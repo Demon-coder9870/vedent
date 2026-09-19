@@ -199,7 +199,7 @@ export default function Home() {
     setMobileOpen(false);
     const el = document.getElementById(id);
     if (el) {
-      const header = document.querySelector('.site-header');
+      const header = document.querySelector('.site-header') as HTMLElement;
       const offset = header ? header.offsetHeight : 80;
       window.scrollTo({ top: el.offsetTop - offset + 4, behavior: 'smooth' });
     }
