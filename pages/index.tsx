@@ -802,6 +802,13 @@ export default function Home() {
         .swiper-button-prev {
           top: 50% !important;
         }
+
+        @media (max-width: 768px) {
+          .hero-swiper-prev,
+          .hero-swiper-next {
+            display: none !important;
+          }
+        }
       `}</style>
     </>
   );
