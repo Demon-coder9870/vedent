@@ -4,12 +4,12 @@ import Head from 'next/head';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import Hero from '../components/homeSection/Hero';
-import Stats from '../components/homeSection/Stats';
 import About from '../components/aboutSection/About';
 import Sectors from '../components/sectorsSection/Sectors';
 import Commitment from '../components/homeSection/Commitment';
 import Vision from '../components/visionSection/Vision';
-import Testimonials from '../components/testimonialsSection/Testimonials';
+import Faq from '../components/faqSection/Faq';
+import ContactInfo from '../components/contactSection/ContactInfo';
 import Contact from '../components/contactSection/Contact';
 
 export default function Home() {
@@ -25,12 +25,12 @@ export default function Home() {
 
       <main>
         <Hero />
-        <Stats />
         <About />
         <Sectors />
         <Commitment />
         <Vision />
-        <Testimonials />
+        <Faq />
+        <ContactInfo />
         <Contact />
       </main>
 

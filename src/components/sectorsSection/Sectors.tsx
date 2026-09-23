@@ -18,7 +18,7 @@ export default function Sectors() {
     <section id="sectors" className="sectors-section">
       <div className="container-wide">
         <div className="sectors-header" data-aos="fade-up">
-          <span className="section-label">Industries We Serve / Our Range</span>
+          <span className="section-label">Our Range</span>
           <h2 className="section-title">
             Animal Healthcare<br />Across every sector
           </h2>

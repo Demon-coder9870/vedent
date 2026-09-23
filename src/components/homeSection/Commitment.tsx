@@ -21,7 +21,7 @@ const commitments = [
   {
     icon: 'bi-diagram-3-fill',
     title: 'Distributor Networks',
-    span: 'bento-tall',
+    span: 'bento-wide',
     desc: 'Fostering strong partnerships with distributors through co-branding opportunities. We invest in relationships to ensure shared goals and sustained growth across all regions.',
     variant: 'bento-teal-bg',
     tag: '20+ Countries',
@@ -29,7 +29,7 @@ const commitments = [
   {
     icon: 'bi-lightbulb-fill',
     title: 'Innovations',
-    span: 'bento-wide',
+    span: 'bento-full',
     desc: 'Continuously investing in R&D to bring forward science-backed, sustainable animal healthcare solutions. We combine traditional herbal wisdom with modern veterinary science.',
     variant: 'bento-dark-bg',
     tag: 'R&D Driven',

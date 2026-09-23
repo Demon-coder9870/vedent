@@ -49,7 +49,7 @@ export default function Hero() {
           <div className="hero-content" style={{ pointerEvents: 'auto', width: '100%' }}>
             <div className="hero-badge">
               <i className="bi bi-star-fill" style={{ fontSize: '0.7rem' }} />
-              Premium Pet Wellness
+              Premium Animal Wellness
             </div>
             <h1 className="hero-title">
               <><b>INGREDIENTS by Nature, FORMULATIONS BY Vedvet</b></>
@@ -61,7 +61,6 @@ export default function Hero() {
               <span className="hero-pills-label">Explore:</span>
               {heroSectors.map(sector => (
                 <a key={sector.name} href={`#${sector.name.toLowerCase()}`} className="pill">
-                  <i className={`bi ${sector.icon}`} style={{ opacity: 0.5, marginRight: '6px' }} />
                   {sector.name}
                 </a>
               ))}

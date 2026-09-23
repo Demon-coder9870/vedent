@@ -31,7 +31,7 @@ export default function Header() {
 
       if (router.pathname !== '/') return;
 
-      const sections = ['hero', 'about', 'services', 'sectors', 'innovation', 'testimonials', 'faq', 'contact'];
+      const sections = ['hero', 'about', 'services', 'sectors', 'innovation', 'faq', 'contact'];
       let current = '';
       for (const id of sections) {
         const el = document.getElementById(id);

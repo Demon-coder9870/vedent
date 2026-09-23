@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import '../styles/globals.css';
+import '../styles/contact-info.css';
+import '../styles/process-card.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';

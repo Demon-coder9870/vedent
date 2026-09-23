@@ -27,9 +27,12 @@
   --cyan: #06b6d4;
   --indigo: #4f46e5;
   --violet: #7c3aed;
+  --red: #ef4444;
+  --red-dark: #b91c1c;
 
   /* Gradients */
   --grad-primary: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #93c5fd 100%);
+  --grad-red: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
   --grad-hero: linear-gradient(135deg, #0b0d14 0%, #13161f 40%, #1e2130 100%);
   --grad-lime: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
   --grad-green: linear-gradient(135deg, #2a5386 0%, #3b82f6 100%);
@@ -162,7 +165,7 @@ button { font-family: var(--font-text); }
   content: '';
   width: 22px;
   height: 3px;
-  background: var(--grad-lime);
+  background: var(--grad-red);
   border-radius: 3px;
   flex-shrink: 0;
 }
@@ -928,7 +931,7 @@ button { font-family: var(--font-text); }
   font-family: var(--font-heading);
 }
 .hero-title .accent {
-  background: var(--grad-text);
+  background: var(--grad-red);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1919,7 +1922,7 @@ button { font-family: var(--font-text); }
   letter-spacing: -0.03em;
 }
 .cta-title .accent {
-  background: var(--grad-text);
+  background: var(--grad-red);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1949,6 +1952,10 @@ button { font-family: var(--font-text); }
   background: var(--grad-dark);
   color: var(--white);
   padding: 80px 0; /* Add padding to give the dark background room */
+}
+
+.vision-section .section-label {
+  color: var(--lime-mid);
 }
 
 .vision-section .section-title {
@@ -2248,6 +2255,8 @@ button { font-family: var(--font-text); }
   .cta-section { padding: 80px 0; }
   .hero-title { font-size: 3rem; }
   .section-title { font-size: 2.4rem; }
+  .direct-contact-card { padding: 30px 20px !important; }
+  .process-card { padding: 30px 20px !important; }
 }
 
 @media (max-width: 480px) {
@@ -3723,6 +3732,7 @@ button { font-family: var(--font-text); }
   }
   .bento-grid-v2 .bento-wide { grid-column: span 2; }
   .bento-grid-v2 .bento-tall { grid-row: span 2; }
+  .bento-grid-v2 .bento-full { grid-column: span 3; }
 }
 
 .bento-card-v2 {

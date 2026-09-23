@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 const navItems = [
@@ -33,12 +34,17 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Brand */}
           <div>
-            <div className="footer-brand">
-              <span className="footer-brand-icon"><i className="bi bi-leaf-fill" /></span>
-              VEDVET
+            <div className="footer-brand" style={{ marginBottom: '20px' }}>
+              <Image
+                src="/images/vedvet-logo.png"
+                alt="VedVet Logo"
+                width={140}
+                height={48}
+                style={{ objectFit: 'contain', height: '48px', width: 'auto' }}
+              />
             </div>
             <p className="footer-desc">
-              World-class veterinary healthcare solutions for modern animal care — trusted by veterinarians and farmers in 50+ countries.
+              World-class veterinary healthcare solutions for modern animal care — trusted by veterinarians and farmers in 15+ countries.
             </p>
             <div className="footer-socials">
               <a href="https://www.facebook.com/p/Vedvet-Animal-Health-Private-Limited-100070798733935/" aria-label="facebook" target="_blank" rel="noopener noreferrer"><i className="bi bi-facebook" /></a>
