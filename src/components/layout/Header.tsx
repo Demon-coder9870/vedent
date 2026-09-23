@@ -14,7 +14,6 @@ const navItems = [
   },
   { label: 'Services', href: '/#services' },
   { label: 'Industries', href: '/#sectors' },
-  { label: 'FAQ', href: '/#faq' },
 ];
 
 export default function Header() {
