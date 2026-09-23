@@ -9,7 +9,7 @@ import Sectors from '../components/sectorsSection/Sectors';
 import Commitment from '../components/homeSection/Commitment';
 import Vision from '../components/visionSection/Vision';
 import Faq from '../components/faqSection/Faq';
-import ContactInfo from '../components/contactSection/ContactInfo';
+import Certifications from '../components/homeSection/Certifications';
 import Contact from '../components/contactSection/Contact';
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
         <Commitment />
         <Vision />
         <Faq />
-        <ContactInfo />
+        <Certifications />
         <Contact />
       </main>
 

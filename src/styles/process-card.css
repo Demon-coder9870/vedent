@@ -1,11 +1,86 @@
+/* Card Base */
 .process-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 30px;
+  border-radius: 24px;
+  background: var(--white);
+  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1;
 }
+
+/* Background Gradient Layer (fade in on hover for performance) */
+.process-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--grad-hover-card);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.5s ease;
+}
+
+/* Hover state on card */
 .process-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--red);
+  transform: translateY(-12px) scale(1.02);
+  border-color: rgba(96, 165, 250, 0.3);
+  box-shadow: 0 24px 48px rgba(96, 165, 250, 0.12);
 }
-.process-card:hover h3 {
-  color: var(--red) !important;
+
+.process-card:hover::before {
+  opacity: 1;
+}
+
+/* Big Number styling - Hollow look */
+.process-card-num {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  font-size: 160px;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--border-light);
+  line-height: 1;
+  font-family: var(--font-heading);
+  z-index: 0;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hover state on Number */
+.process-card:hover .process-card-num {
+  -webkit-text-stroke: 2px var(--lime);
+  color: rgba(96, 165, 250, 0.05);
+  transform: scale(1.05) rotate(-4deg);
+}
+
+/* Title */
+.process-card-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  color: var(--charcoal);
+  font-family: var(--font-heading);
+  transition: color 0.4s ease;
+}
+
+/* Description */
+.process-card-desc {
+  color: var(--text-muted);
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-text);
+  transition: color 0.4s ease;
+}
+
+/* Hover states on Title/Desc */
+.process-card:hover .process-card-title {
+  color: var(--lime-dark);
+}
+.process-card:hover .process-card-desc {
+  color: var(--charcoal-2);
 }

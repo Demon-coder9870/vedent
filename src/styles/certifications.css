@@ -1,0 +1,119 @@
+/* certifications.css */
+
+.certifications-section {
+  padding: 80px 0;
+  background: var(--white);
+  overflow: hidden;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.certifications-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Marquee Container */
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* Gradient Edges to fade out logos */
+.marquee-container::before,
+.marquee-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.marquee-container::before {
+  left: 0;
+  background: linear-gradient(to right, var(--white) 0%, transparent 100%);
+}
+.marquee-container::after {
+  right: 0;
+  background: linear-gradient(to left, var(--white) 0%, transparent 100%);
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  white-space: nowrap;
+  will-change: transform;
+  animation: scrollMarquee 35s linear infinite;
+  padding-left: 80px; /* match the gap */
+}
+
+/* Pause on hover */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes scrollMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%); /* Needs double content to work perfectly */
+  }
+}
+
+.cert-logo-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-decoration: none;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%) opacity(0.7);
+  cursor: pointer;
+  min-width: 160px;
+}
+
+.cert-logo-link:hover {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.05) translateY(-5px);
+}
+
+.cert-logo-circle {
+  width: 100px;
+  height: 100px;
+  background: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  font-size: 2.5rem;
+  color: var(--lime-dark);
+  transition: all 0.3s ease;
+}
+
+.cert-logo-link:hover .cert-logo-circle {
+  background: var(--white);
+  border-color: var(--lime);
+  box-shadow: var(--shadow-md);
+  color: var(--lime);
+}
+
+.cert-logo-name {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  transition: color 0.3s ease;
+}
+
+.cert-logo-link:hover .cert-logo-name {
+  color: var(--lime-dark);
+}

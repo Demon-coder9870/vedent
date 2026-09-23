@@ -171,13 +171,21 @@ button { font-family: var(--font-text); }
 }
 
 .section-title {
-  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  font-size: clamp(2.2rem, 3.5vw, 3.2rem);
   font-weight: 800;
   color: var(--charcoal);
-  margin-bottom: 20px;
-  line-height: 1.1;
-  letter-spacing: -0.025em;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
   font-family: var(--font-heading);
+}
+
+.title-underline {
+  width: 60px;
+  height: 4px;
+  background: var(--lime);
+  border-radius: 2px;
+  margin-bottom: 24px;
 }
 
 .section-subtitle {
@@ -1226,12 +1234,7 @@ button { font-family: var(--font-text); }
   font-family: var(--font-text);
 }
 
-.title-underline {
-  width: 80px;
-  height: 4px;
-  background: var(--lime);
-  margin-bottom: 24px;
-}
+
 
 .about-green-dot {
   position: absolute;

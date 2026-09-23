@@ -15,7 +15,8 @@ const commitments = [
     title: 'Premium Quality',
     span: 'bento-tall',
     desc: 'Upholding the highest standards of quality at every stage — from raw material sourcing to final dispatch — ensuring consistency, safety, and reliability in every batch.',
-    variant: 'bento-lime-bg',
+    variant: 'bento-image-bg',
+    bgImage: '/images/poultry.jpg',
     tag: 'ISO & GMP Certified',
   },
   {
@@ -23,7 +24,8 @@ const commitments = [
     title: 'Distributor Networks',
     span: 'bento-wide',
     desc: 'Fostering strong partnerships with distributors through co-branding opportunities. We invest in relationships to ensure shared goals and sustained growth across all regions.',
-    variant: 'bento-teal-bg',
+    variant: 'bento-image-bg',
+    bgImage: '/images/livestock.jpg',
     tag: '20+ Countries',
   },
   {
@@ -31,7 +33,8 @@ const commitments = [
     title: 'Innovations',
     span: 'bento-full',
     desc: 'Continuously investing in R&D to bring forward science-backed, sustainable animal healthcare solutions. We combine traditional herbal wisdom with modern veterinary science.',
-    variant: 'bento-dark-bg',
+    variant: 'bento-image-bg',
+    bgImage: '/images/pets.jpg',
     tag: 'R&D Driven',
   },
 ];
@@ -40,10 +43,10 @@ export default function Commitment() {
   return (
     <section id="commitment" className="about-section-pad bg-pattern-dots" style={{ backgroundColor: '#f9f9fc' }}>
       <div className="container-wide">
-        <div className="wwd-section-header" style={{ marginBottom: '50px' }} data-aos="fade-up">
+        <div className="wwd-section-header" style={{ marginBottom: '50px', textAlign: 'center' }} data-aos="fade-up">
           <div>
             <h2 className="section-title">VEDVET IS COMMITTED TO</h2>
-            <div className="title-underline"></div>
+            <div className="title-underline" style={{ margin: '0 auto 24px auto' }}></div>
           </div>
         </div>
 

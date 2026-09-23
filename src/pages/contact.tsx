@@ -120,11 +120,11 @@ export default function ContactPage() {
               
               {/* Right Column: Direct Contact */}
               <div className="contact-info-col" data-aos="fade-left">
-                <div className="direct-contact-card" style={{ background: 'var(--white)', padding: '50px 40px', borderRadius: '24px', boxShadow: 'var(--shadow-md)', border: '1px solid var(--border-light)', textAlign: 'left' }}>
+                <div className="direct-contact-card" style={{ background: 'var(--grad-card)', padding: '50px 40px', borderRadius: '24px', boxShadow: 'var(--shadow-md)', border: '1px solid var(--border-light)', textAlign: 'left' }}>
                   <h3 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '35px', fontFamily: 'var(--font-heading)' }}>Prefer Direct Contact?</h3>
                   
                   <div className="contact-info-item" style={{ display: 'flex', gap: '20px', marginBottom: '30px', alignItems: 'flex-start' }}>
-                    <div className="contact-info-icon" style={{ fontSize: '1.5rem', color: 'var(--lime)', background: 'var(--lime-light)', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '12px', flexShrink: 0 }}><i className="bi bi-geo-alt-fill" /></div>
+                    <div className="contact-info-icon" style={{ fontSize: '1.5rem', color: 'var(--white)', background: 'var(--lime)', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '12px', flexShrink: 0 }}><i className="bi bi-geo-alt-fill" /></div>
                     <div>
                       <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>Head Office</h4>
                       <p style={{ margin: 0, color: '#555', lineHeight: '1.6' }}>
@@ -134,7 +134,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="contact-info-item" style={{ display: 'flex', gap: '20px', marginBottom: '30px', alignItems: 'flex-start' }}>
-                    <div className="contact-info-icon" style={{ fontSize: '1.5rem', color: 'var(--lime)', background: 'var(--lime-light)', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '12px', flexShrink: 0 }}><i className="bi bi-envelope-fill" /></div>
+                    <div className="contact-info-icon" style={{ fontSize: '1.5rem', color: 'var(--white)', background: 'var(--lime)', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '12px', flexShrink: 0 }}><i className="bi bi-envelope-fill" /></div>
                     <div>
                       <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>Email</h4>
                       <p style={{ margin: 0, color: '#555', lineHeight: '1.6' }}>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                   </div>
                   
                   <div className="contact-info-item" style={{ display: 'flex', gap: '20px', marginBottom: '40px', alignItems: 'flex-start' }}>
-                    <div className="contact-info-icon" style={{ fontSize: '1.5rem', color: 'var(--lime)', background: 'var(--lime-light)', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '12px', flexShrink: 0 }}><i className="bi bi-telephone-fill" /></div>
+                    <div className="contact-info-icon" style={{ fontSize: '1.5rem', color: 'var(--white)', background: 'var(--lime)', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '12px', flexShrink: 0 }}><i className="bi bi-telephone-fill" /></div>
                     <div>
                       <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>Phone</h4>
                       <p style={{ margin: 0, color: '#555', lineHeight: '1.6' }}>+91 999 77 148 00</p>
@@ -178,33 +178,14 @@ export default function ContactPage() {
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px' }}>
               {processSteps.map((step, index) => (
-                <div key={index} className="process-card" data-aos="fade-up" data-aos-delay={index * 100} style={{
-                  background: 'var(--white)',
-                  padding: '40px 30px',
-                  borderRadius: '24px',
-                  boxShadow: 'var(--shadow-sm)',
-                  position: 'relative',
-                  overflow: 'hidden',
-                  border: '1px solid var(--border-light)',
-                  transition: 'var(--transition)',
-                }}>
-                  <div style={{
-                    position: 'absolute',
-                    top: '-15px',
-                    right: '-10px',
-                    fontSize: '140px',
-                    fontWeight: 900,
-                    color: 'var(--lime-light)',
-                    lineHeight: 1,
-                    fontFamily: 'var(--font-heading)',
-                    zIndex: 0
-                  }}>
+                <div key={index} className="process-card" data-aos="fade-up" data-aos-delay={index * 100}>
+                  <div className="process-card-num">
                     {step.num}
                   </div>
-                  <h3 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: '20px', position: 'relative', zIndex: 1, color: 'var(--charcoal)', fontFamily: 'var(--font-heading)' }}>
+                  <h3 className="process-card-title">
                     {step.title}
                   </h3>
-                  <p style={{ color: 'var(--text-muted)', lineHeight: '1.6', position: 'relative', zIndex: 1, fontFamily: 'var(--font-text)' }}>
+                  <p className="process-card-desc">
                     {step.desc}
                   </p>
                 </div>

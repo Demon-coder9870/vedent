@@ -1,9 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
@@ -11,6 +9,10 @@ const heroSlides = [
   { bg: '/images/hero.jpg' },
   { bg: '/images/pets.jpg' },
   { bg: '/images/livestock.jpg' },
+  { bg: '/images/hero-4-placeholder.jpg' },
+  { bg: '/images/hero-5-placeholder.jpg' },
+  { bg: '/images/hero-6-placeholder.jpg' },
+  { bg: '/images/hero-7-placeholder.jpg' },
 ];
 
 const heroSectors = [
@@ -26,15 +28,11 @@ export default function Hero() {
     <section id="hero" className="hero-section">
       <Swiper
         className="hero-swiper"
-        modules={[Navigation, Pagination, Autoplay, EffectFade]}
+        modules={[Pagination, Autoplay, EffectFade]}
         effect="fade"
         speed={1000}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
         loop={true}
-        navigation={{
-          prevEl: '.hero-swiper-prev',
-          nextEl: '.hero-swiper-next',
-        }}
         pagination={{ clickable: true }}
       >
         {heroSlides.map((slide, i) => (
@@ -67,10 +65,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        
-        {/* Custom Navigation */}
-        <div className="hero-swiper-prev" style={{ zIndex: 11 }}><FiChevronLeft /></div>
-        <div className="hero-swiper-next" style={{ zIndex: 11 }}><FiChevronRight /></div>
       </Swiper>
 
       {/* Scroll indicator */}

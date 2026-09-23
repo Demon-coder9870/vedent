@@ -1,6 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -15,7 +16,7 @@ const sectors = [
 
 export default function Sectors() {
   return (
-    <section id="sectors" className="sectors-section">
+    <section id="sectors" className="sectors-section" style={{ position: 'relative' }}>
       <div className="container-wide">
         <div className="sectors-header" data-aos="fade-up">
           <span className="section-label">Our Range</span>
@@ -27,37 +28,47 @@ export default function Sectors() {
           </p>
         </div>
 
-        <Swiper
-          className="sectors-swiper"
-          modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={24}
-          slidesPerView={1}
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 3500, disableOnInteraction: false }}
-          loop
-          breakpoints={{
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-            1280: { slidesPerView: 4 },
-          }}
-        >
-          {sectors.map(({ bg, tag, title, sub }, i) => (
-            <SwiperSlide key={i}>
-              <a href="#" className="sector-card" onClick={(e) => e.preventDefault()}>
-                <div className="sector-card-bg" style={{ backgroundImage: `url(${bg})` }} />
-                <div className="sector-card-overlay" />
-                <div className="sector-card-content">
-                  <span className="sector-card-tag">{tag}</span>
-                  <h3 className="sector-card-title">{title}</h3>
-                  <p className="sector-card-sub">{sub}</p>
-                  <span className="sector-card-btn">
-                    Explore <i className="bi bi-arrow-right" />
-                  </span>
-                </div>
-              </a>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div style={{ position: 'relative' }}>
+          <Swiper
+            className="sectors-swiper"
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={24}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+            navigation={{
+              prevEl: '.sectors-swiper-prev',
+              nextEl: '.sectors-swiper-next',
+            }}
+            autoplay={{ delay: 3500, disableOnInteraction: false }}
+            loop
+            breakpoints={{
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+              1280: { slidesPerView: 4 },
+            }}
+          >
+            {sectors.map(({ bg, tag, title, sub }, i) => (
+              <SwiperSlide key={i}>
+                <a href="#" className="sector-card" onClick={(e) => e.preventDefault()}>
+                  <div className="sector-card-bg" style={{ backgroundImage: `url(${bg})` }} />
+                  <div className="sector-card-overlay" />
+                  <div className="sector-card-content">
+                    <span className="sector-card-tag">{tag}</span>
+                    <h3 className="sector-card-title">{title}</h3>
+                    <p className="sector-card-sub">{sub}</p>
+                    <span className="sector-card-btn">
+                      Explore <i className="bi bi-arrow-right" />
+                    </span>
+                  </div>
+                </a>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          
+          {/* Custom Navigation */}
+          <div className="sectors-swiper-prev swiper-nav-btn" style={{ position: 'absolute', top: '50%', left: '-20px', transform: 'translateY(-50%)', zIndex: 10, cursor: 'pointer', background: 'var(--white)', color: 'var(--charcoal)', width: '40px', height: '40px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: 'var(--shadow-md)', border: '1px solid var(--border-light)' }}><FiChevronLeft size={20} /></div>
+          <div className="sectors-swiper-next swiper-nav-btn" style={{ position: 'absolute', top: '50%', right: '-20px', transform: 'translateY(-50%)', zIndex: 10, cursor: 'pointer', background: 'var(--white)', color: 'var(--charcoal)', width: '40px', height: '40px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: 'var(--shadow-md)', border: '1px solid var(--border-light)' }}><FiChevronRight size={20} /></div>
+        </div>
       </div>
     </section>
   );
