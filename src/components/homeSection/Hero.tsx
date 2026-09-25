@@ -6,13 +6,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
 const heroSlides = [
-  { bg: '/images/hero.jpg' },
-  { bg: '/images/pets.jpg' },
-  { bg: '/images/livestock.jpg' },
-  { bg: '/images/hero-4-placeholder.jpg' },
-  { bg: '/images/hero-5-placeholder.jpg' },
-  { bg: '/images/hero-6-placeholder.jpg' },
-  { bg: '/images/hero-7-placeholder.jpg' },
+  { bg: '/images/hero_landscape_1790180703293.jpg' },
+  { bg: '/images/hero_pets_1790180504171.jpg' },
+  { bg: '/images/hero_livestock_1790180518211.jpg' },
+  { bg: '/images/hero_poultry_1790180533602.jpg' },
+  { bg: '/images/hero_swine_1790180583531.jpg' },
+  { bg: '/images/hero_aqua_1790180603169.jpg' },
 ];
 
 const heroSectors = [
