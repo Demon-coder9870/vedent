@@ -1,14 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const certs = [
-  { name: 'ISO 9001:2015', icon: 'bi-patch-check-fill' },
-  { name: 'GMP Certified', icon: 'bi-shield-fill-check' },
-  { name: 'WHO-GMP', icon: 'bi-globe' },
-  { name: 'FDA Compliant', icon: 'bi-check2-circle' },
-  { name: 'FSSAI', icon: 'bi-cup-hot-fill' },
-  { name: 'Organic', icon: 'bi-flower1' },
-  { name: 'HALAL', icon: 'bi-star-fill' },
+  { name: 'ISO 9001:2015', image: '/images/accreditations/ISO 9001 2015.png' },
+  { name: 'ISO 22000', image: '/images/accreditations/ISO 22000.png' },
+  { name: 'GMP Certified', image: '/images/accreditations/GMP.png' },
+  { name: 'HACCP', image: '/images/accreditations/HACCP.png' },
+  { name: 'HALAL', image: '/images/accreditations/Halal.png' },
+  { name: 'FAMI-QS', image: '/images/accreditations/FAMI-QS.png' },
+  { name: 'GMO Certified', image: '/images/accreditations/GMO.png' },
+  { name: 'WHO', image: '/images/accreditations/WHO.png' },
 ];
 
 export default function Certifications() {
@@ -28,8 +30,8 @@ export default function Certifications() {
           <div className="marquee-content">
             {duplicatedCerts.map((cert, index) => (
               <Link href="/accreditations" key={index} className="cert-logo-link">
-                <div className="cert-logo-circle">
-                  <i className={`bi ${cert.icon}`}></i>
+                <div className="cert-logo-circle" style={{ background: 'transparent', boxShadow: 'none' }}>
+                  <Image src={cert.image} alt={cert.name} width={60} height={60} style={{ objectFit: 'contain' }} />
                 </div>
                 <span className="cert-logo-name">{cert.name}</span>
               </Link>

@@ -23,7 +23,7 @@ const milestones = [
 
 const values = [
   { icon: 'bi-heart-pulse', title: 'Animal Wellbeing', desc: 'Every solution we build starts with the health and wellbeing of the animals our customers care for.' },
-  { icon: 'bi-patch-check', title: 'Certified Excellence', desc: 'HALAL, ISO, GMP, HACCP, WHO certified — our quality is validated at every level.' },
+  { icon: 'bi-patch-check', title: 'Certified Excellence', desc: 'HALAL, ISO, GMP, HACCP certified — our quality is validated at every level.' },
   { icon: 'bi-globe2', title: 'Global Reach', desc: 'Trusted across 20+ countries, building partnerships that span continents.' },
   { icon: 'bi-lightbulb', title: 'Scientific Rigor', desc: 'Combining scientific expertise with hands-on industry knowledge to deliver results.' },
 ];

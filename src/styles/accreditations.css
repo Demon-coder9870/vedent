@@ -1,0 +1,117 @@
+/* src/styles/accreditations.css */
+
+.acc-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.acc-row {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.acc-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.acc-visual {
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--white);
+  padding: 60px 40px;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+  border: 1px solid var(--border-light);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.acc-visual:hover {
+  transform: translateY(-5px);
+}
+
+.acc-visual::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: var(--grad-lime);
+}
+
+.acc-icon-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--lime-light);
+  color: var(--lime-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(96, 165, 250, 0.2);
+}
+
+.acc-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--charcoal);
+  font-family: var(--font-heading);
+}
+
+.acc-content {
+  flex: 1;
+}
+
+.acc-desc {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.acc-meaning-box {
+  background: var(--off-white);
+  padding: 35px;
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--lime);
+}
+
+.acc-meaning-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--charcoal);
+  margin-bottom: 12px;
+}
+
+.acc-meaning-text {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .acc-row, .acc-row.reverse {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .acc-visual {
+    width: 100%;
+    flex: auto;
+    padding: 40px 20px;
+  }
+  .acc-container {
+    gap: 60px;
+  }
+}

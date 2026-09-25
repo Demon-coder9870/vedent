@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const faqs = [
   {
     q: 'What quality certifications does VEDVET hold?',
-    a: 'VEDVET holds HALAL, GMO, ISO 9001, ISO 22000, FAMI-QS, GMP, HACCP, and WHO certifications, reflecting our commitment to quality, safety, and international regulatory standards across our product range.',
+    a: 'VEDVET holds HALAL, GMO, ISO 9001, ISO 22000, FAMI-QS, GMP, and HACCP certifications, reflecting our commitment to quality, safety, and international regulatory standards across our product range.',
   },
   {
     q: 'Which countries does VEDVET currently export to?',

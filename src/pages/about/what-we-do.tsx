@@ -65,7 +65,7 @@ export default function WhatWeDo() {
                 <img src="/images/what_we_do_hero_1789905138747.jpg" alt="What We Do" />
                 <div className="wwd-intro-image-badge">
                   <i className="bi bi-patch-check-fill" />
-                  <span>WHO Certified</span>
+                  <span>GMP Certified</span>
                 </div>
               </div>
             </div>

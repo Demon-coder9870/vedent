@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import Hero from '../components/homeSection/Hero';
+import Counter from '../components/homeSection/Counter';
 import About from '../components/aboutSection/About';
 import Sectors from '../components/sectorsSection/Sectors';
 import Commitment from '../components/homeSection/Commitment';
@@ -25,6 +26,7 @@ export default function Home() {
 
       <main>
         <Hero />
+        <Counter />
         <About />
         <Sectors />
         <Commitment />

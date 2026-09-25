@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 
 const navItems = [
   { label: 'Home', href: '/#hero' },
+  { label: 'Products', href: '/products' },
   {
     label: 'About',
     dropdown: [
@@ -12,8 +13,8 @@ const navItems = [
       { label: 'What We Do', href: '/about/what-we-do' },
     ],
   },
+  { label: 'Accreditations', href: '/accreditations' },
   { label: 'Services', href: '/#services' },
-  { label: 'Industries', href: '/#sectors' },
 ];
 
 export default function Header() {
@@ -30,7 +31,7 @@ export default function Header() {
 
       if (router.pathname !== '/') return;
 
-      const sections = ['hero', 'about', 'services', 'sectors', 'innovation', 'faq', 'contact'];
+      const sections = ['hero', 'about', 'services', 'innovation', 'faq', 'contact'];
       let current = '';
       for (const id of sections) {
         const el = document.getElementById(id);
@@ -100,7 +101,6 @@ export default function Header() {
                   width={140}
                   height={48}
                   style={{ objectFit: 'contain', height: '48px', width: 'auto' }}
-                  priority
                 />
               </Link>
 
