@@ -10,7 +10,6 @@ const certs = [
   { name: 'HALAL', image: '/images/accreditations/Halal.png' },
   { name: 'FAMI-QS', image: '/images/accreditations/FAMI-QS.png' },
   { name: 'GMO Certified', image: '/images/accreditations/GMO.png' },
-  { name: 'WHO', image: '/images/accreditations/WHO.png' },
 ];
 
 export default function Certifications() {

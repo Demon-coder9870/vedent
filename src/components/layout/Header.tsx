@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 
 const navItems = [
   { label: 'Home', href: '/#hero' },
-  { label: 'Products', href: '/products' },
   {
     label: 'About',
     dropdown: [
@@ -13,8 +12,9 @@ const navItems = [
       { label: 'What We Do', href: '/about/what-we-do' },
     ],
   },
-  { label: 'Accreditations', href: '/accreditations' },
+  { label: 'Products', href: '/products' },
   { label: 'Services', href: '/#services' },
+  { label: 'Accreditations', href: '/accreditations' },
 ];
 
 export default function Header() {
@@ -66,28 +66,6 @@ export default function Header() {
     <>
       {/* ── HEADER ─────────────────────────────────────── */}
       <header className={`site-header${scrolled || router.pathname !== '/' ? ' scrolled' : ''}`}>
-        {/* Announcement Bar */}
-        <div className="announce-bar">
-          <div className="container-wide">
-            <div className="announce-inner">
-              <span className="announce-badge"><i className="bi bi-stars" /> NEW</span>
-              <span className="announce-text">Trusted by 10,000+ farmers &amp; veterinarians across 50+ countries</span>
-              <div className="announce-right">
-                <a href="mailto:info@vedvet.com" className="announce-link"><i className="bi bi-envelope-fill" /> info@vedvet.com</a>
-                <span className="announce-divider" />
-                <a href="tel:+919997714800" className="announce-link"><i className="bi bi-telephone-fill" /> +91 999 77 148 00</a>
-                <span className="announce-divider" />
-                <div className="announce-socials">
-                  <a href="https://www.facebook.com/p/Vedvet-Animal-Health-Private-Limited-100070798733935/" aria-label="facebook" target="_blank" rel="noopener noreferrer"><i className="bi bi-facebook" /></a>
-                  <a href="https://x.com/ved_vet" aria-label="twitter-x" target="_blank" rel="noopener noreferrer"><i className="bi bi-twitter-x" /></a>
-                  <a href="https://www.linkedin.com/in/ved-vet-604050422/" aria-label="linkedin" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin" /></a>
-                  <a href="https://www.instagram.com/ved_vet/" aria-label="instagram" target="_blank" rel="noopener noreferrer"><i className="bi bi-instagram" /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Main Nav */}
         <div className="nav-wrapper">
           <div className="container-wide">
