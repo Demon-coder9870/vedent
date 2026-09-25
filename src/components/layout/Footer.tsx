@@ -6,9 +6,8 @@ import { useRouter } from 'next/router';
 const navItems = [
   { label: 'Home', href: '/#hero' },
   { label: 'About Us', href: '/about/who-we-are' },
+  { label: 'Products', href: '/products' },
   { label: 'Services', href: '/#services' },
-  { label: 'Industries', href: '/#sectors' },
-  { label: 'FAQ', href: '/faq' },
   { label: 'Contact Us', href: '/contact' },
 ];
 
@@ -109,9 +108,12 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p className="footer-copy">
-            © 2026 <span>VEDVET</span>. All Rights Reserved.
+            © {new Date().getFullYear()} <span>VEDVET</span>. All Rights Reserved.
           </p>
           <div className="footer-bottom-links">
+            <span style={{ fontSize: '0.85rem', color: 'rgba(255, 255, 255, 0.5)' }}>
+              Designed by <a href="https://applaudwebmedia.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--lime-light)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--lime)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--lime-light)'}>Applaud Web Media Pvt Ltd</a>
+            </span>
           </div>
         </div>
       </div>
