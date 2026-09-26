@@ -224,6 +224,30 @@ button { font-family: var(--font-text); }
   filter: brightness(1.05);
 }
 
+.btn-red {
+  background: var(--grad-red);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 10px 24px;
+  border-radius: var(--radius-full);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 32px rgba(239, 68, 68, 0.35);
+  transition: all 0.3s;
+  font-family: var(--font-text);
+  letter-spacing: 0.02em;
+}
+.btn-red:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(239, 68, 68, 0.5);
+  color: #fff;
+  filter: brightness(1.05);
+}
+
 .btn-ghost {
   background: rgba(255,255,255,0.1);
   color: var(--white);
@@ -598,8 +622,8 @@ button { font-family: var(--font-text); }
   background: var(--grad-lime);
   color: #fff;
   font-weight: 700;
-  font-size: 0.75rem;
-  padding: 8px 18px;
+  font-size: 0.85rem;
+  padding: 10px 24px;
   border-radius: var(--radius-full);
   border: none;
   cursor: pointer;
@@ -3922,7 +3946,6 @@ button { font-family: var(--font-text); }
 .btn-outline-dark,
 .btn-outline-lime,
 .cta-ghost-btn,
-.nav-cta,
 .drawer-cta {
   display: inline-flex;
   align-items: center;
@@ -3930,7 +3953,6 @@ button { font-family: var(--font-text); }
   gap: 10px;
   padding: 14px 32px;
   border-radius: 50px;
-  font-family: 'Montserrat', sans-serif !important;
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.02em;

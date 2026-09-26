@@ -1,0 +1,133 @@
+[
+  {
+    "name": "DIGYVED PLUS",
+    "category": "Natural",
+    "presentation": "100ml",
+    "slug": "digyved-plus",
+    "image": "/images/products/digyved-plus.jpg",
+    "shortDescription": "Clinically effective herbal remedy formulated to support digestive health in adult pets. Helps provide supportive care for indigestion, colic, constipation, gastritis, and irregular bowel movement.",
+    "fullDescription": "DIGYVED PLUS is a clinically effective herbal remedy formulated to support digestive health in adult pets. Its antibacterial, anti-spasmodic, and bowel-regulating properties help control gastric infections associated with stomach disorders, while supporting relief from indigestion, colic, and constipation. DIGYVED PLUS also provides supportive care in gastritis and irritable bowel syndrome, and helps restore regular bowel movement.",
+    "benefits": [
+      {
+        "title": "Antibacterial Support",
+        "text": "Antibacterial, anti-spasmodic, and bowel-regulating action controls gastric infections linked to stomach disorders.",
+        "icon": "bi-shield-check"
+      },
+      {
+        "title": "Digestive Comfort",
+        "text": "Provides relief from indigestion, colic, and constipation.",
+        "icon": "bi-heart-pulse"
+      },
+      {
+        "title": "Gastric Support",
+        "text": "Provides supportive care in gastritis and irritable bowel syndrome.",
+        "icon": "bi-bandaid"
+      },
+      {
+        "title": "Regular Bowel Movement",
+        "text": "Helps correct irregular bowel movement.",
+        "icon": "bi-arrow-repeat"
+      }
+    ],
+    "indications": [
+      "Signs of indigestion, colic, or abdominal discomfort in adult pets.",
+      "Constipation or irregular bowel movement.",
+      "Suspected or confirmed gastritis.",
+      "Suspected irritable bowel syndrome (IBS).",
+      "Gastric infections associated with stomach disorders in adult pets."
+    ]
+  },
+  {
+    "name": "VETVITA PLUS",
+    "category": "Pets",
+    "presentation": "100ml",
+    "slug": "vetvita-plus",
+    "image": "/images/products/vetvita-plus.jpg",
+    "shortDescription": "A veterinary nutritional supplement designed to support vitality, digestion, immunity, and overall health in pets and livestock.",
+    "fullDescription": "VETVITA PLUS is a veterinary nutritional supplement designed to support vitality, digestion, immunity, and overall health in pets and livestock. It ensures daily nutritional requirements are met to keep animals healthy and active.",
+    "benefits": [
+      {
+        "title": "Enhanced Vitality",
+        "text": "Supports overall energy levels and vitality.",
+        "icon": "bi-lightning-charge"
+      },
+      {
+        "title": "Immune Support",
+        "text": "Boosts the immune system to fight off diseases.",
+        "icon": "bi-shield-plus"
+      },
+      {
+        "title": "Improved Digestion",
+        "text": "Promotes a healthy digestive tract.",
+        "icon": "bi-heart"
+      }
+    ],
+    "indications": [
+      "General weakness or low energy levels.",
+      "Nutritional deficiencies.",
+      "During recovery from illness."
+    ]
+  },
+  {
+    "name": "HERBOVET CARE",
+    "category": "Natural",
+    "presentation": "100ml",
+    "slug": "herbovet-care",
+    "image": "/images/products/herbovet-care.jpg",
+    "shortDescription": "A herbal veterinary formulation designed to provide supportive care for common digestive and general health concerns in animals.",
+    "fullDescription": "HERBOVET CARE is a herbal veterinary formulation designed to provide supportive care for common digestive and general health concerns in animals. Formulated with natural ingredients, it offers a gentle yet effective approach to animal wellness.",
+    "benefits": [
+      {
+        "title": "Natural Formulation",
+        "text": "Made with safe and natural herbal ingredients.",
+        "icon": "bi-flower1"
+      },
+      {
+        "title": "Gentle Care",
+        "text": "Provides non-invasive supportive care.",
+        "icon": "bi-droplet"
+      },
+      {
+        "title": "Holistic Wellness",
+        "text": "Supports overall animal health.",
+        "icon": "bi-check2-circle"
+      }
+    ],
+    "indications": [
+      "Minor digestive upsets.",
+      "General health maintenance.",
+      "As a supplement to primary care."
+    ]
+  },
+  {
+    "name": "IMMUNOVET PRO",
+    "category": "Aqua",
+    "presentation": "200ml",
+    "slug": "immunovet-pro",
+    "image": "/images/products/vetvita-plus.jpg",
+    "shortDescription": "Advanced immune-supporting formulation for pets, enriched with essential vitamins and natural botanical extracts to ensure optimal health.",
+    "fullDescription": "IMMUNOVET PRO is a cutting-edge immunity booster designed to strengthen the natural defenses of pets. Enriched with essential vitamins and natural botanical extracts, it promotes optimal health, rapid recovery from illness, and resilience against common infections.",
+    "benefits": [
+      {
+        "title": "Strong Immunity",
+        "text": "Strengthens natural defenses.",
+        "icon": "bi-shield-check"
+      },
+      {
+        "title": "Rapid Recovery",
+        "text": "Aids in quicker recovery from illness.",
+        "icon": "bi-activity"
+      },
+      {
+        "title": "Overall Vitality",
+        "text": "Keeps pets energetic and healthy.",
+        "icon": "bi-stars"
+      }
+    ],
+    "indications": [
+      "Compromised immune system.",
+      "During and after illness.",
+      "Stressful conditions."
+    ]
+  }
+]

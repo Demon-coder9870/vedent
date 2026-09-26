@@ -10,7 +10,7 @@ const milestones = [
   {
     year: 'Chapter 01',
     title: 'The Beginning',
-    desc: 'Our story began a decade ago, when a young entrepreneur with a long-term vision recognized an opportunity in this industry and made the decision to bring about real change. Within a few years, that vision took shape as VEDVET.',
+    desc: 'Our story began over 12 years ago, when a young entrepreneur with a long-term vision recognized an opportunity in this industry and made the decision to bring about real change. Within a few years, that vision took shape as VEDVET.',
     img: '/images/about_beginning_1789905087984.jpg',
   },
   {
@@ -62,7 +62,7 @@ export default function WhoWeAre() {
                   <div className="wwa-intro-img-badge">
                     <i className="bi bi-stars" />
                     <div>
-                      <span className="wwa-badge-num">10+</span>
+                      <span className="wwa-badge-num">12+</span>
                       <span className="wwa-badge-label">Years of Excellence</span>
                     </div>
                   </div>
@@ -72,7 +72,7 @@ export default function WhoWeAre() {
                 <span className="section-label">Our Identity</span>
                 <h2 className="section-title">A Specialist in<br /><span className="accent">Premium Animal Health.</span></h2>
                 <p className="wwa-intro-lead">
-                  VEDVET is a specialist in premium feed additives and veterinary products, backed by over a decade of rich industry experience. We are dedicated to developing innovative, sustainable solutions that drive our customers' success through consistently high-quality products.
+                  VEDVET is a specialist in premium feed additives and veterinary products, backed by 12+ years of rich industry experience. We are dedicated to developing innovative, sustainable solutions that drive our customers' success through consistently high-quality products.
                 </p>
                 <p className="wwa-intro-body">
                   Our approach begins with a deep understanding of our customers' needs and concerns — this customer-first principle shapes every solution we deliver. By combining scientific rigor with hands-on expertise, we help our partners support animal health, optimize performance, and improve production efficiency, ensuring long-term value at every stage of the process.

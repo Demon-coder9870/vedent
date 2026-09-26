@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 const navItems = [
-  { label: 'Home', href: '/#hero' },
+  { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about/who-we-are' },
   { label: 'Products', href: '/products' },
   { label: 'Services', href: '/#services' },
@@ -95,8 +95,8 @@ export default function Footer() {
             <div className="footer-contact-item">
               <i className="bi bi-envelope" />
               <span style={{ lineHeight: '1.6' }}>
-                Business: <a href="mailto:info@vedvet.com" style={{color: 'inherit'}}>info@vedvet.com</a><br/>
-                Marketing: <a href="mailto:amit@vedvet.com" style={{color: 'inherit'}}>amit@vedvet.com</a>
+                Business: <a href="mailto:info@vedvet.com" style={{ color: 'inherit' }}>info@vedvet.com</a><br />
+                Marketing: <a href="mailto:amit@vedvet.com" style={{ color: 'inherit' }}>amit@vedvet.com</a>
               </span>
             </div>
             <div className="footer-contact-item">

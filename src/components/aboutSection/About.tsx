@@ -42,7 +42,7 @@ export default function About() {
               <img src="/images/about.jpg" alt="Veterinary Science at VEDVET" loading="lazy" />
             </div>
             <div className="about-badge">
-              <div className="about-badge-number">15+ yrs</div>
+              <div className="about-badge-number">12 yrs</div>
               <div className="about-badge-text">of veterinary excellence</div>
             </div>
           </div>

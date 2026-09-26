@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 const navItems = [
-  { label: 'Home', href: '/#hero' },
+  { label: 'Home', href: '/' },
   {
     label: 'About',
     dropdown: [
@@ -85,8 +85,8 @@ export default function Header() {
               {/* Desktop Links */}
               <ul className="nav-links">
                 {navItems.map((item, i) => (
-                  <li 
-                    key={i} 
+                  <li
+                    key={i}
                     className="nav-item"
                     onMouseEnter={() => item.dropdown && setDropdownOpen(true)}
                     onMouseLeave={() => item.dropdown && setDropdownOpen(false)}
@@ -97,7 +97,7 @@ export default function Header() {
                           {item.label} <i className="bi bi-chevron-down" style={{ fontSize: '0.8em', marginLeft: 4, marginTop: 2 }} />
                         </span>
                         <span className="nav-link-bar" />
-                        
+
                         {/* Dropdown Menu */}
                         <div className={`nav-dropdown ${dropdownOpen ? 'open' : ''}`}>
                           {item.dropdown.map((subItem, j) => (
@@ -173,8 +173,8 @@ export default function Header() {
               <li key={i} style={{ animationDelay: `${i * 0.06}s` }}>
                 {item.dropdown ? (
                   <div className="drawer-dropdown-wrapper">
-                    <div 
-                      className="drawer-link-container" 
+                    <div
+                      className="drawer-link-container"
                       onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
                       style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer', padding: '15px 0', borderBottom: '1px solid rgba(0,0,0,0.05)' }}
                     >
@@ -187,9 +187,9 @@ export default function Header() {
                     {mobileDropdownOpen && (
                       <div className="drawer-dropdown-list" style={{ paddingLeft: '40px', background: 'rgba(0,0,0,0.02)' }}>
                         {item.dropdown.map((subItem, j) => (
-                          <Link 
-                            key={j} 
-                            href={subItem.href} 
+                          <Link
+                            key={j}
+                            href={subItem.href}
                             onClick={() => setMobileOpen(false)}
                             style={{ display: 'block', padding: '15px 0', color: 'var(--charcoal)', textDecoration: 'none', borderBottom: j === item.dropdown!.length - 1 ? 'none' : '1px solid rgba(0,0,0,0.05)' }}
                           >
@@ -200,9 +200,9 @@ export default function Header() {
                     )}
                   </div>
                 ) : (
-                  <Link 
-                    href={item.href!} 
-                    onClick={(e) => handleLinkClick(e, item.href!)} 
+                  <Link
+                    href={item.href!}
+                    onClick={(e) => handleLinkClick(e, item.href!)}
                     className={(router.pathname === '/' && activeSection === item.href?.replace('/#', '')) ? 'active' : ''}
                   >
                     <span className="drawer-link-num">0{i + 1}</span>

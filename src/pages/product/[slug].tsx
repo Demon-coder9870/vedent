@@ -17,23 +17,9 @@ interface ProductPageProps {
 
 export default function ProductPage({ product, relatedProducts }: ProductPageProps) {
   const router = useRouter();
-  const [showModal, setShowModal] = useState(false);
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
-
   if (!product) {
     return <div>Product not found</div>;
   }
-
-  const handleEnquirySubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.name || !formData.email || !formData.message) return;
-    
-    // Mailto action for enquiry
-    const subject = `Enquiry for ${product.name}`;
-    const body = `Name: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0AProduct: ${product.name}%0A%0AMessage:%0A${formData.message}`;
-    window.location.href = `mailto:info@vedvet.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-    setShowModal(false);
-  };
 
   return (
     <>
@@ -46,21 +32,21 @@ export default function ProductPage({ product, relatedProducts }: ProductPagePro
 
       <main>
         {/* Page Header */}
-        <PageHeader 
-          title="Product Details" 
+        <PageHeader
+          title="Product Details"
           breadcrumbs={[
-            { label: 'Home', href: '/#hero' },
+            { label: 'Home', href: '/' },
             { label: 'Products', href: '/products' },
             { label: product.name }
-          ]} 
-          bgImage="/images/hero.jpg" 
+          ]}
+          bgImage="/images/hero.jpg"
         />
 
         {/* Hero Section */}
         <section className="product-hero-section">
           <div className="container-wide">
             <div className="product-hero-grid">
-              
+
               {/* Left Side: Image */}
               <div data-aos="fade-right">
                 <div className="product-hero-image-box">
@@ -73,17 +59,23 @@ export default function ProductPage({ product, relatedProducts }: ProductPagePro
                 <div className="product-hero-category">{product.category}</div>
                 <h2 className="product-hero-title">{product.name}</h2>
                 <p className="product-hero-desc">{product.shortDescription}</p>
-                
+
                 <div className="product-presentation-box">
                   <i className="bi bi-box-seam"></i>
                   Presentation: {product.presentation}
                 </div>
 
                 <div className="product-hero-actions">
-                  <button className="btn-primary" onClick={() => setShowModal(true)}>
-                    Enquire Now <i className="bi bi-chat-dots" />
-                  </button>
-                  <a href={`#tab-description`} className="btn-dark">
+                  <a 
+                    href={`https://wa.me/919997714800?text=${encodeURIComponent('Hi, I am interested in your product: ' + product.name + '. Could you please provide more details?')}`} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="btn-primary"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    Enquire Now <i className="bi bi-whatsapp" />
+                  </a>
+                  <a href={`#tab-description`} className="btn-red">
                     Learn More <i className="bi bi-arrow-down" />
                   </a>
                 </div>
@@ -96,7 +88,7 @@ export default function ProductPage({ product, relatedProducts }: ProductPagePro
         {/* Product Information - Stacked Sections */}
         <section id="tab-description" className="product-details-section bg-pattern-dots" style={{ backgroundColor: '#fdfdfd', padding: '80px 0' }}>
           <div className="container-wide">
-            
+
             {/* Description */}
             <div className="tab-content-box" data-aos="fade-up">
               <h3 className="tab-content-title" style={{ marginBottom: '15px' }}>Product Description</h3>
@@ -145,7 +137,7 @@ export default function ProductPage({ product, relatedProducts }: ProductPagePro
             </div>
 
             <div style={{ textAlign: 'center', marginTop: '60px' }} data-aos="fade-up">
-              <a href={`https://vedvet.com/product/${product.slug}`} target="_blank" rel="noopener noreferrer" className="btn-ghost" style={{ color: 'var(--lime-dark)', borderColor: 'var(--border-light)', backgroundColor: 'var(--white)' }}>
+              <a href={`https://vedvet.com/product/${product.slug}`} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ textDecoration: 'none' }}>
                 Download Additional Information <i className="bi bi-download" />
               </a>
             </div>
@@ -154,82 +146,12 @@ export default function ProductPage({ product, relatedProducts }: ProductPagePro
         </section>
 
 
-        {/* Related Products */}
-        {relatedProducts.length > 0 && (
-          <section className="section-pad" style={{ backgroundColor: '#f8fafc' }}>
-            <div className="container-wide">
-              <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-                <span className="section-label" style={{ justifyContent: 'center' }}>More Solutions</span>
-                <h2 className="section-title">Related Products</h2>
-              </div>
-              <div className="products-grid">
-                {relatedProducts.map((p, index) => (
-                  <Link href={`/product/${p.slug}`} key={p.slug} style={{ textDecoration: 'none' }} passHref>
-                    <div className="product-card" data-aos="fade-up" data-aos-delay={index * 100}>
-                      <div className="product-image-wrapper">
-                        <img src={p.image} alt={p.name} className="product-image" />
-                      </div>
-                      <div className="product-category">{p.category}</div>
-                      <h3 className="product-title">{p.name}</h3>
-                      <div style={{ marginTop: 'auto', textAlign: 'center' }}>
-                        <span className="btn-primary">
-                          View Product <i className="bi bi-arrow-right" />
-                        </span>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
+
       </main>
 
       <Footer />
 
-      {/* Enquiry Modal Form */}
-      {showModal && (
-        <>
-          <div className="modal-backdrop fade show" style={{ opacity: 0.5, backgroundColor: '#000' }}></div>
-          <div className="modal fade show d-block" tabIndex={-1} role="dialog" style={{ display: 'block', backgroundColor: 'rgba(0,0,0,0.5)' }}>
-            <div className="modal-dialog modal-dialog-centered" role="document">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h5 className="modal-title">Enquiry - {product.name}</h5>
-                  <button type="button" className="drawer-close" onClick={() => setShowModal(false)} aria-label="Close" style={{ border: 'none', background: 'transparent' }}>
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div className="modal-body">
-                  <form onSubmit={handleEnquirySubmit}>
-                    <div className="form-group mb-3">
-                      <label className="fw-bold mb-2">Name *</label>
-                      <input type="text" className="form-control" required value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} />
-                    </div>
-                    <div className="form-group mb-3">
-                      <label className="fw-bold mb-2">Email *</label>
-                      <input type="email" className="form-control" required value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} />
-                    </div>
-                    <div className="form-group mb-3">
-                      <label className="fw-bold mb-2">Phone</label>
-                      <input type="tel" className="form-control" value={formData.phone} onChange={(e) => setFormData({...formData, phone: e.target.value})} />
-                    </div>
-                    <div className="form-group mb-3">
-                      <label className="fw-bold mb-2">Product Name</label>
-                      <input type="text" className="form-control" readOnly value={product.name} style={{ backgroundColor: '#f8fafc' }} />
-                    </div>
-                    <div className="form-group mb-4">
-                      <label className="fw-bold mb-2">Message *</label>
-                      <textarea className="form-control" rows={3} required value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})}></textarea>
-                    </div>
-                    <button type="submit" className="btn-lime w-100 justify-content-center">Submit Enquiry</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </>
-      )}
+
     </>
   );
 }

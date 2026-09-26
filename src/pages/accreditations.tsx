@@ -75,18 +75,18 @@ export default function Accreditations() {
       <Header />
 
       <main>
-        <PageHeader 
-          title="Our Accreditations" 
+        <PageHeader
+          title="Accreditations"
           breadcrumbs={[
-            { label: 'Home', href: '/#hero' },
+            { label: 'Home', href: '/' },
             { label: 'Accreditations' }
-          ]} 
-          bgImage="/images/hero.jpg" 
+          ]}
+          bgImage="/images/hero.jpg"
         />
 
         <section className="section-pad bg-pattern-dots" style={{ backgroundColor: '#fdfdfd' }}>
           <div className="container-wide">
-            
+
             <div style={{ textAlign: 'center', marginBottom: '80px', maxWidth: '800px', margin: '0 auto 80px auto' }} data-aos="fade-up">
               <span className="section-label" style={{ justifyContent: 'center' }}>Global Standards</span>
               <h2 className="section-title">Commitment to Uncompromised Quality</h2>
@@ -98,24 +98,24 @@ export default function Accreditations() {
 
             <div className="acc-container">
               {certifications.map((cert, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className={`acc-row ${index % 2 === 1 ? 'reverse' : ''}`}
                   data-aos="fade-up"
                 >
                   <div className="acc-visual">
                     <div className="acc-icon-box" style={{ background: 'transparent', boxShadow: 'none' }}>
-                      <Image 
-                        src={cert.image} 
-                        alt={cert.title} 
-                        width={120} 
-                        height={120} 
+                      <Image
+                        src={cert.image}
+                        alt={cert.title}
+                        width={120}
+                        height={120}
                         style={{ objectFit: 'contain' }}
                       />
                     </div>
                     <h3 className="acc-title">{cert.title}</h3>
                   </div>
-                  
+
                   <div className="acc-content">
                     <p className="acc-desc">
                       {cert.desc}

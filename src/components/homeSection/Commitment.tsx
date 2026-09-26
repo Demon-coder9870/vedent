@@ -17,7 +17,7 @@ const commitments = [
     desc: 'Upholding the highest standards of quality at every stage — from raw material sourcing to final dispatch — ensuring consistency, safety, and reliability in every batch.',
     variant: 'bento-image-bg',
     bgImage: '/images/poultry.jpg',
-    tag: 'ISO & GMP Certified',
+    tag: '6+ certifications',
   },
   {
     icon: 'bi-diagram-3-fill',

@@ -56,7 +56,7 @@ export default function WhatWeDo() {
                   VEDVET develops and produces premium-quality feed additives and premixes to improve animal performance in an economically viable way. Our product range spans the full spectrum of animal health — from time-tested herbal treatment practices to the latest advances in veterinary science.
                 </p>
                 <div className="wwd-stats-row">
-                  <div className="wwd-stat"><span className="wwd-stat-num">10+</span><span className="wwd-stat-label">Years Experience</span></div>
+                  <div className="wwd-stat"><span className="wwd-stat-num">12+</span><span className="wwd-stat-label">Years Experience</span></div>
                   <div className="wwd-stat"><span className="wwd-stat-num">20</span><span className="wwd-stat-label">Countries Served</span></div>
                   <div className="wwd-stat"><span className="wwd-stat-num">8+</span><span className="wwd-stat-label">Certifications</span></div>
                 </div>
