@@ -514,3 +514,672 @@
 .modal-body {
   padding: 30px;
 }
+
+/* ============================================================
+   Product Design 2 Styles (Split-screen)
+   ============================================================ */
+.design2-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+@media (max-width: 991px) {
+  .design2-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.design2-left {
+  position: sticky;
+  top: 100px;
+}
+
+.design2-image-card {
+  background: #fff;
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-light);
+  position: relative;
+}
+
+.design2-category-badge {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: var(--lime);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.design2-main-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: contain;
+  margin-top: 20px;
+  transition: transform 0.4s;
+}
+
+.design2-main-img:hover {
+  transform: scale(1.05);
+}
+
+.design2-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--charcoal);
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-family: var(--font-heading);
+}
+
+.design2-short-desc {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.design2-presentation {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #eef2f5;
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 40px;
+}
+
+.design2-presentation i {
+  color: var(--lime);
+  font-size: 1.2rem;
+}
+
+.design2-divider {
+  height: 2px;
+  background: var(--border-light);
+  margin: 50px 0;
+}
+
+.design2-section {
+  margin-bottom: 50px;
+}
+
+.design2-section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--charcoal);
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.design2-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background: var(--lime);
+  border-radius: 2px;
+}
+
+.design2-text {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.design2-benefits-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.design2-benefit-item {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  padding: 25px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--lime);
+}
+
+.design2-benefit-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--lime-light);
+  color: var(--lime-dark);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.design2-benefit-content h4 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--charcoal);
+}
+
+.design2-benefit-content p {
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.design2-indications {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.design2-indications li {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.05rem;
+  color: var(--charcoal);
+}
+
+.design2-indications li i {
+  color: var(--lime);
+  font-size: 1.3rem;
+}
+
+
+/* ============================================================
+   Product Design 3 Styles (Light Minimalist)
+   ============================================================ */
+.design3-hero {
+  position: relative;
+  padding: 100px 0 80px;
+  text-align: center;
+}
+
+.design3-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.design3-category {
+  display: inline-block;
+  background: var(--lime-light);
+  color: var(--lime-dark);
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.design3-title {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 900;
+  color: var(--charcoal);
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-family: var(--font-heading);
+}
+
+.design3-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.design3-image-wrapper {
+  position: relative;
+  margin: 0 auto 50px;
+  display: inline-block;
+}
+
+.design3-main-img {
+  max-width: 100%;
+  height: 450px;
+  object-fit: contain;
+  position: relative;
+  z-index: 3;
+}
+
+.design3-backdrop-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: var(--grad-lime);
+  opacity: 0.05;
+  z-index: 2;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  animation: morph 8s ease-in-out infinite;
+}
+
+@keyframes morph {
+  0%, 100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+  34% { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; }
+  67% { border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; }
+}
+
+.design3-hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.design3-btn {
+  background: var(--charcoal);
+  color: #fff !important;
+  border: none;
+  font-weight: 800;
+  padding: 16px 40px;
+  border-radius: var(--radius-full);
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+}
+
+.design3-btn:hover {
+  background: var(--lime);
+  color: #fff !important;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lime);
+}
+
+.design3-presentation {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.design3-presentation i {
+  color: var(--lime);
+  font-size: 1.4rem;
+}
+
+.design3-details {
+  padding: 40px 0 80px;
+}
+
+.design3-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 991px) {
+  .design3-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.design3-card {
+  background: #fff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  height: 100%;
+  box-shadow: var(--shadow-sm);
+}
+
+.design3-card h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--charcoal);
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-heading);
+}
+
+.design3-card p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.design3-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.design3-list li {
+  position: relative;
+  padding-left: 30px;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.design3-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background: var(--lime);
+  border-radius: 50%;
+}
+
+.design3-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.design3-benefit-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.design3-benefit-icon-box {
+  width: 55px;
+  height: 55px;
+  background: var(--lime-light);
+  color: var(--lime-dark);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.design3-benefit-text-box h4 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+
+.design3-benefit-text-box p {
+  color: var(--text-muted);
+  margin: 0;
+  font-size: 1rem;
+}
+
+
+/* ============================================================
+   Product Design 4 Styles (Grid Showcase)
+   ============================================================ */
+.design4-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .design4-showcase {
+    grid-template-columns: 1fr;
+  }
+}
+
+.design4-tag {
+  display: inline-block;
+  background: var(--charcoal);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.design4-title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: var(--charcoal);
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-family: var(--font-heading);
+}
+
+.design4-lead {
+  font-size: 1.2rem;
+  color: var(--lime-dark);
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.design4-divider {
+  width: 60px;
+  height: 3px;
+  background: var(--border-light);
+  margin-bottom: 30px;
+}
+
+.design4-full-desc {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.design4-action-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.design4-meta {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.design4-meta i {
+  color: var(--lime);
+  font-size: 1.2rem;
+}
+
+.design4-image-bg {
+  background: #f8fbfc;
+  border-radius: 50%;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.design4-image-bg::before {
+  content: '';
+  position: absolute;
+  top: 20px; right: 20px; bottom: 20px; left: 20px;
+  border: 2px dashed var(--border-light);
+  border-radius: 50%;
+  animation: spin 30s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.design4-img {
+  max-width: 100%;
+  height: 400px;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.5s;
+}
+
+.design4-img:hover {
+  transform: scale(1.1);
+}
+
+.design4-section-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--charcoal);
+  margin-bottom: 50px;
+  font-family: var(--font-heading);
+}
+
+.design4-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.design4-feature-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.design4-feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.design4-feature-icon {
+  width: 70px;
+  height: 70px;
+  background: var(--off-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--lime);
+  margin: 0 auto 20px;
+}
+
+.design4-feature-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--charcoal);
+  margin-bottom: 15px;
+}
+
+.design4-feature-text {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.design4-indications-box {
+  background: #fff;
+  border-radius: var(--radius-xl);
+  padding: 50px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .design4-indications-box {
+    flex-direction: column;
+    padding: 30px;
+  }
+}
+
+.design4-indications-content {
+  flex: 1;
+}
+
+.design4-indications-content h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--charcoal);
+  margin-bottom: 25px;
+}
+
+.design4-check-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+@media (max-width: 576px) {
+  .design4-check-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.design4-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+.design4-check-list li i {
+  color: var(--lime);
+  font-size: 1.3rem;
+}
+
+.design4-indications-warning {
+  background: #fff3cd;
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  max-width: 300px;
+  text-align: center;
+}
+
+.design4-indications-warning i {
+  font-size: 2.5rem;
+  color: #ffc107;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.design4-indications-warning p {
+  color: #664d03;
+  font-weight: 600;
+  margin: 0;
+}
