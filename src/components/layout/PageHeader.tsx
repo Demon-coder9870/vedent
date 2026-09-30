@@ -8,17 +8,23 @@ interface Breadcrumb {
 
 interface PageHeaderProps {
   title: string;
+  tagline?: string;
   breadcrumbs: Breadcrumb[];
   bgImage?: string;
 }
 
-export default function PageHeader({ title, breadcrumbs, bgImage = '/images/hero.jpg' }: PageHeaderProps) {
+export default function PageHeader({ title, tagline, breadcrumbs, bgImage = '/images/hero.jpg' }: PageHeaderProps) {
   return (
     <div className="page-header" style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="page-header-overlay"></div>
       <div className="container-wide page-header-content">
         <h1 className="page-header-title" data-aos="fade-up">{title}</h1>
-        <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="100">
+        {tagline && (
+          <p className="page-header-tagline" data-aos="fade-up" data-aos-delay="80">
+            <i className="bi bi-quote"></i>{tagline}
+          </p>
+        )}
+        <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="150">
           <ol className="breadcrumb breadcrumb-glass">
             {breadcrumbs.map((crumb, index) => {
               const isLast = index === breadcrumbs.length - 1;

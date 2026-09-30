@@ -8,6 +8,7 @@ const navItems = [
   { label: 'About Us', href: '/about/who-we-are' },
   { label: 'Products', href: '/products' },
   { label: 'Services', href: '/#services' },
+  { label: 'Gallery', href: '/gallery' },
   { label: 'Contact Us', href: '/contact' },
 ];
 

@@ -8,6 +8,7 @@ import '../styles/products.css';
 import '../styles/pd2.css';
 import '../styles/pd3.css';
 import '../styles/pd4.css';
+import '../styles/gallery.css';
 import '../styles/counter.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'aos/dist/aos.css';

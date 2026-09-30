@@ -14,6 +14,7 @@ const navItems = [
   },
   { label: 'Products', href: '/products' },
   { label: 'Services', href: '/#services' },
+  { label: 'Gallery', href: '/gallery' },
   { label: 'Accreditations', href: '/accreditations' },
 ];
 

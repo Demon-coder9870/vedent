@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import PageHeader from '../layout/PageHeader';
+import ProductImageGallery from './ProductImageGallery';
 import { products } from '../../data/products';
 
 type Product = typeof products[0];
@@ -41,15 +42,19 @@ export default function ProductDesign1({ product, relatedProducts }: ProductPage
 
               {/* Left Side: Image */}
               <div data-aos="fade-right">
-                <div className="product-hero-image-box">
-                  <img src={product.image} alt={product.name} className="product-hero-main-img" />
-                </div>
+                <ProductImageGallery images={product.gallery || [product.image]} />
               </div>
 
               {/* Right Side: Info */}
               <div className="product-hero-content" data-aos="fade-left">
                 <div className="product-hero-category">{product.category}</div>
                 <h2 className="product-hero-title">{product.name}</h2>
+                {product.tagline && (
+                  <p className="product-hero-tagline">
+                    <i className="bi bi-quote" style={{ color: 'var(--lime)', marginRight: '8px', fontSize: '1rem' }}></i>
+                    {product.tagline}
+                  </p>
+                )}
                 <p className="product-hero-desc">{product.shortDescription}</p>
 
                 <div className="product-presentation-box">
@@ -127,6 +132,60 @@ export default function ProductDesign1({ product, relatedProducts }: ProductPage
                 Use under the guidance of a qualified veterinarian where appropriate.
               </div>
             </div>
+
+            {/* Composition */}
+            {product.composition && product.composition.length > 0 && (
+              <div className="tab-content-box" data-aos="fade-up">
+                <h3 className="tab-content-title" style={{ marginBottom: '15px' }}>Composition</h3>
+                <div className="title-underline"></div>
+                {product.compositionBase && (
+                  <p className="tab-content-text" style={{ fontWeight: 'bold', marginBottom: '10px' }}>{product.compositionBase}</p>
+                )}
+                <div className="composition-table-wrapper" style={{ marginTop: '20px', overflowX: 'auto' }}>
+                  <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', background: '#fff', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                    <tbody>
+                      {product.composition.map((item: any, i: number) => (
+                        <tr key={i} style={{ borderBottom: '1px solid #f0f0f0' }}>
+                          <td style={{ padding: '15px 20px', color: 'var(--charcoal)' }}>{item.ingredient}</td>
+                          <td style={{ padding: '15px 20px', color: 'var(--charcoal)', fontWeight: '700', textAlign: 'right' }}>{item.amount}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {/* Dosage */}
+            {product.dosage && product.dosage.methods && (
+              <div className="tab-content-box" data-aos="fade-up">
+                <h3 className="tab-content-title" style={{ marginBottom: '15px' }}>Dosage & Administration</h3>
+                <div className="title-underline"></div>
+                <div style={{ marginTop: '30px' }}>
+                  {product.dosage.methods.map((method: any, i: number) => (
+                    <div key={i} style={{ marginBottom: '30px' }}>
+                      <h4 style={{ fontSize: '1.05rem', letterSpacing: '0.5px', color: 'var(--lime-dark)', marginBottom: '15px', borderBottom: '2px solid var(--lime-light)', paddingBottom: '8px', display: 'inline-block', fontStyle: 'italic' }}>{method.name}</h4>
+                      <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', background: '#f8fafd', borderRadius: '8px', overflow: 'hidden' }}>
+                        <tbody>
+                          {method.dosages.map((dosage: any, j: number) => (
+                            <tr key={j} style={{ borderBottom: j !== method.dosages.length - 1 ? '1px solid #e1e8f0' : 'none' }}>
+                              <td style={{ padding: '15px 20px', color: 'var(--charcoal)', width: '50%' }}>{dosage.target}</td>
+                              <td style={{ padding: '15px 20px', color: 'var(--lime-dark)', fontWeight: '700' }}>{dosage.amount}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  ))}
+                  {product.dosage.note && (
+                    <div className="veterinary-warning" style={{ marginTop: '10px' }}>
+                      <i className="bi bi-info-circle-fill"></i>
+                      {product.dosage.note}
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
 
             <div style={{ textAlign: 'center', marginTop: '60px' }} data-aos="fade-up">
               <a href={`https://vedvet.com/product/${product.slug}`} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ textDecoration: 'none' }}>

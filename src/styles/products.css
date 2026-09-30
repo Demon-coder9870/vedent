@@ -258,6 +258,23 @@
   font-family: var(--font-heading);
 }
 
+.product-hero-tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--lime-dark);
+  background: var(--lime-light);
+  border-left: 3px solid var(--lime);
+  padding: 10px 18px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin-bottom: 18px;
+  font-family: var(--font-text);
+  line-height: 1.4;
+}
+
 .product-hero-category {
   font-size: 0.9rem;
   font-weight: 700;

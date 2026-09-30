@@ -5,6 +5,13 @@
     "presentation": "100ml",
     "slug": "digyved-plus",
     "image": "/images/products/digyved-plus.jpg",
+    "gallery": [
+      "/images/products/digyved-plus.jpg",
+      "/images/products/vetvita-plus.jpg",
+      "/images/products/herbovet-care.jpg",
+      "/images/products/vetvita-plus.jpg"
+    ],
+    "tagline": "Nature's Answer to Digestive Wellness",
     "shortDescription": "Clinically effective herbal remedy formulated to support digestive health in adult pets. Helps provide supportive care for indigestion, colic, constipation, gastritis, and irregular bowel movement.",
     "fullDescription": "DIGYVED PLUS is a clinically effective herbal remedy formulated to support digestive health in adult pets. Its antibacterial, anti-spasmodic, and bowel-regulating properties help control gastric infections associated with stomach disorders, while supporting relief from indigestion, colic, and constipation. DIGYVED PLUS also provides supportive care in gastritis and irritable bowel syndrome, and helps restore regular bowel movement.",
     "benefits": [
@@ -35,7 +42,25 @@
       "Suspected or confirmed gastritis.",
       "Suspected irritable bowel syndrome (IBS).",
       "Gastric infections associated with stomach disorders in adult pets."
-    ]
+    ],
+    "compositionBase": "Each 10ml contains extract of -",
+    "composition": [
+      { "ingredient": "Terminalia chebula", "amount": "100mg" },
+      { "ingredient": "Zingiber officinale", "amount": "50mg" },
+      { "ingredient": "Piper nigrum", "amount": "25mg" }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "ADULT PETS — ORAL",
+          "dosages": [
+            { "target": "Small Breeds", "amount": "5 mL twice daily" },
+            { "target": "Large Breeds", "amount": "10 mL twice daily" }
+          ]
+        }
+      ],
+      "note": "Administer directly or mix with food."
+    }
   },
   {
     "name": "VETVITA PLUS",
@@ -43,6 +68,13 @@
     "presentation": "100ml",
     "slug": "vetvita-plus",
     "image": "/images/products/vetvita-plus.jpg",
+    "gallery": [
+      "/images/products/vetvita-plus.jpg",
+      "/images/products/digyved-plus.jpg",
+      "/images/products/herbovet-care.jpg",
+      "/images/products/vetvita-plus.jpg"
+    ],
+    "tagline": "Complete Nutrition for a Healthier, Happier Pet",
     "shortDescription": "A veterinary nutritional supplement designed to support vitality, digestion, immunity, and overall health in pets and livestock.",
     "fullDescription": "VETVITA PLUS is a veterinary nutritional supplement designed to support vitality, digestion, immunity, and overall health in pets and livestock. It ensures daily nutritional requirements are met to keep animals healthy and active.",
     "benefits": [
@@ -66,7 +98,25 @@
       "General weakness or low energy levels.",
       "Nutritional deficiencies.",
       "During recovery from illness."
-    ]
+    ],
+    "compositionBase": "Each 100ml contains -",
+    "composition": [
+      { "ingredient": "Vitamin A", "amount": "5000 IU" },
+      { "ingredient": "Vitamin D3", "amount": "1000 IU" },
+      { "ingredient": "Calcium", "amount": "500mg" }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "ALL PETS & LIVESTOCK",
+          "dosages": [
+            { "target": "Dogs & Cats", "amount": "5-10 mL daily" },
+            { "target": "Cattle & Horses", "amount": "50 mL daily" }
+          ]
+        }
+      ],
+      "note": "Mix with drinking water or feed."
+    }
   },
   {
     "name": "HERBOVET CARE",
@@ -74,6 +124,13 @@
     "presentation": "100ml",
     "slug": "herbovet-care",
     "image": "/images/products/herbovet-care.jpg",
+    "gallery": [
+      "/images/products/herbovet-care.jpg",
+      "/images/products/digyved-plus.jpg",
+      "/images/products/vetvita-plus.jpg",
+      "/images/products/herbovet-care.jpg"
+    ],
+    "tagline": "Gentle Herbal Care, Powerful Natural Results",
     "shortDescription": "A herbal veterinary formulation designed to provide supportive care for common digestive and general health concerns in animals.",
     "fullDescription": "HERBOVET CARE is a herbal veterinary formulation designed to provide supportive care for common digestive and general health concerns in animals. Formulated with natural ingredients, it offers a gentle yet effective approach to animal wellness.",
     "benefits": [
@@ -97,7 +154,25 @@
       "Minor digestive upsets.",
       "General health maintenance.",
       "As a supplement to primary care."
-    ]
+    ],
+    "compositionBase": "Proprietary herbal blend contains -",
+    "composition": [
+      { "ingredient": "Andrographis paniculata", "amount": "20%" },
+      { "ingredient": "Azadirachta indica", "amount": "15%" },
+      { "ingredient": "Tinospora cordifolia", "amount": "10%" }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "GENERAL USE — ORAL",
+          "dosages": [
+            { "target": "Small Animals", "amount": "2-5 mL twice daily" },
+            { "target": "Large Animals", "amount": "15-20 mL twice daily" }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    }
   },
   {
     "name": "IMMUNOVET PRO",
@@ -105,6 +180,13 @@
     "presentation": "200ml",
     "slug": "immunovet-pro",
     "image": "/images/products/vetvita-plus.jpg",
+    "gallery": [
+      "/images/products/vetvita-plus.jpg",
+      "/images/products/digyved-plus.jpg",
+      "/images/products/herbovet-care.jpg",
+      "/images/products/vetvita-plus.jpg"
+    ],
+    "tagline": "Advanced Immunity, Built for the Toughest Challenges",
     "shortDescription": "Advanced immune-supporting formulation for pets, enriched with essential vitamins and natural botanical extracts to ensure optimal health.",
     "fullDescription": "IMMUNOVET PRO is a cutting-edge immunity booster designed to strengthen the natural defenses of pets. Enriched with essential vitamins and natural botanical extracts, it promotes optimal health, rapid recovery from illness, and resilience against common infections.",
     "benefits": [
@@ -128,6 +210,108 @@
       "Compromised immune system.",
       "During and after illness.",
       "Stressful conditions."
-    ]
+    ],
+    "compositionBase": "Each 100ml contains -",
+    "composition": [
+      { "ingredient": "Vitamin C", "amount": "10g" },
+      { "ingredient": "Zinc", "amount": "2g" },
+      { "ingredient": "Echinacea Extract", "amount": "5g" }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "AQUA & PETS",
+          "dosages": [
+            { "target": "Fish Ponds", "amount": "1L / acre" },
+            { "target": "Pets", "amount": "5 mL daily" }
+          ]
+        }
+      ],
+      "note": "Consult an aqua specialist for precise pond dosing."
+    }
+  },
+  {
+    "name": "VED CRD HERB",
+    "category": "Poultry & Livestock",
+    "presentation": "1Ltr Bottle and 25kg Bag",
+    "slug": "ved-crd-herb",
+    "image": "/images/hero_poultry_1790180533602.jpg",
+    "gallery": [
+      "/images/hero_poultry_1790180533602.jpg",
+      "/images/products/digyved-plus.jpg",
+      "/images/products/vetvita-plus.jpg",
+      "/images/products/herbovet-care.jpg"
+    ],
+    "tagline": "A unique herbal tonic for the respiratory tract",
+    "shortDescription": "A herbal respiratory tonic blending medicinal herbs and essential oils to support the respiratory tract, ease congestion, and promote smooth breathing in poultry and livestock.",
+    "fullDescription": "VED CRD HERB is a herbal respiratory tonic for poultry and livestock. It blends medicinal herbs and essential oils that offer mucolytic, expectorant, bronchodilator, anti-tussive, anti-inflammatory, antimicrobial, anti-stress and antioxidant properties. The formulation supports the respiratory tract, eases congestion and promotes smooth breathing. As supportive therapy during respiratory infections, it helps relieve cough, sneezing and nasal blockage while reducing stress. When used as a growth promoter, it may help lower disease incidence, support performance and reduce mortality and production losses.",
+    "compositionBase": "Each 100ml contains extract of -",
+    "composition": [
+      { "ingredient": "Trachyspermum ammi", "amount": "10g" },
+      { "ingredient": "Piper longum", "amount": "10g" },
+      { "ingredient": "Curcuma longa", "amount": "10g" },
+      { "ingredient": "Piper nigrum", "amount": "10g" },
+      { "ingredient": "Thyme oil", "amount": "5g" },
+      { "ingredient": "Eucalyptus oil", "amount": "5g" },
+      { "ingredient": "Basil oil", "amount": "5g" },
+      { "ingredient": "Mint oil", "amount": "5g" }
+    ],
+    "benefits": [
+      {
+        "title": "Supportive Therapy",
+        "text": "Useful as supportive therapy in severe respiratory infections.",
+        "icon": "bi-bandaid"
+      },
+      {
+        "title": "Decongestion",
+        "text": "Aids nasal decongestion and helps clear the larynx and pharynx for smoother breathing.",
+        "icon": "bi-wind"
+      },
+      {
+        "title": "Symptomatic Relief",
+        "text": "Provides symptomatic relief from cough, sneezing and blockage of the nasal passages and upper respiratory tract.",
+        "icon": "bi-shield-check"
+      },
+      {
+        "title": "Stress Reduction",
+        "text": "Helps reduce stress and relieve signs of respiratory distress.",
+        "icon": "bi-emoji-smile"
+      },
+      {
+        "title": "Growth Promoter",
+        "text": "When used as a growth promoter, helps reduce disease incidence and enhance performance.",
+        "icon": "bi-graph-up-arrow"
+      },
+      {
+        "title": "Reduced Mortality",
+        "text": "Helps reduce mortality and production losses.",
+        "icon": "bi-activity"
+      }
+    ],
+    "indications": [
+      "Respiratory disease is among the most common ailments in poultry and a leading cause of mortality and production losses.",
+      "VED CRD HERB is a blend of medicinal herbs known to restrict the growth of Mycoplasma, bacteria and fungi. Its active ingredients also possess mucolytic, expectorant, bronchodilator, anti-tussive, anti-inflammatory, antimicrobial, anti-stress, antioxidant and respiratory-tractsmoothing properties.",
+      "These herbs have shown promising results in conditions such as bronchitis, laryngitis and bronchial asthma. By helping to prevent various infections, the product is also useful as a growth promoter."
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            { "target": "Chicks / Broilers (0–2 weeks)", "amount": "10 mL / 100 birds" },
+            { "target": "Growers / Broilers (2–4 weeks)", "amount": "15 mL / 100 birds" },
+            { "target": "Layers / Broilers (above 4 weeks)", "amount": "30 mL / 100 birds" }
+          ]
+        },
+        {
+          "name": "LARGE ANIMALS — ORAL",
+          "dosages": [
+            { "target": "Sheep / Goat / Swine", "amount": "30 mL for 3–5 days, when required" },
+            { "target": "Cattle", "amount": "50 mL, twice daily for 3–5 days" }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    }
   }
 ]

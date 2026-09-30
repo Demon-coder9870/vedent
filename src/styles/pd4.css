@@ -62,9 +62,26 @@
   font-weight: 900;
   color: var(--charcoal);
   line-height: 1.05;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
   letter-spacing: -0.025em;
   font-family: var(--font-heading);
+}
+
+.pd4-tagline-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--lime-dark);
+  background: var(--lime-light);
+  border-left: 3px solid var(--lime);
+  padding: 10px 20px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin-bottom: 20px;
+  font-family: var(--font-text);
+  line-height: 1.4;
 }
 
 .pd4-tagline {
