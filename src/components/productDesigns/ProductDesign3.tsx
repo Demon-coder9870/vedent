@@ -11,6 +11,7 @@ interface ProductPageProps { product: Product; relatedProducts: Product[]; }
 
 export default function ProductDesign3({ product, relatedProducts }: ProductPageProps) {
   const [activeImg, setActiveImg] = React.useState((product.gallery && product.gallery.length > 0) ? product.gallery[0] : product.image);
+  const [fullscreenOpen, setFullscreenOpen] = React.useState(false);
   const whatsappMsg = `https://wa.me/919997714800?text=${encodeURIComponent('Hi, I am interested in your product: ' + product.name + '. Could you please provide more details?')}`;
 
   return (
@@ -36,14 +37,47 @@ export default function ProductDesign3({ product, relatedProducts }: ProductPage
           <div className="pd3-left-panel">
             <div className="pd3-panel-bg"></div>
             
-            <div className="pd3-img-wrapper" data-aos="zoom-in" data-aos-duration="1000">
+            <div className="pd3-img-wrapper" data-aos="zoom-in" data-aos-duration="1000" style={{ position: 'relative' }}>
               <img src={activeImg} alt={product.name} className="pd3-main-img" style={{ transition: 'all 0.3s ease', mixBlendMode: 'multiply' }} />
               <div className="pd3-img-glow"></div>
+              
+              <button 
+                onClick={() => setFullscreenOpen(true)}
+                style={{
+                  position: 'absolute',
+                  top: '10px',
+                  right: '10px',
+                  background: 'rgba(255, 255, 255, 0.8)',
+                  border: 'none',
+                  borderRadius: '8px',
+                  width: '40px',
+                  height: '40px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  zIndex: 10,
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+                  color: 'var(--charcoal)',
+                  transition: 'all 0.3s'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'var(--lime)';
+                  e.currentTarget.style.color = '#fff';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.8)';
+                  e.currentTarget.style.color = 'var(--charcoal)';
+                }}
+                aria-label="View Fullscreen"
+              >
+                <i className="bi bi-arrows-fullscreen"></i>
+              </button>
             </div>
 
             {/* Custom Gallery Thumbnails for Design 3 */}
             {product.gallery && product.gallery.length > 1 && (
-              <div style={{ display: 'flex', gap: '15px', marginTop: '40px', zIndex: 10 }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '15px', marginTop: '40px', zIndex: 10 }}>
                 {product.gallery.map((img, idx) => (
                   <div 
                     key={idx}
@@ -56,19 +90,16 @@ export default function ProductDesign3({ product, relatedProducts }: ProductPage
                       overflow: 'hidden',
                       cursor: 'pointer',
                       transition: 'all 0.3s ease',
-                      backgroundColor: '#fff',
-                      boxShadow: activeImg === img ? '0 4px 10px rgba(0,0,0,0.1)' : '0 2px 5px rgba(0,0,0,0.05)'
+                      backgroundColor: 'transparent',
+                      boxShadow: activeImg === img ? '0 4px 10px rgba(0,0,0,0.1)' : 'none'
                     }}
                   >
-                    <img src={img} alt={`Thumbnail ${idx}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={img} alt={`Thumbnail ${idx}`} style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply' }} />
                   </div>
                 ))}
               </div>
             )}
 
-            <div className="pd3-meta-tag">
-              <i className="bi bi-box-seam"></i> {product.presentation}
-            </div>
           </div>
 
           {/* Right: Info Panel */}
@@ -79,11 +110,26 @@ export default function ProductDesign3({ product, relatedProducts }: ProductPage
               {product.tagline && (
                 <p className="pd3-tagline-text"><i className="bi bi-quote"></i>{product.tagline}</p>
               )}
-              <p className="pd3-tagline">{product.shortDescription}</p>
+              <p className="pd3-tagline" style={{ marginBottom: '20px' }}>{product.shortDescription}</p>
+
+              <div style={{ marginBottom: '36px', display: 'inline-flex', alignItems: 'center', gap: '10px', background: 'var(--lime-light)', padding: '10px 20px', borderRadius: 'var(--radius-md)', color: 'var(--charcoal)', fontWeight: '700' }}>
+                <i className="bi bi-box-seam" style={{ color: 'var(--lime)', fontSize: '1.2rem' }}></i> 
+                Presentation: {product.presentation}
+              </div>
 
               <a href={whatsappMsg} target="_blank" rel="noopener noreferrer" className="pd3-enq-btn">
                 <i className="bi bi-whatsapp"></i> Request Information
               </a>
+
+              {(product as any).animalUsedImage && (
+                <div style={{ marginTop: '25px', marginBottom: '10px' }}>
+                  <img 
+                    src={(product as any).animalUsedImage} 
+                    alt="Suitable for animals" 
+                    style={{ maxWidth: '220px', width: '100%', height: 'auto', borderRadius: '8px' }} 
+                  />
+                </div>
+              )}
 
               <div className="pd3-quick-benefits">
                 {product.benefits && product.benefits.slice(0, 4).map((b, i) => (
@@ -168,8 +214,8 @@ export default function ProductDesign3({ product, relatedProducts }: ProductPage
                     <div className="pd3-section-num">04</div>
                     <h2 className="pd3-detail-h">Composition</h2>
                     {product.compositionBase && <p style={{ marginBottom: '15px', color: 'var(--charcoal)', fontWeight: '600' }}>{product.compositionBase}</p>}
-                    <div style={{ background: '#fff', padding: '25px', borderRadius: '16px', border: '1px solid #eee' }}>
-                      <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+                    <div style={{ background: '#fff', padding: '25px', borderRadius: '16px', border: '1px solid #eee', overflowX: 'auto' }}>
+                      <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '400px' }}>
                         <tbody>
                           {product.composition.map((item: any, i: number) => (
                             <tr key={i} style={{ borderBottom: i !== product.composition.length - 1 ? '1px solid #f5f5f5' : 'none' }}>
@@ -194,8 +240,8 @@ export default function ProductDesign3({ product, relatedProducts }: ProductPage
                           <div style={{ background: '#f5f8fb', padding: '15px 20px', borderBottom: '1px solid #eef2f6' }}>
                             <h4 style={{ margin: 0, fontSize: '1rem', color: 'var(--lime-dark)' }}>{method.name}</h4>
                           </div>
-                          <div style={{ padding: '0 20px' }}>
-                            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+                          <div style={{ padding: '0 20px', overflowX: 'auto' }}>
+                            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '300px' }}>
                               <tbody>
                                 {method.dosages.map((dosage: any, j: number) => (
                                   <tr key={j} style={{ borderBottom: j !== method.dosages.length - 1 ? '1px solid #f0f4f8' : 'none' }}>
@@ -224,6 +270,29 @@ export default function ProductDesign3({ product, relatedProducts }: ProductPage
         </div>
 
       </main>
+
+      {/* Fullscreen Image Modal */}
+      {fullscreenOpen && (
+        <div 
+          style={{ position: 'fixed', inset: 0, zIndex: 9999, background: 'rgba(0,0,0,0.85)', display: 'flex', alignItems: 'center', justifyContent: 'center', backdropFilter: 'blur(5px)' }}
+          onClick={() => setFullscreenOpen(false)}
+        >
+          <button 
+            style={{ position: 'absolute', top: '25px', right: '30px', background: 'none', border: 'none', color: '#fff', fontSize: '2.5rem', cursor: 'pointer', padding: '10px', zIndex: 10000 }}
+            onClick={(e) => { e.stopPropagation(); setFullscreenOpen(false); }}
+            aria-label="Close"
+          >
+            <i className="bi bi-x-lg"></i>
+          </button>
+          <img 
+            src={activeImg} 
+            alt={product.name} 
+            style={{ maxWidth: '90vw', maxHeight: '90vh', objectFit: 'contain', background: '#fff', padding: '20px', borderRadius: '16px' }}
+            onClick={(e) => e.stopPropagation()} 
+          />
+        </div>
+      )}
+
       <Footer />
     </>
   );

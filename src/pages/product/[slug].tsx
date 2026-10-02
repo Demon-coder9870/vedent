@@ -2,10 +2,7 @@ import React from 'react';
 import { GetStaticProps, GetStaticPaths } from 'next';
 import { useRouter } from 'next/router';
 import { products } from '../../data/products';
-import ProductDesign1 from '../../components/productDesigns/ProductDesign1';
-import ProductDesign2 from '../../components/productDesigns/ProductDesign2';
 import ProductDesign3 from '../../components/productDesigns/ProductDesign3';
-import ProductDesign4 from '../../components/productDesigns/ProductDesign4';
 
 type Product = typeof products[0];
 
@@ -25,21 +22,8 @@ export default function ProductPage({ product, relatedProducts }: ProductPagePro
     return <div>Product not found</div>;
   }
 
-  // Assigning different designs based on product slug
-  if (product.slug === 'vetvita-plus') {
-    return <ProductDesign2 product={product} relatedProducts={relatedProducts} />;
-  }
-
-  if (product.slug === 'herbovet-care') {
-    return <ProductDesign3 product={product} relatedProducts={relatedProducts} />;
-  }
-
-  if (product.slug === 'immunovet-pro') {
-    return <ProductDesign4 product={product} relatedProducts={relatedProducts} />; 
-  }
-
-  // Default: digyved-plus
-  return <ProductDesign1 product={product} relatedProducts={relatedProducts} />;
+  // all products use design 3
+  return <ProductDesign3 product={product} relatedProducts={relatedProducts} />;
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {

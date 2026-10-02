@@ -8,8 +8,7 @@
     "gallery": [
       "/images/products/digyved-plus.jpg",
       "/images/products/vetvita-plus.jpg",
-      "/images/products/herbovet-care.jpg",
-      "/images/products/vetvita-plus.jpg"
+      "/images/products/herbovet-care.jpg"
     ],
     "tagline": "Nature's Answer to Digestive Wellness",
     "shortDescription": "Clinically effective herbal remedy formulated to support digestive health in adult pets. Helps provide supportive care for indigestion, colic, constipation, gastritis, and irregular bowel movement.",
@@ -45,78 +44,144 @@
     ],
     "compositionBase": "Each 10ml contains extract of -",
     "composition": [
-      { "ingredient": "Terminalia chebula", "amount": "100mg" },
-      { "ingredient": "Zingiber officinale", "amount": "50mg" },
-      { "ingredient": "Piper nigrum", "amount": "25mg" }
+      {
+        "ingredient": "Terminalia chebula",
+        "amount": "100mg"
+      },
+      {
+        "ingredient": "Zingiber officinale",
+        "amount": "50mg"
+      },
+      {
+        "ingredient": "Piper nigrum",
+        "amount": "25mg"
+      }
     ],
     "dosage": {
       "methods": [
         {
           "name": "ADULT PETS — ORAL",
           "dosages": [
-            { "target": "Small Breeds", "amount": "5 mL twice daily" },
-            { "target": "Large Breeds", "amount": "10 mL twice daily" }
+            {
+              "target": "Small Breeds",
+              "amount": "5 mL twice daily"
+            },
+            {
+              "target": "Large Breeds",
+              "amount": "10 mL twice daily"
+            }
           ]
         }
       ],
       "note": "Administer directly or mix with food."
-    }
+    },
+    "animalUsedImage": "/images/products/animalused.png"
   },
   {
-    "name": "VETVITA PLUS",
-    "category": "Pets",
-    "presentation": "100ml",
-    "slug": "vetvita-plus",
+    "name": "VEDCOCCINIL",
+    "category": "Poultry & Livestock",
+    "presentation": "1 Litre (Liquid), 25 kg (Powder)",
+    "slug": "vedcoccinil",
     "image": "/images/products/vetvita-plus.jpg",
     "gallery": [
       "/images/products/vetvita-plus.jpg",
       "/images/products/digyved-plus.jpg",
-      "/images/products/herbovet-care.jpg",
-      "/images/products/vetvita-plus.jpg"
+      "/images/products/herbovet-care.jpg"
     ],
-    "tagline": "Complete Nutrition for a Healthier, Happier Pet",
-    "shortDescription": "A veterinary nutritional supplement designed to support vitality, digestion, immunity, and overall health in pets and livestock.",
-    "fullDescription": "VETVITA PLUS is a veterinary nutritional supplement designed to support vitality, digestion, immunity, and overall health in pets and livestock. It ensures daily nutritional requirements are met to keep animals healthy and active.",
+    "tagline": "Effective eliminator of intestinal cocci",
+    "shortDescription": "A herbal alternative designed to help prevent and eliminate coccidia from the gut while supporting recovery and intestinal health.",
+    "fullDescription": "Coccidiosis is a major parasitic condition affecting the intestinal tract of animals and birds. It can lead to weight loss, unhealthy carcasses, reduced production, developmental problems, and even death. VEDCOCCINIL provides a herbal alternative designed to help prevent and eliminate coccidia from the gut while supporting recovery and intestinal health.",
     "benefits": [
       {
-        "title": "Enhanced Vitality",
-        "text": "Supports overall energy levels and vitality.",
-        "icon": "bi-lightning-charge"
+        "title": "Prevention",
+        "text": "Effective prevention against coccidiosis.",
+        "icon": "bi-shield-check"
       },
       {
-        "title": "Immune Support",
-        "text": "Boosts the immune system to fight off diseases.",
-        "icon": "bi-shield-plus"
+        "title": "Combats Oxidative Stress",
+        "text": "Helps combat oxidative stress associated with clinical coccidiosis.",
+        "icon": "bi-activity"
       },
       {
-        "title": "Improved Digestion",
-        "text": "Promotes a healthy digestive tract.",
-        "icon": "bi-heart"
+        "title": "Epithelium Repair",
+        "text": "Supports repair of damaged intestinal epithelium.",
+        "icon": "bi-bandaid"
+      },
+      {
+        "title": "Faster Recovery",
+        "text": "Promotes faster recovery.",
+        "icon": "bi-heart-pulse"
+      },
+      {
+        "title": "Herbal Formulation",
+        "text": "Herbal formulation suitable for animal and poultry use.",
+        "icon": "bi-flower1"
       }
     ],
     "indications": [
-      "General weakness or low energy levels.",
-      "Nutritional deficiencies.",
-      "During recovery from illness."
+      "Prevention and treatment of coccidiosis in poultry and animals.",
+      "Supportive therapy for intestinal health and epithelium repair.",
+      "Combatting oxidative stress during clinical coccidiosis."
     ],
-    "compositionBase": "Each 100ml contains -",
+    "compositionBase": "Each 100 ml/gm contains extracts of -",
     "composition": [
-      { "ingredient": "Vitamin A", "amount": "5000 IU" },
-      { "ingredient": "Vitamin D3", "amount": "1000 IU" },
-      { "ingredient": "Calcium", "amount": "500mg" }
+      {
+        "ingredient": "Acacia concinna",
+        "amount": "15 gm"
+      },
+      {
+        "ingredient": "Sapindus mukorossi",
+        "amount": "15 gm"
+      },
+      {
+        "ingredient": "Saccharum officinarum",
+        "amount": "10 gm"
+      },
+      {
+        "ingredient": "Tribulus terrestris",
+        "amount": "10 gm"
+      }
     ],
     "dosage": {
       "methods": [
         {
-          "name": "ALL PETS & LIVESTOCK",
+          "name": "LIQUID - DRINKING WATER OR ORAL",
           "dosages": [
-            { "target": "Dogs & Cats", "amount": "5-10 mL daily" },
-            { "target": "Cattle & Horses", "amount": "50 mL daily" }
+            {
+              "target": "Poultry – Prevention",
+              "amount": "1 ml/litre of drinking water for the first 2–3 weeks"
+            },
+            {
+              "target": "Poultry – Treatment",
+              "amount": "2 ml/litre of drinking water for 24 hours for 5–7 days"
+            },
+            {
+              "target": "Sheep & Goat",
+              "amount": "5–8 ml/animal, twice daily for 3–5 days"
+            },
+            {
+              "target": "Swine",
+              "amount": "10–20 ml/animal, twice daily for 3–5 days"
+            },
+            {
+              "target": "Cattle",
+              "amount": "50–60 ml/animal, twice daily for 3–5 days"
+            }
+          ]
+        },
+        {
+          "name": "POWDER - IN FEED",
+          "dosages": [
+            {
+              "target": "Poultry / Sheep / Goat / Swine / Cattle",
+              "amount": "1 kg per ton of feed"
+            }
           ]
         }
       ],
-      "note": "Mix with drinking water or feed."
-    }
+      "note": "Or as recommended by a poultry/animal health consultant."
+    },
+    "animalUsedImage": "/images/products/animalused.png"
   },
   {
     "name": "HERBOVET CARE",
@@ -127,8 +192,7 @@
     "gallery": [
       "/images/products/herbovet-care.jpg",
       "/images/products/digyved-plus.jpg",
-      "/images/products/vetvita-plus.jpg",
-      "/images/products/herbovet-care.jpg"
+      "/images/products/vetvita-plus.jpg"
     ],
     "tagline": "Gentle Herbal Care, Powerful Natural Results",
     "shortDescription": "A herbal veterinary formulation designed to provide supportive care for common digestive and general health concerns in animals.",
@@ -157,22 +221,38 @@
     ],
     "compositionBase": "Proprietary herbal blend contains -",
     "composition": [
-      { "ingredient": "Andrographis paniculata", "amount": "20%" },
-      { "ingredient": "Azadirachta indica", "amount": "15%" },
-      { "ingredient": "Tinospora cordifolia", "amount": "10%" }
+      {
+        "ingredient": "Andrographis paniculata",
+        "amount": "20%"
+      },
+      {
+        "ingredient": "Azadirachta indica",
+        "amount": "15%"
+      },
+      {
+        "ingredient": "Tinospora cordifolia",
+        "amount": "10%"
+      }
     ],
     "dosage": {
       "methods": [
         {
           "name": "GENERAL USE — ORAL",
           "dosages": [
-            { "target": "Small Animals", "amount": "2-5 mL twice daily" },
-            { "target": "Large Animals", "amount": "15-20 mL twice daily" }
+            {
+              "target": "Small Animals",
+              "amount": "2-5 mL twice daily"
+            },
+            {
+              "target": "Large Animals",
+              "amount": "15-20 mL twice daily"
+            }
           ]
         }
       ],
       "note": "Or as directed by a veterinarian."
-    }
+    },
+    "animalUsedImage": "/images/products/animalused.png"
   },
   {
     "name": "IMMUNOVET PRO",
@@ -213,22 +293,38 @@
     ],
     "compositionBase": "Each 100ml contains -",
     "composition": [
-      { "ingredient": "Vitamin C", "amount": "10g" },
-      { "ingredient": "Zinc", "amount": "2g" },
-      { "ingredient": "Echinacea Extract", "amount": "5g" }
+      {
+        "ingredient": "Vitamin C",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Zinc",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Echinacea Extract",
+        "amount": "5g"
+      }
     ],
     "dosage": {
       "methods": [
         {
           "name": "AQUA & PETS",
           "dosages": [
-            { "target": "Fish Ponds", "amount": "1L / acre" },
-            { "target": "Pets", "amount": "5 mL daily" }
+            {
+              "target": "Fish Ponds",
+              "amount": "1L / acre"
+            },
+            {
+              "target": "Pets",
+              "amount": "5 mL daily"
+            }
           ]
         }
       ],
       "note": "Consult an aqua specialist for precise pond dosing."
-    }
+    },
+    "animalUsedImage": "/images/products/animalused.png"
   },
   {
     "name": "VED CRD HERB",
@@ -247,14 +343,38 @@
     "fullDescription": "VED CRD HERB is a herbal respiratory tonic for poultry and livestock. It blends medicinal herbs and essential oils that offer mucolytic, expectorant, bronchodilator, anti-tussive, anti-inflammatory, antimicrobial, anti-stress and antioxidant properties. The formulation supports the respiratory tract, eases congestion and promotes smooth breathing. As supportive therapy during respiratory infections, it helps relieve cough, sneezing and nasal blockage while reducing stress. When used as a growth promoter, it may help lower disease incidence, support performance and reduce mortality and production losses.",
     "compositionBase": "Each 100ml contains extract of -",
     "composition": [
-      { "ingredient": "Trachyspermum ammi", "amount": "10g" },
-      { "ingredient": "Piper longum", "amount": "10g" },
-      { "ingredient": "Curcuma longa", "amount": "10g" },
-      { "ingredient": "Piper nigrum", "amount": "10g" },
-      { "ingredient": "Thyme oil", "amount": "5g" },
-      { "ingredient": "Eucalyptus oil", "amount": "5g" },
-      { "ingredient": "Basil oil", "amount": "5g" },
-      { "ingredient": "Mint oil", "amount": "5g" }
+      {
+        "ingredient": "Trachyspermum ammi",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Piper longum",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Curcuma longa",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Piper nigrum",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Thyme oil",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Eucalyptus oil",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Basil oil",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Mint oil",
+        "amount": "5g"
+      }
     ],
     "benefits": [
       {
@@ -298,20 +418,36 @@
         {
           "name": "POULTRY — THROUGH DRINKING WATER",
           "dosages": [
-            { "target": "Chicks / Broilers (0–2 weeks)", "amount": "10 mL / 100 birds" },
-            { "target": "Growers / Broilers (2–4 weeks)", "amount": "15 mL / 100 birds" },
-            { "target": "Layers / Broilers (above 4 weeks)", "amount": "30 mL / 100 birds" }
+            {
+              "target": "Chicks / Broilers (0–2 weeks)",
+              "amount": "10 mL / 100 birds"
+            },
+            {
+              "target": "Growers / Broilers (2–4 weeks)",
+              "amount": "15 mL / 100 birds"
+            },
+            {
+              "target": "Layers / Broilers (above 4 weeks)",
+              "amount": "30 mL / 100 birds"
+            }
           ]
         },
         {
           "name": "LARGE ANIMALS — ORAL",
           "dosages": [
-            { "target": "Sheep / Goat / Swine", "amount": "30 mL for 3–5 days, when required" },
-            { "target": "Cattle", "amount": "50 mL, twice daily for 3–5 days" }
+            {
+              "target": "Sheep / Goat / Swine",
+              "amount": "30 mL for 3–5 days, when required"
+            },
+            {
+              "target": "Cattle",
+              "amount": "50 mL, twice daily for 3–5 days"
+            }
           ]
         }
       ],
       "note": "Or as directed by a veterinarian."
-    }
+    },
+    "animalUsedImage": "/images/products/animalused.png"
   }
 ]
