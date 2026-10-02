@@ -176,22 +176,39 @@ export default function Header() {
                     <div
                       className="drawer-link-container"
                       onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
-                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer', padding: '15px 0', borderBottom: '1px solid rgba(0,0,0,0.05)' }}
+                      style={{ 
+                        display: 'flex', 
+                        justifyContent: 'space-between', 
+                        alignItems: 'center', 
+                        cursor: 'pointer', 
+                        padding: '15px 26px', 
+                        fontSize: '1.05rem',
+                        fontWeight: '700',
+                        color: 'var(--charcoal)'
+                      }}
                     >
-                      <div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
                         <span className="drawer-link-num">0{i + 1}</span>
                         {item.label}
                       </div>
-                      <i className={`bi bi-chevron-${mobileDropdownOpen ? 'up' : 'down'}`} />
+                      <i className={`bi bi-chevron-${mobileDropdownOpen ? 'up' : 'down'}`} style={{ color: 'var(--lime-dark)' }} />
                     </div>
                     {mobileDropdownOpen && (
-                      <div className="drawer-dropdown-list" style={{ paddingLeft: '40px', background: 'rgba(0,0,0,0.02)' }}>
+                      <div className="drawer-dropdown-list" style={{ paddingLeft: '26px', background: 'rgba(0,0,0,0.02)' }}>
                         {item.dropdown.map((subItem, j) => (
                           <Link
                             key={j}
                             href={subItem.href}
                             onClick={() => setMobileOpen(false)}
-                            style={{ display: 'block', padding: '15px 0', color: 'var(--charcoal)', textDecoration: 'none', borderBottom: j === item.dropdown!.length - 1 ? 'none' : '1px solid rgba(0,0,0,0.05)' }}
+                            style={{ 
+                              display: 'block', 
+                              padding: '15px 26px', 
+                              color: 'var(--charcoal)', 
+                              textDecoration: 'none', 
+                              borderBottom: j === item.dropdown!.length - 1 ? 'none' : '1px solid rgba(0,0,0,0.05)',
+                              fontSize: '1rem',
+                              fontWeight: '600'
+                            }}
                           >
                             {subItem.label}
                           </Link>

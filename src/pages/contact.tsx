@@ -36,12 +36,33 @@ export default function ContactPage() {
     { label: 'Contact Us' }
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
 
-    // Mailto action as there is no backend mentioned. This opens the user's default email client.
-    window.location.href = `mailto:info@vedvet.com?subject=Inquiry from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(formData.message)}%0A%0AFrom: ${encodeURIComponent(formData.email)}`;
+    setStatus('submitting');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
+      setStatus('error');
+    }
   };
 
   return (
@@ -112,9 +133,20 @@ export default function ContactPage() {
                     ></textarea>
                   </div>
 
-                  <button type="submit" className="btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
-                    Send Message <i className="bi bi-send" />
+                  <button type="submit" className="btn-primary" disabled={status === 'submitting'} style={{ width: '100%', justifyContent: 'center', opacity: status === 'submitting' ? 0.7 : 1 }}>
+                    {status === 'submitting' ? 'Sending...' : 'Send Message'} <i className="bi bi-send" />
                   </button>
+
+                  {status === 'success' && (
+                    <div style={{ marginTop: '20px', padding: '15px', backgroundColor: '#d1e7dd', color: '#0f5132', borderRadius: '8px', textAlign: 'center', fontWeight: 600 }}>
+                      Thank you! Your message has been sent successfully.
+                    </div>
+                  )}
+                  {status === 'error' && (
+                    <div style={{ marginTop: '20px', padding: '15px', backgroundColor: '#f8d7da', color: '#842029', borderRadius: '8px', textAlign: 'center', fontWeight: 600 }}>
+                      Oops! Something went wrong. Please try again.
+                    </div>
+                  )}
                 </form>
               </div>
 
