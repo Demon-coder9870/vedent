@@ -2,7 +2,7 @@ import React from 'react';
 import { GetStaticProps, GetStaticPaths } from 'next';
 import { useRouter } from 'next/router';
 import { products } from '../../data/products';
-import ProductDesign3 from '../../components/productDesigns/ProductDesign3';
+import ProductDetail from '../../components/productDesigns/ProductDetail';
 
 type Product = typeof products[0];
 
@@ -22,8 +22,7 @@ export default function ProductPage({ product, relatedProducts }: ProductPagePro
     return <div>Product not found</div>;
   }
 
-  // all products use design 3
-  return <ProductDesign3 product={product} relatedProducts={relatedProducts} />;
+  return <ProductDetail product={product} relatedProducts={relatedProducts} />;
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {

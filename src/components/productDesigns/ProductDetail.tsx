@@ -9,7 +9,7 @@ import { products } from '../../data/products';
 type Product = typeof products[0];
 interface ProductPageProps { product: Product; relatedProducts: Product[]; }
 
-export default function ProductDesign3({ product, relatedProducts }: ProductPageProps) {
+export default function ProductDetail({ product, relatedProducts }: ProductPageProps) {
   const [activeImg, setActiveImg] = React.useState((product.gallery && product.gallery.length > 0) ? product.gallery[0] : product.image);
   const [fullscreenOpen, setFullscreenOpen] = React.useState(false);
   const whatsappMsg = `https://wa.me/919997714800?text=${encodeURIComponent('Hi, I am interested in your product: ' + product.name + '. Could you please provide more details?')}`;
@@ -124,7 +124,7 @@ export default function ProductDesign3({ product, relatedProducts }: ProductPage
               <div className="pd3-quick-benefits">
                 {product.benefits && product.benefits.slice(0, 4).map((b, i) => {
                   const commonIcons = ['bi-shield-check', 'bi-bandaid', 'bi-heart-pulse', 'bi-activity'];
-                  const iconClass = b.icon || commonIcons[i % commonIcons.length];
+                  const iconClass = (b as any).icon || commonIcons[i % commonIcons.length];
                   return (
                     <div className="pd3-qb-item" key={i} style={{ animationDelay: `${i * 0.1}s` }}>
                       <div className="pd3-qb-icon"><i className={`bi ${iconClass}`}></i></div>
@@ -173,7 +173,7 @@ export default function ProductDesign3({ product, relatedProducts }: ProductPage
                   <div className="pd3-benefits-rows">
                     {product.benefits && product.benefits.map((b, i) => {
                       const commonIcons = ['bi-shield-check', 'bi-bandaid', 'bi-heart-pulse', 'bi-activity', 'bi-capsule', 'bi-droplet-half'];
-                      const iconClass = b.icon || commonIcons[i % commonIcons.length];
+                      const iconClass = (b as any).icon || commonIcons[i % commonIcons.length];
                       return (
                         <div className="pd3-ben-row" key={i}>
                           <div className="pd3-ben-icon"><i className={`bi ${iconClass}`}></i></div>
