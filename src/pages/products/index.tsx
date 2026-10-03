@@ -16,7 +16,7 @@ export default function ProductsPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 12;
 
-  const categories = ['All', 'Natural', 'Aqua', 'Pets', 'Poultry & Livestock'];
+  const categories = ['All', ...Array.from(new Set(products.map(p => p.category)))];
   const filteredProducts = activeCategory === 'All' 
     ? products 
     : products.filter(p => p.category === activeCategory);

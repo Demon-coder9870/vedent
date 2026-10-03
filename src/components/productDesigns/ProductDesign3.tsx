@@ -77,24 +77,14 @@ export default function ProductDesign3({ product, relatedProducts }: ProductPage
 
             {/* Custom Gallery Thumbnails for Design 3 */}
             {product.gallery && product.gallery.length > 1 && (
-              <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '15px', marginTop: '40px', zIndex: 10 }}>
+              <div className="pd3-thumbnail-container">
                 {product.gallery.map((img, idx) => (
                   <div 
                     key={idx}
                     onClick={() => setActiveImg(img)}
-                    style={{ 
-                      width: '60px', 
-                      height: '60px', 
-                      border: activeImg === img ? '2px solid var(--lime-dark)' : '2px solid transparent',
-                      borderRadius: '10px',
-                      overflow: 'hidden',
-                      cursor: 'pointer',
-                      transition: 'all 0.3s ease',
-                      backgroundColor: 'transparent',
-                      boxShadow: activeImg === img ? '0 4px 10px rgba(0,0,0,0.1)' : 'none'
-                    }}
+                    className={`pd3-thumbnail ${activeImg === img ? 'active' : ''}`}
                   >
-                    <img src={img} alt={`Thumbnail ${idx}`} style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply' }} />
+                    <img src={img} alt={`Thumbnail ${idx}`} />
                   </div>
                 ))}
               </div>
@@ -132,12 +122,16 @@ export default function ProductDesign3({ product, relatedProducts }: ProductPage
               )}
 
               <div className="pd3-quick-benefits">
-                {product.benefits && product.benefits.slice(0, 4).map((b, i) => (
-                  <div className="pd3-qb-item" key={i} style={{ animationDelay: `${i * 0.1}s` }}>
-                    <div className="pd3-qb-icon"><i className={`bi ${b.icon}`}></i></div>
-                    <span className="pd3-qb-label">{b.title}</span>
-                  </div>
-                ))}
+                {product.benefits && product.benefits.slice(0, 4).map((b, i) => {
+                  const commonIcons = ['bi-shield-check', 'bi-bandaid', 'bi-heart-pulse', 'bi-activity'];
+                  const iconClass = b.icon || commonIcons[i % commonIcons.length];
+                  return (
+                    <div className="pd3-qb-item" key={i} style={{ animationDelay: `${i * 0.1}s` }}>
+                      <div className="pd3-qb-icon"><i className={`bi ${iconClass}`}></i></div>
+                      <span className="pd3-qb-label">{b.title}</span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -177,16 +171,20 @@ export default function ProductDesign3({ product, relatedProducts }: ProductPage
                   <div className="pd3-section-num">02</div>
                   <h2 className="pd3-detail-h">Key Benefits</h2>
                   <div className="pd3-benefits-rows">
-                    {product.benefits && product.benefits.map((b, i) => (
-                      <div className="pd3-ben-row" key={i}>
-                        <div className="pd3-ben-icon"><i className={`bi ${b.icon}`}></i></div>
-                        <div className="pd3-ben-content">
-                          <h4>{b.title}</h4>
-                          <p>{b.text}</p>
+                    {product.benefits && product.benefits.map((b, i) => {
+                      const commonIcons = ['bi-shield-check', 'bi-bandaid', 'bi-heart-pulse', 'bi-activity', 'bi-capsule', 'bi-droplet-half'];
+                      const iconClass = b.icon || commonIcons[i % commonIcons.length];
+                      return (
+                        <div className="pd3-ben-row" key={i}>
+                          <div className="pd3-ben-icon"><i className={`bi ${iconClass}`}></i></div>
+                          <div className="pd3-ben-content">
+                            <h4>{b.title}</h4>
+                            <p>{b.text}</p>
+                          </div>
+                          <span className="pd3-ben-num">{String(i + 1).padStart(2, '0')}</span>
                         </div>
-                        <span className="pd3-ben-num">{String(i + 1).padStart(2, '0')}</span>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 </div>
 
