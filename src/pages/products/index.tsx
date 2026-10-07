@@ -17,7 +17,7 @@ export default function ProductsPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 12;
 
-  const categories = ['All', 'Poultry', 'Livestock', 'Livestock & Swine'];
+  const categories = ['All', 'Poultry', 'Livestock', 'Livestock & Swine', 'Pets', 'Aqua'];
   
   const filteredProducts = products.filter(p => {
     const categoryMatch = activeCategory === 'All' || p.category.includes(activeCategory) || p.category === 'All';

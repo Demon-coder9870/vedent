@@ -102,7 +102,7 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
               )}
               <p className="pd3-tagline" style={{ marginBottom: '20px' }}>{product.shortDescription}</p>
 
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'flex-start', marginBottom: '36px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'flex-start', marginBottom: '25px' }}>
                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', background: 'var(--lime-light)', padding: '10px 20px', borderRadius: 'var(--radius-md)', color: 'var(--charcoal)', fontWeight: '700' }}>
                   <i className="bi bi-box-seam" style={{ color: 'var(--lime)', fontSize: '1.2rem' }}></i> 
                   Presentation: {product.presentation}
@@ -113,15 +113,21 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
                 </a>
               </div>
 
-              {(product as any).animalUsedImage && (
-                <div style={{ marginTop: '25px', marginBottom: '10px' }}>
-                  <img 
-                    src={(product as any).animalUsedImage} 
-                    alt="Suitable for animals" 
-                    style={{ maxWidth: '220px', width: '100%', height: 'auto', borderRadius: '30px', background: '#fff', padding: '10px' }} 
-                  />
-                </div>
-              )}
+              {(() => {
+                const categoryImages: string[] = (product as any).animalUsedImages || [];
+                return categoryImages.length > 0 && (
+                  <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap', marginTop: '15px', marginBottom: '10px', alignItems: 'center' }}>
+                    {categoryImages.map((imgSrc, idx) => (
+                      <img 
+                        key={idx}
+                        src={imgSrc} 
+                        alt="Suitable for animals" 
+                        style={{ height: '65px', width: 'auto', borderRadius: '30px', background: '#fff', padding: '10px', objectFit: 'contain' }} 
+                      />
+                    ))}
+                  </div>
+                );
+              })()}
 
               <div className="pd3-quick-benefits">
                 {product.benefits && product.benefits.slice(0, 4).map((b, i) => {

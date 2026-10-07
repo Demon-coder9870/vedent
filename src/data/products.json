@@ -97,7 +97,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDBLOTNIL",
@@ -210,7 +214,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDCAL",
@@ -289,7 +297,9 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png"
+    ]
   },
   {
     "name": "VEDCAL-C",
@@ -381,7 +391,9 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-livestock.png"
+    ]
   },
   {
     "name": "VED CRD HERB",
@@ -499,7 +511,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDCLEAN",
@@ -608,7 +624,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDGROW HERB",
@@ -742,7 +762,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDGUTNIL",
@@ -869,7 +893,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDHEMO",
@@ -984,7 +1012,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDIARRO",
@@ -1131,7 +1163,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDIMMUNO",
@@ -1246,7 +1282,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDINFLA",
@@ -1347,7 +1387,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VED KIDNEY POWER",
@@ -1479,7 +1523,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDLIB",
@@ -1596,7 +1644,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDLIV HERB",
@@ -1751,7 +1803,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VED MV PLUS",
@@ -1872,7 +1928,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDOLYTE",
@@ -1990,7 +2050,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDOXIDENT",
@@ -2088,7 +2152,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDpH",
@@ -2187,7 +2255,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDPYRIN",
@@ -2290,7 +2362,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDREST",
@@ -2388,7 +2464,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDSELVIT E",
@@ -2478,7 +2558,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDTOX",
@@ -2623,7 +2707,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDUTRINE",
@@ -2726,7 +2814,10 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDVIRO",
@@ -2853,7 +2944,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDVIT A",
@@ -2999,7 +3094,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDVIT E",
@@ -3114,7 +3213,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDVIT C",
@@ -3259,7 +3362,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDWORM",
@@ -3383,7 +3490,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "V-CHOLINE-90",
@@ -3509,7 +3620,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDLYSIN",
@@ -3590,7 +3705,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDMETH",
@@ -3688,7 +3807,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDMIX",
@@ -3818,7 +3941,10 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "VEDIGEST",
@@ -3952,7 +4078,11 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-poultry.png",
+      "/images/products/animalused-livestock.png",
+      "/images/products/animalused-Swine.png"
+    ]
   },
   {
     "name": "OXYVED-AQ",
@@ -4002,7 +4132,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-aqua.png"
+    ]
   },
   {
     "name": "O2VED-AQ",
@@ -4052,7 +4184,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-aqua.png"
+    ]
   },
   {
     "name": "VEDCLEAN-AQ",
@@ -4106,7 +4240,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-aqua.png"
+    ]
   },
   {
     "name": "MICROMIN VED-AQ",
@@ -4156,7 +4292,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-aqua.png"
+    ]
   },
   {
     "name": "VEDPROVIB-AQ",
@@ -4206,7 +4344,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-aqua.png"
+    ]
   },
   {
     "name": "VEDLIV-AQ",
@@ -4252,7 +4392,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-aqua.png"
+    ]
   },
   {
     "name": "VEDGROW-AQ",
@@ -4298,7 +4440,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-aqua.png"
+    ]
   },
   {
     "name": "VEDTOX-AQ",
@@ -4348,7 +4492,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-aqua.png"
+    ]
   },
   {
     "name": "DIGYVED PLUS",
@@ -4393,7 +4539,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-pets.png"
+    ]
   },
   {
     "name": "DIGYVED DROPS",
@@ -4438,7 +4586,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-pets.png"
+    ]
   },
   {
     "name": "LIV VED",
@@ -4482,7 +4632,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-pets.png"
+    ]
   },
   {
     "name": "VEDPYRIN PETS",
@@ -4526,7 +4678,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-pets.png"
+    ]
   },
   {
     "name": "IMMUNOVED",
@@ -4575,7 +4729,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-pets.png"
+    ]
   },
   {
     "name": "CLEAN AND CARE",
@@ -4611,7 +4767,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-pets.png"
+    ]
   },
   {
     "name": "FUR CARE",
@@ -4647,7 +4805,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-pets.png"
+    ]
   },
   {
     "name": "VED MV",
@@ -4691,7 +4851,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-pets.png"
+    ]
   },
   {
     "name": "VEDIARRO HERB",
@@ -4730,7 +4892,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-pets.png"
+    ]
   },
   {
     "name": "VEDRESP",
@@ -4769,7 +4933,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-pets.png"
+    ]
   },
   {
     "name": "VEDWORM PETS",
@@ -4809,7 +4975,9 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-pets.png"
+    ]
   },
   {
     "name": "VEDCAL B12",
@@ -4851,6 +5019,8 @@
       "methods": [],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": null
+    "animalUsedImages": [
+      "/images/products/animalused-pets.png"
+    ]
   }
 ]

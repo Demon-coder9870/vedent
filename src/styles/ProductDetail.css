@@ -253,7 +253,6 @@
   border-radius: var(--radius-full);
   box-shadow: var(--shadow-lime);
   transition: all 0.3s var(--ease);
-  margin-bottom: 50px;
   font-family: var(--font-text);
   text-decoration: none;
 }
