@@ -13,13 +13,19 @@ export default function ProductsPage() {
   ];
 
   const [activeCategory, setActiveCategory] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 12;
 
   const categories = ['All', 'Poultry', 'Livestock', 'Livestock & Swine'];
-  const filteredProducts = activeCategory === 'All' 
-    ? products 
-    : products.filter(p => p.category === activeCategory || p.category === 'All');
+  
+  const filteredProducts = products.filter(p => {
+    const categoryMatch = activeCategory === 'All' || p.category.includes(activeCategory) || p.category === 'All';
+    const searchMatch = !searchQuery.trim() || 
+                        p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                        p.shortDescription.toLowerCase().includes(searchQuery.toLowerCase());
+    return categoryMatch && searchMatch;
+  });
 
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
   const paginatedProducts = filteredProducts.slice(
@@ -49,6 +55,31 @@ export default function ProductsPage() {
             <div className="products-page-layout">
               {/* Sidebar */}
               <aside className="products-sidebar">
+                <div style={{ marginBottom: '30px' }}>
+                  <h3 style={{ fontSize: '1.2rem', marginBottom: '15px', fontWeight: 600, color: 'var(--charcoal)' }}>Search</h3>
+                  <div style={{ position: 'relative' }}>
+                    <input 
+                      type="text" 
+                      placeholder="Search products..." 
+                      value={searchQuery}
+                      onChange={(e) => { setSearchQuery(e.target.value); setCurrentPage(1); }}
+                      style={{
+                        width: '100%',
+                        padding: '12px 16px',
+                        paddingLeft: '40px',
+                        borderRadius: '8px',
+                        border: '1px solid var(--border-light)',
+                        background: '#fff',
+                        color: 'var(--charcoal)',
+                        fontSize: '0.95rem',
+                        outline: 'none',
+                        transition: 'border-color 0.3s'
+                      }}
+                    />
+                    <i className="bi bi-search" style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)', color: '#94a3b8' }}></i>
+                  </div>
+                </div>
+
                 <h3 style={{ fontSize: '1.2rem', marginBottom: '20px', fontWeight: 600, color: 'var(--charcoal)' }}>Categories</h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   {categories.map(cat => (

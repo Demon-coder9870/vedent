@@ -102,14 +102,16 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
               )}
               <p className="pd3-tagline" style={{ marginBottom: '20px' }}>{product.shortDescription}</p>
 
-              <div style={{ marginBottom: '36px', display: 'inline-flex', alignItems: 'center', gap: '10px', background: 'var(--lime-light)', padding: '10px 20px', borderRadius: 'var(--radius-md)', color: 'var(--charcoal)', fontWeight: '700' }}>
-                <i className="bi bi-box-seam" style={{ color: 'var(--lime)', fontSize: '1.2rem' }}></i> 
-                Presentation: {product.presentation}
-              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'flex-start', marginBottom: '36px' }}>
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', background: 'var(--lime-light)', padding: '10px 20px', borderRadius: 'var(--radius-md)', color: 'var(--charcoal)', fontWeight: '700' }}>
+                  <i className="bi bi-box-seam" style={{ color: 'var(--lime)', fontSize: '1.2rem' }}></i> 
+                  Presentation: {product.presentation}
+                </div>
 
-              <a href={whatsappMsg} target="_blank" rel="noopener noreferrer" className="pd3-enq-btn">
-                <i className="bi bi-whatsapp"></i> Request Information
-              </a>
+                <a href={whatsappMsg} target="_blank" rel="noopener noreferrer" className="pd3-enq-btn">
+                  <i className="bi bi-whatsapp"></i> Request Information
+                </a>
+              </div>
 
               {(product as any).animalUsedImage && (
                 <div style={{ marginTop: '25px', marginBottom: '10px' }}>

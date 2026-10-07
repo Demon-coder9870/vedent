@@ -1,15 +1,15 @@
 [
   {
     "name": "VEDCOCCINIL",
-    "category": "All",
+    "category": "Poultry & Livestock & Swine",
     "presentation": "1Ltr Bottle and 25kg Bag",
     "slug": "vedcoccinil",
-    "image": "/images/products/Ved Coccinil/01.png",
+    "image": "/images/products/Vedcoccinil/01.png",
     "gallery": [
-      "/images/products/Ved Coccinil/01.png",
-      "/images/products/Ved Coccinil/02.png",
-      "/images/products/Ved Coccinil/03.png",
-      "/images/products/Ved Coccinil/04.png"
+      "/images/products/Vedcoccinil/01.png",
+      "/images/products/Vedcoccinill/02.png",
+      "/images/products/Vedcoccinil/03.png",
+      "/images/products/Vedcoccinil/04.png"
     ],
     "tagline": "Effective Eliminator of Intestinal Cocci",
     "shortDescription": "A herbal antiprotozoal supplement combining four plant extracts for the prevention and treatment of coccidiosis in poultry and livestock.",
@@ -20,11 +20,11 @@
         "text": "Effective prevention and treatment of coccidiosis"
       },
       {
-        "title": "Helps counter oxidative stress",
+        "title": "Helps counter oxidative stress associated with clinical coccidiosis",
         "text": "Helps counter oxidative stress associated with clinical coccidiosis"
       },
       {
-        "title": "Repairs damaged intestinal epithelium",
+        "title": "Repairs damaged intestinal epithelium, supporting fast recovery.",
         "text": "Repairs damaged intestinal epithelium, supporting fast recovery."
       }
     ],
@@ -69,7 +69,7 @@
           ]
         },
         {
-          "name": "LIQUID — LIVESTOCK — ORAL",
+          "name": "LIVESTOCK — ORAL",
           "dosages": [
             {
               "target": "Sheep&Goat",
@@ -100,16 +100,300 @@
     "animalUsedImage": null
   },
   {
+    "name": "VEDBLOTNIL",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltr Bottle",
+    "slug": "vedblotnil",
+    "image": "/images/products/Vedblotnil/01.png",
+    "gallery": [
+      "/images/products/Vedblotnil/01.png",
+      "/images/products/Vedblotnil/02.png",
+      "/images/products/Vedblotnil/03.png",
+      "/images/products/Vedblotnil/04.png"
+    ],
+    "tagline": "Herbal & Natural Anti-Bloat Tonic",
+    "shortDescription": "A herbal anti-bloat tonic combining thirteen plant extracts to relieve ruminal bloat, acidosis, and excess fermentation in poultry, swine, and cattle.",
+    "fullDescription": "VEDBLOTNIL is a herbal anti-bloat tonic formulated to provide safe and effective relief from ruminal bloat, acidosis, and excess fermentation. Combining thirteen plant extracts and essential oils with carminative and prokinetic properties, it maintains ruminal pH, stimulates peristaltic movement, and revives ruminal motility. Gentle on the digestive system, VEDBLOTNIL is suitable for use in poultry, swine, and cattle as both a preventive and therapeutic measure.",
+    "benefits": [
+      {
+        "title": "Prevents the formation of gases and excess fermentation",
+        "text": "Prevents the formation of gases and excess fermentation"
+      },
+      {
+        "title": "Stimulates peristaltic movements",
+        "text": "Stimulates peristaltic movements"
+      },
+      {
+        "title": "Revives ruminal motility and maintains rumen pH",
+        "text": "Revives ruminal motility and maintains rumen pH"
+      }
+    ],
+    "indications": [
+      "Bloat is among the most uncomfortable and dangerous digestive disorders in ruminants.",
+      "Its severity can range from mild digestive disturbance to fatal situations.",
+      "VEDBLOTNIL is a safe, gentle herbal formulation that maintains ruminal pH, effectively relieves ruminal acidosis, prevents excess fermentation, and provides effective relief from bloat in animals."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Cuminum cyminum",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Coriandrum sativum",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Terminalia chebula",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Ferula asafoetida",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Zingiber officinale",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Mentha piperita",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Allium sativum",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Pinus longifolia Oil",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Trachyspermum ammi",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Curcuma longa",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Foeniculum vulgare",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Piper nigrum",
+        "amount": "1g"
+      },
+      {
+        "ingredient": "Butea monosperma",
+        "amount": "3g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID",
+          "dosages": [
+            {
+              "target": "POULTRY",
+              "amount": "2-3 through drinking water, 2-3 ml per bird (3 consecutive days per month)"
+            },
+            {
+              "target": "Swine",
+              "amount": "10ml per bird, (consecutive days per month)"
+            },
+            {
+              "target": "Cattle",
+              "amount": "25ml per bird, (5 consecutive days per month)"
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDCAL",
+    "category": "Poultry",
+    "presentation": "1 Ltr Bottle",
+    "slug": "vedcal",
+    "image": "/images/products/Vedcal/01.png",
+    "gallery": [
+      "/images/products/Vedcal/01.png",
+      "/images/products/Vedcal/02.png",
+      "/images/products/Vedcal/03.png",
+      "/images/products/Vedcal/04.png"
+    ],
+    "tagline": "A Comprehensive Formulation of Calcium, Phosphorus, Vitamin D3, A & E.",
+    "shortDescription": "A liquid calcium, phosphorus, and multi-vitamin supplement formulated to support bone development, mineral homeostasis, and overall health in poultry.",
+    "fullDescription": "VEDCAL is a liquid calcium, phosphorus, and multi-vitamin supplement formulated to support bone development, mineral homeostasis, and overall health in poultry. Combining key macro-minerals with a comprehensive vitamin profile — including vitamins A, D3, E, and B12 — it addresses nutritional gaps that may otherwise lead to deficiency-related conditions. Herbal extracts further enhance the bioabsorption, biodistribution, and bioavailability of its active components for more effective supplementation",
+    "benefits": [
+      {
+        "title": "Essential for healthy bone development and mineralisation",
+        "text": "Essential for healthy bone development and mineralisation"
+      },
+      {
+        "title": "Helps address disorders of bone mineralisation and eggshell quality",
+        "text": "Helps address disorders of bone mineralisation and eggshell quality"
+      },
+      {
+        "title": "Increases appetite and stimulates metabolism",
+        "text": "Increases appetite and stimulates metabolism"
+      },
+      {
+        "title": "Formulated to support lethargic animals and aid recovery from dehydration",
+        "text": "Formulated to support lethargic animals and aid recovery from dehydration"
+      }
+    ],
+    "indications": [
+      "Vitamins and minerals are crucial for the maintenance of homeostasis, proper growth, immunity, and production; their deficiency may manifest as various disease syndromes. This formulation provides the essential vitamins and minerals required for health and growth. Special herbal extracts further enhance the bioabsorption, biodistribution, and bioavailability of its mineral and vitamin components for optimal utilisation."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Calcium",
+        "amount": "1,628mg"
+      },
+      {
+        "ingredient": "Phosphorus",
+        "amount": "838.5mg"
+      },
+      {
+        "ingredient": "Vitamin A",
+        "amount": "45,000IU"
+      },
+      {
+        "ingredient": "Vitamin D3",
+        "amount": "8,000IU"
+      },
+      {
+        "ingredient": "Vitamin B12",
+        "amount": "100mcg"
+      },
+      {
+        "ingredient": "Vitamin E",
+        "amount": "100mg"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID",
+          "dosages": [
+            {
+              "target": "All",
+              "amount": "POULTRY - Through drinking water, 250ml per 1000 litres of drinking water"
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDCAL-C",
+    "category": "Livestock",
+    "presentation": "1 Ltre, 5 Ltre, 10 Ltre, 20 Ltre bottle",
+    "slug": "vedcal-c",
+    "image": "/images/products/Vedcal-C/01.png",
+    "gallery": [
+      "/images/products/Vedcal-C/01.png",
+      "/images/products/Vedcal-C/02.png",
+      "/images/products/Vedcal-C/03.png",
+      "/images/products/Vedcal-C/04.png"
+    ],
+    "tagline": "Complete Blend of Minerals, Vitamins, Amino Acids & Galactogogue Herbs",
+    "shortDescription": "A liquid mineral-vitamin supplement with galactogogue herbal extracts to support growth, bone health, and milk production in cattle, buffaloes, horses, and small ruminants.",
+    "fullDescription": "VEDCAL-C is a comprehensive liquid supplement combining essential minerals and vitamins with galactogogue herbal extracts, formulated to support optimal growth and milk production in cattle, buffaloes, horses, and small ruminants. Its balanced formulation of calcium, phosphorus, fat-soluble vitamins, and targeted herbal extracts supports bone health, stimulates mammary function, and promotes prolactin release for improved milk yield. VEDCAL-C addresses hypogalactia and supports complete milk let-down for enhanced dairy productivity",
+    "benefits": [
+      {
+        "title": "Promotes bone density and strength",
+        "text": "Promotes bone density and strength"
+      },
+      {
+        "title": "Contains galactopoietic herbs that stimulate the secretory functions of mammary alveoli and promote growth of lobuloalveolar tissue, improving milk production",
+        "text": "Contains galactopoietic herbs that stimulate the secretory functions of mammary alveoli and promote growth of lobuloalveolar tissue, improving milk production"
+      },
+      {
+        "title": "Corrects hypogalactia",
+        "text": "Corrects hypogalactia"
+      },
+      {
+        "title": "Supports complete milk let-down",
+        "text": "Supports complete milk let-down"
+      },
+      {
+        "title": "Promotes the release of prolactin, the hormone responsible for stimulating milk secretion",
+        "text": "Promotes the release of prolactin, the hormone responsible for stimulating milk secretion"
+      }
+    ],
+    "indications": [
+      "VEDCAL-C provides a carefully balanced blend of minerals, vitamins, amino acids, and galactogogue herbs, essential for optimal growth and production in animals.",
+      "It supplies all the nutrients required for excellent outcomes in terms of milk yield and overall growth performance."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Calcium",
+        "amount": "1,628mg"
+      },
+      {
+        "ingredient": "Phosphorus",
+        "amount": "838.5mg"
+      },
+      {
+        "ingredient": "Vitamin A",
+        "amount": "45,000IU"
+      },
+      {
+        "ingredient": "Vitamin D",
+        "amount": "38,000IU"
+      },
+      {
+        "ingredient": "Vitamin B12",
+        "amount": "100mcg"
+      },
+      {
+        "ingredient": "Vitamin E",
+        "amount": "100mg"
+      },
+      {
+        "ingredient": "Leptadenia reticulata",
+        "amount": "2,000mg"
+      },
+      {
+        "ingredient": "Asparagus adscendens",
+        "amount": "4,000mg"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — LIVESTOCK — ORAL",
+          "dosages": [
+            {
+              "target": "Cow/Buffalo/Horse",
+              "amount": "100ml orally: Calves/sheep/Goat: 50ml orally"
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
     "name": "VED CRD HERB",
-    "category": "All",
+    "category": "Poultry & Livestock & Swine",
     "presentation": "1Ltr Bottle and 25kg Bag",
     "slug": "ved-crd-herb",
-    "image": "/images/products/Ved CRD Herb/01.png",
+    "image": "/images/products/Ved-CRD-Herb/01.png",
     "gallery": [
-      "/images/products/Ved CRD Herb/01.png",
-      "/images/products/Ved CRD Herb/02.png",
-      "/images/products/Ved CRD Herb/03.png",
-      "/images/products/Ved CRD Herb/04.png"
+      "/images/products/Ved-CRD-Herb/01.png",
+      "/images/products/Ved-CRD-Herb/02.png",
+      "/images/products/Ved-CRD-Herb/03.png",
+      "/images/products/Ved-CRD-Herb/04.png"
     ],
     "tagline": "A unique herbal tonic for the respiratory tract",
     "shortDescription": "A herbal respiratory tonic blending medicinal herbs and essential oils to support the respiratory tract, ease congestion, and promote smooth breathing in poultry and livestock.",
@@ -117,33 +401,27 @@
     "benefits": [
       {
         "title": "Supportive Therapy",
-        "text": "Useful as supportive therapy in severe respiratory infections.",
-        "icon": "bi-bandaid"
+        "text": "Useful as supportive therapy in severe respiratory infections."
       },
       {
         "title": "Decongestion",
-        "text": "Aids nasal decongestion and helps clear the larynx and pharynx for smoother breathing.",
-        "icon": "bi-wind"
+        "text": "Aids nasal decongestion and helps clear the larynx and pharynx for smoother breathing."
       },
       {
         "title": "Symptomatic Relief",
-        "text": "Provides symptomatic relief from cough, sneezing and blockage of the nasal passages and upper respiratory tract.",
-        "icon": "bi-shield-check"
+        "text": "Provides symptomatic relief from cough, sneezing and blockage of the nasal passages and upper respiratory tract."
       },
       {
         "title": "Stress Reduction",
-        "text": "Helps reduce stress and relieve signs of respiratory distress.",
-        "icon": "bi-emoji-smile"
+        "text": "Helps reduce stress and relieve signs of respiratory distress."
       },
       {
         "title": "Growth Promoter",
-        "text": "When used as a growth promoter, helps reduce disease incidence and enhance performance.",
-        "icon": "bi-graph-up-arrow"
+        "text": "When used as a growth promoter, helps reduce disease incidence and enhance performance."
       },
       {
         "title": "Reduced Mortality",
-        "text": "Helps reduce mortality and production losses.",
-        "icon": "bi-activity"
+        "text": "Helps reduce mortality and production losses."
       }
     ],
     "indications": [
@@ -221,6 +499,4358 @@
       ],
       "note": "Or as directed by a veterinarian."
     },
-    "animalUsedImage": "/images/products/animalused.png"
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDCLEAN",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle",
+    "slug": "vedclean",
+    "image": "/images/products/Vedclean/01.png",
+    "gallery": [
+      "/images/products/Vedclean/01.png",
+      "/images/products/Vedclean/02.png",
+      "/images/products/Vedclean/03.png",
+      "/images/products/Vedclean/04.png"
+    ],
+    "tagline": "Highly Efficient Germicidal Activity — Sporicidal, Fungicidal, Anti-Bacterial & Viricidal",
+    "shortDescription": "A herbal broad-spectrum disinfectant combining plant extracts and essential oils for sporicidal, fungicidal, antibacterial, and viricidal efficacy in poultry and livestock environments.",
+    "fullDescription": "VEDCLEAN is a herbal disinfectant formulated with a unique combination of plant extracts and essential oils, providing broad-spectrum germicidal activity. A safe, eco-friendly, and biodegradable alternative to conventional chemical disinfectants, it delivers proven sporicidal, fungicidal, antibacterial, and viricidal efficacy. Suitable for use in the presence of birds and animals, VEDCLEAN is designed for the disinfection of poultry and livestock housing, equipment, and environments. Available as a 1-litre liquid concentrate.",
+    "benefits": [
+      {
+        "title": "Complete all-in-one disinfection solution for poultry and livestock environments",
+        "text": "Complete all-in-one disinfection solution for poultry and livestock environments"
+      },
+      {
+        "title": "Effective against poultry viral diseases",
+        "text": "Effective against poultry viral diseases"
+      },
+      {
+        "title": "Broad-spectrum antibacterial activity, including against Pseudomonas",
+        "text": "Broad-spectrum antibacterial activity, including against Pseudomonas"
+      },
+      {
+        "title": "Supports prevention of infectious diseases in livestock housing",
+        "text": "Supports prevention of infectious diseases in livestock housing"
+      },
+      {
+        "title": "Suitable for disinfection of poultry and livestock equipment",
+        "text": "Suitable for disinfection of poultry and livestock equipment"
+      },
+      {
+        "title": "Safe for use in the direct presence of birds and animals",
+        "text": "Safe for use in the direct presence of birds and animals"
+      }
+    ],
+    "indications": [
+      "VEDCLEAN is an effective natural alternative to chemical disinfectants that pose a high risk of harm to farm animals.",
+      "Derived from a unique combination of powerful plant oils, it demonstrates high germicidal activity and is both eco-friendly and biodegradable.",
+      "It works effectively in mild cases of CRD (chronic respiratory disease) and serves as a broad-spectrum disinfection tool with sporicidal, fungicidal, antibacterial, and viricidal activity."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Ocimum sanctum",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Azadirachta indica",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Trachyspermum ammi",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Curcuma longa",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Sesamum indicum",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Eucalyptus globulus",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Thyme Oil",
+        "amount": "15g"
+      },
+      {
+        "ingredient": "Basil Oil",
+        "amount": "15g"
+      },
+      {
+        "ingredient": "Til Oil",
+        "amount": "15g"
+      },
+      {
+        "ingredient": "Eucalyptus Oil",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Neem Oil",
+        "amount": "7g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID CONCENTRATE",
+          "dosages": [
+            {
+              "target": "Poultry / Sheep / Goat / Swine / Cattle",
+              "amount": "Dilute 0.5 ml per litre of water for 99.9% killing effect on microbes."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDGROW HERB",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "vedgrow-herb",
+    "image": "/images/products/Vedgrow-Herb/01.png",
+    "gallery": [
+      "/images/products/Vedgrow-Herb/01.png",
+      "/images/products/Vedgrow-Herb/02.png",
+      "/images/products/Vedgrow-Herb/03.png",
+      "/images/products/Vedgrow-Herb/04.png"
+    ],
+    "tagline": "A Combination of Herbs, Yeast Extract with Amino Acids, Organic Acids and Minerals",
+    "shortDescription": "Beyond antibiotic growth promoters — eleven plant extracts that build a stronger gut, better performance, and a healthier microbiome.",
+    "fullDescription": "VEDGROW is a herbal growth-promotion supplement combining eleven plant extracts with yeast extract, amino acids, organic acids, and minerals, formulated to support gastrointestinal health and productive performance in poultry and livestock. It serves as a plant-based alternative to antibiotic growth promoters, delivering broad-spectrum antimicrobial activity, enhanced nutrient utilisation, and beneficial modulation of the gut microbiome. Available in liquid and powder formulations, VEDGROW is suitable for poultry, sheep, goats, swine, and cattle.",
+    "benefits": [
+      {
+        "title": "Broad-spectrum antibacterial activity mediated by organic acids",
+        "text": "Broad-spectrum antibacterial activity mediated by organic acids"
+      },
+      {
+        "title": "Competitive exclusion of undesirable organisms, limiting their access to space and nutrients in the digestive tract",
+        "text": "Competitive exclusion of undesirable organisms, limiting their access to space and nutrients in the digestive tract"
+      },
+      {
+        "title": "Production of vitamins and growth factors that support microbial balance and promote beneficial gut flora",
+        "text": "Production of vitamins and growth factors that support microbial balance and promote beneficial gut flora"
+      },
+      {
+        "title": "Promotion and stimulation of digestive enzyme activity",
+        "text": "Promotion and stimulation of digestive enzyme activity"
+      },
+      {
+        "title": "Breakdown and detoxification of undesirable compounds",
+        "text": "Breakdown and detoxification of undesirable compounds"
+      },
+      {
+        "title": "Stimulation of the immune system in the host animal",
+        "text": "Stimulation of the immune system in the host animal"
+      }
+    ],
+    "indications": [
+      "VEDGROW remains active throughout the gastrointestinal tract, exerting broad-spectrum antimicrobial activity and enhancing nutrient utilisation.",
+      "With the progressive restriction and banning of antibiotic-based growth promoters due to associated health and safety concerns, plant-based alternatives have become increasingly important in modern livestock management.",
+      "VEDGROW, formulated with plant extracts and essential oil components, serves as an established herbal growth promoter and is widely relied upon by farmers seeking effective, herbal-based alternatives for sustainable and productive animal rearing."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Mangifera indica",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Emblica officinalis",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Withania somnifera",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Achyranthes aspera",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Tinospora cordifolia",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Citrullus colocynthis",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Nigella sativa",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Solanum nigrum",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Azadirachta indica",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Chlorophytum borivilianum",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Zingiber officinale",
+        "amount": "5g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "Chicks/Boilers (0-2weeks)",
+              "amount": "5ml per 100 birds"
+            },
+            {
+              "target": "Growers/Broilers(2-4 weeks)",
+              "amount": "15ml per 100 birds"
+            },
+            {
+              "target": "Layer/Broilers(above 4 weeks)",
+              "amount": "30 ml per 100 birds."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK — ORALLY ONCE DAILY",
+          "dosages": [
+            {
+              "target": "Sheep/Goat",
+              "amount": "5-8ml orally once daily, 10 days or more"
+            },
+            {
+              "target": "Swine",
+              "amount": "10-15ml orally once daily, 10 days or more"
+            },
+            {
+              "target": "Cattle",
+              "amount": "40-60ml orally once daily, 10days or more."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDGUTNIL",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "vedgutnil",
+    "image": "/images/products/Vedgutnil/01.png",
+    "gallery": [
+      "/images/products/Vedgutnil/01.png",
+      "/images/products/Vedgutnil/02.png",
+      "/images/products/Vedgutnil/03.png",
+      "/images/products/Vedgutnil/04.png"
+    ],
+    "tagline": "An Enzymatic Formula Fortified with Phytochemicals, Enzyme Complex, Prebiotics & Probiotics for Complete Gut Care",
+    "shortDescription": "Plant-based, enzyme-fortified gut care — improving digestion, inhibiting pathogens, binding toxins, and supporting a balanced microbiome in poultry and livestock.",
+    "fullDescription": "VEDGUTNIL is an enzymatic herbal gut care supplement fortified with phytochemicals, enzyme complexes, prebiotics, and probiotics, formulated to support complete digestive health in poultry and livestock. Eleven plant extracts work synergistically with digestive enzymes and beneficial microflora to improve digestion, absorption, metabolism, and excretion. VEDGUTNIL helps maintain gut integrity, inhibits pathogen growth, promotes symbiotic microflora, and acts as a toxin binder and immunoactivator. Available in liquid and powder formulations.",
+    "benefits": [
+      {
+        "title": "Maintains and promotes gut health by preventing various digestive ailments",
+        "text": "Maintains and promotes gut health by preventing various digestive ailments"
+      },
+      {
+        "title": "Prevents disease conditions such as bowel dysbiosis and toxicamine production",
+        "text": "Prevents disease conditions such as bowel dysbiosis and toxicamine production"
+      },
+      {
+        "title": "Enhances nutrient absorption and assimilation, leading to faster growth, better FCR, and improved productivity.",
+        "text": "Enhances nutrient absorption and assimilation, leading to faster growth, better FCR, and improved productivity."
+      }
+    ],
+    "indications": [
+      "Digestion is a complex process requiring the contribution of enzyme complexes, digestive juices, and gut microflora.",
+      "The enzyme complex present in this formulation, along with prebiotics, probiotics, and medicinal herbs, improves the processes of digestion, absorption, metabolism, and excretion, thereby maintaining gut integrity and health.",
+      "Probiotics and prebiotics additionally inhibit the growth of pathogens, promote the development of symbiotic microflora, and act as toxin binders and immunoactivators."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Aegle marmelos",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Tinospora cordifolia",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Woodfordia fruticosa",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Trachyspermum ammi",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Cyperus rotundus",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Mentha arvensis",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Embelia ribes",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Cuminum cyminum",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Holarrhena antidysenterica",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Foeniculum officinalis",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Acacia catechu",
+        "amount": "5g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "Prevention",
+              "amount": "1 ml per litre of drinking water (first 2-3 weeks)"
+            },
+            {
+              "target": "Treatment",
+              "amount": "2ml per litre of drinking water, through the day (5-7days)"
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK — ORALLY TWICE DAILY FOR 3-5 DAYS",
+          "dosages": [
+            {
+              "target": "Sheep/Goat",
+              "amount": "5-8ml"
+            },
+            {
+              "target": "Swine",
+              "amount": "10-20ml"
+            },
+            {
+              "target": "Cattle",
+              "amount": "50-60ml"
+            }
+          ]
+        },
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "Poultry/Sheep/Goat/Swine/Cattle",
+              "amount": "1kg per ton of feed"
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDHEMO",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle",
+    "slug": "vedhemo",
+    "image": "/images/products/Vedhemo/01.png",
+    "gallery": [
+      "/images/products/Vedhemo/01.png",
+      "/images/products/Vedhemo/02.png",
+      "/images/products/Vedhemo/03.png",
+      "/images/products/Vedhemo/04.png"
+    ],
+    "tagline": "Effective Haemoglobin Production Promoter",
+    "shortDescription": "A herbal haematinic supplement combining Ayurvedic mineral preparations, iron, zinc, and folic acid to support haemoglobin production and address anaemic conditions in poultry and livestock.",
+    "fullDescription": "VEDHEMO is a herbal haematinic supplement formulated to promote haemoglobin production and address anaemic conditions in poultry and livestock. Combining Ayurvedic mineral preparations with herbal antioxidants, folic acid, vitamin B1, iron, and zinc, it supports healthy blood formation, alleviates blood loss, and helps prevent and treat conditions such as thumps and pernicious anaemia. Gentle yet effective, VEDHEMO supports overall health and vitality across multiple species.",
+    "benefits": [
+      {
+        "title": "Prevents and treats anaemia",
+        "text": "Prevents and treats anaemia"
+      },
+      {
+        "title": "Alleviates blood loss and reduces stress",
+        "text": "Alleviates blood loss and reduces stress"
+      },
+      {
+        "title": "Rich in antioxidants for enhanced cellular protection.",
+        "text": "Rich in antioxidants for enhanced cellular protection."
+      }
+    ],
+    "indications": [
+      "VEDHEMO is formulated to address anaemia and support overall animal health.",
+      "Anaemia can cause fainting spells and weakness in animals, adversely affecting their long-term health and productivity.",
+      "This gentle formulation is fortified with herbal antioxidants and amino acids that alleviate blood loss and reduce stress.",
+      "VEDHEMO contains effective ingredients that help prevent and treat various anaemic conditions, including thumps and pernicious anaemia."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Embelia ribes",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Emblica officinalis",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Swarna Makshika Bhasma",
+        "amount": "13g"
+      },
+      {
+        "ingredient": "Asphaltum",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Sugar",
+        "amount": "20g"
+      },
+      {
+        "ingredient": "Iron",
+        "amount": "1g"
+      },
+      {
+        "ingredient": "Zinc",
+        "amount": "1g"
+      },
+      {
+        "ingredient": "Vitamin B1",
+        "amount": "2,750mg"
+      },
+      {
+        "ingredient": "Folic Acid",
+        "amount": "750mg"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "Chicks/Boilers (0-2weeks)",
+              "amount": "10ml per 100 birds"
+            },
+            {
+              "target": "Growers/Broilers(2-4 weeks)",
+              "amount": "20ml per 100 birds"
+            },
+            {
+              "target": "Layer/Broilers(above 4 weeks)",
+              "amount": "50ml per 100 birds."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK — ORALLY TWICE DAILY FOR 3-5 DAYS",
+          "dosages": [
+            {
+              "target": "Sheep/Goat",
+              "amount": "5-8ml"
+            },
+            {
+              "target": "Swine",
+              "amount": "10-15ml"
+            },
+            {
+              "target": "Cattle",
+              "amount": "40-60ml."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDIARRO",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "vediarro",
+    "image": "/images/products/Vediarro/01.png",
+    "gallery": [
+      "/images/products/Vediarro/01.png",
+      "/images/products/Vediarro/02.png",
+      "/images/products/Vediarro/03.png",
+      "/images/products/Vediarro/04.png"
+    ],
+    "tagline": "Herbal formulation for the control of loose droppings",
+    "shortDescription": "A herbal anti-diarrhoeal formulation combining medicinal herbs, adsorbents, and electrolytes to control loose droppings and diarrhoea in poultry and livestock.",
+    "fullDescription": "VEDIARRO HERB is a herbal formulation for the control of loose droppings and diarrhoea in poultry and livestock. It combines medicinal herbs with adsorbents and electrolytes, offering anti-diarrhoeal, antimicrobial, anti-peristaltic, toxin-binding and electrolytic action. The herbs help counter bacterial, dysenteric and related causes of diarrhoea, while the adsorbent binds toxins and the electrolytes support rehydration and pH restoration. By restoring gut integrity and function, VEDIARRO HERB supports faster recovery, better growth and improved productivity. Available in liquid and powder forms.",
+    "benefits": [
+      {
+        "title": "Antimicrobial action of the herbs helps fight pathogens, while the adsorbent removes toxins from the system",
+        "text": "Antimicrobial action of the herbs helps fight pathogens, while the adsorbent removes toxins from the system"
+      },
+      {
+        "title": "Herbs provide anti-peristaltic, anti-diarrhoeal and anti-dysenteric action",
+        "text": "Herbs provide anti-peristaltic, anti-diarrhoeal and anti-dysenteric action"
+      },
+      {
+        "title": "Supports rehydration and pH restoration through electrolyte replenishment",
+        "text": "Supports rehydration and pH restoration through electrolyte replenishment"
+      },
+      {
+        "title": "Helps restore gut integrity",
+        "text": "Helps restore gut integrity"
+      },
+      {
+        "title": "optimum functioning supports higher growth and production.",
+        "text": "optimum functioning supports higher growth and production."
+      }
+    ],
+    "indications": [
+      "Diarrhoea is a major cause of slower growth, higher mortality and low productivity in animals, and its causes are varied — ranging from bacterial and protozoan infection, imbalanced feed and mycotoxins to electrolytic imbalance.",
+      "VEDIARRO HERB contains medicinal herbs known to possess antibacterial, anti-diarrhoeal, anti-dysentery, anthelmintic, carminative and digestive properties, and also useful against amoebiasis and colic pain.",
+      "Its adsorbent binds with toxins, while the electrolytes support rapid recovery."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Punica granatum",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Holarrhena antidysenterica",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Aegle marmelos",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Cyperus rotundus",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Acacia catechu",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Symplocos racemosa",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Light kaolin",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Sodium Chloride",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Potassium Chloride",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Sugar",
+        "amount": "15g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "Chicks/Broilers (0-2weeks)",
+              "amount": "10ml per 100 birds"
+            },
+            {
+              "target": "Growers/Broilers (2-4weeks)",
+              "amount": "15ml per 100 birds"
+            },
+            {
+              "target": "Layers/Broilers (above 4weeks)",
+              "amount": "20ml per 100 birds."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK — ORALLY",
+          "dosages": [
+            {
+              "target": "Lamb/Piglet",
+              "amount": "5-10ml for 2 days when required"
+            },
+            {
+              "target": "Sheep/Goat/Swine",
+              "amount": "20-30ml for 2 days when required"
+            },
+            {
+              "target": "Camel/Horse/Cow/Calves",
+              "amount": "80-100ml for 2 days."
+            }
+          ]
+        },
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "Poultry",
+              "amount": "1kg per ton of feed"
+            },
+            {
+              "target": "Lamb/Piglet",
+              "amount": "10g for 2 days when required"
+            },
+            {
+              "target": "Sheep/Goat/Swine",
+              "amount": "30g for 2 days when required"
+            },
+            {
+              "target": "Camel/Horse/Cow/Calves",
+              "amount": "100g for 2 days."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDIMMUNO",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "vedimmuno",
+    "image": "/images/products/Vedimmuno/01.png",
+    "gallery": [
+      "/images/products/Vedimmuno/01.png",
+      "/images/products/Vedimmuno/02.png",
+      "/images/products/Vedimmuno/03.png",
+      "/images/products/Vedimmuno/04.png"
+    ],
+    "tagline": "Anti-Stress, Adaptogenic & Immunity Booster",
+    "shortDescription": "A herbal immunomodulatory supplement combining seven plant extracts with adaptogenic and antioxidant properties to support immune function and stress management in poultry and livestock.",
+    "fullDescription": "VEDIMMUNO is a herbal oral supplement formulated to support immune function and stress management in poultry and livestock. Combining seven standardised plant extracts with adaptogenic, antioxidant, and immunomodulatory properties, it helps animals withstand environmental, climatic, and procedural stressors. By strengthening immune competence, VEDIMMUNO supports resistance to infection, reduces vaccination-related setbacks, and promotes consistent productivity, weight gain, and feed efficiency. Available in liquid and powder formulations, it is suitable for poultry, sheep, goats, swine, and cattle.",
+    "benefits": [
+      {
+        "title": "Provides broad-spectrum protection against stress and acts as an immunomodulator",
+        "text": "Provides broad-spectrum protection against stress and acts as an immunomodulator"
+      },
+      {
+        "title": "Helps prevent vaccination failure and reduces the adverse effects of medication",
+        "text": "Helps prevent vaccination failure and reduces the adverse effects of medication"
+      },
+      {
+        "title": "Reduces stress and mortality associated with transportation and adverse climatic conditions",
+        "text": "Reduces stress and mortality associated with transportation and adverse climatic conditions"
+      },
+      {
+        "title": "Supports enhanced productivity, weight gain, and improved feed conversion ratio",
+        "text": "Supports enhanced productivity, weight gain, and improved feed conversion ratio"
+      },
+      {
+        "title": "Exerts a potent antioxidant action that supports growth and helps reduce mortality.",
+        "text": "Exerts a potent antioxidant action that supports growth and helps reduce mortality."
+      }
+    ],
+    "indications": [
+      "Birds are exposed to infectious agents on a daily basis, however their susceptibility to infection depends primarily on their immune status.",
+      "Immunocompetent birds are better equipped to withstand stress, resist infection, and achieve optimal growth, resulting in improved production outcomes.",
+      "The majority of diseases in birds tend to occur during periods of stress or immune compromise.",
+      "Maintaining immune function through targeted supplementation is therefore essential for optimal productivity, profitability, and reduced disease incidence."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Emblica officinalis",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Withania somnifera",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Nardostachys jatamansi",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Achyranthes aspera",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Tinospora cordifolia",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Curcuma longa",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Ocimum sanctum",
+        "amount": "5g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID",
+          "dosages": [
+            {
+              "target": "Chicks/Broilers",
+              "amount": "20ml per 100 birds for 7-10 days"
+            },
+            {
+              "target": "Growers",
+              "amount": "50ml per 100 birds for 7-10 days"
+            },
+            {
+              "target": "layers/Breeders",
+              "amount": "100ml per 100 birds for 7-10 days"
+            },
+            {
+              "target": "Sheep/Goat/Swine",
+              "amount": "5ml a day, orally for 3 days a week"
+            },
+            {
+              "target": "Cattle",
+              "amount": "10ml a day orally for 3 days a week."
+            }
+          ]
+        },
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "Poultry/Swine/Livestock",
+              "amount": "1kg per ton of feed"
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDINFLA",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "vedinfla",
+    "image": "/images/products/Vedinfla/01.png",
+    "gallery": [
+      "/images/products/Vedinfla/01.png",
+      "/images/products/Vedinfla/02.png",
+      "/images/products/Vedinfla/03.png",
+      "/images/products/Vedinfla/04.png"
+    ],
+    "tagline": "Safe, Studied, Effective — Superior Support for a Healthy Inflammation Response",
+    "shortDescription": "Eleven plant extracts with anti-inflammatory and analgesic properties — relieving arthritis, reducing oxidative stress, and supporting joint, liver, and immune health.",
+    "fullDescription": "VEDINFLA is a herbal anti-inflammatory supplement combining eleven plant extracts with established anti-inflammatory, anti-rheumatic, analgesic, and rubefacient properties. Formulated to support a healthy inflammation response in poultry and livestock, it is particularly effective for animals suffering from arthritis and joint conditions. By addressing oxidative stress and free radical activity, VEDINFLA also supports liver, brain, heart, and immune health. Available in liquid and powder formulations",
+    "benefits": [
+      {
+        "title": "Supports liver, brain, heart, and immune health",
+        "text": "Supports liver, brain, heart, and immune health"
+      },
+      {
+        "title": "Protects cells from oxidative stress and free radicals",
+        "text": "Protects cells from oxidative stress and free radicals"
+      }
+    ],
+    "indications": [
+      "VEDINFLA is a herbal complex combining anti-inflammatory, anti-rheumatic, rubefacient, and analgesic properties, making it highly effective for animals suffering from arthritis.",
+      "Holistic experts compare it to an herbal aspirin, as it provides effective pain relief for animals."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Curcuma longa",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Piper longum",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Zingiber officinale",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Aegle marmelos",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Trachyspermum ammi",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Moringa oleifera",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Piper nigrum",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Sida cordifolia",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Syzygium aromaticum",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Emblica officinalis",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Cinnamomum verum",
+        "amount": "5g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY/LIVESTOCK/SWINE — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "POULTRY/LIVESTOCK/SWINE",
+              "amount": "500ml per 1000 litres of drinking water."
+            }
+          ]
+        },
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "Poultry/Sheep/Goat/Swine/Cattle",
+              "amount": "1kg per ton of feed"
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VED KIDNEY POWER",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "ved-kidney-power",
+    "image": "/images/products/Ved-Kidney-Power/01.png",
+    "gallery": [
+      "/images/products/Ved-Kidney-Power/01.png",
+      "/images/products/Ved-Kidney-Power/02.png",
+      "/images/products/Ved-Kidney-Power/03.png",
+      "/images/products/Ved-Kidney-Power/04.png"
+    ],
+    "tagline": "Natural Kidney Flusher for Protection and Relief from Urolithiasis & Visceral Gout",
+    "shortDescription": "Eight standardised plant extracts — flushing the kidneys, preventing calculi, relieving gout, and supporting urinary tract health in poultry and livestock.",
+    "fullDescription": "VED KIDNEY POWER is a herbal renal-support supplement formulated to protect and maintain kidney function in poultry and livestock. Combining eight standardised plant extracts with nephroprotective and diuretic properties, it supports renal flushing, helps prevent calculi formation, and aids in the elimination of pre-formed kidney stones. It provides targeted relief from urolithiasis and visceral gout while supporting urinary tract health, joint function, and overall animal vitality. Available in liquid and powder formulations.",
+    "benefits": [
+      {
+        "title": "Supports renal flushing and activates kidney function for effective blood purification",
+        "text": "Supports renal flushing and activates kidney function for effective blood purification"
+      },
+      {
+        "title": "Prevents calculi formation and reduces mineral deposition",
+        "text": "Prevents calculi formation and reduces mineral deposition"
+      },
+      {
+        "title": "Provides protection against urolithiasis and visceral gout",
+        "text": "Provides protection against urolithiasis and visceral gout"
+      },
+      {
+        "title": "Helps prevent joint degeneration and urinary tract infections",
+        "text": "Helps prevent joint degeneration and urinary tract infections"
+      },
+      {
+        "title": "Promotes overall health, energy, vitality, and growth in birds.",
+        "text": "Promotes overall health, energy, vitality, and growth in birds."
+      }
+    ],
+    "indications": [
+      "Nephritis and gout are among the most commonly encountered health conditions in poultry, arising from a range of causes — from minor shifts in dietary protein levels to various nephropathic and systemic infections.",
+      "In cases of renal impairment, renal flushing is of primary importance, and a renal tonic plays a key role in restoring normal kidney function.",
+      "VED KIDNEY POWER helps prevent stone formation and aids in the elimination of pre-formed stones.",
+      "For best results, the powder formulation should be pre-mixed into feed."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Trachyspermum ammi",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Achyranthes aspera",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Terminalia chebula",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Citrullus colocynthis",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Andrographis paniculata",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Solanum nigrum",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Fumaria indica",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Zingiber officinale",
+        "amount": "6g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "Prevention",
+              "amount": "1ml per litre of drinking water for 3 weeks"
+            },
+            {
+              "target": "Treatment (Chicks/Broilers)",
+              "amount": "5ml per 100 birds for 7 days"
+            },
+            {
+              "target": "Treatment (Growers/Broilers)",
+              "amount": "10ml per 100 birds for 7 days"
+            },
+            {
+              "target": "Treatment (Layers/Breeders above 4 weeks)",
+              "amount": "20ml per 100 birds for 7 days."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK — ORALLY TWICE DAILY FOR 3-5 DAYS",
+          "dosages": [
+            {
+              "target": "Sheep/Goat",
+              "amount": "5-8ml"
+            },
+            {
+              "target": "Swine",
+              "amount": "10-20ml"
+            },
+            {
+              "target": "Cattle",
+              "amount": "50-60ml."
+            }
+          ]
+        },
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "POULTRY/LIVESTOCK/SWINE",
+              "amount": "500g - 2kg per ton of feed."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDLIB",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "vedlib",
+    "image": "/images/products/Vedlib/01.png",
+    "gallery": [
+      "/images/products/Vedlib/01.png",
+      "/images/products/Vedlib/02.png",
+      "/images/products/Vedlib/03.png",
+      "/images/products/Vedlib/04.png"
+    ],
+    "tagline": "Herbal spermatogenic and libido-enhancing tonic for high vigour and vitality in male breeders",
+    "shortDescription": "Aphrodisiac and reproduction-enhancing herbs — boosting sperm count, motility, libido, and fertile egg output in male poultry and livestock breeders.",
+    "fullDescription": "VEDLIB is a herbal spermatogenic and libido tonic formulated for male breeders. This non-hormonal, non-enzymatic blend of reproductionenhancing and aphrodisiac herbs is intended to support breeding performance — helping to increase semen volume, sperm count, motility and viability, and to enhance libido and vigour. By supporting testosterone levels and general body condition, VEDLIB aims to improve fertility outcomes and, in poultry, the number of fertile eggs. Suitable for male poultry and livestock breeders, and available in liquid and powder forms.",
+    "benefits": [
+      {
+        "title": "Boosts the body's testosterone levels, thereby enhancing libido. Higher libido in birds leads to an increase in the number of fertile eggs",
+        "text": "Boosts the body's testosterone levels, thereby enhancing libido. Higher libido in birds leads to an increase in the number of fertile eggs"
+      },
+      {
+        "title": "The phytochemicals are known to improve general body condition and immunity",
+        "text": "The phytochemicals are known to improve general body condition and immunity"
+      },
+      {
+        "title": "Increases semen volume and viscosity",
+        "text": "Increases semen volume and viscosity"
+      },
+      {
+        "title": "Increases sperm count, motility and viability.",
+        "text": "Increases sperm count, motility and viability."
+      }
+    ],
+    "indications": [
+      "Low sperm count (oligospermia) is a common cause of male infertility.",
+      "Possible causes include varicoceles, side effects of certain medications, excessive stress, exposure to radiation or certain chemicals, and congenital testicular abnormalities.",
+      "A single sperm can fertilize an egg (ovum), but during infertility the chances of a sperm reaching the egg are low.",
+      "VEDLIB is a non-hormonal, non-enzymatic formula for male breeders, containing known and proven ingredients for increasing semen volume, sperm count and sperm motility and for supporting successful reproduction — possibly by stimulating the LH- and FSH-producing basophil cells of the pituitary gland.",
+      "All herbs used in this formulation have reproduction-enhancing and aphrodisiac properties."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Withania somnifera",
+        "amount": "7.5g"
+      },
+      {
+        "ingredient": "Dactylorhiza hatagirea",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Mucuna prurita",
+        "amount": "7.5g"
+      },
+      {
+        "ingredient": "Asphaltum",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Chlorophytum borivilianum",
+        "amount": "7.5g"
+      },
+      {
+        "ingredient": "Water chestnut",
+        "amount": "7.5g"
+      },
+      {
+        "ingredient": "Pueraria tuberosa",
+        "amount": "10g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "Layers",
+              "amount": "5ml per gallon of water"
+            },
+            {
+              "target": "Broiler",
+              "amount": "5-10ml per gallon of water."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK/SWINE",
+          "dosages": [
+            {
+              "target": "Sheep/Goat/Swine",
+              "amount": "10ml per day per head"
+            },
+            {
+              "target": "Camel/Horse/Cow/Calves",
+              "amount": "30ml per day per head."
+            }
+          ]
+        },
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "POULTRY",
+              "amount": "70g per 100 male birds for 10 days, repeat every month"
+            },
+            {
+              "target": "LIVESTOCK/SWINE",
+              "amount": "30 g per 100 kg body weight, give for 3 consecutive days from the 1st day of weaning (male animals)"
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDLIV HERB",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "vedliv-herb",
+    "image": "/images/products/Vedliv-Herb/01.png",
+    "gallery": [
+      "/images/products/Vedliv-Herb/01.png",
+      "/images/products/Vedliv-Herb/02.png",
+      "/images/products/Vedliv-Herb/03.png",
+      "/images/products/Vedliv-Herb/04.png"
+    ],
+    "tagline": "A natural and unique herbal formulation for liver disorders",
+    "shortDescription": "Hepatoprotective herbs that detoxify, restore liver health, and improve appetite, digestion, FCR, and productivity across poultry and livestock.",
+    "fullDescription": "VEDLIV HERB is a natural herbal formulation developed to support liver health in poultry and livestock. Its blend of hepatoprotective medicinal herbs helps protect the liver from toxins, modulate its functions and support the restoration of liver health. By aiding fat transport and detoxification, VEDLIV HERB helps counter fatty liver and related conditions, while improving appetite and digestion. Better liver function supports improved FCR, growth and egg production. Available in liquid and powder forms for use across poultry and a range of livestock species.",
+    "benefits": [
+      {
+        "title": "Improves appetite and digestion",
+        "text": "Improves appetite and digestion"
+      },
+      {
+        "title": "Protects against harmful toxins and works as a blood purifier",
+        "text": "Protects against harmful toxins and works as a blood purifier"
+      },
+      {
+        "title": "Effectively prevents and cures jaundice, fatty liver syndrome and many other liver ailments",
+        "text": "Effectively prevents and cures jaundice, fatty liver syndrome and many other liver ailments"
+      },
+      {
+        "title": "Helps in the transport of fat, thereby preventing fat-accumulation disorders and enhancing egg production and quality",
+        "text": "Helps in the transport of fat, thereby preventing fat-accumulation disorders and enhancing egg production and quality"
+      },
+      {
+        "title": "Improved liver health leads to better FCR, higher growth rate and higher egg production.",
+        "text": "Improved liver health leads to better FCR, higher growth rate and higher egg production."
+      }
+    ],
+    "indications": [
+      "The liver plays an important role in the metabolism of carbohydrate, protein and lipid, and in the detoxification of various bio-toxins and harmful chemicals.",
+      "Various enzymes synthesized in the liver are crucial for many physiological functions, in their absence, homeostasis is disrupted.",
+      "VEDLIV HERB contains a blend of medicinal herbs that protect the liver from various toxins, modulate its bio-functions, and help restore liver health."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Trachyspermum ammi",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Andrographis paniculata",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Tylophora indica",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Nigella sativa",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Terminalia arjuna",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Saussurea costus",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Phyllanthus niruri",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Azadirachta indica",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Eclipta alba",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Tecoma undulata",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Achyranthes aspera",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Fumaria indica",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Terminalia chebula",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Zingiber officinale",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Citrullus colocynthis",
+        "amount": "3g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "Chicks / Broilers (0–2 weeks)",
+              "amount": "5 mL per 100 birds"
+            },
+            {
+              "target": "Growers / Broilers (2–4 weeks)",
+              "amount": "15 mL per 100 birds"
+            },
+            {
+              "target": "Layers / Broilers (above 4 weeks)",
+              "amount": "30 mL per 100 birds."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK/SWINE — ORALLY ONCE DAILY FOR 10 DAYS OR MORE",
+          "dosages": [
+            {
+              "target": "Lamb / Piglet",
+              "amount": "5–8 mL"
+            },
+            {
+              "target": "Sheep / Goat / Swine",
+              "amount": "10–15 mL"
+            },
+            {
+              "target": "Camel / Horse / Cow / Calves",
+              "amount": "40–60 mL."
+            }
+          ]
+        },
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "POULTRY/LIVESTOCK/SWINE",
+              "amount": "1kg per ton of feed."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VED MV PLUS",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Litre Bottle",
+    "slug": "ved-mv-plus",
+    "image": "/images/products/Ved-MV-Plus/01.png",
+    "gallery": [
+      "/images/products/Ved-MV-Plus/01.png",
+      "/images/products/Ved-MV-Plus/02.png",
+      "/images/products/Ved-MV-Plus/03.png",
+      "/images/products/Ved-MV-Plus/04.png"
+    ],
+    "tagline": "Water-Soluble Multivitamin Supplement with Selenium, Vitamins A, D3, E & C",
+    "shortDescription": "A comprehensive, highly bioavailable vitamin profile — supporting stress resistance, healthy metabolism, and improved growth and productivity across poultry and livestock.",
+    "fullDescription": "VED MV PLUS is a water-soluble multivitamin liquid supplement formulated to support growth, immunity, and productivity in poultry and livestock. Its comprehensive vitamin profile helps improve resistance to stress conditions, supports healthy metabolic function, and promotes growth, egg production, and feed efficiency. Highly bioavailable and easy to administer via drinking water or direct oral dosing, VED MV PLUS is suitable for poultry, sheep, goats, swine, and cattle.",
+    "benefits": [
+      {
+        "title": "Water-soluble formulation for easy administration and high bioavailability",
+        "text": "Water-soluble formulation for easy administration and high bioavailability"
+      },
+      {
+        "title": "Maintains structural and functional integrity of epithelial tissue, immune system function, and egg development",
+        "text": "Maintains structural and functional integrity of epithelial tissue, immune system function, and egg development"
+      },
+      {
+        "title": "Reduces problems of early chick mortality, debility, and emaciation",
+        "text": "Reduces problems of early chick mortality, debility, and emaciation"
+      },
+      {
+        "title": "Enhances growth, productivity, feed conversion ratio (FCR), and livability.",
+        "text": "Enhances growth, productivity, feed conversion ratio (FCR), and livability."
+      }
+    ],
+    "indications": [
+      "Improves resistance to various stress conditions, including those caused by vaccination, disease, transport, high humidity, and extreme temperature changes.",
+      "Supports faster growth rate, improved weight gain, and better feed conversion.",
+      "Improves feed utilisation and egg production.",
+      "Stimulates metabolism and increases egg productivity.",
+      "Helps address vitamin deficiencies that may compromise health and growth.",
+      "Supports animals experiencing retarded growth during antibiotic treatment."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Vitamin A",
+        "amount": "1,500,000IU"
+      },
+      {
+        "ingredient": "Vitamin D",
+        "amount": "3,100,000IU"
+      },
+      {
+        "ingredient": "Vitamin E",
+        "amount": "600mg"
+      },
+      {
+        "ingredient": "Vitamin B1",
+        "amount": "150mg"
+      },
+      {
+        "ingredient": "Vitamin B2",
+        "amount": "166mg"
+      },
+      {
+        "ingredient": "Vitamin B6",
+        "amount": "100mg"
+      },
+      {
+        "ingredient": "Vitamin B12",
+        "amount": "1mg"
+      },
+      {
+        "ingredient": "Biotin",
+        "amount": "90mg"
+      },
+      {
+        "ingredient": "Folic Acid",
+        "amount": "20mg"
+      },
+      {
+        "ingredient": "Betaine",
+        "amount": "300mg"
+      },
+      {
+        "ingredient": "Sorbitol",
+        "amount": "5,000mg"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "Poultry",
+              "amount": "500ml per 1000 litres of drinking water."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK/SWINE — ORALLY ONCE DAILY",
+          "dosages": [
+            {
+              "target": "Sheep/Goat",
+              "amount": "5-8ml per animal"
+            },
+            {
+              "target": "Swine",
+              "amount": "10-15ml per animal"
+            },
+            {
+              "target": "Cattle",
+              "amount": "15-25ml per animal."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDOLYTE",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "vedolyte",
+    "image": "/images/products/Vedolyte/01.png",
+    "gallery": [
+      "/images/products/Vedolyte/01.png",
+      "/images/products/Vedolyte/02.png",
+      "/images/products/Vedolyte/03.png",
+      "/images/products/Vedolyte/04.png"
+    ],
+    "tagline": "Superior Rehydration Drink with Benefits of Probiotics",
+    "shortDescription": "Electrolytes, energy, and vitamin C — formulated to rapidly rehydrate, reduce stress-related mortality, and restore balance in poultry and livestock.",
+    "fullDescription": "VEDOLYTE is an oral rehydration supplement formulated to rapidly restore fluid, electrolyte, and energy balance in poultry and livestock. Combining essential electrolytes with dextrose, sucrose, and vitamin C, it helps animals withstand and recover from heat stress, transport stress, and conditions causing electrolyte and acid-base imbalances. VEDOLYTE significantly reduces dehydration-related mortality by replenishing lost minerals and providing immediate energy. Available in liquid and powder formulations.",
+    "benefits": [
+      {
+        "title": "Rehydrates the body and restores electrolytic balance",
+        "text": "Rehydrates the body and restores electrolytic balance"
+      },
+      {
+        "title": "Adequate electrolyte and water replenishment significantly reduces mortality",
+        "text": "Adequate electrolyte and water replenishment significantly reduces mortality"
+      },
+      {
+        "title": "Restores lost minerals",
+        "text": "Restores lost minerals"
+      },
+      {
+        "title": "Provides energy to animals.",
+        "text": "Provides energy to animals."
+      }
+    ],
+    "indications": [
+      "VEDOLYTE contains electrolytes in addition to sucrose, which helps animals withstand heat and travel stress.",
+      "The electrolytes — sodium, chloride, potassium, and citrate — present in VEDOLYTE support the recovery of electrolyte and acid-base imbalances."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Sugar",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Potassium Chloride",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Sodium Chloride",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Sodium Bicarbonate",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Sodium Citrate",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Magnesium Sulphate",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Sodium Dihydrogen Orthophosphate",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Vitamin C",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Dextrose",
+        "amount": "3.5g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "Poultry",
+              "amount": "250ml per 1000 litres of drinking water."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK/SWINE — ORALLY, ONCE DAILY",
+          "dosages": [
+            {
+              "target": "Sheep/Goat",
+              "amount": "2-5ml per animal"
+            },
+            {
+              "target": "Swine",
+              "amount": "8-10ml per animal"
+            },
+            {
+              "target": "Cattle",
+              "amount": "10-20ml per animal."
+            }
+          ]
+        },
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "POULTRY/SWINE/LIVESTOCK",
+              "amount": "1kg per ton of feed."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDOXIDENT",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "vedoxident",
+    "image": "/images/products/Vedoxident/01.png",
+    "gallery": [
+      "/images/products/Vedoxident/01.png",
+      "/images/products/Vedoxident/02.png",
+      "/images/products/Vedoxident/03.png",
+      "/images/products/Vedoxident/04.png"
+    ],
+    "tagline": "A Natural & Effective Antioxidant",
+    "shortDescription": "Nine antioxidant plant extracts — protecting heart health, reducing oxidative stress, and improving the nutritional value of milk and meat across all species.",
+    "fullDescription": "VEDOXIDENT is a herbal antioxidant supplement combining nine plant extracts with established antioxidant and cardioprotective properties, formulated to support animal health and enhance the quality of animal-derived products. By reducing oxidative stress during sensitive production stages, it supports cardiovascular health and cognitive function while contributing added nutritional value to milk and meat. Available for all species in liquid and powder formulations.",
+    "benefits": [
+      {
+        "title": "Promotes cardiovascular health",
+        "text": "Promotes cardiovascular health"
+      },
+      {
+        "title": "Improves cognitive functions",
+        "text": "Improves cognitive functions"
+      },
+      {
+        "title": "100% drug-free and non-addictive, with natural glycerin.",
+        "text": "100% drug-free and non-addictive, with natural glycerin."
+      }
+    ],
+    "indications": [
+      "VEDOXIDENT provides added value to animal-derived products, whether milk or meat.",
+      "It enhances animal health during sensitive production stages such as the transition period, and can further improve the quality of the final product by contributing nutritional value aligned with the concept of functional food in the human diet.",
+      "The antioxidant-rich plant extracts present in VEDOXIDENT are reflected in the improved nutritional profile of milk and meat from supplemented animals."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Syzygium aromaticum",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Origanum vulgare",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Rosmarinus officinalis",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Cinnamomum verum",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Curcuma longa",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Cuminum cyminum",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Ocimum basilicum",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Zingiber officinale",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Trachyspermum ammi",
+        "amount": "2g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — ALL — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "All Species",
+              "amount": "500ml per 1000 litres of drinking water."
+            }
+          ]
+        },
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "POULTRY/LIVESTOCK/SWINE",
+              "amount": "1kg per ton of feed."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDpH",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle",
+    "slug": "vedph",
+    "image": "/images/products/VedpH/01.png",
+    "gallery": [
+      "/images/products/VedpH/01.png",
+      "/images/products/VedpH/02.png",
+      "/images/products/VedpH/03.png",
+      "/images/products/VedpH/04.png"
+    ],
+    "tagline": "Poultry Feed Acidifier, Detoxifier & Mould Inhibitor",
+    "shortDescription": "A herbal-organic acid feed acidifier combining three plant extracts and organic acids to suppress pathogens, improve nutrient utilisation, and inhibit mould in poultry and livestock.",
+    "fullDescription": "VED pH is a herbal-organic acid blend formulated as a feed acidifier, detoxifier, and mould inhibitor for poultry and livestock. Combining three plant extracts with a balanced mixture of organic acids, it lowers gut pH to suppress pathogen growth, improves nutrient utilisation, and protects feed from bacterial and fungal deterioration. VED pH supports healthy digestion, prebiotic and probiotic activity, and consistent productive performance. Available as a 1-litre liquid concentrate for use via drinking water.",
+    "benefits": [
+      {
+        "title": "Reduces the risk of pathogen load, particularly E. coli",
+        "text": "Reduces the risk of pathogen load, particularly E. coli"
+      },
+      {
+        "title": "Maintains appetite, gut pH, and healthy digestion",
+        "text": "Maintains appetite, gut pH, and healthy digestion"
+      },
+      {
+        "title": "Promotes optimal nutrient utilisation",
+        "text": "Promotes optimal nutrient utilisation"
+      },
+      {
+        "title": "Supports the growth of prebiotics and probiotics",
+        "text": "Supports the growth of prebiotics and probiotics"
+      },
+      {
+        "title": "Encourages feed intake and weight gain",
+        "text": "Encourages feed intake and weight gain"
+      },
+      {
+        "title": "Supports overall production and performance.",
+        "text": "Supports overall production and performance."
+      }
+    ],
+    "indications": [
+      "Supplementation of organic acids in feed has been shown to improve production parameters such as body weight and feed conversion ratio (FCR) in broiler chickens.",
+      "This improvement is attributed to better nutrient utilisation, resulting in increased body weight gain.",
+      "VED pH is a balanced mixture of organic acids that prevents feed deterioration caused by bacterial and fungal infections.",
+      "Organic acids work on the principle that non-dissociated acids penetrate the bacterial cell wall and disrupt the normal physiological functions of pH-sensitive bacteria, thereby protecting both the feed and the animals from infection and toxicosis.",
+      "Additionally, the organic acids in VED pH directly influence the bacterial population of the gastrointestinal tract."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Citrullus colocynthis",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Citrus limon",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Citrus aurantium",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Citric Acid",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Acetic Acid",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Lactic Acid",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Propionic Acid",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Sodium Formate",
+        "amount": "5g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY/LIVESTOCK/SWINE — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "POULTRY/LIVESTOCK/SWINE",
+              "amount": "1 litre per 1000 litres of drinking water."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDPYRIN",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "vedpyrin",
+    "image": "/images/products/Vedpyrin/01.png",
+    "gallery": [
+      "/images/products/Vedpyrin/01.png",
+      "/images/products/Vedpyrin/02.png",
+      "/images/products/Vedpyrin/03.png",
+      "/images/products/Vedpyrin/04.png"
+    ],
+    "tagline": "A Strong Herbal Anti-Pyretic & Analgesic",
+    "shortDescription": "Nature's alternative to NSAIDs — ten plant extracts that relieve pain, break fever, and reduce inflammation without chemicals.",
+    "fullDescription": "VEDPYRIN is a herbal anti-pyretic and analgesic supplement formulated to provide natural relief from pain, fever, and inflammation in poultry and livestock. Combining ten plant extracts with established antipyretic, analgesic, and anti-inflammatory properties, it works by inhibiting the production of prostaglandins, thromboxane, and other inflammatory mediators. Effective for musculoskeletal pain, post-surgical recovery, and fever from viral or bacterial infections, VEDPYRIN offers a natural alternative to conventional NSAIDs. Available in liquid and powder formulations.",
+    "benefits": [
+      {
+        "title": "Clinically tested herbal anti-inflammatory",
+        "text": "Clinically tested herbal anti-inflammatory"
+      },
+      {
+        "title": "Effective reliever of pain and fever",
+        "text": "Effective reliever of pain and fever"
+      },
+      {
+        "title": "Effective in instances of injury or post-surgery.",
+        "text": "Effective in instances of injury or post-surgery."
+      }
+    ],
+    "indications": [
+      "VEDPYRIN is a natural herbal analgesic, antipyretic, and anti-inflammatory cyclooxygenase inhibitor.",
+      "It is useful for musculoskeletal pain arising from soft tissue injury, osteoarthritis, or other bone and joint conditions.",
+      "It helps reduce or control fevers caused by viral or bacterial infections.",
+      "It works by inhibiting the body's production of prostaglandins, thromboxane, and other inflammatory mediators through natural pathways."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Tinospora cordifolia",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Cnicus benedictus",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Zingiber officinale",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Capsicum annuum",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Acorus calamus",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Mentha piperita",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Glycyrrhiza glabra",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Thymus vulgaris",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Cyperus rotundus",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Artemisia absinthium",
+        "amount": "3g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — ALL — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "All Species",
+              "amount": "500ml per 1000 litres of drinking water."
+            }
+          ]
+        },
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "POULTRY/LIVESTOCK/SWINE",
+              "amount": "1kg per ton of feed."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDREST",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle",
+    "slug": "vedrest",
+    "image": "/images/products/Vedrest/01.png",
+    "gallery": [
+      "/images/products/Vedrest/01.png",
+      "/images/products/Vedrest/02.png",
+      "/images/products/Vedrest/03.png",
+      "/images/products/Vedrest/04.png"
+    ],
+    "tagline": "Refreshing, Rehydration & Stress-Relieving Oral Solution for Poultry & Livestock",
+    "shortDescription": "Electrolytes, amino acids, and vitamin C — restoring fluid balance, regulating stress response, and sustaining performance through vaccination, transport, and environmental extremes.",
+    "fullDescription": "VEDREST is an oral rehydration and stress-relief solution formulated for poultry and livestock. Combining electrolytes, amino acids, and vitamin C, it helps restore fluid and mineral balance, regulate adrenal function, and improve the body's non-specific resistance to environmental and physiological stress. By optimising glucose metabolism, protein biosynthesis, and antioxidant activity, VEDREST supports animals in maintaining performance under stress. Suitable for use following vaccination, transportation, disease challenge, and temperature extremes.",
+    "benefits": [
+      {
+        "title": "Effective in cases of stress caused by vaccination, transportation, disease, high temperatures, extreme temperature changes, and high humidity",
+        "text": "Effective in cases of stress caused by vaccination, transportation, disease, high temperatures, extreme temperature changes, and high humidity"
+      },
+      {
+        "title": "Strengthens resistance to disease",
+        "text": "Strengthens resistance to disease"
+      },
+      {
+        "title": "Promotes growth rates and improves feed efficiency.",
+        "text": "Promotes growth rates and improves feed efficiency."
+      }
+    ],
+    "indications": [
+      "VEDREST increases the body's adaptability to stress by helping to regulate adrenal gland function and enhancing non-specific resistance to heat stress, cold stress, and other stressors.",
+      "It restores and enhances glucose metabolism and optimises protein biosynthesis, thereby improving the ability to perform under stress.",
+      "It also optimises the body's antioxidant profile through augmentation of the level and activity of SOD (superoxide dismutase)."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Betaine",
+        "amount": "2,200mg"
+      },
+      {
+        "ingredient": "Methionine",
+        "amount": "1,200mg"
+      },
+      {
+        "ingredient": "Vitamin C",
+        "amount": "1,000mg"
+      },
+      {
+        "ingredient": "Calcium Chloride Dihydrate",
+        "amount": "400mg"
+      },
+      {
+        "ingredient": "Sodium Chloride Dihydrate",
+        "amount": "400mg"
+      },
+      {
+        "ingredient": "Magnesium Chloride Hexahydrate",
+        "amount": "40mg"
+      },
+      {
+        "ingredient": "Potassium Chloride",
+        "amount": "20mg"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "Poultry",
+              "amount": "250ml per 1000 litres of drinking water."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK/SWINE — ORALLY, ONCE DAILY",
+          "dosages": [
+            {
+              "target": "Lamb/Piglet",
+              "amount": "2-5ml per animal"
+            },
+            {
+              "target": "Sheep/Goat/Swine",
+              "amount": "8-10ml per animal"
+            },
+            {
+              "target": "Camel/Horse/Cow/Calves",
+              "amount": "10-20ml per animal."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDSELVIT E",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle",
+    "slug": "vedselvit-e",
+    "image": "/images/products/Vedselvit-E/01.png",
+    "gallery": [
+      "/images/products/Vedselvit-E/01.png",
+      "/images/products/Vedselvit-E/02.png",
+      "/images/products/Vedselvit-E/03.png",
+      "/images/products/Vedselvit-E/04.png"
+    ],
+    "tagline": "A Combination of Selenium & Vitamin E",
+    "shortDescription": "Vitamin E, selenium, and zinc working together — protecting cells, enhancing fertility and hatchability, and reducing stress-related mortality across poultry and livestock.",
+    "fullDescription": "VED SELVIT E is a concentrated vitamin and mineral supplement combining vitamin E, selenium, zinc, and vitamin A, formulated to support antioxidant defence, reproductive performance, and overall health in poultry and livestock. By protecting cell membranes from free radical damage and potentiating antioxidant activity, it helps maintain fertility, hatchability, and productive performance, while reducing stress-related mortality and leg weakness in broilers. Available as a 1-litre liquid.",
+    "benefits": [
+      {
+        "title": "Maintains optimum fertility and hatchability in breeder flocks",
+        "text": "Maintains optimum fertility and hatchability in breeder flocks"
+      },
+      {
+        "title": "Helps maintain optimum productivity in layer birds",
+        "text": "Helps maintain optimum productivity in layer birds"
+      },
+      {
+        "title": "Helps overcome leg weakness in broilers",
+        "text": "Helps overcome leg weakness in broilers"
+      },
+      {
+        "title": "Reduces mortality caused by stress and related factors.",
+        "text": "Reduces mortality caused by stress and related factors."
+      }
+    ],
+    "indications": [
+      "Vitamin E and selenium are integral components of the antioxidant defence mechanism of tissues and cells.",
+      "Vitamin E protects polyunsaturated fatty acids, enzymes, and transport proteins located in cell membranes from free radical attack.",
+      "Selenium potentiates the functioning of Vitamin E, reinforcing and extending its protective activity."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Vitamin E",
+        "amount": "20ml"
+      },
+      {
+        "ingredient": "Zinc",
+        "amount": "850mg"
+      },
+      {
+        "ingredient": "Selenium",
+        "amount": "230mg"
+      },
+      {
+        "ingredient": "Vitamin A",
+        "amount": "10,000IU"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "Poultry",
+              "amount": "100ml per 1000 litres of drinking water."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK — ORALLY ONCE DAILY",
+          "dosages": [
+            {
+              "target": "Sheep/Goat",
+              "amount": "2ml per animal"
+            },
+            {
+              "target": "Swine",
+              "amount": "5ml per animal"
+            },
+            {
+              "target": "Cattle",
+              "amount": "10ml per animal"
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDTOX",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "vedtox",
+    "image": "/images/products/Vedtox/01.png",
+    "gallery": [
+      "/images/products/Vedtox/01.png",
+      "/images/products/Vedtox/02.png",
+      "/images/products/Vedtox/03.png",
+      "/images/products/Vedtox/04.png"
+    ],
+    "tagline": "A new-generation toxin binder",
+    "shortDescription": "Next-generation mycotoxin defence — binding, neutralising, and eliminating toxins while rebuilding gut health and liver function from within.",
+    "fullDescription": "VEDTOX is a new-generation toxin binder that combines organic acids, adsorbents, prebiotics and probiotics to neutralize and eliminate mycotoxins in feed and gut. Dissociated organic acids neutralize mycotoxins, while adsorbents bind toxins and support their elimination. A blend of hepatoprotective, antioxidant and immunomodulatory herbs supports liver function and the bio-neutralization of aflatoxins, and prebiotic and probiotic components help maintain a healthy gut while inhibiting pathogenic bacteria. Together, these actions support detoxification, improved immunity, faster growth, better FCR and enhanced productivity in poultry and livestock.",
+    "benefits": [
+      {
+        "title": "Detoxifies the feed and gut of birds",
+        "text": "Detoxifies the feed and gut of birds"
+      },
+      {
+        "title": "Protects the liver and improves immune response",
+        "text": "Protects the liver and improves immune response"
+      },
+      {
+        "title": "Supports the bio-neutralization of aflatoxins",
+        "text": "Supports the bio-neutralization of aflatoxins"
+      },
+      {
+        "title": "Acidifies the gut for competitive inhibition of pathogens",
+        "text": "Acidifies the gut for competitive inhibition of pathogens"
+      },
+      {
+        "title": "Prebiotics and probiotics promote growth and help maintain a healthy gut",
+        "text": "Prebiotics and probiotics promote growth and help maintain a healthy gut"
+      },
+      {
+        "title": "Supports faster growth, better FCR and enhanced productivity.",
+        "text": "Supports faster growth, better FCR and enhanced productivity."
+      }
+    ],
+    "indications": [
+      "Dissociated organic acids help neutralize mycotoxins present in feed and gut.",
+      "Adsorbents bind toxins in the gut and support their elimination from the body.",
+      "Herbal actives counteract the effects of toxins by supporting liver activation and the bio-neutralization of aflatoxins.",
+      "The herbs also exhibit hepatoprotective, antioxidant, free-radical-scavenging and immunomodulatory activity.",
+      "MOS (mannan oligosaccharide) acts as a prebiotic and broad-spectrum toxin binder.",
+      "Live yeast promotes the proliferation of symbiotic bacteria while inhibiting the growth of pathogenic bacteria."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Emblica officinalis",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Andrographis paniculata",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Withania somnifera",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Allium sativum",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Tinospora cordifolia",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Azadirachta indica",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Curcuma longa",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Moringa oleifera",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Citric Acid",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Vitamin B1",
+        "amount": "1g"
+      },
+      {
+        "ingredient": "Copper MHA",
+        "amount": "1g"
+      },
+      {
+        "ingredient": "Vitamin B2",
+        "amount": "100mg"
+      },
+      {
+        "ingredient": "Sugar",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Zinc",
+        "amount": "5g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "Chicks/Broilers (0-2weeks)",
+              "amount": "10ml per 100 birds"
+            },
+            {
+              "target": "Growers/Broilers (2-4weeks)",
+              "amount": "15ml per 100 birds"
+            },
+            {
+              "target": "Layers/Broilers (above 4weeks)",
+              "amount": "20ml per 100 birds."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK/SWINE — ORALLY",
+          "dosages": [
+            {
+              "target": "Swine/Sheep/Goat",
+              "amount": "30ml for 3-5 days when required"
+            },
+            {
+              "target": "Cattle",
+              "amount": "50ml for 3-5 days when required."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDUTRINE",
+    "category": "Livestock & Swine",
+    "presentation": "1 Ltre Bottle",
+    "slug": "vedutrine",
+    "image": "/images/products/Vedutrine/01.png",
+    "gallery": [
+      "/images/products/Vedutrine/01.png",
+      "/images/products/Vedutrine/02.png",
+      "/images/products/Vedutrine/03.png",
+      "/images/products/Vedutrine/04.png"
+    ],
+    "tagline": "Herbal uterine tonic and ecbolic that helps in the expulsion of retained placenta",
+    "shortDescription": "Herbal extracts that induce gentle uterine contractions — aiding placental expulsion, reducing infection risk, and supporting reproductive recovery in cattle, sheep, goats, and swine.",
+    "fullDescription": "VEDUTRINE is a herbal uterine tonic and ecbolic formulated to assist in the expulsion of retained placenta in livestock. Its blend of herbal extracts induces slow, smooth uterine contractions that aid placental expulsion, while helping to regulate lochial discharge and reduce the risk of uterine infection. Given after parturition, VEDUTRINE supports uterine recovery and helps address infertility and related reproductive problems. Intended for cattle, sheep, goats and swine, it is administered orally and available as a liquid.",
+    "benefits": [
+      {
+        "title": "Induces slow, smooth uterine contractions that aid placental expulsion",
+        "text": "Induces slow, smooth uterine contractions that aid placental expulsion"
+      },
+      {
+        "title": "Regulates lochial discharge, thereby minimizing the chances of uterine infection",
+        "text": "Regulates lochial discharge, thereby minimizing the chances of uterine infection"
+      },
+      {
+        "title": "Helps control uterine discomfort and checks uterine infections.",
+        "text": "Helps control uterine discomfort and checks uterine infections."
+      }
+    ],
+    "indications": [
+      "VEDUTRINE is a herbal uterine tonic and ecbolic that helps in the expulsion of retained placenta. Formulated from a blend of herbal extracts, it is intended to help overcome infertility and other related reproductive problems."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Gloriosa superba",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Caesalpinia bonducella",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Plumbago zeylanica",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Trapa bispinosa",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Peganum harmala",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Orchis latifolia",
+        "amount": "1g"
+      },
+      {
+        "ingredient": "Piper nigrum",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Pueraria tuberosa",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Lepidium sativum",
+        "amount": "5g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — LIVESTOCK/SWINE — ORALLY TWICE DAILY",
+          "dosages": [
+            {
+              "target": "Swine",
+              "amount": "50-60ml"
+            },
+            {
+              "target": "Sheep/Goat",
+              "amount": "30-40ml"
+            },
+            {
+              "target": "Cattle",
+              "amount": "100-120ml"
+            },
+            {
+              "target": "Instructions",
+              "amount": "Administer one double dose orally soon after calving; repeat a single dose every six hours until the placenta is completely shed (within 24 hours)."
+            },
+            {
+              "target": "Instructions",
+              "amount": "Continue to administer twice daily for the next 3–4 days."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDVIRO",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle",
+    "slug": "vedviro",
+    "image": "/images/products/Vedviro/01.png",
+    "gallery": [
+      "/images/products/Vedviro/01.png",
+      "/images/products/Vedviro/02.png",
+      "/images/products/Vedviro/03.png",
+      "/images/products/Vedviro/04.png"
+    ],
+    "tagline": "A Herbal Blend to Boost the Immune System & Fight Against Viruses",
+    "shortDescription": "Thirteen plant extracts that inhibit viral development, strengthen immune competence, and protect against respiratory viruses, Newcastle disease, and bronchitis.",
+    "fullDescription": "VEDVIRO is a herbal antiviral supplement combining thirteen plant extracts formulated to boost immune function and help the body resist and recover from viral infections. Its herbal constituents inhibit viral development, support immune competence for sustained protection, and provide additional benefits including cardiovascular support, improved digestive performance, and anti-inflammatory activity. Effective against common respiratory viruses, Newcastle disease, and bronchitis, VEDVIRO is suitable for poultry and livestock. Available as a 1-litre liquid.",
+    "benefits": [
+      {
+        "title": "Effective against common colds, Newcastle disease, and bronchitis",
+        "text": "Effective against common colds, Newcastle disease, and bronchitis"
+      },
+      {
+        "title": "Helps eliminate viruses responsible for these diseases",
+        "text": "Helps eliminate viruses responsible for these diseases"
+      },
+      {
+        "title": "Strengthens the immune system",
+        "text": "Strengthens the immune system"
+      }
+    ],
+    "indications": [
+      "The herbs in VEDVIRO inhibit the development of viruses.",
+      "Many of the ingredients boost the immune system, enabling the body to fight back against viral pathogens.",
+      "VEDVIRO not only addresses common viral infections but also enhances the body's long-term immune resilience.",
+      "It also supports improved cardiovascular function, digestive performance, and anti-inflammatory response."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Azadirachta indica",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Coriandrum sativum",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Allium sativum",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Ocimum sanctum",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Phyllanthus emblica",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Curcuma longa",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Terminalia arjuna",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Zingiber officinale",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Phyllanthus niruri",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Trigonella foenum-graecum",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Bacopa monnieri",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Olea europaea",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Scutellaria baicalensis (Skullcap)",
+        "amount": "2g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER IN THE MORNING FOR 5-7 DAYS",
+          "dosages": [
+            {
+              "target": "Chicks / Broilers (0–2 weeks)",
+              "amount": "5 ml per 100 birds"
+            },
+            {
+              "target": "Growers / Broilers (2–4 weeks)",
+              "amount": "10 ml per 100 birds"
+            },
+            {
+              "target": "Layers / Broilers (above 4 weeks)",
+              "amount": "15 ml per 100 birds."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK — ORALLY TWICE FOR 5-7 DAYS",
+          "dosages": [
+            {
+              "target": "Sheep, Goat & Swine",
+              "amount": "25 ml"
+            },
+            {
+              "target": "Cattle",
+              "amount": "50 ml."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDVIT A",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "vedvit-a",
+    "image": "/images/products/Vedvit-A/01.png",
+    "gallery": [
+      "/images/products/Vedvit-A/01.png",
+      "/images/products/Vedvit-A/02.png",
+      "/images/products/Vedvit-A/03.png",
+      "/images/products/Vedvit-A/04.png"
+    ],
+    "tagline": "Natural Vitamin A",
+    "shortDescription": "Six plant extracts unlocking the full potential of vitamin A — superior bioavailability for better growth, immunity, and reproductive function across poultry and livestock.",
+    "fullDescription": "VEDVIT A is a herbal vitamin A supplement combining six plant extracts with water-soluble vitamin A, formulated to overcome the absorption challenges associated with conventional fat-soluble vitamin A administration. Its phytochemical blend enhances the bioavailability and bioactivity of vitamin A, supporting growth, immunity, epithelial integrity, and reproductive function in poultry and livestock. Available in liquid and powder formulations, VEDVIT A is suitable for poultry, sheep, goats, swine, and cattle.",
+    "benefits": [
+      {
+        "title": "Enhances bioavailability and helps maintain optimal vitamin A levels in the body",
+        "text": "Enhances bioavailability and helps maintain optimal vitamin A levels in the body"
+      },
+      {
+        "title": "Supports the structural and functional integrity of epithelial tissue and the immune system",
+        "text": "Supports the structural and functional integrity of epithelial tissue and the immune system"
+      },
+      {
+        "title": "Aids cellular differentiation and proliferation, bone growth, egg development, and testicular and ovarian function",
+        "text": "Aids cellular differentiation and proliferation, bone growth, egg development, and testicular and ovarian function"
+      },
+      {
+        "title": "Reduces photophobia and supports healthy vision",
+        "text": "Reduces photophobia and supports healthy vision"
+      },
+      {
+        "title": "Reduces early chick mortality and enhances livability",
+        "text": "Reduces early chick mortality and enhances livability"
+      }
+    ],
+    "indications": [
+      "Vitamin A is an essential fat-soluble vitamin required for growth, immunity, and the maintenance of good health.",
+      "Its deficiency may lead to increased disease susceptibility, a decline in growth rate, and reduced production.",
+      "Due to its fat-soluble nature, conventional administration of vitamin A through drinking water has historically posed practical challenges.",
+      "VEDVIT A contains vitamin A in an easy-to-administer, water-soluble form.",
+      "Its blend of phytochemicals further fortifies the bioabsorption and bioactivity of vitamin A."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Emblica officinalis",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Withania somnifera",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Centella asiatica",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Tinospora cordifolia",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Nardostachys jatamansi",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Chlorophytum borivilianum",
+        "amount": "15g"
+      },
+      {
+        "ingredient": "Vitamin A",
+        "amount": "425,000IU"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "Growers / Broilers",
+              "amount": "20–40 ml per 100 birds"
+            },
+            {
+              "target": "Layers / Breeders",
+              "amount": "40–80 ml per 100 birds."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK — ORALLY TWICE DAILY FOR 3-5 DAYS",
+          "dosages": [
+            {
+              "target": "Sheep / Goat",
+              "amount": "5–8 ml"
+            },
+            {
+              "target": "Swine",
+              "amount": "10–20 ml"
+            },
+            {
+              "target": "Cattle",
+              "amount": "50–60 ml."
+            }
+          ]
+        },
+        {
+          "name": "POWDER — PREVENTION",
+          "dosages": [
+            {
+              "target": "Poulty",
+              "amount": "100g per ton of feed"
+            },
+            {
+              "target": "Sheep/Goat/Swine",
+              "amount": "250g per ton of feed"
+            },
+            {
+              "target": "Cattle",
+              "amount": "500g per ton of feed."
+            }
+          ]
+        },
+        {
+          "name": "POWDER — HIGH DEMAND PERIODS",
+          "dosages": [
+            {
+              "target": "Poultry",
+              "amount": "250g per ton of feed"
+            },
+            {
+              "target": "Sheep/Goat/Swine",
+              "amount": "500g per ton of feed"
+            },
+            {
+              "target": "Cattle",
+              "amount": "1000g per ton of feed."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDVIT E",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "vedvit-e",
+    "image": "/images/products/Vedvit-E/01.png",
+    "gallery": [
+      "/images/products/Vedvit-E/01.png",
+      "/images/products/Vedvit-E/02.png",
+      "/images/products/Vedvit-E/03.png",
+      "/images/products/Vedvit-E/04.png"
+    ],
+    "tagline": "Natural Vitamin E",
+    "shortDescription": "Natural vitamin E enhanced with five bioactive extracts — superior antioxidant protection, cellular integrity, and feed stability across poultry and livestock.",
+    "fullDescription": "VEDVIT E is a herbal vitamin E supplement combining five plant-based and fungal extracts with natural vitamin E, formulated to provide potent antioxidant protection and immune support in poultry and livestock. Its bioactive ingredients mimic the functional activity of alpha-tocopherol, preventing lipid peroxidation and protecting cellular integrity. VEDVIT E delivers greater stability in feed compared to synthetic vitamin E and is available in liquid and powder formulations.",
+    "benefits": [
+      {
+        "title": "Antioxidant action provides relief from oxidative stress and enhances immunocompetence",
+        "text": "Antioxidant action provides relief from oxidative stress and enhances immunocompetence"
+      },
+      {
+        "title": "herbal constituents act as immunomodulators by stimulating macrophages and T-cells",
+        "text": "herbal constituents act as immunomodulators by stimulating macrophages and T-cells"
+      },
+      {
+        "title": "In association with selenium, nourishes skin and helps prevent skin ailments such as itching, dryness, and rashes, as well as joint conditions such as perosis",
+        "text": "In association with selenium, nourishes skin and helps prevent skin ailments such as itching, dryness, and rashes, as well as joint conditions such as perosis"
+      },
+      {
+        "title": "Improves fertility, hatchability, and livability, supports healthy growth rate, and reduces mortality",
+        "text": "Improves fertility, hatchability, and livability, supports healthy growth rate, and reduces mortality"
+      }
+    ],
+    "indications": [
+      "Oxidising agents and free radicals damage polyunsaturated fatty acids (PUFA) and phospholipids present in cell membranes, resulting in cell death through lipid peroxidation.",
+      "Alpha-tocopherol, present in feed, acts as a natural antioxidant and prevents this damage.",
+      "VEDVIT E contains highly bioactive and bioavailable active ingredients that mimic the functional activity of alpha-tocopherol, thereby effectively preventing lipid peroxidation and maintaining cellular health."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Mangifera indica",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Aloe barbadensis",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Tinospora cordifolia",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Agaricus bisporus",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Asparagus adscendens",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Natural Vitamin E",
+        "amount": "10g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "Growers / Broilers",
+              "amount": "20–40 ml per 100 birds"
+            },
+            {
+              "target": "Layers / Breeders",
+              "amount": "40–80 ml per 100 birds."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK/SWINE — ORALLY TWICE FOR 3-5 DAYS",
+          "dosages": [
+            {
+              "target": "Sheep / Goat",
+              "amount": "5–8 ml"
+            },
+            {
+              "target": "Swine",
+              "amount": "10–20 ml"
+            },
+            {
+              "target": "Cattle",
+              "amount": "50–60 ml."
+            }
+          ]
+        },
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "Poultry",
+              "amount": "50g in place of 100 g synthetic Vitamin E (50%) (3.75 mg/kg body weight, higher stability in feed)"
+            },
+            {
+              "target": "Sheep / Goat / Swine / Cattle",
+              "amount": "1:1 replacement of synthetic Vitamin E (50%)."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDVIT C",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "vedvit-c",
+    "image": "/images/products/Vedvit-C/01.png",
+    "gallery": [
+      "/images/products/Vedvit-C/01.png",
+      "/images/products/Vedvit-C/02.png",
+      "/images/products/Vedvit-C/03.png",
+      "/images/products/Vedvit-C/04.png"
+    ],
+    "tagline": "Natural Vitamin C with Bioflavonoid Characteristics and Powerful Antioxidant Activity",
+    "shortDescription": "A herbal vitamin C supplement combining seven plant extracts to provide antioxidant protection, immune modulation, and stress relief in poultry and livestock.",
+    "fullDescription": "VEDVIT C is a herbal vitamin C supplement combining seven plant extracts with natural vitamin C, formulated to provide antioxidant protection, immune modulation, and stress relief in poultry and livestock. Its bioflavonoid characteristics support high bioavailability and enhanced cellular protection, making it particularly effective during periods of heat stress. VEDVIT C helps maintain health, supports reproductive performance, and promotes productive efficiency across multiple species. Available in liquid and powder formulations.",
+    "benefits": [
+      {
+        "title": "Reduces mortality caused by heat stroke and helps maintain overall health and livability",
+        "text": "Reduces mortality caused by heat stroke and helps maintain overall health and livability"
+      },
+      {
+        "title": "Supports modulation of immunity and inflammatory cell functions",
+        "text": "Supports modulation of immunity and inflammatory cell functions"
+      },
+      {
+        "title": "Enhances fertility, hatchability, and growth",
+        "text": "Enhances fertility, hatchability, and growth"
+      },
+      {
+        "title": "Improves egg production, eggshell strength, and eggshell thickness.",
+        "text": "Improves egg production, eggshell strength, and eggshell thickness."
+      }
+    ],
+    "indications": [
+      "Vitamin C is essential for the maintenance of good health, and its deficiency may lead to various deficiency syndromes.",
+      "It exerts antioxidant and free radical scavenging activity, protecting cell membrane integrity by preventing lipid peroxidation and reducing oxidative stress.",
+      "It is particularly beneficial during periods of heat stress and helps prevent mortality caused by heat stroke.",
+      "VEDVIT C is a herbal blend formulated to mimic the bioactivity of vitamin C, offering high bioavailability and effective therapeutic support."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Emblica officinalis",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Withania somnifera",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Tinospora cordifolia",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Tamarindus indica",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Citrullus colocynthis",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Citrus limon",
+        "amount": "7g"
+      },
+      {
+        "ingredient": "Ocimum sanctum",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Natural Vitamin C",
+        "amount": "10g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER",
+          "dosages": [
+            {
+              "target": "Growers / Broilers",
+              "amount": "20–50 ml per 100 birds"
+            },
+            {
+              "target": "Layers / Breeders",
+              "amount": "40–80 ml per 100 birds per day."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK — ORALLY TWICE FOR 3-5 DAYS",
+          "dosages": [
+            {
+              "target": "Sheep / Goat",
+              "amount": "5–8 ml"
+            },
+            {
+              "target": "Swine",
+              "amount": "10–20 ml"
+            },
+            {
+              "target": "Cattle",
+              "amount": "50–60 ml."
+            }
+          ]
+        },
+        {
+          "name": "POWDER — PREVENTION",
+          "dosages": [
+            {
+              "target": "Poultry",
+              "amount": "100g per ton of feed"
+            },
+            {
+              "target": "Sheep/Goat/Swine",
+              "amount": "250g per ton of feed"
+            },
+            {
+              "target": "Cattle",
+              "amount": "500g per ton of feed."
+            }
+          ]
+        },
+        {
+          "name": "POWDER — HIGH DEMAND PERIODS",
+          "dosages": [
+            {
+              "target": "Poultry",
+              "amount": "250g per ton of feed"
+            },
+            {
+              "target": "Sheep/Goat/Swine",
+              "amount": "500g per ton of feed"
+            },
+            {
+              "target": "Cattle",
+              "amount": "1000g per ton of feed."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDWORM",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "1 Ltre Bottle and 25kg bag",
+    "slug": "vedworm",
+    "image": "/images/products/Vedworm/01.png",
+    "gallery": [
+      "/images/products/Vedworm/01.png",
+      "/images/products/Vedworm/02.png",
+      "/images/products/Vedworm/03.png",
+      "/images/products/Vedworm/04.png"
+    ],
+    "tagline": "Effective Herbal Intestinal Care — Gentle on the Intestine, Hard on Bacteria",
+    "shortDescription": "A herbal anthelmintic supplement combining ten plant extracts to prevent and treat tapeworm, hookworm, roundworm, and whipworm infestations in poultry and livestock.",
+    "fullDescription": "VEDWORM is a herbal anthelmintic supplement formulated for the prevention and treatment of intestinal worm infestations in poultry and livestock. Combining ten plant extracts with established antiparasitic properties, it effectively targets all four common intestinal worms — tapeworms, hookworms, roundworms, and whipworms — while remaining gentle on the digestive tract. Free from synthetic chemicals, VEDWORM provides a natural and safe approach to intestinal care and routine deworming. Available in liquid and powder formulations.",
+    "benefits": [
+      {
+        "title": "Suitable for both prevention and treatment of intestinal worm infestations",
+        "text": "Suitable for both prevention and treatment of intestinal worm infestations"
+      },
+      {
+        "title": "A natural and safe alternative to rid animals of intestinal parasites",
+        "text": "A natural and safe alternative to rid animals of intestinal parasites"
+      },
+      {
+        "title": "Prevents and treats digestive ailments associated with worm burden.",
+        "text": "Prevents and treats digestive ailments associated with worm burden."
+      }
+    ],
+    "indications": [
+      "Regular deworming with VEDWORM helps reduce the parasite burden in animals and birds.",
+      "Deworming involves the elimination of worms from the digestive system, particularly from the stomach, intestine, and liver, and enhances the animal's overall resistance to disease.",
+      "VEDWORM is a natural, chemical-free herbal preparation with effective action against all four common intestinal worms — tapeworms, hookworms, roundworms, and whipworms.",
+      "Being completely natural, it is suitable for both the prevention and treatment of digestive ailments."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Azadirachta indica",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Centratherum anthelminticum",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Allium sativum",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Peganum harmala",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Embelia ribes",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Fumaria indica",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Mallotus philippensis",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Holarrhena antidysenterica",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Artemisia absinthium",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Andrographis paniculata",
+        "amount": "2g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "LIQUID — POULTRY — THROUGH DRINKING WATER, THROUGHOUT THE DAY FOR 10 DAYS",
+          "dosages": [
+            {
+              "target": "Chicks / Broilers (0–2 weeks)",
+              "amount": "5 ml per 100 birds"
+            },
+            {
+              "target": "Layers / Broilers (2–4 weeks)",
+              "amount": "10 ml per 100 birds"
+            },
+            {
+              "target": "Layers / Broilers (above 4 weeks)",
+              "amount": "20 ml per 100 birds."
+            }
+          ]
+        },
+        {
+          "name": "LIVESTOCK — ORALLY TWICE DAILY FOR 7-10 DAYS",
+          "dosages": [
+            {
+              "target": "Sheep / Goat / Swine",
+              "amount": "10–15 ml"
+            },
+            {
+              "target": "Cattle",
+              "amount": "30–40 ml."
+            }
+          ]
+        },
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "Poultry / Sheep / Goat / Swine / Cattle",
+              "amount": "1 kg per ton of feed."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "V-CHOLINE-90",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "25 kg Bag",
+    "slug": "v-choline-90",
+    "image": "/images/products/V-Choline-90/01.png",
+    "gallery": [
+      "/images/products/V-Choline-90/01.png"
+    ],
+    "tagline": "Herbal source of choline and biotin — regulates metabolism and helps inhibit fatty liver syndrome",
+    "shortDescription": "A natural alternative to synthetic choline chloride — supporting fat transport, preventing fatty liver syndrome, and improving weight gain and productivity across poultry and livestock.",
+    "fullDescription": "V-CHOLINE 90 is a herbal source of choline and biotin, formulated as a natural alternative to synthetic choline chloride. Derived from cholinerich legumes and herbs, it supplies readily assimilable choline and biotin to support metabolism, fat transport and cell membrane integrity. By improving the mobilization of hepatic fat and supporting fat catabolism, it helps regulate metabolism and inhibit fatty liver syndrome, while also helping prevent deficiency conditions such as perosis. Suitable for poultry and livestock, V-CHOLINE 90 supports weight gain, lower mortality and improved production.",
+    "benefits": [
+      {
+        "title": "Mimics the activity of choline and biotin, offering a safer herbal alternative to synthetic products",
+        "text": "Mimics the activity of choline and biotin, offering a safer herbal alternative to synthetic products"
+      },
+      {
+        "title": "Regulates metabolism and helps inhibit fatty liver syndrome",
+        "text": "Regulates metabolism and helps inhibit fatty liver syndrome"
+      },
+      {
+        "title": "Improves fat mobilization (especially hepatic fat) and fat catabolism, providing quick energy",
+        "text": "Improves fat mobilization (especially hepatic fat) and fat catabolism, providing quick energy"
+      },
+      {
+        "title": "Biotin supports cell growth, fatty acid production and protein absorption",
+        "text": "Biotin supports cell growth, fatty acid production and protein absorption"
+      },
+      {
+        "title": "Helps prevent deficiency syndromes such as “perosis” and “fatty liver syndrome.”",
+        "text": "Helps prevent deficiency syndromes such as “perosis” and “fatty liver syndrome.”"
+      },
+      {
+        "title": "Supports increased weight, reduced mortality and enhanced production.",
+        "text": "Supports increased weight, reduced mortality and enhanced production."
+      }
+    ],
+    "indications": [
+      "V-CHOLINE 90 is a rich source of 100% assimilable choline and biotin.",
+      "It is a methyl-donor amino acid necessary for the maintenance of cell structure and cell membrane integrity, normal maturation of bone and cartilage, the transport of fat, and acetylcholine synthesis.",
+      "As a limiting amino acid, it must be acquired through feed intake, and this formulation helps ensure effective, gentle supplementation."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Phaseolus mungo",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Phaseolus vulgaris",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Vigna mungo",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Vigna unguiculata",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Lens esculenta",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Vigna aconitifolia",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Cajanus cajan",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Trigonella foenum-graecum",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Cicer arietinum",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Calcium Chloride",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Cyamopsis tetragonoloba",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Brassica nigra",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Triticum aestivum",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Boerhaavia diffusa",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Allium sativum",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Sugar",
+        "amount": "7g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "Poultry, Sheep, Goat, Swine and Cattle",
+              "amount": "V-CHOLINE 90 replaces synthetic Choline Chloride (60%) at 30% — i.e., 300 g of V-CHOLINE 90 can replace 1 kg of synthetic Choline Chloride (60%)."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDLYSIN",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "25 kg Bag",
+    "slug": "vedlysin",
+    "image": "/images/products/Vedlysin/01.png",
+    "gallery": [
+      "/images/products/Vedlysin/01.png"
+    ],
+    "tagline": "A highly bioavailable and bioactive phytochemical blend to replace synthetic L-lysine",
+    "shortDescription": "A natural, 1:1 replacement for synthetic L-lysine — offering superior bioavailability, preventing fatty liver syndrome, and improving calcium absorption and egg quality.",
+    "fullDescription": "VEDLYSIN is a phytochemical blend designed to replace synthetic L-lysine with a highly bioavailable, bioactive herbal source. Drawing on lysine-rich legumes and plant materials, its active phytochemicals mimic the biological activity of lysine while offering higher bioactivity and bioavailability. Beyond supplying lysine activity, VEDLYSIN supports fat transport and catabolism — helping prevent fatty liver syndrome — and improves calcium absorption, which supports skeletal structure and helps reduce egg breakages. Suitable for poultry and livestock, it can replace synthetic L-lysine on a 1:1 basis.",
+    "benefits": [
+      {
+        "title": "Active phytochemicals mimic the bioactivity of lysine and, in addition, offer higher bioactivity and bioavailability",
+        "text": "Active phytochemicals mimic the bioactivity of lysine and, in addition, offer higher bioactivity and bioavailability"
+      },
+      {
+        "title": "Helps with fat transport and catabolism, thereby helping prevent fatty liver syndrome",
+        "text": "Helps with fat transport and catabolism, thereby helping prevent fatty liver syndrome"
+      },
+      {
+        "title": "Better absorption and assimilation of calcium leads to reduced egg breakages and improved skeletal structure.",
+        "text": "Better absorption and assimilation of calcium leads to reduced egg breakages and improved skeletal structure."
+      }
+    ],
+    "indications": [
+      "Lysine is an essential amino acid necessary for optimum growth and development.",
+      "It plays a role in calcium absorption, carnitine synthesis, and the production of hormones, enzymes and antibodies, as well as in the formation of muscle protein, collagen, connective tissue, skin, tendon and cartilage."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Allium sativum",
+        "amount": "20g"
+      },
+      {
+        "ingredient": "Medicago sativa",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Corn bran (Zea mays)",
+        "amount": "15g"
+      },
+      {
+        "ingredient": "Cicer arietinum",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Mucuna prurita",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Glycine max",
+        "amount": "20g"
+      },
+      {
+        "ingredient": "Trigonella foenum-graecum",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Full-fat soya",
+        "amount": "20g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "Poultry, Sheep, Goat, Swine, Camel, Horse, Cow and Calves",
+              "amount": "1 kg of VEDLYSIN can replace 1 kg of synthetic L-lysine, with higher and sustained activity. Ensure proper mixing of the premix in feed for better results."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDMETH",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "25 kg Bag",
+    "slug": "vedmeth",
+    "image": "/images/products/Vedmeth/01.png",
+    "gallery": [
+      "/images/products/Vedmeth/01.png"
+    ],
+    "tagline": "A blend of phytochemicals that mimic the bioactivity of methionine and help overcome the drawbacks of synthetic methionine",
+    "shortDescription": "A natural, 1:1 replacement for synthetic DL-methionine — delivering methionine-like activity, better muscle development, improved egg quality, and enhanced livability",
+    "fullDescription": "VEDMETH is a phytochemical blend that mimics the biological activity of methionine while helping overcome the drawbacks of synthetic methionine. Its plant actives supply methionine-like activity together with SAMe (S-adenosyl methionine) and phosphatidylcholine, supporting trans-methylation and the re-conversion of homocysteine to methionine. As a source of building blocks for protein synthesis, VEDMETH supports better growth, muscle development and immunity, and helps improve egg production, egg quality, early weight gain and livability. Suitable for poultry and livestock, it replaces synthetic DL-methionine on a 1:1 basis.",
+    "benefits": [
+      {
+        "title": "Provides building blocks for protein synthesis, supporting better growth in birds",
+        "text": "Provides building blocks for protein synthesis, supporting better growth in birds"
+      },
+      {
+        "title": "Rich source of SAMe (S-adenosyl methionine, the methyl-donor compound) and phosphatidylcholine, which help in the re-conversion of homocysteine to methionin",
+        "text": "Rich source of SAMe (S-adenosyl methionine, the methyl-donor compound) and phosphatidylcholine, which help in the re-conversion of homocysteine to methionin"
+      },
+      {
+        "title": "Enhances the production and quality of eggs, early weight gain and livability.",
+        "text": "Enhances the production and quality of eggs, early weight gain and livability."
+      }
+    ],
+    "indications": [
+      "Methionine is very important for the health and productivity of birds.",
+      "It participates in various metabolic pathways, including the transmethylation reaction (homocysteine metabolism), where amino acids are metabolized to form energy.",
+      "Deficiency of this limiting amino acid leads to a drop in egg production and reduced egg size, retarded growth, immunosuppression, and reduced muscle mass and body fat."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Trachyspermum ammi",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Azadirachta indica",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Achyranthes aspera",
+        "amount": "10g"
+      },
+      {
+        "ingredient": "Boerhaavia diffusa",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Terminalia chebula",
+        "amount": "5g"
+      },
+      {
+        "ingredient": "Zingiber officinale",
+        "amount": "12g"
+      },
+      {
+        "ingredient": "Citrullus colocynthis",
+        "amount": "12g"
+      },
+      {
+        "ingredient": "Pennisetum glaucum",
+        "amount": "3"
+      },
+      {
+        "ingredient": "Andrographis paniculata",
+        "amount": "5"
+      },
+      {
+        "ingredient": "Black Salt",
+        "amount": "3"
+      },
+      {
+        "ingredient": "Solanum nigrum",
+        "amount": "12g"
+      },
+      {
+        "ingredient": "Full Fat Soya",
+        "amount": "10"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "Poultry, Lamb, Piglet, Sheep, Goat, Swine, Camel, Horse, Cow and Calves",
+              "amount": "1:1 replacement of synthetic DLmethionine, up to 1 kg only."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDMIX",
+    "category": "Livestock & Swine",
+    "presentation": "25 kg Bag",
+    "slug": "vedmix",
+    "image": "/images/products/Vedmix/01.png",
+    "gallery": [
+      "/images/products/Vedmix/01.png"
+    ],
+    "tagline": "Improves reproductive health and milk production",
+    "shortDescription": "Essential minerals, vitamins, and reproductive herbs — supporting fertility, udder health, immunity, and milk production across a range of livestock species.",
+    "fullDescription": "VEDMIX is a mineral and vitamin supplement fortified with herbal actives, formulated to support reproductive health and milk production in livestock. It combines essential macro- and trace minerals and vitamins with reproductive herbs to help regulate body function, improve nutrient absorption and manage environmental stress. By supporting ovarian activity, fertility, immunity and udder health, VEDMIX helps improve overall production and reproduction. Suitable for a range of livestock — including cattle, sheep, goats, swine and horses — it is administered through feed.",
+    "benefits": [
+      {
+        "title": "A specially formulated mineral and vitamin supplement fortified with herbal actives for livestock",
+        "text": "A specially formulated mineral and vitamin supplement fortified with herbal actives for livestock"
+      },
+      {
+        "title": "Provides the minerals required to manage stress, boost immunity, and improve production, reproduction and udder health",
+        "text": "Provides the minerals required to manage stress, boost immunity, and improve production, reproduction and udder health"
+      },
+      {
+        "title": "Provides essential nutrients to improve ovarian activity and enhance fertility.",
+        "text": "Provides essential nutrients to improve ovarian activity and enhance fertility."
+      }
+    ],
+    "indications": [
+      "VEDMIX enhances glucose absorption, activates enzymes, stabilizes proteins and nucleic acids, and reduces the negative effects of environmental stress.",
+      "It helps regulate body function and enhance growth and production, while increasing immune resistance against disease.",
+      "By improving nutrient absorption and supporting stress management, the herbal actives in this product enhance fertility and production and help build immunity."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Withania somnifera",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Asparagus adscendens",
+        "amount": "1g"
+      },
+      {
+        "ingredient": "Leptadenia reticulata",
+        "amount": "1g"
+      },
+      {
+        "ingredient": "Vitamin A",
+        "amount": "70,000IU"
+      },
+      {
+        "ingredient": "Vitamin D3",
+        "amount": "7,000IU"
+      },
+      {
+        "ingredient": "Vitamin E",
+        "amount": "25mg"
+      },
+      {
+        "ingredient": "Proteins",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Cobalt",
+        "amount": "15mg"
+      },
+      {
+        "ingredient": "Calcium",
+        "amount": "25g"
+      },
+      {
+        "ingredient": "Iodine",
+        "amount": "35mg"
+      },
+      {
+        "ingredient": "Phosphorous",
+        "amount": "12"
+      },
+      {
+        "ingredient": "Sulphur",
+        "amount": "680mg"
+      },
+      {
+        "ingredient": "Magnesium",
+        "amount": "600mg"
+      },
+      {
+        "ingredient": "Potassium",
+        "amount": "10mg"
+      },
+      {
+        "ingredient": "Manganese",
+        "amount": "15mg"
+      },
+      {
+        "ingredient": "Sodium",
+        "amount": "1mg"
+      },
+      {
+        "ingredient": "Zinc",
+        "amount": "1g"
+      },
+      {
+        "ingredient": "Iron",
+        "amount": "500mg"
+      },
+      {
+        "ingredient": "Copper",
+        "amount": "120mg"
+      },
+      {
+        "ingredient": "Selenium",
+        "amount": "1mg"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "Lamb, Piglet, Sheep, Goat, Swine, Camel, Horse, Cow and Calves",
+              "amount": "1 kg per ton of feed."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDIGEST",
+    "category": "Poultry & Livestock & Swine",
+    "presentation": "25 kg Bag",
+    "slug": "vedigest",
+    "image": "/images/products/Vedigest/01.png",
+    "gallery": [
+      "/images/products/Vedigest/01.png"
+    ],
+    "tagline": "Unique Herbal Digestive Formulation",
+    "shortDescription": "A herbal digestive supplement combining seventeen plant extracts to optimise digestive secretion, maintain rumen pH, and support complete gastrointestinal function in poultry and livestock.",
+    "fullDescription": "VEDIGEST is a herbal digestive supplement formulated to optimise the secretion of digestive juices and support complete gastrointestinal function in poultry and livestock. Combining seventeen plant extracts with stomachic, carminative, and digestive properties, it corrects anorexia and dyspepsia, maintains rumen pH, and prevents problems of flatulence and diarrhoea. Suitable for administration in feed, VEDIGEST is available as a 25 kg powder for use across multiple species.",
+    "benefits": [
+      {
+        "title": "Optimises secretion of saliva and other digestive juices, addressing conditions of anorexia and dyspepsia",
+        "text": "Optimises secretion of saliva and other digestive juices, addressing conditions of anorexia and dyspepsia"
+      },
+      {
+        "title": "Acts as a stomachic, anti-zymotics, carminative, digestive, mild laxative, and alterative, while improving appetite",
+        "text": "Acts as a stomachic, anti-zymotics, carminative, digestive, mild laxative, and alterative, while improving appetite"
+      },
+      {
+        "title": "Maintains rumen pH and prevents problems of flatulence and diarrhoea.",
+        "text": "Maintains rumen pH and prevents problems of flatulence and diarrhoea."
+      }
+    ],
+    "indications": [
+      "Appetite and digestion in animals depend on optimal secretion of digestive juices, inadequate secretion may cause an animal to go off feed or impair proper digestion.",
+      "The specialised herbal extracts used in this formulation improve secretory function and support digestion without any adverse effects."
+    ],
+    "compositionBase": "Each 100 ml / g contains extract of:",
+    "composition": [
+      {
+        "ingredient": "Zingiber officinale",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Swertia angustifolia",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Balanites roxburghii",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Azadirachta indica",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Acorus calamus",
+        "amount": "4g"
+      },
+      {
+        "ingredient": "Trigonella foenum-graecum",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Picrorhiza kurroa",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Tinospora cordifolia",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Andrographis paniculata",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Terminalia chebula",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Eclipta alba",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Piper nigrum",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Embelia ribes",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Piper longum",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Commiphora mukul",
+        "amount": "3g"
+      },
+      {
+        "ingredient": "Calotropis procera",
+        "amount": "2g"
+      },
+      {
+        "ingredient": "Woodfordia fruticosa",
+        "amount": "3g"
+      }
+    ],
+    "dosage": {
+      "methods": [
+        {
+          "name": "POWDER",
+          "dosages": [
+            {
+              "target": "Poultry",
+              "amount": "2kg per ton of feed."
+            }
+          ]
+        },
+        {
+          "name": "TWICE DAILY MIXED WITH FEED",
+          "dosages": [
+            {
+              "target": "Sheep / Goat",
+              "amount": "30g per head"
+            },
+            {
+              "target": "Swine",
+              "amount": "15g per head"
+            },
+            {
+              "target": "Cattle",
+              "amount": "60g per head."
+            }
+          ]
+        }
+      ],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "OXYVED-AQ",
+    "category": "Aqua",
+    "presentation": "5kg Pack",
+    "slug": "Oxyved-aq",
+    "image": "/images/products/Oxyved-Aq/01.png",
+    "gallery": [
+      "/images/products/Oxyved-Aq/01.png"
+    ],
+    "tagline": "Instant Dissolved Oxygen Source for Aquatic Systems",
+    "shortDescription": "Instant oxygen release and water purification — protecting aquatic life during transport, power failure, and sudden water quality decline.",
+    "fullDescription": "Oxy Ved is a fast-acting dissolved oxygen source formulated to safeguard aquatic life during periods of low oxygen availability. On application, it releases a large volume of oxygen directly into the water, providing immediate relief during transport, overcrowding, power failure, or sudden water quality decline. Beyond oxygenation, Oxy Ved actively improves overall water quality by breaking down accumulated organic waste and neutralising harmful compounds such as ammonia, hydrogen sulphide, and algae-derived toxins, helping maintain a clean, stable, and stress-free environment for pets kept in aquatic setups.",
+    "benefits": [
+      {
+        "title": "Instantly releases a high volume of dissolved oxygen into water upon application",
+        "text": "Instantly releases a high volume of dissolved oxygen into water upon application"
+      },
+      {
+        "title": "Enhances overall water quality by breaking down and degrading accumulated organic matter",
+        "text": "Enhances overall water quality by breaking down and degrading accumulated organic matter"
+      },
+      {
+        "title": "Neutralises ammonia nitrogen, reducing toxic stress on aquatic pets",
+        "text": "Neutralises ammonia nitrogen, reducing toxic stress on aquatic pets"
+      },
+      {
+        "title": "Removes hydrogen sulphide, a harmful gas linked to poor water conditions",
+        "text": "Removes hydrogen sulphide, a harmful gas linked to poor water conditions"
+      },
+      {
+        "title": "Counters algae-related toxins, supporting a safer, cleaner aquatic environment.",
+        "text": "Counters algae-related toxins, supporting a safer, cleaner aquatic environment."
+      }
+    ],
+    "indications": [
+      "Visible gasping at the water surface or reduced swimming activity indicating low oxygen levels.",
+      "During and after transport, transfer, or handling of pets to reduce stress-related oxygen demand.",
+      "Following power outages or aerator/filter failure that disrupt normal oxygenation.",
+      "Overcrowded tanks or ponds where oxygen depletion and organic build-up are likely.",
+      "Cloudy, discoloured, or foul-smelling water suggesting ammonia, sulphide, or algae toxin build-up.",
+      "As a routine preventive measure during water quality maintenance and periodic water changes."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "O2VED-AQ",
+    "category": "Aqua",
+    "presentation": "5kg Pack",
+    "slug": "O2Ved-aq",
+    "image": "/images/products/O2ved-Aq/01.png",
+    "gallery": [
+      "/images/products/O2ved-Aq/01.png"
+    ],
+    "tagline": "Strong, Long-Acting Dissolved Oxygen for Pond Bottoms",
+    "shortDescription": "Deep-penetrating oxygen release that aerates the pond floor, starves anaerobic bacteria, and delivers sustained bottom-water correction where surface aeration cannot reach.",
+    "fullDescription": "O2 Ved is a heavy-duty oxygenating formula built for ponds where the surface, not the bottom, usually gets all the oxygen. Once applied, it sinks quickly through the water column and releases oxygen right at the pond floor, turning a typically low-oxygen, sludge-prone zone into an aerobic one. This shift in conditions works against the pond, not with the usual problem spots: it starves out the anaerobic bacteria that thrive in oxygen-poor sediment, while giving denitrifying bacteria the aerobic-to-anoxic conditions they need to convert nitrite into safer compounds. The effect builds gradually and holds for an extended period, making O2 Ved suited to sustained bottom-water correction rather than a one-off surface boost.",
+    "benefits": [
+      {
+        "title": "Generates dissolved oxygen quickly, with an effect that holds over an extended period",
+        "text": "Generates dissolved oxygen quickly, with an effect that holds over an extended period"
+      },
+      {
+        "title": "Sinks fast to the pond bottom, delivering oxygen where it is usually most lacking",
+        "text": "Sinks fast to the pond bottom, delivering oxygen where it is usually most lacking"
+      },
+      {
+        "title": "Converts the pond floor from an oxygen-starved zone into an aerobic one",
+        "text": "Converts the pond floor from an oxygen-starved zone into an aerobic one"
+      },
+      {
+        "title": "The resulting aerobic condition suppresses harmful anaerobic bacteria at the source",
+        "text": "The resulting aerobic condition suppresses harmful anaerobic bacteria at the source"
+      },
+      {
+        "title": "Creates the right conditions for denitrifying bacteria to break down nitrite more effectively.",
+        "text": "Creates the right conditions for denitrifying bacteria to break down nitrite more effectively."
+      }
+    ],
+    "indications": [
+      "Sludge, black soil, or a foul, rotten-egg odour rising from the pond bottom.",
+      "Persistently high nitrite readings despite normal water exchange or filtration.",
+      "Dense stocking of sea life where bottom-water oxygen depletion builds up faster than usual.",
+      "Post-harvest or pre-stocking pond preparation, to re-oxygenate sediment before the next cycle.",
+      "Stagnant or poorly circulated ponds where surface aerators fail to reach deeper layers.",
+      "Extended culture periods where bottom conditions need sustained, not one-time, correction."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDCLEAN-AQ",
+    "category": "Aqua",
+    "presentation": "5kg Pack",
+    "slug": "Vedclean-aq",
+    "image": "/images/products/Vedclean-Aq/01.png",
+    "gallery": [
+      "/images/products/Vedclean-Aq/01.png"
+    ],
+    "tagline": "Broad-Spectrum Disinfectant & Sanitizer",
+    "shortDescription": "Single-step cleaning and disinfection — dual-mode biocidal action that resists pathogen resistance, eliminates odours, and leaves no persistent chemical burden.",
+    "fullDescription": "Vedclean is a high-strength cationic disinfectant and sanitizer built to clean up the pathogen load across an entire culture system, not just visible dirt. It combines detergent action with biocidal activity in a single step, so surfaces, equipment, and water get lifted clean of organic residue while the biocide works on the microbes underneath. Its dual mode of action attacks bacteria on two fronts at once, which keeps resistant strains from simply riding out one mechanism, and the effect continues working long after application rather than fading within hours. Vedclean also lifts the foul odours that come with bacterial load, and because it breaks down naturally over time, it does not leave behind a persistent chemical burden in the pond or tank environment.",
+    "benefits": [
+      {
+        "title": "High-strength cationic detergent and biocide combined in one formula",
+        "text": "High-strength cationic detergent and biocide combined in one formula"
+      },
+      {
+        "title": "Broad-spectrum activity against a wide range of disease-causing organisms",
+        "text": "Broad-spectrum activity against a wide range of disease-causing organisms"
+      },
+      {
+        "title": "Dual mode of action that inhibits bacterial growth from two directions at once",
+        "text": "Dual mode of action that inhibits bacterial growth from two directions at once"
+      },
+      {
+        "title": "Long-acting protection that continues working well beyond initial application",
+        "text": "Long-acting protection that continues working well beyond initial application"
+      },
+      {
+        "title": "De-odorises treated areas by clearing the bacterial load behind foul smells",
+        "text": "De-odorises treated areas by clearing the bacterial load behind foul smells"
+      },
+      {
+        "title": "Biodegradable, breaking down naturally without leaving lasting residue.",
+        "text": "Biodegradable, breaking down naturally without leaving lasting residue."
+      }
+    ],
+    "indications": [
+      "Routine disinfection of ponds, tanks, and equipment between production cycles.",
+      "Following a disease outbreak, to bring bacterial load down before restocking.",
+      "Persistent foul odour from tanks, ponds, or equipment surfaces.",
+      "Visible biofilm or slime build-up on nets, pipes, tanks, or other culture equipment.",
+      "Newly introduced or quarantined stock, as part of a standard biosecurity protocol.",
+      "High-density culture systems where bacterial pressure builds up faster than usual."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "MICROMIN VED-AQ",
+    "category": "Aqua",
+    "presentation": "5kg Pack",
+    "slug": "Micromin-ved-aq",
+    "image": "/images/products/Micromin-Ved-Aq/01.png",
+    "gallery": [
+      "/images/products/Micromin-Ved-Aq/01.png"
+    ],
+    "tagline": "Micro-Mineral Supplement for Balanced Pond Nutrition",
+    "shortDescription": "Targeted trace minerals that correct deficiency gaps — improving nutrient absorption, preventing white muscle disease, and supporting regular moulting and weight gain in shrimp.",
+    "fullDescription": "MicroMin Ved is a micro-mineral supplement designed to correct the trace-element gaps that macro-nutrient feeding alone often leaves behind in pond culture. By restoring the pond's mineral equilibrium, it helps shrimp actually absorb and use the macro-nutrients already present in feed and water, rather than losing their benefit to a deficient environment. Adequate micro-mineral levels are directly tied to muscle and shell integrity, so MicroMin Ved works to prevent cramping and white muscle disease while supporting the physiological conditions shrimp need to moult on schedule. The result is a population that survives better through each cycle and puts on weight steadily, rather than stalling out from mineral-linked stress.",
+    "benefits": [
+      {
+        "title": "Improves the availability and uptake of macro-nutrients already present in the pond",
+        "text": "Improves the availability and uptake of macro-nutrients already present in the pond"
+      },
+      {
+        "title": "Restores and controls the mineral equilibrium of pond water",
+        "text": "Restores and controls the mineral equilibrium of pond water"
+      },
+      {
+        "title": "Prevents and controls cramps and white muscle problems in shrimp",
+        "text": "Prevents and controls cramps and white muscle problems in shrimp"
+      },
+      {
+        "title": "Reduces low survival rates and slow, unexplained mortality in shrimps",
+        "text": "Reduces low survival rates and slow, unexplained mortality in shrimps"
+      },
+      {
+        "title": "Induces timely moulting, supporting the desired Average Daily Gain (ADG) in shrimps.",
+        "text": "Induces timely moulting, supporting the desired Average Daily Gain (ADG) in shrimps."
+      }
+    ],
+    "indications": [
+      "Visible cramping, curling, or white muscle symptoms in shrimp.",
+      "Slower-than-expected growth or Average Daily Gain despite adequate feeding.",
+      "Delayed, irregular, or incomplete moulting cycles across the pond.",
+      "Unexplained slow mortality or declining survival rates without an obvious disease cause.",
+      "Ponds on intensive feeding regimes where mineral depletion is likely over time.",
+      "As a routine supplement to maintain mineral balance through the culture cycle."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDPROVIB-AQ",
+    "category": "Aqua",
+    "presentation": "5kg Pack",
+    "slug": "Vedprovib-aq",
+    "image": "/images/products/Vedprovib-Aq/01.png",
+    "gallery": [
+      "/images/products/Vedprovib-Aq/01.png"
+    ],
+    "tagline": "Probiotic, Amino Acid & Essential Mineral Complex",
+    "shortDescription": "Probiotics, amino acids, and minerals working together — building immunity, fuelling plankton bloom, and driving consistent growth across the culture cycle.",
+    "fullDescription": "VedProvib brings together beneficial probiotics, amino acids, and essential minerals into a single formula that works on both the animal and its environment. The probiotic and mineral components strengthen natural disease resistance and immune defence from within, while the same application, used during pond preparation and carried through the culture period, encourages a healthy plankton bloom that underpins the entire pond's food chain. Amino acids fill in the nutritional gaps that support steady tissue growth, so the combined effect is a pond environment and a population that reinforce each other: stronger immunity, a more productive plankton base, and consistently better survival and growth across the cycle.",
+    "benefits": [
+      {
+        "title": "Enhances disease resistance and natural defence mechanisms in sea life",
+        "text": "Enhances disease resistance and natural defence mechanisms in sea life"
+      },
+      {
+        "title": "Promotes healthy plankton development when applied during pond preparation",
+        "text": "Promotes healthy plankton development when applied during pond preparation"
+      },
+      {
+        "title": "Sustains plankton growth when applied through the culture period",
+        "text": "Sustains plankton growth when applied through the culture period"
+      },
+      {
+        "title": "Supports better survival rates across the culture cycle",
+        "text": "Supports better survival rates across the culture cycle"
+      },
+      {
+        "title": "Contributes to steadier, more consistent growth performance.",
+        "text": "Contributes to steadier, more consistent growth performance."
+      }
+    ],
+    "indications": [
+      "During pond preparation, to establish a healthy plankton bloom before stocking.",
+      "Through the culture period, to sustain plankton levels and support the pond's food chain.",
+      "Periods of disease pressure or increased susceptibility within the stock.",
+      "Following stress events such as handling, weather change, or water quality fluctuation.",
+      "Declining survival or inconsistent growth performance across the pond.",
+      "As a routine addition to support immunity and overall pond productivity."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDLIV-AQ",
+    "category": "Aqua",
+    "presentation": "5kg Pack",
+    "slug": "Vedliv-aq",
+    "image": "/images/products/Vedliv-Aq/01.png",
+    "gallery": [
+      "/images/products/Vedliv-Aq/01.png"
+    ],
+    "tagline": "Growth Enhancer & Hepatoprotective",
+    "shortDescription": "A hepatoprotective and growth-enhancing supplement formulated to strengthen gut integrity, improve nutrient absorption, and support liver function in aquaculture species.",
+    "fullDescription": "VedLiv works from the inside out, combining growth-enhancing and hepatoprotective action to help sea life get more out of every feed input. By supporting intestinal health, it strengthens the gut lining where digestion and nutrient uptake actually happen, so a larger share of every meal is broken down and absorbed rather than passing through unused. Protecting the liver keeps this digestive and metabolic machinery running efficiently over the full culture period, which shows up directly in feed conversion and daily weight gain. The combined effect of a healthier gut, a protected liver, and better nutrient absorption also translates into fewer unexplained losses, giving a hardier population that grows more consistently to harvest.",
+    "benefits": [
+      {
+        "title": "Improves intestinal health, supporting a stronger digestive foundation",
+        "text": "Improves intestinal health, supporting a stronger digestive foundation"
+      },
+      {
+        "title": "Improves feed digestibility and nutrient absorption",
+        "text": "Improves feed digestibility and nutrient absorption"
+      },
+      {
+        "title": "Reduces mortality across the culture cycle",
+        "text": "Reduces mortality across the culture cycle"
+      },
+      {
+        "title": "Improves Feed Conversion Ratio (FCR) and daily weight gain.",
+        "text": "Improves Feed Conversion Ratio (FCR) and daily weight gain."
+      }
+    ],
+    "indications": [
+      "Poor or inconsistent Feed Conversion Ratio despite adequate feed quality.",
+      "Slow daily weight gain not explained by stocking density or water quality.",
+      "Signs of poor gut health, such as irregular faecal output or reduced feed response.",
+      "Elevated or unexplained mortality across the pond.",
+      "Following stress events (handling, water quality shifts, disease pressure) that may affect liver function.",
+      "As a routine addition to support digestion, liver health, and growth through the culture cycle."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDGROW-AQ",
+    "category": "Aqua",
+    "presentation": "5kg Pack",
+    "slug": "Vedgrow-aq",
+    "image": "/images/products/Vedgrow-Aq/01.png",
+    "gallery": [
+      "/images/products/Vedgrow-Aq/01.png"
+    ],
+    "tagline": "Antibiotic Growth & Immunity Enhancer",
+    "shortDescription": "Beta-glucans, mannans, and 38% digestible protein — stimulating innate immunity, blocking pathogen colonisation, and sustaining faster growth throughout the culture cycle.",
+    "fullDescription": "VedGrow combines immune support and high-density nutrition into a single long-acting formula for faster, more resilient growth. A high concentration of beta-glucans acts as an immunostimulant, switching on the innate immune system so the animal is better equipped to respond to pathogen pressure on its own. Alongside this, optimally concentrated mannans work in the gut to bind pathogenic organisms directly, restricting their ability to colonise before they can establish an infection. On the nutrition side, a high concentration of digestible protein, up to 38%, gives the animal the raw material it needs to grow faster while improving feed conversion. Because the formula is long-acting, its immune and growth benefits are sustained well beyond the point of application rather than tapering off quickly.",
+    "benefits": [
+      {
+        "title": "High concentration of beta-glucans that act as an immunostimulant, activating the innate immune system",
+        "text": "High concentration of beta-glucans that act as an immunostimulant, activating the innate immune system"
+      },
+      {
+        "title": "Optimal mannan concentrations bind pathogens in the gut, restricting their ability to colonise",
+        "text": "Optimal mannan concentrations bind pathogens in the gut, restricting their ability to colonise"
+      },
+      {
+        "title": "High digestible protein content (up to 38%), supporting faster growth with improved FCR",
+        "text": "High digestible protein content (up to 38%), supporting faster growth with improved FCR"
+      },
+      {
+        "title": "Long-acting formula, sustaining growth and immune benefits over an extended period.",
+        "text": "Long-acting formula, sustaining growth and immune benefits over an extended period."
+      }
+    ],
+    "indications": [
+      "Periods of high disease pressure or increased pathogen exposure in the pond.",
+      "Slow growth or poor Feed Conversion Ratio despite adequate feeding.",
+      "Following stress events (handling, transport, water quality shifts) that can lower immune response.",
+      "Early culture stages, to build gut-level resistance against pathogen colonisation.",
+      "High-density stocking, where pathogen pressure and growth demands are both elevated.",
+      "As a routine addition to support sustained growth and immunity through the culture cycle."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDTOX-AQ",
+    "category": "Aqua",
+    "presentation": "5kg Pack",
+    "slug": "Vedtox-aq",
+    "image": "/images/products/Vedtox-Aq/01.png",
+    "gallery": [
+      "/images/products/Vedtox-Aq/01.png"
+    ],
+    "tagline": "Granular Toxin Binder for Pond Water & Sediment",
+    "shortDescription": "Zeolite and probiotics working together — binding toxins on contact, breaking down sediment waste, and delivering cleaner water for better survivability and yield.",
+    "fullDescription": "VedTox pairs mineral zeolite with select strains of Bacillus spp. probiotics in a single granular blend, combining physical toxin-binding with active biological correction. The zeolite component works fast, trapping toxins and excess ions on contact, while the Bacillus strains keep working over time to break down the organic matter and waste that feed those toxins in the first place. Because it is granular, VedTox sinks through the water column to reach the sediment, where most toxin build-up actually originates, giving it consistent efficacy across the wide range of conditions different ponds present. The net result is cleaner, more hygienic water that directly supports higher survivability, steadier growth, and better yield across fish, shrimp, and prawn culture.",
+    "benefits": [
+      {
+        "title": "Unique zeolite and Bacillus spp. probiotic blend for combined physical and biological action",
+        "text": "Unique zeolite and Bacillus spp. probiotic blend for combined physical and biological action"
+      },
+      {
+        "title": "Granular form reaches pond sediment, where toxin build-up typically originates",
+        "text": "Granular form reaches pond sediment, where toxin build-up typically originates"
+      },
+      {
+        "title": "Delivers consistent efficacy across a wide range of pond conditions",
+        "text": "Delivers consistent efficacy across a wide range of pond conditions"
+      },
+      {
+        "title": "Improves overall water quality and hygienic conditions in the pond",
+        "text": "Improves overall water quality and hygienic conditions in the pond"
+      },
+      {
+        "title": "Supports better survivability, growth, and ultimate yield in fish, shrimp, and prawns.",
+        "text": "Supports better survivability, growth, and ultimate yield in fish, shrimp, and prawns."
+      }
+    ],
+    "indications": [
+      "Elevated ammonia, nitrite, or other toxic compounds detected in pond water.",
+      "Sediment build-up or deteriorating bottom conditions in the pond.",
+      "Declining water clarity or hygiene indicators during the culture period.",
+      "Following heavy feeding or high organic loading that increases toxin risk.",
+      "Before restocking, to condition water and sediment for the next culture cycle.",
+      "As a routine addition across varied pond conditions to maintain consistent water quality"
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "DIGYVED PLUS",
+    "category": "Pets",
+    "presentation": "100ml",
+    "slug": "Digyved-plus",
+    "image": "/images/products/Digyved-Plus/01.png",
+    "gallery": [
+      "/images/products/Digyved-Plus/01.png"
+    ],
+    "tagline": "An Effective Herbal Remedy for Digestive Problems in Adult Pets",
+    "shortDescription": "Herbal antibacterial and bowel-regulating action — relieving indigestion, colic, constipation, and gastric infections for complete digestive health in adult pets.",
+    "fullDescription": "DIGYVED PLUS is a clinically effective herbal remedy formulated to support digestive health in adult pets. Its antibacterial, anti-spasmodic, and bowel-regulating properties help control gastric infections associated with stomach disorders, while supporting relief from indigestion, colic, and constipation. DIGYVED PLUS also provides supportive care in gastritis and irritable bowel syndrome, and helps restore regular bowel movement.",
+    "benefits": [
+      {
+        "title": "Antibacterial, anti-spasmodic, and bowel-regulating action controls gastric infections linked to stomach disorders",
+        "text": "Antibacterial, anti-spasmodic, and bowel-regulating action controls gastric infections linked to stomach disorders"
+      },
+      {
+        "title": "Provides relief from indigestion, colic, and constipation",
+        "text": "Provides relief from indigestion, colic, and constipation"
+      },
+      {
+        "title": "Supportive in gastritis and irritable bowel syndrome",
+        "text": "Supportive in gastritis and irritable bowel syndrome"
+      },
+      {
+        "title": "Helps correct irregular bowel movement.",
+        "text": "Helps correct irregular bowel movement."
+      }
+    ],
+    "indications": [
+      "Signs of indigestion, colic, or abdominal discomfort in adult pets.",
+      "Constipation or irregular bowel movement.",
+      "Suspected or confirmed gastritis.",
+      "Suspected irritable bowel syndrome (IBS).",
+      "Gastric infections associated with stomach disorders in adult pets."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "DIGYVED DROPS",
+    "category": "Pets",
+    "presentation": "30ml",
+    "slug": "Digyved-drops",
+    "image": "/images/products/Digyved-Drops/01.png",
+    "gallery": [
+      "/images/products/Digyved-Drops/01.png"
+    ],
+    "tagline": "An Effective Herbal Remedy for Digestive Problems",
+    "shortDescription": "A herbal digestive remedy formulated to stimulate enzyme secretion, tone the gastrointestinal tract, and relieve flatulence, colic, and abdominal discomfort in pets.",
+    "fullDescription": "DIGYVED DROPS is a clinically effective herbal remedy formulated to support healthy digestion in pets. It facilitates the secretion of proteolytic, amylolytic, and lipolytic enzymes that catalyze food digestion, and helps treat gastrointestinal disorders in puppies while toning the digestive tract. Its carminative action prevents recurring flatulence, colic, and abdominal discomfort, and it supports improved absorption and assimilation of food.",
+    "benefits": [
+      {
+        "title": "Facilitates secretion of proteolytic, amylolytic, and lipolytic enzymes to catalyze food digestion",
+        "text": "Facilitates secretion of proteolytic, amylolytic, and lipolytic enzymes to catalyze food digestion"
+      },
+      {
+        "title": "Helps treat gastrointestinal disorders in puppies and tones the digestive tract.",
+        "text": "Helps treat gastrointestinal disorders in puppies and tones the digestive tract."
+      },
+      {
+        "title": "Carminative action prevents recurring flatulence, colic, and abdominal discomfort",
+        "text": "Carminative action prevents recurring flatulence, colic, and abdominal discomfort"
+      },
+      {
+        "title": "Supports improved absorption and assimilation of food.",
+        "text": "Supports improved absorption and assimilation of food."
+      }
+    ],
+    "indications": [
+      "Signs of poor digestion or reduced enzyme activity in pets.",
+      "Gastrointestinal disorders in puppies.",
+      "Recurrent flatulence, colic, or abdominal discomfort.",
+      "Poor absorption or assimilation of food.",
+      "As a digestive tonic to support overall gut health in pets."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "LIV VED",
+    "category": "Pets",
+    "presentation": "100ml",
+    "slug": "Liv-ved",
+    "image": "/images/products/Liv-Ved/01.png",
+    "gallery": [
+      "/images/products/Liv-Ved/01.png"
+    ],
+    "tagline": "An Effective Herbal Liver Tonic",
+    "shortDescription": "A herbal hepatic tonic formulated to protect liver function, enhance protein synthesis, and support recovery from hepatic damage, toxicity, and viral infection in pets.",
+    "fullDescription": "Liv Ved is a clinically effective herbal liver tonic formulated to support hepatic health in pets. It increases appetite and protects the liver from toxins, drugs, and chemicals, while enhancing protein building in liver cells. Liv Ved supports pets experiencing anorexia, hepatic damage and dysfunction, ascites, and jaundice, as well as toxicity linked to drugs and pesticides, and serves as a valuable adjuvant in managing canine and feline viral hepatitis, distemper, and parvovirus infection.",
+    "benefits": [
+      {
+        "title": "Increases appetite in pets.",
+        "text": "Increases appetite in pets."
+      },
+      {
+        "title": "Protects the liver from toxins, drugs, and chemicals.",
+        "text": "Protects the liver from toxins, drugs, and chemicals."
+      },
+      {
+        "title": "Enhances protein building in liver cells.",
+        "text": "Enhances protein building in liver cells."
+      },
+      {
+        "title": "Serves as an adjuvant in managing canine and feline viral hepatitis, distemper, and parvovirus infection",
+        "text": "Serves as an adjuvant in managing canine and feline viral hepatitis, distemper, and parvovirus infection"
+      }
+    ],
+    "indications": [
+      "Anorexia or reduced appetite in pets.",
+      "Hepatic damage or dysfunction, ascites, or jaundice.",
+      "Toxicity associated with drugs or pesticides.",
+      "As an adjuvant during canine and feline viral hepatitis, distemper, or parvovirus infection."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDPYRIN PETS",
+    "category": "Pets",
+    "presentation": "30ml",
+    "slug": "Vedpyrin-pets",
+    "image": "/images/products/Vedpyrin-Pets/01.png",
+    "gallery": [
+      "/images/products/Vedpyrin-Pets/01.png"
+    ],
+    "tagline": "An Effective Herbal Antipyretic",
+    "shortDescription": "Herbal fever relief and immune support — reducing inflammation, improving circulation, and building resistance against infection in pets.",
+    "fullDescription": "VedPyrin is a clinically effective herbal antipyretic formulated to support recovery in pets. It strengthens the immune system and builds resistance against infections, while helping reduce fever. VedPyrin also improves blood circulation and alleviates swelling, and its anti-inflammatory action relieves pain and inflammation.",
+    "benefits": [
+      {
+        "title": "Strengthens the immune system and builds resistance against infections",
+        "text": "Strengthens the immune system and builds resistance against infections"
+      },
+      {
+        "title": "Helps reduce fever.",
+        "text": "Helps reduce fever."
+      },
+      {
+        "title": "Improves blood circulation and alleviates swelling.",
+        "text": "Improves blood circulation and alleviates swelling."
+      },
+      {
+        "title": "Anti-inflammatory action relieves pain and inflammation.",
+        "text": "Anti-inflammatory action relieves pain and inflammation."
+      }
+    ],
+    "indications": [
+      "Fever or elevated body temperature in pets.",
+      "Weakened immunity or increased susceptibility to infection.",
+      "Swelling or poor blood circulation.",
+      "Pain or inflammation requiring supportive relief."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "IMMUNOVED",
+    "category": "Pets",
+    "presentation": "100ml",
+    "slug": "Immunoved",
+    "image": "/images/products/Immunoved/01.png",
+    "gallery": [
+      "/images/products/Immunoved/01.png"
+    ],
+    "tagline": "An Effective Herbal Immunomodulator",
+    "shortDescription": "A herbal immunomodulator formulated to boost antibody response, strengthen immunity, and support pets through vaccination, infection, and immunosuppression.",
+    "fullDescription": "ImmunoVed is a clinically effective herbal immunomodulator formulated to strengthen immunity in pets. It boosts the pet's ability to fight infections by improving antibody titer, and supports immunity when used before and after vaccination. ImmunoVed is also useful in immunosuppression of multiple causes, as co-therapy in recurrent dermal, ocular, and otic infections, and as follow-up therapy alongside antibiotics in bacterial infections.",
+    "benefits": [
+      {
+        "title": "Increases immunity to fight infections by improving antibody titer",
+        "text": "Increases immunity to fight infections by improving antibody titer"
+      },
+      {
+        "title": "Supports immunity during pre- and post-vaccination periods",
+        "text": "Supports immunity during pre- and post-vaccination periods"
+      },
+      {
+        "title": "Useful in immunosuppression of multiple etiologies.",
+        "text": "Useful in immunosuppression of multiple etiologies."
+      },
+      {
+        "title": "Co-therapy in recurrent dermal, ocular, and otic infections",
+        "text": "Co-therapy in recurrent dermal, ocular, and otic infections"
+      },
+      {
+        "title": "Follow-up therapy alongside antibiotics in bacterial infections.",
+        "text": "Follow-up therapy alongside antibiotics in bacterial infections."
+      }
+    ],
+    "indications": [
+      "Before and after vaccination, to support immune response.",
+      "Immunosuppression of multiple etiologies.",
+      "Recurrent dermal, ocular, or otic infections requiring co-therapy.",
+      "As follow-up therapy alongside antibiotics in bacterial infections.",
+      "Weakened immunity or low antibody titer"
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "CLEAN AND CARE",
+    "category": "Pets",
+    "presentation": "200g / 150g",
+    "slug": "Clean-and-care",
+    "image": "/images/products/Clean&Care/01.png",
+    "gallery": [
+      "/images/products/Clean&Care/01.png"
+    ],
+    "tagline": "An Effective Herbal Ecto-parasiticidal Shampoo and Powder",
+    "shortDescription": "A herbal ecto-parasiticidal shampoo and powder formulated to control ticks, fleas, and lice while preventing skin infections in pets.",
+    "fullDescription": "CLEAN & CARE is a clinically effective herbal ecto-parasiticidal shampoo and powder formulated for pet skin and coat care. It controls external parasites such as ticks, fleas, and lice, while its antimicrobial and antifungal actions help prevent skin infections and improve overall skin condition.",
+    "benefits": [
+      {
+        "title": "Controls ectoparasites such as ticks, fleas, and lice in pets.",
+        "text": "Controls ectoparasites such as ticks, fleas, and lice in pets."
+      },
+      {
+        "title": "Antimicrobial and antifungal action prevents skin infections and improves overall skin condition.",
+        "text": "Antimicrobial and antifungal action prevents skin infections and improves overall skin condition."
+      }
+    ],
+    "indications": [
+      "Visible presence of ticks, fleas, or lice on the pet's coat.",
+      "Signs of skin infection, irritation, or fungal involvement.",
+      "Poor overall skin and coat condition.",
+      "As routine grooming care to help prevent ectoparasite infestation."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "FUR CARE",
+    "category": "Pets",
+    "presentation": "200ml",
+    "slug": "Fur-care",
+    "image": "/images/products/Furcare/01.png",
+    "gallery": [
+      "/images/products/Furcare/01.png"
+    ],
+    "tagline": "An Effective Oral Coat Conditioner",
+    "shortDescription": "An oral coat conditioner combining balanced Omega-6 and Omega-3 fatty acids with zinc to support skin health, prevent dermatitis, and maintain a healthy coat in pets.",
+    "fullDescription": "Fur Care is a clinically effective oral coat conditioner formulated to support skin and coat health in pets. Its balanced Omega-6 and Omega-3 fatty acids are essential for skin health, promoting healthy cell membrane and nerve cell formation. Zinc plays a vital role in preventing scaly dermatitis and hair loss, helping maintain a shiny, healthy coat.",
+    "benefits": [
+      {
+        "title": "Balanced Omega-6 and Omega-3 fatty acids support skin health and promote cell membrane and nerve cell formation",
+        "text": "Balanced Omega-6 and Omega-3 fatty acids support skin health and promote cell membrane and nerve cell formation"
+      },
+      {
+        "title": "Zinc helps prevent scaly dermatitis and hair loss.",
+        "text": "Zinc helps prevent scaly dermatitis and hair loss."
+      }
+    ],
+    "indications": [
+      "As a supplement for a shiny and glossy coat.",
+      "Hair shedding, flaky skin, and dandruff.",
+      "Allergic skin conditions such as flea bite allergy and atopy.",
+      "Fungal skin infection and pyoderma."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VED MV",
+    "category": "Pets",
+    "presentation": "30ml",
+    "slug": "Ved-mv",
+    "image": "/images/products/Ved-MV/01.png",
+    "gallery": [
+      "/images/products/Ved-MV/01.png"
+    ],
+    "tagline": "An Effective Multivitamin Liquid Supplement",
+    "shortDescription": "A liquid multivitamin supplement combining iron, copper, and five essential vitamins to address nutritional deficiencies and support growth and metabolism in dogs and cats",
+    "fullDescription": "Ved MV is a liquid dietary multivitamin supplement formulated for dogs and cats, containing iron, copper, and 5 essential vitamins. It is designed for dogs and cats that may not be receiving complete nutrition, offering reliable support against various vitamin and amino acid deficiencies. Ved MV helps improve a pet's growth and stimulates metabolism, supporting overall good health.",
+    "benefits": [
+      {
+        "title": "A liquid dietary supplement for dogs and cats containing iron, copper, and 5 essential vitamins",
+        "text": "A liquid dietary supplement for dogs and cats containing iron, copper, and 5 essential vitamins"
+      },
+      {
+        "title": "Designed for dogs and cats that may not be getting complete nutrition.",
+        "text": "Designed for dogs and cats that may not be getting complete nutrition."
+      },
+      {
+        "title": "Reliable support for various vitamin and amino acid deficiencies.",
+        "text": "Reliable support for various vitamin and amino acid deficiencies."
+      },
+      {
+        "title": "Helps improve a pet's growth and stimulates metabolism for good health.",
+        "text": "Helps improve a pet's growth and stimulates metabolism for good health."
+      }
+    ],
+    "indications": [
+      "Incomplete or unbalanced nutrition in dogs and cats.",
+      "Suspected vitamin or amino acid deficiencies.",
+      "Poor growth or slow development in growing pets.",
+      "As a general supplement to support metabolism and overall health."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDIARRO HERB",
+    "category": "Pets",
+    "presentation": "100ml",
+    "slug": "Vediarro-herb",
+    "image": "/images/products/Vediarro-Herb/01.png",
+    "gallery": [
+      "/images/products/Vediarro-Herb/01.png"
+    ],
+    "tagline": "An Effective Herbal Anti-diarrhoeal",
+    "shortDescription": "A herbal anti-diarrhoeal formulated to control diarrhoea of varied causes, protect intestinal mucosa, and address enteritis, dysentery, and calf scours in pets and livestock.",
+    "fullDescription": "Vediarro Herb is a clinically effective herbal anti-diarrhoeal formulated to control diarrhea of varied etiologies. Its antibacterial activity helps prevent gastrointestinal upsets, while its anti-inflammatory action protects the intestinal mucosa from damage. Vediarro Herb is useful in both specific and nonspecific diarrhea, calf scours, and conditions such as enteritis, dysentery, and gastritis.",
+    "benefits": [
+      {
+        "title": "Helps control diarrhea of varied etiologies",
+        "text": "Helps control diarrhea of varied etiologies"
+      },
+      {
+        "title": "Antibacterial activity helps prevent gastrointestinal upsets.",
+        "text": "Antibacterial activity helps prevent gastrointestinal upsets."
+      },
+      {
+        "title": "Anti-inflammatory activity protects the intestinal mucosa from damage.",
+        "text": "Anti-inflammatory activity protects the intestinal mucosa from damage."
+      }
+    ],
+    "indications": [
+      "Specific and nonspecific diarrhea.",
+      "Calf scours.",
+      "Enteritis, dysentery, and gastritis."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDRESP",
+    "category": "Pets",
+    "presentation": "100ml",
+    "slug": "Vedresp",
+    "image": "/images/products/Vedresp/01.png",
+    "gallery": [
+      "/images/products/Vedresp/01.png"
+    ],
+    "tagline": "An Effective Herbal Remedy for Respiratory Problems",
+    "shortDescription": "Herbal decongestion and respiratory support — clearing airways, easing breathing, and reducing disease incidence in pets.",
+    "fullDescription": "VedResp is a clinically effective herbal remedy formulated to support respiratory health in pets. It aids nasal decongestion and clears the larynx and pharynx for smooth, unobstructed breathing, and serves as a valuable supportive therapy in severe respiratory infections. Used as a growth promoter, VedResp reduces disease incidence and enhances overall performance.",
+    "benefits": [
+      {
+        "title": "Aids nasal decongestion and clears the larynx and pharynx for smooth breathing.",
+        "text": "Aids nasal decongestion and clears the larynx and pharynx for smooth breathing."
+      },
+      {
+        "title": "Serves as a valuable supportive therapy in severe respiratory infections.",
+        "text": "Serves as a valuable supportive therapy in severe respiratory infections."
+      },
+      {
+        "title": "As a growth promoter, reduces disease incidence and enhances overall performance.",
+        "text": "As a growth promoter, reduces disease incidence and enhances overall performance."
+      }
+    ],
+    "indications": [
+      "Signs of nasal congestion, coughing, or labored breathing in pets.",
+      "Severe respiratory infections requiring supportive therapy.",
+      "As a preventive aid to reduce disease incidence and support overall performance."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDWORM PETS",
+    "category": "Pets",
+    "presentation": "100ml",
+    "slug": "Vedworm-pets",
+    "image": "/images/products/Vedworm-Pets/01.png",
+    "gallery": [
+      "/images/products/Vedworm-Pets/01.png"
+    ],
+    "tagline": "An Effective Herbal Dewormer",
+    "shortDescription": "A 100% natural herbal anthelmintic formulated to eliminate roundworms, tapeworms, and trematodes while supporting digestive health and long-term worm resistance in pets.",
+    "fullDescription": "VedWorm is a 100% natural herbal anthelmintic supplement formulated for pets, effective against roundworms and, depending on dose, some tapeworms and a few trematodes. As an organic and safe alternative for ridding animals of all types of worms, VedWorm also helps improve digestive system ailments and strengthens long-term resistance to such issues.",
+    "benefits": [
+      {
+        "title": "100% natural anthelmintic, effective against roundworms and, depending on dose, some tapeworms and a few trematodes.",
+        "text": "100% natural anthelmintic, effective against roundworms and, depending on dose, some tapeworms and a few trematodes."
+      },
+      {
+        "title": "Organic and safe alternative to rid animals of all types of worms.",
+        "text": "Organic and safe alternative to rid animals of all types of worms."
+      },
+      {
+        "title": "Improves digestive system ailments and strengthens long-term resistance to worm-related issues.",
+        "text": "Improves digestive system ailments and strengthens long-term resistance to worm-related issues."
+      }
+    ],
+    "indications": [
+      "Suspected or confirmed roundworm infestation.",
+      "Suspected tapeworm or trematode infestation, depending on dose.",
+      "Digestive disturbances linked to worm infestation.",
+      "As routine deworming to strengthen long-term resistance."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
+  },
+  {
+    "name": "VEDCAL B12",
+    "category": "Pets",
+    "presentation": "200ml",
+    "slug": "Vedcal-b12",
+    "image": null,
+    "gallery": [],
+    "tagline": "An Effective Herbal Calcium Phosphorus Supplement Loaded with Essential Vitamins",
+    "shortDescription": "A herbal calcium, phosphorus, and vitamin supplement formulated to support bone density, dental health, and prevent milk fever in puppies, adult dogs, and lactating mothers.",
+    "fullDescription": "VedCal B12 is a herbal calcium and phosphorus supplement loaded with essential vitamins, formulated to support bone health in pets. It promotes bone density and strength, aiding optimal bone development in puppies and supporting the formation of strong bones and teeth in adult dogs. VedCal B12 also helps prevent milk fever post-whelping and in lactating mothers.",
+    "benefits": [
+      {
+        "title": "Promotes bone density and strength.",
+        "text": "Promotes bone density and strength."
+      },
+      {
+        "title": "Supports optimal bone development in puppies.",
+        "text": "Supports optimal bone development in puppies."
+      },
+      {
+        "title": "Supports the formation of strong bones and teeth in adult dogs.",
+        "text": "Supports the formation of strong bones and teeth in adult dogs."
+      },
+      {
+        "title": "Helps prevent milk fever post-whelping and in lactating mothers",
+        "text": "Helps prevent milk fever post-whelping and in lactating mothers"
+      }
+    ],
+    "indications": [
+      "Growing puppies requiring support for optimal bone development.",
+      "Adult dogs needing support for strong bones and teeth.",
+      "Lactating mothers, to help prevent milk fever post-whelping.",
+      "Suspected calcium, phosphorus, or vitamin deficiency affecting bone health."
+    ],
+    "compositionBase": null,
+    "composition": [],
+    "dosage": {
+      "methods": [],
+      "note": "Or as directed by a veterinarian."
+    },
+    "animalUsedImage": null
   }
 ]
