@@ -38,7 +38,7 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
             <div className="pd3-panel-bg"></div>
             
             <div className="pd3-img-wrapper" data-aos="zoom-in" data-aos-duration="1000" style={{ position: 'relative' }}>
-              <img src={activeImg} alt={product.name} className="pd3-main-img" style={{ transition: 'all 0.3s ease', mixBlendMode: 'multiply' }} />
+              <img src={activeImg} alt={product.name} className="pd3-main-img" style={{ transition: 'all 0.3s ease' }} />
               <div className="pd3-img-glow"></div>
               
               <button 
@@ -118,7 +118,7 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
                   <img 
                     src={(product as any).animalUsedImage} 
                     alt="Suitable for animals" 
-                    style={{ maxWidth: '220px', width: '100%', height: 'auto', borderRadius: '8px' }} 
+                    style={{ maxWidth: '220px', width: '100%', height: 'auto', borderRadius: '30px', background: '#fff', padding: '10px' }} 
                   />
                 </div>
               )}
@@ -287,7 +287,7 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
           <img 
             src={activeImg} 
             alt={product.name} 
-            style={{ maxWidth: '90vw', maxHeight: '90vh', objectFit: 'contain', background: '#fff', padding: '20px', borderRadius: '16px' }}
+            style={{ maxWidth: '90vw', maxHeight: '90vh', objectFit: 'contain', background: '#fff', padding: '20px', borderRadius: '30px' }}
             onClick={(e) => e.stopPropagation()} 
           />
         </div>
