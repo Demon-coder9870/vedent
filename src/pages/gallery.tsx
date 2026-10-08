@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React from 'react';
 import Head from 'next/head';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
@@ -24,40 +24,9 @@ const galleryImages = [
 ];
 
 export default function GalleryPage() {
-  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
-
-  const openLightbox = (index: number) => {
-    setSelectedImageIndex(index);
-    document.body.style.overflow = 'hidden'; // Prevent background scrolling
-  };
-
-  const closeLightbox = useCallback(() => {
-    setSelectedImageIndex(null);
-    document.body.style.overflow = 'auto';
-  }, []);
-
-  const nextImage = useCallback((e?: React.MouseEvent) => {
-    e?.stopPropagation();
-    setSelectedImageIndex((prev) => (prev === null ? null : (prev + 1) % galleryImages.length));
-  }, []);
-
-  const prevImage = useCallback((e?: React.MouseEvent) => {
-    e?.stopPropagation();
-    setSelectedImageIndex((prev) => (prev === null ? null : (prev === 0 ? galleryImages.length - 1 : prev - 1)));
-  }, []);
-
-  // Keyboard navigation for Lightbox
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (selectedImageIndex === null) return;
-      if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowRight') nextImage();
-      if (e.key === 'ArrowLeft') prevImage();
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [selectedImageIndex, closeLightbox, nextImage, prevImage]);
+  const halfIndex = Math.ceil(galleryImages.length / 2);
+  const row1 = galleryImages.slice(0, halfIndex);
+  const row2 = galleryImages.slice(halfIndex);
 
   return (
     <>
@@ -87,51 +56,35 @@ export default function GalleryPage() {
             </p>
           </div>
 
-          <div className="masonry-grid">
-            {galleryImages.map((img, index) => (
-              <div 
-                key={index} 
-                className="masonry-item" 
-                data-aos="fade-up" 
-                data-aos-delay={(index % 3) * 100}
-                onClick={() => openLightbox(index)}
-              >
-                <img src={img.src} alt={img.alt} loading="lazy" />
-                <div className="masonry-overlay">
-                  <i className="bi bi-arrows-fullscreen"></i>
+          <div className="gallery-marquee-container">
+            {/* Top Row: Left to Right */}
+            <div className="gallery-marquee-row marquee-left-to-right">
+              {[...row1, ...row1].map((img, index) => (
+                <div 
+                  key={`r1-${index}`} 
+                  className="marquee-item" 
+                >
+                  <img src={img.src} alt={img.alt} loading="lazy" />
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+
+            {/* Bottom Row: Right to Left */}
+            <div className="gallery-marquee-row marquee-right-to-left">
+              {[...row2, ...row2].map((img, index) => (
+                <div 
+                  key={`r2-${index}`} 
+                  className="marquee-item" 
+                >
+                  <img src={img.src} alt={img.alt} loading="lazy" />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </main>
 
-      {/* Lightbox Modal */}
-      <div 
-        className={`lightbox-modal ${selectedImageIndex !== null ? 'open' : ''}`}
-        onClick={closeLightbox}
-      >
-        <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
-          <button className="lightbox-close" onClick={closeLightbox} aria-label="Close Lightbox">
-            <i className="bi bi-x"></i>
-          </button>
-          
-          <button className="lightbox-nav-btn lightbox-prev" onClick={prevImage} aria-label="Previous Image">
-            <i className="bi bi-chevron-left"></i>
-          </button>
 
-          {selectedImageIndex !== null && (
-            <img 
-              src={galleryImages[selectedImageIndex].src} 
-              alt={galleryImages[selectedImageIndex].alt} 
-            />
-          )}
-
-          <button className="lightbox-nav-btn lightbox-next" onClick={nextImage} aria-label="Next Image">
-            <i className="bi bi-chevron-right"></i>
-          </button>
-        </div>
-      </div>
 
       <Footer />
     </>
