@@ -108,9 +108,14 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
                   Presentation: {product.presentation}
                 </div>
 
-                <a href={whatsappMsg} target="_blank" rel="noopener noreferrer" className="pd3-enq-btn">
-                  <i className="bi bi-whatsapp"></i> Request Information
-                </a>
+                <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
+                  <a href={whatsappMsg} target="_blank" rel="noopener noreferrer" className="pd3-enq-btn">
+                    <i className="bi bi-whatsapp"></i> Request Information
+                  </a>
+                  <a href={(product as any).brochure || "#"} download target="_blank" rel="noopener noreferrer" className="pd3-enq-btn" style={{ background: '#fff', color: 'var(--lime-dark)', border: '2px solid var(--lime-dark)' }}>
+                    <i className="bi bi-download"></i> Download Brochure
+                  </a>
+                </div>
               </div>
 
               {(() => {
