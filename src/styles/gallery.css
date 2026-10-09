@@ -15,6 +15,27 @@
   gap: 30px;
   overflow: hidden;
   width: 100%;
+  position: relative;
+}
+
+/* Gradient Edges to fade out images */
+.gallery-marquee-container::before,
+.gallery-marquee-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.gallery-marquee-container::before {
+  left: 0;
+  background: linear-gradient(to right, var(--off-white) 0%, transparent 100%);
+}
+.gallery-marquee-container::after {
+  right: 0;
+  background: linear-gradient(to left, var(--off-white) 0%, transparent 100%);
 }
 
 .gallery-marquee-row {
@@ -41,8 +62,8 @@
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   background: #fff;
-  width: 320px;
-  height: 250px;
+  width: 240px;
+  height: 180px;
   flex-shrink: 0;
 }
 
@@ -74,14 +95,14 @@
 
 @media (max-width: 991px) {
   .marquee-item {
-    width: 280px;
-    height: 220px;
+    width: 200px;
+    height: 150px;
   }
 }
 @media (max-width: 575px) {
   .marquee-item {
-    width: 240px;
-    height: 180px;
+    width: 160px;
+    height: 120px;
   }
 }
 

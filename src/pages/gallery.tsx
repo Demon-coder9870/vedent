@@ -24,9 +24,10 @@ const galleryImages = [
 ];
 
 export default function GalleryPage() {
-  const halfIndex = Math.ceil(galleryImages.length / 2);
-  const row1 = galleryImages.slice(0, halfIndex);
-  const row2 = galleryImages.slice(halfIndex);
+  const thirdIndex = Math.ceil(galleryImages.length / 3);
+  const row1 = galleryImages.slice(0, thirdIndex);
+  const row2 = galleryImages.slice(thirdIndex, thirdIndex * 2);
+  const row3 = galleryImages.slice(thirdIndex * 2);
 
   return (
     <>
@@ -69,11 +70,23 @@ export default function GalleryPage() {
               ))}
             </div>
 
-            {/* Bottom Row: Right to Left */}
+            {/* Middle Row: Right to Left */}
             <div className="gallery-marquee-row marquee-right-to-left">
               {[...row2, ...row2].map((img, index) => (
                 <div 
                   key={`r2-${index}`} 
+                  className="marquee-item" 
+                >
+                  <img src={img.src} alt={img.alt} loading="lazy" />
+                </div>
+              ))}
+            </div>
+
+            {/* Bottom Row: Left to Right */}
+            <div className="gallery-marquee-row marquee-left-to-right">
+              {[...row3, ...row3].map((img, index) => (
+                <div 
+                  key={`r3-${index}`} 
                   className="marquee-item" 
                 >
                   <img src={img.src} alt={img.alt} loading="lazy" />
