@@ -121,13 +121,14 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
               {(() => {
                 const categoryImages: string[] = (product as any).animalUsedImages || [];
                 return categoryImages.length > 0 && (
-                  <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap', marginTop: '15px', marginBottom: '10px', alignItems: 'center' }}>
+                  <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '10px', marginBottom: '15px', alignItems: 'center' }}>
+                    <span style={{ fontSize: '0.95rem', color: 'var(--charcoal)', fontWeight: '600', marginRight: '5px' }}>Suitable For:</span>
                     {categoryImages.map((imgSrc, idx) => (
                       <img 
                         key={idx}
                         src={imgSrc} 
                         alt="Suitable for animals" 
-                        style={{ height: '65px', width: 'auto', borderRadius: '30px', background: '#fff', padding: '10px', objectFit: 'contain' }} 
+                        style={{ height: '60px', width: 'auto', objectFit: 'contain', borderRadius: '5px' }} 
                       />
                     ))}
                   </div>
