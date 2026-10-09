@@ -244,12 +244,12 @@
 .pd3-enq-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   background: var(--grad-lime);
   color: #fff;
-  font-weight: 700;
-  font-size: 1rem;
-  padding: 15px 32px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 10px 24px;
   border-radius: var(--radius-full);
   box-shadow: var(--shadow-lime);
   transition: all 0.3s var(--ease);
