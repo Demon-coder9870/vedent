@@ -39,7 +39,7 @@ export default function About() {
           {/* Image */}
           <div className="about-image-wrap" data-aos="fade-up">
             <div className="about-image-main">
-              <img src="/images/about.jpg" alt="Veterinary Science at VEDVET" loading="lazy" />
+              <img src="/images/vedent-approch.jpg" alt="Veterinary Science at VEDVET" loading="lazy" />
             </div>
             <div className="about-badge">
               <div className="about-badge-number">12 yrs</div>

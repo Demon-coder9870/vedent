@@ -20,8 +20,11 @@ export default function ProductsPage() {
   useEffect(() => {
     if (router.query.category && typeof router.query.category === 'string') {
       setActiveCategory(router.query.category);
+      setCurrentPage(1);
+    } else if (router.isReady && !router.query.category) {
+      setActiveCategory('All');
     }
-  }, [router.query.category]);
+  }, [router.query.category, router.isReady]);
 
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
@@ -95,7 +98,15 @@ export default function ProductsPage() {
                   {categories.map(cat => (
                     <button
                       key={cat}
-                      onClick={() => { setActiveCategory(cat); setCurrentPage(1); }}
+                      onClick={() => {
+                        setActiveCategory(cat);
+                        setCurrentPage(1);
+                        if (cat === 'All') {
+                          router.push('/products', undefined, { shallow: true });
+                        } else {
+                          router.push(`/products?category=${encodeURIComponent(cat)}`, undefined, { shallow: true });
+                        }
+                      }}
                       style={{
                         display: 'flex',
                         alignItems: 'center',

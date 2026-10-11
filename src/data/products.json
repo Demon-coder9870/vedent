@@ -7,7 +7,7 @@
     "image": "/images/products/Vedcoccinil/01.png",
     "gallery": [
       "/images/products/Vedcoccinil/01.png",
-      "/images/products/Vedcoccinil/02.png",
+      "/images/products/Vedcoccinill/02.png",
       "/images/products/Vedcoccinil/03.png",
       "/images/products/Vedcoccinil/04.png"
     ],
@@ -1742,11 +1742,11 @@
             },
             {
               "target": "Growers / Broilers (2–4 weeks)",
-              "amount": "15 mL per 100 birds"
+              "amount": "15 mL per 100 birds;"
             },
             {
-              "target": "Layers / Broilers (above 4 weeks)",
-              "amount": "30 mL per 100 birds."
+              "target": "Instructions",
+              "amount": "Layers / Broilers (above 4 weeks): 30 mL per 100 birds."
             }
           ]
         },
@@ -1759,7 +1759,7 @@
             },
             {
               "target": "Sheep / Goat / Swine",
-              "amount": "10–15 mL"
+              "amount": "10–15 mL;"
             },
             {
               "target": "Camel / Horse / Cow / Calves",
@@ -2877,11 +2877,11 @@
             },
             {
               "target": "Growers / Broilers (2–4 weeks)",
-              "amount": "10 ml per 100 birds"
+              "amount": "10 ml per 100 birds;"
             },
             {
-              "target": "Layers / Broilers (above 4 weeks)",
-              "amount": "15 ml per 100 birds."
+              "target": "Instructions",
+              "amount": "Layers / Broilers (above 4 weeks): 15 ml per 100 birds."
             }
           ]
         },
@@ -4079,9 +4079,9 @@
     "category": "Aqua",
     "presentation": "5kg Pack",
     "slug": "O2Ved-aq",
-    "image": "/images/products/O2Ved-Aq/01.png",
+    "image": "/images/products/O2ved-Aq/01.png",
     "gallery": [
-      "/images/products/O2Ved-Aq/01.png"
+      "/images/products/O2ved-Aq/01.png"
     ],
     "tagline": "Strong, Long-Acting Dissolved Oxygen for Pond Bottoms",
     "shortDescription": "Deep-penetrating oxygen release that aerates the pond floor, starves anaerobic bacteria, and delivers sustained bottom-water correction where surface aeration cannot reach.",
@@ -4922,8 +4922,10 @@
     "category": "Pets",
     "presentation": "200ml",
     "slug": "Vedcal-b12",
-    "image": null,
-    "gallery": [],
+    "image": "/images/products/Vedcal-B12/01.png",
+    "gallery": [
+      "/images/products/Vedcal-B12/01.png"
+    ],
     "tagline": "An Effective Herbal Calcium Phosphorus Supplement Loaded with Essential Vitamins",
     "shortDescription": "A herbal calcium, phosphorus, and vitamin supplement formulated to support bone density, dental health, and prevent milk fever in puppies, adult dogs, and lactating mothers.",
     "fullDescription": "VedCal B12 is a herbal calcium and phosphorus supplement loaded with essential vitamins, formulated to support bone health in pets. It promotes bone density and strength, aiding optimal bone development in puppies and supporting the formation of strong bones and teeth in adult dogs. VedCal B12 also helps prevent milk fever post-whelping and in lactating mothers.",

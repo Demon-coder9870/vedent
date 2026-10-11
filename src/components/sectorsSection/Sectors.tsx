@@ -25,7 +25,7 @@ export default function Sectors() {
             Animal Healthcare<br />Across every sector
           </h2>
           <p className="section-subtitle" style={{ color: 'rgba(255,255,255,0.5)', margin: '0 auto' }}>
-            From Swine to Pets — dedicated, specialized solutions for every animal sector.
+            From Poultry to Pets — dedicated, specialized solutions for every animal sector.
           </p>
         </div>
 

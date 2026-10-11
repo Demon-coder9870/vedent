@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
@@ -6,19 +7,23 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
 const heroSlides = [
-  { bg: '/images/hero_landscape_1790180703293.jpg' },
-  { bg: '/images/hero_pets_1790180504171.jpg' },
-  { bg: '/images/hero_livestock_1790180518211.jpg' },
-  { bg: '/images/hero_poultry_1790180533602.jpg' },
-  { bg: '/images/hero_swine_1790180583531.jpg' },
-  { bg: '/images/hero_aqua_1790180603169.jpg' },
+  { bg: '/images/slider/1.jpg' },
+  { bg: '/images/slider/2.jpg' },
+  { bg: '/images/slider/3.jpg' },
+  { bg: '/images/slider/4.jpg' },
+  { bg: '/images/slider/5.jpg' },
+  { bg: '/images/slider/6.jpg' },
+  { bg: '/images/slider/7.jpg' },
+  { bg: '/images/slider/8.jpg' },
+  { bg: '/images/slider/9.jpg' },
+  { bg: '/images/slider/10.jpg' },
 ];
 
 const heroSectors = [
-  { name: 'Swine', icon: 'bi-piggy-bank' },
-  { name: 'Aqua', icon: 'bi-droplet' },
-  { name: 'Livestock', icon: 'bi-box-seam' },
   { name: 'Poultry', icon: 'bi-egg' },
+  { name: 'Swine', icon: 'bi-piggy-bank' },
+  { name: 'Livestock', icon: 'bi-box-seam' },
+  { name: 'Aqua', icon: 'bi-droplet' },
   { name: 'Pets', icon: 'bi-heart' },
 ];
 
@@ -57,9 +62,13 @@ export default function Hero() {
             <div className="hero-pills-inner" style={{ marginTop: '20px' }}>
               <span className="hero-pills-label">Explore:</span>
               {heroSectors.map(sector => (
-                <a key={sector.name} href={`#${sector.name.toLowerCase()}`} className="pill">
+                <Link
+                  key={sector.name}
+                  href={`/products?category=${encodeURIComponent(sector.name)}`}
+                  className="pill"
+                >
                   {sector.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>

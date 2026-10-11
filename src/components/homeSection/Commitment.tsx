@@ -1,6 +1,16 @@
 import React from 'react';
 
-const commitments = [
+interface CommitmentItem {
+  icon: string;
+  title: string;
+  span: string;
+  desc: string;
+  variant: string;
+  tag: string;
+  bgImage?: string;
+}
+
+const commitments: CommitmentItem[] = [
   {
     icon: 'bi-people-fill',
     title: "It's Customers.",
