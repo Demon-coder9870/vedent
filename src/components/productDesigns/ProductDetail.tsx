@@ -12,7 +12,6 @@ interface ProductPageProps { product: Product; relatedProducts: Product[]; }
 export default function ProductDetail({ product, relatedProducts }: ProductPageProps) {
   const [activeImg, setActiveImg] = React.useState((product.gallery && product.gallery.length > 0) ? product.gallery[0] : product.image);
   const [fullscreenOpen, setFullscreenOpen] = React.useState(false);
-  const whatsappMsg = `https://wa.me/919997714800?text=${encodeURIComponent('Hi, I am interested in your product: ' + product.name + '. Could you please provide more details?')}`;
 
   return (
     <>
@@ -109,12 +108,9 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
                 </div>
 
                 <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
-                  <a href={whatsappMsg} target="_blank" rel="noopener noreferrer" className="pd3-enq-btn">
-                    <i className="bi bi-whatsapp"></i> Request Information
-                  </a>
-                  <a href={(product as any).brochure || "#"} download target="_blank" rel="noopener noreferrer" className="pd3-enq-btn" style={{ background: '#fff', color: 'var(--lime-dark)', border: '2px solid var(--lime-dark)' }}>
-                    <i className="bi bi-download"></i> Download Brochure
-                  </a>
+                  <Link href="/contact" className="pd3-enq-btn">
+                    <i className="bi bi-envelope"></i> Request Information
+                  </Link>
                 </div>
               </div>
 

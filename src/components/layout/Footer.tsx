@@ -8,7 +8,7 @@ const navItems = [
   { label: 'About Us', href: '/about/who-we-are' },
   { label: 'Products', href: '/products' },
   { label: 'Services', href: '/#services' },
-  { label: 'Gallery', href: '/gallery' },
+  { label: 'Highlights', href: '/highlights' },
   { label: 'Contact Us', href: '/contact' },
 ];
 
@@ -38,13 +38,13 @@ export default function Footer() {
               <Image
                 src="/images/vedvet-logo.png"
                 alt="VedVet Logo"
-                width={140}
-                height={48}
-                style={{ objectFit: 'contain', height: '48px', width: 'auto' }}
+                width={210}
+                height={72}
+                style={{ objectFit: 'contain', height: 'clamp(40px, 8vw, 72px)', width: 'auto', filter: 'brightness(0) invert(1)' }}
               />
             </div>
             <p className="footer-desc">
-              World-class veterinary healthcare solutions for modern animal care — trusted by veterinarians and farmers in 15+ countries.
+              World-class veterinary healthcare solutions for modern animal care — trusted by veterinarians and farmers in 18+ countries.
             </p>
             <div className="footer-socials">
               <a href="https://www.facebook.com/p/Vedvet-Animal-Health-Private-Limited-100070798733935/" aria-label="facebook" target="_blank" rel="noopener noreferrer"><i className="bi bi-facebook" /></a>
@@ -72,7 +72,7 @@ export default function Footer() {
           <div>
             <h5 className="footer-col-title">Animal Healthcare</h5>
             <ul className="footer-links">
-              {['Swine', 'Livestock', 'Poultry', 'Aqua', 'Pets'].map((s) => (
+              {['Poultry', 'Swine', 'Livestock', 'Aqua', 'Pets'].map((s) => (
                 <li key={s}>
                   <Link href="/#sectors" onClick={(e) => handleLinkClick(e, '/#sectors')}>
                     <i className="bi bi-chevron-right" /> {s}
@@ -87,7 +87,7 @@ export default function Footer() {
             <h5 className="footer-col-title">Contact</h5>
             <div className="footer-contact-item">
               <i className="bi bi-geo-alt" />
-              <span>2nd Floor, Maya Plaza, Court Road, Saharanpur, Uttar Pradesh, INDIA</span>
+              <span>St. Jude Chowk, Near, Shimla Bypass Rd, Sewla Kalan, Majra, Dehradun, Shewala Kala, Uttarakhand 248171</span>
             </div>
             <div className="footer-contact-item">
               <i className="bi bi-telephone" />

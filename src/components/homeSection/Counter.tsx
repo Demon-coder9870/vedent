@@ -2,9 +2,9 @@ import React, { useEffect, useState, useRef } from 'react';
 
 const stats = [
   { value: 12, suffix: '+', label: 'YEARS OF EXCELLENCE' },
-  { value: 60, suffix: '+', label: 'PRODUCTS PORTFOLIO' },
-  { value: 15, suffix: '+', label: 'COUNTRIES SERVED' },
-  { value: 10, suffix: '+', label: 'HAPPY CLIENTS' },
+  { value: 52, suffix: '+', label: 'PRODUCTS PORTFOLIO' },
+  { value: 18, suffix: '+', label: 'COUNTRIES SERVED' },
+  { value: 6, suffix: '+', label: 'CERTIFICATIONS' },
 ];
 
 const AnimatedNumber = ({ target, suffix }: { target: number, suffix: string }) => {

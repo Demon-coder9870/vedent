@@ -160,7 +160,7 @@ export default function ContactPage() {
                     <div>
                       <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>Head Office</h4>
                       <p style={{ margin: 0, color: '#555', lineHeight: '1.6' }}>
-                        2nd Floor, Maya Plaza, Court Road,<br />Saharanpur, Uttar Pradesh, INDIA
+                        St. Jude Chowk, Near, Shimla Bypass Rd,<br />Sewla Kalan, Majra, Dehradun, Shewala Kala, Uttarakhand 248171
                       </p>
                     </div>
                   </div>
@@ -235,7 +235,7 @@ export default function ContactPage() {
           height="100%"
           frameBorder="0"
           scrolling="no"
-          src="https://maps.google.com/maps?width=100%25&height=500&hl=en&q=Maya%20Plaza,%20Court%20Road,%20Saharanpur,%20Uttar%20Pradesh,%20India+(VEDVET%20Animal%20Health)&t=&z=15&ie=UTF8&iwloc=B&output=embed"
+          src="https://maps.google.com/maps?width=100%25&height=500&hl=en&q=St.+Jude+Chowk,+Near+Shimla+Bypass+Rd,+Sewla+Kalan,+Majra,+Dehradun,+Shewala+Kala,+Uttarakhand+248171&t=&z=15&ie=UTF8&iwloc=B&output=embed"
           style={{ border: 0, filter: 'contrast(1.05)' }}
           allowFullScreen={false}
           loading="lazy"

@@ -57,8 +57,8 @@ export default function WhatWeDo() {
                 </p>
                 <div className="wwd-stats-row">
                   <div className="wwd-stat"><span className="wwd-stat-num">12+</span><span className="wwd-stat-label">Years Experience</span></div>
-                  <div className="wwd-stat"><span className="wwd-stat-num">20</span><span className="wwd-stat-label">Countries Served</span></div>
-                  <div className="wwd-stat"><span className="wwd-stat-num">8+</span><span className="wwd-stat-label">Certifications</span></div>
+                  <div className="wwd-stat"><span className="wwd-stat-num">18+</span><span className="wwd-stat-label">Countries Served</span></div>
+                  <div className="wwd-stat"><span className="wwd-stat-num">6+</span><span className="wwd-stat-label">Certifications</span></div>
                 </div>
               </div>
               <div className="wwd-intro-image" data-aos="fade-left">

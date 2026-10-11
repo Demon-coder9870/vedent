@@ -6,8 +6,8 @@ const faqs = [
     a: 'VEDVET holds HALAL, GMO, ISO 9001, ISO 22000, FAMI-QS, GMP, and HACCP certifications, reflecting our commitment to quality, safety, and international regulatory standards across our product range.',
   },
   {
-    q: 'Which countries does VEDVET currently export to?',
-    a: 'VEDVET currently exports to 20 countries worldwide, including Taiwan, the Philippines, Nepal, Bangladesh, Sri Lanka, Myanmar, Jordan, Iraq, Algeria, Iran, Brazil, Russia, Serbia, Hungary, Italy, Romania, Egypt, Vietnam, the Netherlands, and the UAE.',
+    q: 'How do I choose the right product?',
+    a: 'Start from the problem, then check that product’s datasheet. For example, VEDTOX is a toxin binder for feed-toxin concerns. Our technical team can advise at [phone/WhatsApp/email].',
   },
   {
     q: 'Which animal health segments and species does VEDVET serve?',

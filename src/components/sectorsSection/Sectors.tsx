@@ -2,15 +2,16 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import Link from 'next/link';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const sectors = [
+  { bg: '/images/poultry.jpg', tag: 'Poultry', title: 'Poultry', sub: 'Targeted wellness and nutrition for poultry farming.' },
   { bg: '/images/swine.jpg', tag: 'Swine', title: 'Swine', sub: 'Advanced health solutions for swine management and care.' },
   { bg: '/images/livestock.jpg', tag: 'Livestock', title: 'Livestock', sub: 'Comprehensive healthcare products for healthy livestock.' },
-  { bg: '/images/poultry.jpg', tag: 'Poultry', title: 'Poultry', sub: 'Targeted wellness and nutrition for poultry farming.' },
-  { bg: '/images/aqua.jpg', tag: 'Aqua', title: 'Aqua', sub: 'Premium solutions for aquaculture health and growth.' },
+  { bg: '/images/aqua_fish.jpg', tag: 'Aqua', title: 'Aqua', sub: 'Premium solutions for aquaculture health and growth.' },
   { bg: '/images/pets.jpg', tag: 'Pets', title: 'Pets', sub: 'Complete health management solutions for your loyal companions.' },
 ];
 
@@ -49,7 +50,7 @@ export default function Sectors() {
           >
             {sectors.map(({ bg, tag, title, sub }, i) => (
               <SwiperSlide key={i}>
-                <a href="#" className="sector-card" onClick={(e) => e.preventDefault()}>
+                <Link href={`/products?category=${title}`} className="sector-card">
                   <div className="sector-card-bg" style={{ backgroundImage: `url(${bg})` }} />
                   <div className="sector-card-overlay" />
                   <div className="sector-card-content">
@@ -60,7 +61,7 @@ export default function Sectors() {
                       Explore <i className="bi bi-arrow-right" />
                     </span>
                   </div>
-                </a>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

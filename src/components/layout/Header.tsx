@@ -13,7 +13,7 @@ const navItems = [
     ],
   },
   { label: 'Products', href: '/products' },
-  { label: 'Gallery', href: '/gallery' },
+  { label: 'Highlights', href: '/highlights' },
   { label: 'Accreditations', href: '/accreditations' },
 ];
 
@@ -76,9 +76,9 @@ export default function Header() {
                 <Image
                   src="/images/vedvet-logo.png"
                   alt="VedVet Logo"
-                  width={140}
-                  height={48}
-                  style={{ objectFit: 'contain', height: '48px', width: 'auto' }}
+                  width={210}
+                  height={72}
+                  style={{ objectFit: 'contain', height: 'clamp(40px, 8vw, 72px)', width: 'auto' }}
                 />
               </Link>
 

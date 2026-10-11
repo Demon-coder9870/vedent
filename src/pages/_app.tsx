@@ -6,7 +6,7 @@ import '../styles/certifications.css';
 import '../styles/accreditations.css';
 import '../styles/products.css';
 import '../styles/ProductDetail.css';
-import '../styles/gallery.css';
+import '../styles/highlights.css';
 import '../styles/counter.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'aos/dist/aos.css';

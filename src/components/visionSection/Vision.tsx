@@ -12,15 +12,6 @@ export default function Vision() {
           </p>
         </div>
         <div className="vision-grid">
-          <div className="vision-main-video" data-aos="fade-up">
-            <iframe 
-              src="https://www.youtube.com/embed/J5xIneVJnwA" 
-              title="YouTube video player" 
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowFullScreen
-            ></iframe>
-          </div>
           <div className="vision-sub-videos">
             <div className="vision-sub-video" data-aos="fade-up" data-aos-delay="100">
               <iframe 
@@ -33,7 +24,7 @@ export default function Vision() {
             </div>
             <div className="vision-sub-video" data-aos="fade-up" data-aos-delay="200">
               <iframe 
-                src="https://www.youtube.com/embed/vWxs4Nl3r0Q?start=68" 
+                src="https://www.youtube.com/embed/J5xIneVJnwA" 
                 title="YouTube video player" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

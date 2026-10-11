@@ -1,23 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import PageHeader from '../../components/layout/PageHeader';
 import { products } from '../../data/products';
 
 export default function ProductsPage() {
+  const router = useRouter();
+  
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Products' }
   ];
 
   const [activeCategory, setActiveCategory] = useState('All');
+  
+  useEffect(() => {
+    if (router.query.category && typeof router.query.category === 'string') {
+      setActiveCategory(router.query.category);
+    }
+  }, [router.query.category]);
+
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 12;
 
-  const categories = ['All', 'Poultry', 'Livestock', 'Livestock & Swine', 'Pets', 'Aqua'];
+  const categories = ['All', 'Poultry', 'Swine', 'Livestock', 'Aqua', 'Pets'];
   
   const filteredProducts = products.filter(p => {
     const categoryMatch = activeCategory === 'All' || p.category.includes(activeCategory) || p.category === 'All';
