@@ -35,7 +35,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const product = products.find((p) => p.slug === params?.slug);
-  const relatedProducts = products.filter((p) => p.slug !== params?.slug).slice(0, 4);
+  const sameCategory = product
+    ? products.filter((p) => p.slug !== product.slug && p.category === product.category)
+    : [];
+  const otherCategory = product
+    ? products.filter((p) => p.slug !== product.slug && p.category !== product.category)
+    : [];
+  const relatedProducts = [...sameCategory, ...otherCategory].slice(0, 4);
 
   return {
     props: {

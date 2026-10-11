@@ -14,6 +14,10 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
   const [fullscreenOpen, setFullscreenOpen] = React.useState(false);
   const [activeSection, setActiveSection] = React.useState('pd3-desc');
 
+  const displayRelated = (relatedProducts && relatedProducts.length > 0)
+    ? relatedProducts.slice(0, 4)
+    : products.filter((p) => p.slug !== product.slug).slice(0, 4);
+
   React.useEffect(() => {
     const handleScroll = () => {
       const sectionIds = ['pd3-desc', 'pd3-benefits', 'pd3-when', 'pd3-comp', 'pd3-dosage'];
@@ -58,6 +62,8 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
 
       <PageHeader
         title={product.name}
+        eyebrow={product.category}
+        tagline={product.tagline}
         breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Products', href: '/products' }, { label: product.name }]}
         bgImage="/images/hero.jpg"
       />
@@ -338,6 +344,65 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
             </div>
           </div>
         </div>
+
+        {/* ── RELATED PRODUCTS SECTION ────────────────── */}
+        {displayRelated.length > 0 && (
+          <section className="pd3-related-section">
+            <div className="container-wide">
+              <div className="pd3-related-header" data-aos="fade-up">
+                <div className="pd3-related-header-left">
+                  <span className="pd3-related-eyebrow">Explore Formulations</span>
+                  <h2 className="pd3-related-title">Related Products</h2>
+                  <p className="pd3-related-subtitle">
+                    Discover other veterinarian-grade healthcare solutions designed to deliver optimal animal wellness.
+                  </p>
+                </div>
+                <div className="pd3-related-header-right">
+                  <Link href="/products" className="pd3-related-view-all">
+                    <span>View All Products</span>
+                    <i className="bi bi-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+
+              <div className="pd3-related-grid">
+                {displayRelated.map((relProduct, idx) => (
+                  <Link 
+                    href={`/product/${relProduct.slug}`} 
+                    key={relProduct.slug || idx} 
+                    className="pd3-related-card"
+                    data-aos="fade-up" 
+                    data-aos-delay={idx * 100}
+                  >
+                    <div className="pd3-related-img-wrapper">
+                      <img 
+                        src={relProduct.image} 
+                        alt={relProduct.name} 
+                        className="pd3-related-img" 
+                      />
+                    </div>
+                    <div className="pd3-related-body">
+                      <span className="pd3-related-cat">{relProduct.category}</span>
+                      <h3 className="pd3-related-name">{relProduct.name}</h3>
+                      {relProduct.presentation && (
+                        <div className="pd3-related-presentation">
+                          <i className="bi bi-box-seam"></i>
+                          <span>{relProduct.presentation}</span>
+                        </div>
+                      )}
+                      <p className="pd3-related-desc">{relProduct.shortDescription}</p>
+                      <div className="pd3-related-btn-wrapper">
+                        <span className="pd3-related-btn">
+                          View Details <i className="bi bi-arrow-right"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
       </main>
 
