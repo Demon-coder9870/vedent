@@ -58,7 +58,7 @@ export default function HighlightsPage() {
           { label: 'Home', href: '/' },
           { label: 'Highlights' }
         ]}
-        bgImage="/images/hero_landscape_1790180703293.jpg"
+        bgImage="/images/our-identity.jpg"
       />
 
       <main className="highlights-section">

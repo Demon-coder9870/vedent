@@ -9,9 +9,9 @@ import CtaSection from '../../components/ctaSection/CtaSection';
 const principles = [
   { title: 'Partnership', icon: 'bi-handshake', desc: 'Our customers, suppliers, and employees are our partners. We build long-term, trustful, and therefore productive relationships with all of them.', img: '/images/hero.jpg' },
   { title: 'Quality', icon: 'bi-award', desc: "Maintaining the high quality of our products and services is every employee's responsibility.", img: '/images/about.jpg' },
-  { title: 'Innovation', icon: 'bi-lightbulb', desc: 'Continuous improvement and innovation are central to our goals, driving the economic success of both our customers and our company.', img: '/images/about_hero_portrait_1789905073068.jpg' },
-  { title: 'Respect & Teamwork', icon: 'bi-people', desc: 'We champion international, process-oriented teamwork and respect cultural differences across our worldwide operations. We treat every human being with dignity and respect.', img: '/images/about_journey_1789905102059.jpg' },
-  { title: 'Compliance', icon: 'bi-shield-check', desc: 'We adhere to all relevant legal rules, regulations, and requirements, ensuring the highest safety standards for our products and services.', img: '/images/about_beginning_1789905087984.jpg' },
+  { title: 'Innovation', icon: 'bi-lightbulb', desc: 'Continuous improvement and innovation are central to our goals, driving the economic success of both our customers and our company.', img: '/images/our-identity.jpg' },
+  { title: 'Respect & Teamwork', icon: 'bi-people', desc: 'We champion international, process-oriented teamwork and respect cultural differences across our worldwide operations. We treat every human being with dignity and respect.', img: '/images/our-journey.jpg' },
+  { title: 'Compliance', icon: 'bi-shield-check', desc: 'We adhere to all relevant legal rules, regulations, and requirements, ensuring the highest safety standards for our products and services.', img: '/images/the-beginning.jpg' },
   { title: 'Ethics', icon: 'bi-heart', desc: 'We hold ourselves to strong ethical principles in every dealing, acting with appropriate and good conduct in all situations.', img: '/images/livestock.jpg' },
   { title: 'Confidentiality', icon: 'bi-lock', desc: 'We protect our know-how, business practices, and trade secrets.', img: '/images/swine.jpg' },
   { title: 'Resource Stewardship', icon: 'bi-recycle', desc: 'We are committed to managing economic, environmental, and social resources carefully and efficiently.', img: '/images/aqua.jpg' },

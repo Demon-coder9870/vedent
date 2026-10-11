@@ -12,6 +12,41 @@ interface ProductPageProps { product: Product; relatedProducts: Product[]; }
 export default function ProductDetail({ product, relatedProducts }: ProductPageProps) {
   const [activeImg, setActiveImg] = React.useState((product.gallery && product.gallery.length > 0) ? product.gallery[0] : product.image);
   const [fullscreenOpen, setFullscreenOpen] = React.useState(false);
+  const [activeSection, setActiveSection] = React.useState('pd3-desc');
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const sectionIds = ['pd3-desc', 'pd3-benefits', 'pd3-when', 'pd3-comp', 'pd3-dosage'];
+      const scrollPos = window.scrollY + 180;
+      let current = '';
+
+      for (const id of sectionIds) {
+        const el = document.getElementById(id);
+        if (el && el.offsetTop <= scrollPos) {
+          current = id;
+        }
+      }
+      if (current) {
+        setActiveSection(current);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      const header = document.querySelector('.site-header') as HTMLElement;
+      const offset = header ? header.offsetHeight + 20 : 100;
+      const top = el.offsetTop - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+      setActiveSection(id);
+    }
+  };
 
   return (
     <>
@@ -156,14 +191,44 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
               {/* Left Sticky: Navigation indicator */}
               <div className="pd3-sticky-nav">
                 <div className="pd3-nav-track">
-                  <a href="#pd3-desc" className="pd3-nav-dot active"><span>Description</span></a>
-                  <a href="#pd3-benefits" className="pd3-nav-dot"><span>Benefits</span></a>
-                  <a href="#pd3-when" className="pd3-nav-dot"><span>Indications</span></a>
+                  <a
+                    href="#pd3-desc"
+                    onClick={(e) => scrollToSection(e, 'pd3-desc')}
+                    className={`pd3-nav-dot${activeSection === 'pd3-desc' ? ' active' : ''}`}
+                  >
+                    <span>Description</span>
+                  </a>
+                  <a
+                    href="#pd3-benefits"
+                    onClick={(e) => scrollToSection(e, 'pd3-benefits')}
+                    className={`pd3-nav-dot${activeSection === 'pd3-benefits' ? ' active' : ''}`}
+                  >
+                    <span>Benefits</span>
+                  </a>
+                  <a
+                    href="#pd3-when"
+                    onClick={(e) => scrollToSection(e, 'pd3-when')}
+                    className={`pd3-nav-dot${activeSection === 'pd3-when' ? ' active' : ''}`}
+                  >
+                    <span>Indications</span>
+                  </a>
                   {product.composition && product.composition.length > 0 && (
-                    <a href="#pd3-comp" className="pd3-nav-dot"><span>Composition</span></a>
+                    <a
+                      href="#pd3-comp"
+                      onClick={(e) => scrollToSection(e, 'pd3-comp')}
+                      className={`pd3-nav-dot${activeSection === 'pd3-comp' ? ' active' : ''}`}
+                    >
+                      <span>Composition</span>
+                    </a>
                   )}
                   {product.dosage && product.dosage.methods && (
-                    <a href="#pd3-dosage" className="pd3-nav-dot"><span>Dosage</span></a>
+                    <a
+                      href="#pd3-dosage"
+                      onClick={(e) => scrollToSection(e, 'pd3-dosage')}
+                      className={`pd3-nav-dot${activeSection === 'pd3-dosage' ? ' active' : ''}`}
+                    >
+                      <span>Dosage</span>
+                    </a>
                   )}
                 </div>
               </div>
@@ -222,17 +287,14 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
                     <div className="pd3-section-num">04</div>
                     <h2 className="pd3-detail-h">Composition</h2>
                     {product.compositionBase && <p style={{ marginBottom: '15px', color: 'var(--charcoal)', fontWeight: '600' }}>{product.compositionBase}</p>}
-                    <div style={{ background: '#fff', padding: '25px', borderRadius: '16px', border: '1px solid #eee', overflowX: 'auto' }}>
-                      <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '400px' }}>
-                        <tbody>
-                          {product.composition.map((item: any, i: number) => (
-                            <tr key={i} style={{ borderBottom: i !== product.composition.length - 1 ? '1px solid #f5f5f5' : 'none' }}>
-                              <td style={{ padding: '12px 10px', color: 'var(--charcoal)' }}>{item.ingredient}</td>
-                              <td style={{ padding: '12px 10px', color: 'var(--lime-dark)', fontWeight: '700', textAlign: 'right' }}>{item.amount}</td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
+                    <div className="pd3-comp-box">
+                      <div className="pd3-comp-badges">
+                        {product.composition.map((item: any, i: number) => (
+                          <span key={i} className="pd3-comp-badge">
+                            {item.ingredient}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 )}

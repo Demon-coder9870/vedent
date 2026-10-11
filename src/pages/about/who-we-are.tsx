@@ -11,13 +11,13 @@ const milestones = [
     year: 'Chapter 01',
     title: 'The Beginning',
     desc: 'Our story began over 12 years ago, when a young entrepreneur with a long-term vision recognized an opportunity in this industry and made the decision to bring about real change. Within a few years, that vision took shape as VEDVET.',
-    img: '/images/about_beginning_1789905087984.jpg',
+    img: '/images/the-beginning.jpg',
   },
   {
     year: 'Chapter 02',
     title: 'The Journey',
     desc: 'From the outset, growth came through trial and error, with every setback treated not as a failure but as a lesson, and every lesson turned into a step forward. Today, we stand as a company that has spent years building products that help this industry grow and stay resilient.',
-    img: '/images/about_journey_1789905102059.jpg',
+    img: '/images/our-journey.jpg',
   },
 ];
 
@@ -47,7 +47,7 @@ export default function WhoWeAre() {
       <PageHeader
         title="Who We Are"
         breadcrumbs={breadcrumbs}
-        bgImage="/images/about_hero_portrait_1789905073068.jpg"
+        bgImage="/images/our-identity.jpg"
       />
 
       <main style={{ backgroundColor: '#fdfdfd' }}>
@@ -58,7 +58,7 @@ export default function WhoWeAre() {
             <div className="wwa-intro-grid">
               <div className="wwa-intro-image-col" data-aos="fade-right">
                 <div className="wwa-intro-img-wrap">
-                  <img src="/images/about_hero_portrait_1789905073068.jpg" alt="VEDVET Team" />
+                  <img src="/images/our-identity.jpg" alt="Our Identity - VEDVET" />
                   <div className="wwa-intro-img-badge">
                     <i className="bi bi-stars" />
                     <div>
@@ -153,7 +153,7 @@ export default function WhoWeAre() {
         </section>
 
         {/* ── PARALLAX QUOTE ────────────────────────────────── */}
-        <section className="about-parallax-quote">
+        <section className="about-parallax-quote" style={{ backgroundImage: 'url("/images/ceo-second.jpeg")' }}>
           <div className="parallax-overlay" />
           <div className="container-wide" style={{ position: 'relative', zIndex: 2 }}>
             <div className="quote-content" data-aos="zoom-in">
@@ -178,7 +178,30 @@ export default function WhoWeAre() {
             <div className="ceo-card">
               <div className="ceo-image-wrapper" data-aos="fade-right">
                 <div className="ceo-image-accent" />
-                <img src="/images/about_ceo_1789905115681.jpg" alt="CEO Portrait" className="ceo-image" />
+                <div style={{ position: 'relative', height: '100%' }}>
+                  <img src="/images/ceo.jpeg" alt="CEO Portrait" className="ceo-image" />
+                  <div
+                    style={{
+                      position: 'absolute',
+                      bottom: '12px',
+                      right: '-12px',
+                      width: '145px',
+                      height: '100px',
+                      borderRadius: '12px',
+                      overflow: 'hidden',
+                      border: '3px solid #fff',
+                      boxShadow: '0 10px 24px rgba(0,0,0,0.18)',
+                      zIndex: 3,
+                    }}
+                    title="Founder & CEO at Desk"
+                  >
+                    <img
+                      src="/images/ceo-second.jpeg"
+                      alt="CEO in Executive Office"
+                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    />
+                  </div>
+                </div>
                 <div className="ceo-name-tag">
                   <strong>Founder & CEO</strong>
                   <span>VEDVET Animal Health Pvt. Ltd.</span>

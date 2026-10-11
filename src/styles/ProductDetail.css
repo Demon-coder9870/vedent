@@ -315,6 +315,7 @@
 .pd3-detail-body {
   padding: 80px 0 120px;
   background: var(--off-white);
+  position: relative;
 }
 
 .pd3-detail-grid {
@@ -322,6 +323,7 @@
   grid-template-columns: 200px 1fr;
   gap: 60px;
   align-items: start;
+  position: relative;
 }
 
 @media (max-width: 991px) {
@@ -333,9 +335,12 @@
 
 /* Sticky Navigation */
 .pd3-sticky-nav {
+  position: -webkit-sticky;
   position: sticky;
-  top: 120px;
+  top: 110px;
+  align-self: start;
   height: fit-content;
+  z-index: 20;
 }
 
 @media (max-width: 991px) { .pd3-sticky-nav { display: none; } }
@@ -387,6 +392,7 @@
 .pd3-detail-section {
   margin-bottom: 80px;
   position: relative;
+  scroll-margin-top: 120px;
 }
 
 .pd3-section-num {
@@ -545,3 +551,45 @@
   font-family: var(--font-text);
 }
 .pd3-disclaimer-box i { font-size: 1.4rem; flex-shrink: 0; }
+
+/* ── Composition Badges ── */
+.pd3-comp-box {
+  background: var(--white);
+  padding: 24px 28px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.pd3-comp-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.pd3-comp-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 22px;
+  border-radius: var(--radius-full);
+  background: rgba(96, 165, 250, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  color: var(--lime-dark);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--font-text);
+  transition: all 0.25s ease;
+  user-select: none;
+  cursor: default;
+  box-shadow: 0 2px 6px rgba(96, 165, 250, 0.08);
+}
+
+.pd3-comp-badge:hover {
+  background: var(--grad-lime);
+  color: #ffffff;
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.35);
+}

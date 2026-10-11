@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import Head from 'next/head';
 import '../styles/globals.css';
 import '../styles/contact-info.css';
 import '../styles/process-card.css';
@@ -22,7 +23,14 @@ function MyApp({ Component, pageProps }) {
     });
   }, []);
 
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;
