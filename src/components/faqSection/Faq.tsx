@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 
 const faqs = [
   {
@@ -7,7 +7,7 @@ const faqs = [
   },
   {
     q: 'How do I choose the right product?',
-    a: 'Start from the problem, then check that product’s datasheet. For example, VEDTOX is a toxin binder for feed-toxin concerns. Our technical team can advise at [phone/WhatsApp/email].',
+    a: 'Start from the problem, then check that product’s datasheet. For example, VEDTOX is a toxin binder for feed-toxin concerns. For queries contact us at info@vedvet.com.',
   },
   {
     q: 'Which animal health segments and species does VEDVET serve?',
