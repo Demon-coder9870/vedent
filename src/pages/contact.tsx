@@ -160,7 +160,7 @@ export default function ContactPage() {
                     <div>
                       <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>Head Office</h4>
                       <p style={{ margin: 0, color: '#555', lineHeight: '1.6' }}>
-                        St. Jude Chowk, Near, Shimla Bypass Rd,<br />Sewla Kalan, Majra, Dehradun, Shewala Kala, Uttarakhand 248171
+                        2nd floor, Applaud Tower, St. Jude's Chowk,<br />Behind Super Star Electricals, GMS Road,<br />Dehradun-248001, Uttarakhand, INDIA
                       </p>
                     </div>
                   </div>
@@ -170,8 +170,8 @@ export default function ContactPage() {
                     <div>
                       <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>Email</h4>
                       <p style={{ margin: 0, color: '#555', lineHeight: '1.6' }}>
-                        <a href="mailto:info@vedvet.com" style={{ color: 'inherit', textDecoration: 'none' }}>info@vedvet.com</a><br />
-                        <a href="mailto:amit@vedvet.com" style={{ color: 'inherit', textDecoration: 'none' }}>amit@vedvet.com</a>
+                        Business: <a href="mailto:info@vedvet.com" style={{ color: 'inherit', textDecoration: 'none' }}>info@vedvet.com</a><br />
+                        Sales Enquiry: <a href="mailto:amit@vedvet.com" style={{ color: 'inherit', textDecoration: 'none' }}>amit@vedvet.com</a>
                       </p>
                     </div>
                   </div>
@@ -179,8 +179,11 @@ export default function ContactPage() {
                   <div className="contact-info-item" style={{ display: 'flex', gap: '20px', marginBottom: '40px', alignItems: 'flex-start' }}>
                     <div className="contact-info-icon" style={{ fontSize: '1.5rem', color: 'var(--white)', background: 'var(--lime)', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '12px', flexShrink: 0 }}><i className="bi bi-telephone-fill" /></div>
                     <div>
-                      <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>Phone</h4>
-                      <p style={{ margin: 0, color: '#555', lineHeight: '1.6' }}>+91 999 77 148 00</p>
+                      <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>Phone & Working Hours</h4>
+                      <p style={{ margin: 0, color: '#555', lineHeight: '1.6' }}>
+                        +91 999 77 148 00<br />
+                        <span style={{ fontSize: '0.9rem', color: '#666' }}>Monday to Friday: 10:00 AM to 5:00 PM</span>
+                      </p>
                     </div>
                   </div>
 
@@ -235,7 +238,7 @@ export default function ContactPage() {
           height="100%"
           frameBorder="0"
           scrolling="no"
-          src="https://maps.google.com/maps?width=100%25&height=500&hl=en&q=St.+Jude+Chowk,+Near+Shimla+Bypass+Rd,+Sewla+Kalan,+Majra,+Dehradun,+Shewala+Kala,+Uttarakhand+248171&t=&z=15&ie=UTF8&iwloc=B&output=embed"
+          src="https://maps.google.com/maps?width=100%25&height=500&hl=en&q=2nd+floor,+Applaud+Tower,+St.+Jude's+Chowk,+Behind+Super+Star+Electricals,+GMS+Road,+Dehradun-248001,+Uttarakhand,+INDIA&t=&z=15&ie=UTF8&iwloc=B&output=embed"
           style={{ border: 0, filter: 'contrast(1.05)' }}
           allowFullScreen={false}
           loading="lazy"

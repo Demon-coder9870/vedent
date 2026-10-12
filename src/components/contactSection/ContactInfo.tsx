@@ -4,21 +4,21 @@ const contactDetails = [
   {
     icon: 'bi-geo-alt',
     title: 'Headquarters',
-    desc: 'VEDVET Animal Health Pvt. Ltd.\nIndustrial Estate, Mumbai, India',
-    link: '#',
+    desc: '2nd floor, Applaud Tower, St. Jude\'s Chowk,\nBehind Super Star Electricals, GMS Road,\nDehradun-248001, Uttarakhand, INDIA',
+    link: 'https://maps.google.com/?q=2nd+floor,+Applaud+Tower,+St.+Jude%27s+Chowk,+Behind+Super+Star+Electricals,+GMS+Road,+Dehradun-248001,+Uttarakhand,+INDIA',
     linkText: 'Get Directions'
   },
   {
     icon: 'bi-envelope',
     title: 'Email Support',
-    desc: 'info@vedvet.com\nsupport@vedvet.com',
+    desc: 'info@vedvet.com\nSales Enquiry: amit@vedvet.com',
     link: 'mailto:info@vedvet.com',
     linkText: 'Drop a Line'
   },
   {
     icon: 'bi-telephone',
     title: 'Phone Support',
-    desc: '+91 999 77 148 00\nMon - Sat, 9:00 AM - 6:00 PM',
+    desc: '+91 999 77 148 00\nMon - Fri, 10:00 AM - 5:00 PM',
     link: 'tel:+919997714800',
     linkText: 'Call Now'
   }

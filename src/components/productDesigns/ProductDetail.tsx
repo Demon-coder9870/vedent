@@ -18,37 +18,93 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
     ? relatedProducts.slice(0, 4)
     : products.filter((p) => p.slug !== product.slug).slice(0, 4);
 
+  const isAquaOrPets = Boolean(
+    product.category &&
+      (product.category.toLowerCase().includes('aqua') ||
+        product.category.toLowerCase().includes('pet'))
+  );
+
+  const hasDosage = !isAquaOrPets && Boolean(
+    product.dosage &&
+      product.dosage.methods &&
+      Array.isArray(product.dosage.methods) &&
+      product.dosage.methods.length > 0
+  );
+
+  const isManualScrollingRef = React.useRef(false);
+  const scrollTimerRef = React.useRef<NodeJS.Timeout | null>(null);
+
   React.useEffect(() => {
     const handleScroll = () => {
-      const sectionIds = ['pd3-desc', 'pd3-benefits', 'pd3-when', 'pd3-comp', 'pd3-dosage'];
-      const scrollPos = window.scrollY + 180;
-      let current = '';
+      if (isManualScrollingRef.current) return;
 
-      for (const id of sectionIds) {
-        const el = document.getElementById(id);
-        if (el && el.offsetTop <= scrollPos) {
-          current = id;
+      const sectionIds = ['pd3-desc', 'pd3-benefits', 'pd3-when'];
+      if (product.composition && product.composition.length > 0) {
+        sectionIds.push('pd3-comp');
+      }
+      if (hasDosage) {
+        sectionIds.push('pd3-dosage');
+      }
+      const existingSections = sectionIds
+        .map((id) => document.getElementById(id))
+        .filter((el): el is HTMLElement => Boolean(el));
+
+      if (existingSections.length === 0) return;
+
+      const header = document.querySelector('.site-header') as HTMLElement;
+      const headerHeight = header ? header.offsetHeight : 80;
+      const threshold = headerHeight + 50;
+
+      // If user is near bottom of the page, activate the last existing section
+      const isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 60;
+      if (isAtBottom) {
+        setActiveSection(existingSections[existingSections.length - 1].id);
+        return;
+      }
+
+      let current = existingSections[0].id;
+      for (const el of existingSections) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= threshold) {
+          current = el.id;
         }
       }
-      if (current) {
-        setActiveSection(current);
-      }
+
+      setActiveSection(current);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (scrollTimerRef.current) clearTimeout(scrollTimerRef.current);
+    };
   }, []);
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     const el = document.getElementById(id);
     if (el) {
-      const header = document.querySelector('.site-header') as HTMLElement;
-      const offset = header ? header.offsetHeight + 20 : 100;
-      const top = el.offsetTop - offset;
-      window.scrollTo({ top, behavior: 'smooth' });
+      isManualScrollingRef.current = true;
       setActiveSection(id);
+
+      if (scrollTimerRef.current) {
+        clearTimeout(scrollTimerRef.current);
+      }
+
+      const header = document.querySelector('.site-header') as HTMLElement;
+      const headerHeight = header ? header.offsetHeight : 80;
+      const elementPos = el.getBoundingClientRect().top + window.scrollY;
+      const targetTop = elementPos - headerHeight - 20;
+
+      window.scrollTo({
+        top: Math.max(0, targetTop),
+        behavior: 'smooth',
+      });
+
+      scrollTimerRef.current = setTimeout(() => {
+        isManualScrollingRef.current = false;
+      }, 700);
     }
   };
 
@@ -65,7 +121,6 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
         eyebrow={product.category}
         tagline={product.tagline}
         breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Products', href: '/products' }, { label: product.name }]}
-        bgImage="/images/hero.jpg"
       />
 
       <main className="pd3-main">
@@ -227,7 +282,7 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
                       <span>Composition</span>
                     </a>
                   )}
-                  {product.dosage && product.dosage.methods && (
+                  {hasDosage && (
                     <a
                       href="#pd3-dosage"
                       onClick={(e) => scrollToSection(e, 'pd3-dosage')}
@@ -306,9 +361,9 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
                 )}
 
                 {/* Dosage */}
-                {product.dosage && product.dosage.methods && (
+                {hasDosage && (
                   <div id="pd3-dosage" className="pd3-detail-section" data-aos="fade-up">
-                    <div className="pd3-section-num">05</div>
+                    <div className="pd3-section-num">{product.composition && product.composition.length > 0 ? '05' : '04'}</div>
                     <h2 className="pd3-detail-h">Dosage & Administration</h2>
                     <div>
                       {product.dosage.methods.map((method: any, i: number) => (

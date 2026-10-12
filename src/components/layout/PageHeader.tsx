@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 
 interface Breadcrumb {
@@ -14,20 +14,136 @@ interface PageHeaderProps {
   bgImage?: string;
 }
 
+function ParticlesCanvas() {
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    let animationFrameId: number;
+    let width = 0;
+    let height = 0;
+
+    const handleResize = () => {
+      const parent = canvas.parentElement;
+      if (!parent) return;
+      width = canvas.width = parent.clientWidth;
+      height = canvas.height = parent.clientHeight;
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    const isMobile = width < 768;
+    const particleCount = isMobile ? 35 : 65;
+    const maxDistance = isMobile ? 85 : 120;
+
+    interface Particle {
+      x: number;
+      y: number;
+      vx: number;
+      vy: number;
+      radius: number;
+      alpha: number;
+    }
+
+    const particles: Particle[] = [];
+    for (let i = 0; i < particleCount; i++) {
+      particles.push({
+        x: Math.random() * (width || 800),
+        y: Math.random() * (height || 360),
+        vx: (Math.random() - 0.5) * 0.6,
+        vy: (Math.random() - 0.5) * 0.6,
+        radius: Math.random() * 1.8 + 1,
+        alpha: Math.random() * 0.45 + 0.3,
+      });
+    }
+
+    const render = () => {
+      ctx.clearRect(0, 0, width, height);
+
+      // Draw constellation connection lines
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < maxDistance) {
+            const lineAlpha = (1 - dist / maxDistance) * 0.22;
+            ctx.strokeStyle = `rgba(96, 165, 250, ${lineAlpha})`;
+            ctx.lineWidth = 0.8;
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+
+      // Draw and drift particles
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+
+        ctx.fillStyle = `rgba(96, 165, 250, ${p.alpha})`;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fill();
+
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (p.x < -10) p.x = width + 10;
+        else if (p.x > width + 10) p.x = -10;
+
+        if (p.y < -10) p.y = height + 10;
+        else if (p.y > height + 10) p.y = -10;
+      }
+
+      animationFrameId = requestAnimationFrame(render);
+    };
+
+    render();
+
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      style={{
+        position: 'absolute',
+        inset: 0,
+        width: '100%',
+        height: '100%',
+        pointerEvents: 'none',
+        zIndex: 2,
+      }}
+    />
+  );
+}
+
 export default function PageHeader({ 
   title, 
   tagline, 
   eyebrow,
   breadcrumbs, 
-  bgImage = '/images/hero.jpg' 
 }: PageHeaderProps) {
   // Determine badge text: use provided eyebrow, or derive from breadcrumbs, or default to brand
   const badgeText = eyebrow || (breadcrumbs.length > 2 ? breadcrumbs[breadcrumbs.length - 2].label : 'VedVet Healthcare');
 
   return (
-    <div className="page-header" style={{ backgroundImage: `url(${bgImage})` }}>
-      {/* Modern cinematic dark gradient overlay & high-tech grid mesh */}
-      <div className="page-header-overlay" />
+    <div className="page-header">
+      {/* Dynamic interactive constellation particles */}
+      <ParticlesCanvas />
+
+      {/* High-tech grid mesh */}
       <div className="page-header-grid-mesh" />
 
       {/* Ambient luminous glow spheres */}

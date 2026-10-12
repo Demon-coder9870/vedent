@@ -87,7 +87,7 @@ export default function Footer() {
             <h5 className="footer-col-title">Contact</h5>
             <div className="footer-contact-item">
               <i className="bi bi-geo-alt" />
-              <span>St. Jude Chowk, Near, Shimla Bypass Rd, Sewla Kalan, Majra, Dehradun, Shewala Kala, Uttarakhand 248171</span>
+              <span>2nd floor, Applaud Tower, St. Jude's Chowk, Behind Super Star Electricals, GMS Road, Dehradun-248001, Uttarakhand, INDIA</span>
             </div>
             <div className="footer-contact-item">
               <i className="bi bi-telephone" />
@@ -97,12 +97,12 @@ export default function Footer() {
               <i className="bi bi-envelope" />
               <span style={{ lineHeight: '1.6' }}>
                 Business: <a href="mailto:info@vedvet.com" style={{ color: 'inherit' }}>info@vedvet.com</a><br />
-                Marketing: <a href="mailto:amit@vedvet.com" style={{ color: 'inherit' }}>amit@vedvet.com</a>
+                Sales Enquiry: <a href="mailto:amit@vedvet.com" style={{ color: 'inherit' }}>amit@vedvet.com</a>
               </span>
             </div>
             <div className="footer-contact-item">
               <i className="bi bi-clock" />
-              <span>Mon – Sat: 9am – 6pm</span>
+              <span>Mon – Fri: 10:00 AM – 5:00 PM</span>
             </div>
           </div>
         </div>

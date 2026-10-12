@@ -3360,13 +3360,12 @@ button { font-family: var(--font-text); }
 .page-header {
   position: relative;
   min-height: 380px;
-  padding: 160px 0 80px;
+  padding: 160px 0 85px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
-  background-position: center 35%;
-  background-repeat: no-repeat;
+  background: radial-gradient(circle at 50% 25%, rgba(37, 99, 235, 0.35) 0%, transparent 65%),
+              linear-gradient(135deg, #030712 0%, #08142b 30%, #0e2447 60%, #0a1832 85%, #030712 100%);
   color: #fff;
   text-align: center;
   margin-top: 0;
@@ -3936,6 +3935,78 @@ button { font-family: var(--font-text); }
   line-height: 1.7;
 }
 .wwd-mission-text strong { color: var(--lime); }
+
+/* WWD 4 CORE PILLARS */
+.wwd-pillar-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+.wwd-pillar-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: rgba(96, 165, 250, 0.3);
+}
+.wwd-pillar-img-wrap {
+  position: relative;
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+.wwd-pillar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.wwd-pillar-card:hover .wwd-pillar-img {
+  transform: scale(1.06);
+}
+.wwd-pillar-badge {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  background: rgba(11, 13, 20, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.wwd-pillar-badge i {
+  color: var(--lime);
+}
+.wwd-pillar-body {
+  padding: 24px 26px 28px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.wwd-pillar-body h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--charcoal);
+  margin-bottom: 10px;
+  font-family: var(--font-heading);
+}
+.wwd-pillar-body p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #555;
+  margin: 0;
+}
 
 /* PRINCIPLES TAB � ICON */
 .tab-icon {
