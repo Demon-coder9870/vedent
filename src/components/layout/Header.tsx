@@ -142,21 +142,40 @@ export default function Header() {
           </div>
         </div>
 
-        {/* ── MARQUEE BELOW HEADER ────────────────── */}
-        <div className="header-marquee-bar" aria-label="Announcement">
+        {/* ── MARQUEE BELOW HEADER (EUROTIER 2026) ────────────────── */}
+        <div className="header-marquee-bar" aria-label="EuroTier 2026 Announcement">
           <div className="header-marquee-track">
             <div className="header-marquee-group">
               {[...Array(6)].map((_, idx) => (
-                <span key={`marquee-item-1-${idx}`} className="header-marquee-text">
-                  VISIT US @ EUROTIER 2026  BOOTH D33, HALL 23
-                </span>
+                <Link
+                  key={`marquee-item-1-${idx}`}
+                  href="/contact"
+                  className="header-marquee-item"
+                  title="Visit us at EuroTier 2026 - Booth D33, Hall 23"
+                >
+                  <i className="bi bi-geo-alt-fill header-marquee-icon" />
+                  <span className="marquee-text-content">
+                    VISIT US @ <strong className="marquee-event-name">EUROTIER 2026</strong> - BOOTH D33, HALL 23
+                  </span>
+                  <span className="header-marquee-sep">✦</span>
+                </Link>
               ))}
             </div>
             <div className="header-marquee-group" aria-hidden="true">
               {[...Array(6)].map((_, idx) => (
-                <span key={`marquee-item-2-${idx}`} className="header-marquee-text">
-                  VISIT US @ EUROTIER 2026  BOOTH D33, HALL 23
-                </span>
+                <Link
+                  key={`marquee-item-2-${idx}`}
+                  href="/contact"
+                  className="header-marquee-item"
+                  tabIndex={-1}
+                  title="Visit us at EuroTier 2026 - Booth D33, Hall 23"
+                >
+                  <i className="bi bi-geo-alt-fill header-marquee-icon" />
+                  <span className="marquee-text-content">
+                    VISIT US @ <strong className="marquee-event-name">EUROTIER 2026</strong> - BOOTH D33, HALL 23
+                  </span>
+                  <span className="header-marquee-sep">✦</span>
+                </Link>
               ))}
             </div>
           </div>
