@@ -16,19 +16,19 @@ export default function ProductsPage() {
   ];
 
   const [activeCategory, setActiveCategory] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 12;
   
   useEffect(() => {
     if (router.query.category && typeof router.query.category === 'string') {
       setActiveCategory(router.query.category);
       setCurrentPage(1);
+      setSearchQuery('');
     } else if (router.isReady && !router.query.category) {
       setActiveCategory('All');
     }
   }, [router.query.category, router.isReady]);
-
-  const [searchQuery, setSearchQuery] = useState('');
-  const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 12;
 
   const categories = ['All', 'Poultry', 'Swine', 'Livestock', 'Aqua', 'Pets'];
   

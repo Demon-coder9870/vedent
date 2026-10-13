@@ -8,6 +8,7 @@ import Counter from '../components/homeSection/Counter';
 import About from '../components/aboutSection/About';
 import Sectors from '../components/sectorsSection/Sectors';
 import Commitment from '../components/homeSection/Commitment';
+import CoreCapabilities from '../components/homeSection/CoreCapabilities';
 import Vision from '../components/visionSection/Vision';
 import Faq from '../components/faqSection/Faq';
 import Certifications from '../components/homeSection/Certifications';
@@ -29,7 +30,8 @@ export default function Home() {
         <Counter />
         <About />
         <Sectors />
-        <Commitment />
+        {/* <Commitment /> */}
+        <CoreCapabilities />
         <Vision />
         <Faq />
         <Certifications />

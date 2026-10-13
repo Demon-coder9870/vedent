@@ -211,16 +211,33 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
               </div>
 
               {(() => {
-                const categoryImages: string[] = (product as any).animalUsedImages || [];
+                const getAnimalImages = (): string[] => {
+                  const cat = (product.category || '').toLowerCase();
+                  const derived: string[] = [];
+                  if (cat.includes('poultry')) derived.push('/images/products/animalused-poultry.png');
+                  if (cat.includes('livestock')) derived.push('/images/products/animalused-livestock.png');
+                  if (cat.includes('swine')) derived.push('/images/products/animalused-swine.png');
+                  if (cat.includes('aqua')) derived.push('/images/products/animalused-aqua.png');
+                  if (cat.includes('pet')) derived.push('/images/products/animalused-pets.png');
+
+                  const existing: string[] = (product as any).animalUsedImages || [];
+                  const combined = [...derived];
+                  existing.forEach((img) => {
+                    if (!combined.includes(img)) combined.push(img);
+                  });
+                  return combined.length > 0 ? combined : existing;
+                };
+
+                const categoryImages = getAnimalImages();
                 return categoryImages.length > 0 && (
-                  <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '10px', marginBottom: '15px', alignItems: 'center' }}>
+                  <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '8px', marginBottom: '16px', alignItems: 'center' }}>
                     <span style={{ fontSize: '0.95rem', color: 'var(--charcoal)', fontWeight: '600', marginRight: '5px' }}>Suitable For:</span>
                     {categoryImages.map((imgSrc, idx) => (
                       <img 
                         key={idx}
                         src={imgSrc} 
                         alt="Suitable for animals" 
-                        style={{ height: '60px', width: 'auto', objectFit: 'contain', borderRadius: '5px' }} 
+                        style={{ height: '38px', width: 'auto', objectFit: 'contain', borderRadius: '4px' }} 
                       />
                     ))}
                   </div>

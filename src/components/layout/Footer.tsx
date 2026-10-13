@@ -74,7 +74,14 @@ export default function Footer() {
             <ul className="footer-links">
               {['Poultry', 'Swine', 'Livestock', 'Aqua', 'Pets'].map((s) => (
                 <li key={s}>
-                  <Link href="/#sectors" onClick={(e) => handleLinkClick(e, '/#sectors')}>
+                  <Link
+                    href={`/products?category=${encodeURIComponent(s)}`}
+                    onClick={() => {
+                      if (router.pathname === '/products') {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                      }
+                    }}
+                  >
                     <i className="bi bi-chevron-right" /> {s}
                   </Link>
                 </li>
