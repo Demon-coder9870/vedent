@@ -471,6 +471,141 @@ button { font-family: var(--font-text); }
   box-shadow: 0 4px 12px rgba(59,130,246,0.4);
 }
 
+/* ── Blue Header Marquee Ticker (EuroTier 2026) ───────────── */
+
+.header-marquee-bar {
+  background: linear-gradient(90deg, #1e40af 0%, #2563eb 50%, #1d4ed8 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-bottom: 1px solid rgba(30, 64, 175, 0.5);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.22);
+  height: 36px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 3%, #000 97%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 3%, #000 97%, transparent 100%);
+}
+
+.header-marquee-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: headerMarqueeScroll 28s linear infinite;
+}
+
+.header-marquee-bar:hover .header-marquee-track {
+  animation-play-state: paused;
+}
+
+.header-marquee-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header-marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-family: var(--font-text, 'Jost', sans-serif);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 0 6px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.header-marquee-item:hover {
+  opacity: 0.92;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.marquee-pin-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  color: #eff6ff;
+  font-size: 0.72rem;
+  flex-shrink: 0;
+}
+
+.marquee-text-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #ffffff;
+}
+
+.marquee-event-name {
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+}
+
+.marquee-booth-badge {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.header-marquee-sep {
+  color: #93c5fd;
+  opacity: 0.85;
+  margin: 0 20px;
+  font-size: 0.75rem;
+  display: inline-block;
+  user-select: none;
+}
+
+@keyframes headerMarqueeScroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-marquee-bar {
+    height: 32px;
+  }
+  .header-marquee-item {
+    font-size: 0.74rem;
+    gap: 6px;
+  }
+  .marquee-pin-badge {
+    width: 18px;
+    height: 18px;
+    font-size: 0.65rem;
+  }
+  .marquee-booth-badge {
+    padding: 1px 6px;
+    font-size: 0.7rem;
+  }
+  .header-marquee-sep {
+    margin: 0 14px;
+    font-size: 0.65rem;
+  }
+}
+
 /* ── Nav Wrapper ────────────────────────────────────────── */
 
 .nav-wrapper {
@@ -972,9 +1107,9 @@ button { font-family: var(--font-text); }
    ============================================================ */
 
 .hero-section {
-  height: calc(100vh - 76px);
+  height: calc(100vh - 112px);
   min-height: 600px;
-  margin-top: 76px;
+  margin-top: 112px;
   position: relative;
   overflow: hidden;
 }
@@ -2360,7 +2495,7 @@ button { font-family: var(--font-text); }
   .announce-bar { display: none; }
   .announce-right { display: none; }
   .site-header { padding: 0; }
-  .hero-section { margin-top: 70px; height: calc(100vh - 70px); min-height: 500px; }
+  .hero-section { margin-top: 102px; height: calc(100vh - 102px); min-height: 500px; }
   .services-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .vision-sub-videos { grid-template-columns: 1fr; }

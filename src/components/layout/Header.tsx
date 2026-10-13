@@ -141,6 +141,49 @@ export default function Header() {
             </nav>
           </div>
         </div>
+
+        {/* ── MARQUEE BELOW HEADER (EUROTIER 2026) ────────────────── */}
+        <div className="header-marquee-bar" aria-label="EuroTier 2026 Announcement">
+          <div className="header-marquee-track">
+            <div className="header-marquee-group">
+              {[...Array(6)].map((_, idx) => (
+                <Link
+                  key={`marquee-item-1-${idx}`}
+                  href="/contact"
+                  className="header-marquee-item"
+                  title="Visit us at EuroTier 2026 - Booth D33, Hall 23"
+                >
+                  <span className="marquee-pin-badge">
+                    <i className="bi bi-geo-alt-fill" />
+                  </span>
+                  <span className="marquee-text-content">
+                    VISIT US @ <strong className="marquee-event-name">EUROTIER 2026</strong> - <span className="marquee-booth-badge">BOOTH D33, HALL 23</span>
+                  </span>
+                  <span className="header-marquee-sep">✦</span>
+                </Link>
+              ))}
+            </div>
+            <div className="header-marquee-group" aria-hidden="true">
+              {[...Array(6)].map((_, idx) => (
+                <Link
+                  key={`marquee-item-2-${idx}`}
+                  href="/contact"
+                  className="header-marquee-item"
+                  tabIndex={-1}
+                  title="Visit us at EuroTier 2026 - Booth D33, Hall 23"
+                >
+                  <span className="marquee-pin-badge">
+                    <i className="bi bi-geo-alt-fill" />
+                  </span>
+                  <span className="marquee-text-content">
+                    VISIT US @ <strong className="marquee-event-name">EUROTIER 2026</strong> - <span className="marquee-booth-badge">BOOTH D33, HALL 23</span>
+                  </span>
+                  <span className="header-marquee-sep">✦</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
       </header>
 
       {/* ── MOBILE DRAWER ──────────────────────────────── */}
