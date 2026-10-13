@@ -527,16 +527,9 @@ button { font-family: var(--font-text); }
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-.marquee-pin-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
-  color: #eff6ff;
-  font-size: 0.72rem;
+.header-marquee-icon {
+  color: #93c5fd;
+  font-size: 0.82rem;
   flex-shrink: 0;
 }
 
@@ -552,17 +545,6 @@ button { font-family: var(--font-text); }
   font-weight: 800;
   letter-spacing: 0.08em;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
-}
-
-.marquee-booth-badge {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  color: #ffffff;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .header-marquee-sep {
@@ -591,14 +573,8 @@ button { font-family: var(--font-text); }
     font-size: 0.74rem;
     gap: 6px;
   }
-  .marquee-pin-badge {
-    width: 18px;
-    height: 18px;
-    font-size: 0.65rem;
-  }
-  .marquee-booth-badge {
-    padding: 1px 6px;
-    font-size: 0.7rem;
+  .header-marquee-icon {
+    font-size: 0.72rem;
   }
   .header-marquee-sep {
     margin: 0 14px;
