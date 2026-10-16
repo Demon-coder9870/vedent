@@ -5,6 +5,7 @@ import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import PageHeader from '../layout/PageHeader';
 import { products } from '../../data/products';
+import FeaturedBadge from './FeaturedBadge';
 
 type Product = typeof products[0];
 interface ProductPageProps { product: Product; relatedProducts: Product[]; }
@@ -190,7 +191,12 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
           {/* Right: Info Panel */}
           <div className="pd3-right-panel">
             <div className="pd3-right-inner" data-aos="fade-up" data-aos-delay="200">
-              <span className="pd3-eyebrow">{product.category}</span>
+              <div className="pd3-header-meta">
+                <span className="pd3-eyebrow">{product.category}</span>
+                {product.featured && (
+                  <FeaturedBadge featured={product.featured} size="lg" />
+                )}
+              </div>
               <h1 className="pd3-h1">{product.name}</h1>
               {product.tagline && (
                 <p className="pd3-tagline-text"><i className="bi bi-quote"></i>{product.tagline}</p>
@@ -447,6 +453,11 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
                     data-aos-delay={idx * 100}
                   >
                     <div className="pd3-related-img-wrapper">
+                      {relProduct.featured && (
+                        <div className="pd3-related-badge-wrap">
+                          <FeaturedBadge featured={relProduct.featured} size="sm" />
+                        </div>
+                      )}
                       <img 
                         src={relProduct.image} 
                         alt={relProduct.name} 

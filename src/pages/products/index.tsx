@@ -6,6 +6,7 @@ import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import PageHeader from '../../components/layout/PageHeader';
 import { products } from '../../data/products';
+import FeaturedBadge from '../../components/productDesigns/FeaturedBadge';
 
 export default function ProductsPage() {
   const router = useRouter();
@@ -31,6 +32,39 @@ export default function ProductsPage() {
   }, [router.query.category, router.isReady]);
 
   const categories = ['All', 'Poultry', 'Swine', 'Livestock', 'Aqua', 'Pets'];
+
+  const getProductDisplayOrder = (product: typeof products[0], category: string): number => {
+    const orderObj = (product as unknown as { displayOrder?: Record<string, number> }).displayOrder;
+    if (!orderObj) return 9999;
+
+    if (category === 'Poultry') {
+      return orderObj['Poultry'] ?? 9999;
+    }
+    if (category === 'Livestock' || category === 'Swine') {
+      return orderObj['Livestock/Swine'] ?? orderObj['Livestock'] ?? orderObj['Swine'] ?? 9999;
+    }
+    if (category === 'Aqua') {
+      return orderObj['Aqua'] ?? 9999;
+    }
+    if (category === 'Pets') {
+      return orderObj['Pets'] ?? 9999;
+    }
+
+    // Default when category is 'All':
+    if (orderObj['Poultry'] !== undefined) {
+      return orderObj['Poultry'];
+    }
+    if (orderObj['Livestock/Swine'] !== undefined) {
+      return 100 + orderObj['Livestock/Swine'];
+    }
+    if (orderObj['Aqua'] !== undefined) {
+      return 200 + orderObj['Aqua'];
+    }
+    if (orderObj['Pets'] !== undefined) {
+      return 300 + orderObj['Pets'];
+    }
+    return 9999;
+  };
   
   const filteredProducts = products.filter(p => {
     const categoryMatch = activeCategory === 'All' || p.category.includes(activeCategory) || p.category === 'All';
@@ -40,8 +74,17 @@ export default function ProductsPage() {
     return categoryMatch && searchMatch;
   });
 
-  const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
-  const paginatedProducts = filteredProducts.slice(
+  const sortedProducts = [...filteredProducts].sort((a, b) => {
+    const orderA = getProductDisplayOrder(a, activeCategory);
+    const orderB = getProductDisplayOrder(b, activeCategory);
+    if (orderA !== orderB) {
+      return orderA - orderB;
+    }
+    return a.name.localeCompare(b.name);
+  });
+
+  const totalPages = Math.ceil(sortedProducts.length / productsPerPage);
+  const paginatedProducts = sortedProducts.slice(
     (currentPage - 1) * productsPerPage,
     currentPage * productsPerPage
   );
@@ -136,6 +179,11 @@ export default function ProductsPage() {
               {paginatedProducts.map((product, index) => (
                 <Link href={`/product/${product.slug}`} key={product.slug} style={{ textDecoration: 'none' }} passHref>
                   <div className="product-card" data-aos="fade-up" data-aos-delay={index * 100}>
+                    {product.featured && (
+                      <div className="product-card-badge-wrap">
+                        <FeaturedBadge featured={product.featured} size="md" />
+                      </div>
+                    )}
                     <div className="product-image-wrapper">
                       <img src={product.image} alt={product.name} className="product-image" />
                     </div>

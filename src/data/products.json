@@ -3,6 +3,11 @@
     "name": "VEDCOCCINIL",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1Ltr Bottle and 25kg Bag",
+    "displayOrder": {
+      "Poultry": 2,
+      "Livestock/Swine": 5
+    },
+    "featured": "Most Popular",
     "slug": "vedcoccinil",
     "image": "/images/products/Vedcoccinil/01.png",
     "gallery": [
@@ -107,6 +112,11 @@
     "name": "VEDBLOTNIL",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltr Bottle",
+    "displayOrder": {
+      "Poultry": 13,
+      "Livestock/Swine": 10
+    },
+    "featured": null,
     "slug": "vedblotnil",
     "image": "/images/products/Vedblotnil/01.png",
     "gallery": [
@@ -224,6 +234,10 @@
     "name": "VEDCAL",
     "category": "Poultry",
     "presentation": "1 Ltr Bottle",
+    "displayOrder": {
+      "Poultry": 4
+    },
+    "featured": "Best Seller",
     "slug": "vedcal",
     "image": "/images/products/Vedcal/01.png",
     "gallery": [
@@ -305,6 +319,10 @@
     "name": "VEDCAL-C",
     "category": "Livestock",
     "presentation": "1 Ltre, 5 Ltre, 10 Ltre, 20 Ltre bottle",
+    "displayOrder": {
+      "Livestock/Swine": 11
+    },
+    "featured": null,
     "slug": "vedcal-c",
     "image": "/images/products/Vedcal-C/01.png",
     "gallery": [
@@ -399,6 +417,11 @@
     "name": "VED CRD HERB",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1Ltr Bottle and 25kg Bag",
+    "displayOrder": {
+      "Poultry": 1,
+      "Livestock/Swine": 6
+    },
+    "featured": "Best Seller",
     "slug": "ved-crd-herb",
     "image": "/images/products/Ved-CRD-Herb/01.png",
     "gallery": [
@@ -521,6 +544,11 @@
     "name": "VEDCLEAN",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle",
+    "displayOrder": {
+      "Poultry": 14,
+      "Livestock/Swine": 12
+    },
+    "featured": null,
     "slug": "vedclean",
     "image": "/images/products/Vedclean/01.png",
     "gallery": [
@@ -634,6 +662,11 @@
     "name": "VEDGROW HERB",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 3,
+      "Livestock/Swine": 13
+    },
+    "featured": null,
     "slug": "vedgrow-herb",
     "image": "/images/products/Vedgrow-Herb/01.png",
     "gallery": [
@@ -772,6 +805,11 @@
     "name": "VEDGUTNIL",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 15,
+      "Livestock/Swine": 14
+    },
+    "featured": null,
     "slug": "vedgutnil",
     "image": "/images/products/Vedgutnil/01.png",
     "gallery": [
@@ -903,6 +941,11 @@
     "name": "VEDHEMO",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle",
+    "displayOrder": {
+      "Poultry": 16,
+      "Livestock/Swine": 15
+    },
+    "featured": null,
     "slug": "vedhemo",
     "image": "/images/products/Vedhemo/01.png",
     "gallery": [
@@ -1022,6 +1065,11 @@
     "name": "VEDIARRO",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 12,
+      "Livestock/Swine": 9
+    },
+    "featured": null,
     "slug": "vediarro",
     "image": "/images/products/Vediarro/01.png",
     "gallery": [
@@ -1173,6 +1221,11 @@
     "name": "VEDIMMUNO",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 17,
+      "Livestock/Swine": 16
+    },
+    "featured": null,
     "slug": "vedimmuno",
     "image": "/images/products/Vedimmuno/01.png",
     "gallery": [
@@ -1292,6 +1345,11 @@
     "name": "VEDINFLA",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 18,
+      "Livestock/Swine": 17
+    },
+    "featured": null,
     "slug": "vedinfla",
     "image": "/images/products/Vedinfla/01.png",
     "gallery": [
@@ -1397,6 +1455,11 @@
     "name": "VED KIDNEY POWER",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 19,
+      "Livestock/Swine": 18
+    },
+    "featured": null,
     "slug": "ved-kidney-power",
     "image": "/images/products/Ved-Kidney-Power/01.png",
     "gallery": [
@@ -1533,6 +1596,11 @@
     "name": "VEDLIB",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 20,
+      "Livestock/Swine": 19
+    },
+    "featured": null,
     "slug": "vedlib",
     "image": "/images/products/Vedlib/01.png",
     "gallery": [
@@ -1654,6 +1722,11 @@
     "name": "VEDLIV HERB",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 6,
+      "Livestock/Swine": 20
+    },
+    "featured": null,
     "slug": "vedliv-herb",
     "image": "/images/products/Vedliv-Herb/01.png",
     "gallery": [
@@ -1813,6 +1886,11 @@
     "name": "VED MV PLUS",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Litre Bottle",
+    "displayOrder": {
+      "Poultry": 7,
+      "Livestock/Swine": 21
+    },
+    "featured": null,
     "slug": "ved-mv-plus",
     "image": "/images/products/Ved-MV-Plus/01.png",
     "gallery": [
@@ -1938,6 +2016,11 @@
     "name": "VEDOLYTE",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 5,
+      "Livestock/Swine": 22
+    },
+    "featured": "Best Seller",
     "slug": "vedolyte",
     "image": "/images/products/Vedolyte/01.png",
     "gallery": [
@@ -2060,6 +2143,11 @@
     "name": "VEDOXIDENT",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 21,
+      "Livestock/Swine": 23
+    },
+    "featured": null,
     "slug": "vedoxident",
     "image": "/images/products/Vedoxident/01.png",
     "gallery": [
@@ -2162,6 +2250,11 @@
     "name": "VEDpH",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle",
+    "displayOrder": {
+      "Poultry": 22,
+      "Livestock/Swine": 24
+    },
+    "featured": null,
     "slug": "vedph",
     "image": "/images/products/VedpH/01.png",
     "gallery": [
@@ -2265,6 +2358,11 @@
     "name": "VEDPYRIN",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 23,
+      "Livestock/Swine": 7
+    },
+    "featured": null,
     "slug": "vedpyrin",
     "image": "/images/products/Vedpyrin/01.png",
     "gallery": [
@@ -2372,6 +2470,11 @@
     "name": "VEDREST",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle",
+    "displayOrder": {
+      "Poultry": 24,
+      "Livestock/Swine": 25
+    },
+    "featured": null,
     "slug": "vedrest",
     "image": "/images/products/Vedrest/01.png",
     "gallery": [
@@ -2474,6 +2577,11 @@
     "name": "VEDSELVIT E",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle",
+    "displayOrder": {
+      "Poultry": 8,
+      "Livestock/Swine": 26
+    },
+    "featured": "Most Popular",
     "slug": "vedselvit-e",
     "image": "/images/products/Vedselvit-E/01.png",
     "gallery": [
@@ -2568,6 +2676,11 @@
     "name": "VEDTOX",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 11,
+      "Livestock/Swine": 8
+    },
+    "featured": "Most Popular",
     "slug": "vedtox",
     "image": "/images/products/Vedtox/01.png",
     "gallery": [
@@ -2717,6 +2830,10 @@
     "name": "VEDUTRINE",
     "category": "Livestock & Swine",
     "presentation": "1 Ltre Bottle",
+    "displayOrder": {
+      "Livestock/Swine": 27
+    },
+    "featured": null,
     "slug": "vedutrine",
     "image": "/images/products/Vedutrine/01.png",
     "gallery": [
@@ -2823,6 +2940,11 @@
     "name": "VEDVIRO",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle",
+    "displayOrder": {
+      "Poultry": 9,
+      "Livestock/Swine": 28
+    },
+    "featured": null,
     "slug": "vedviro",
     "image": "/images/products/Vedviro/01.png",
     "gallery": [
@@ -2954,6 +3076,11 @@
     "name": "VEDVIT A",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 25,
+      "Livestock/Swine": 29
+    },
+    "featured": null,
     "slug": "vedvit-a",
     "image": "/images/products/Vedvit-A/01.png",
     "gallery": [
@@ -3104,6 +3231,11 @@
     "name": "VEDVIT E",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 26,
+      "Livestock/Swine": 30
+    },
+    "featured": null,
     "slug": "vedvit-e",
     "image": "/images/products/Vedvit-E/01.png",
     "gallery": [
@@ -3223,6 +3355,11 @@
     "name": "VEDVIT C",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 27,
+      "Livestock/Swine": 31
+    },
+    "featured": null,
     "slug": "vedvit-c",
     "image": "/images/products/Vedvit-C/01.png",
     "gallery": [
@@ -3372,6 +3509,11 @@
     "name": "VEDWORM",
     "category": "Poultry & Livestock & Swine",
     "presentation": "1 Ltre Bottle and 25kg bag",
+    "displayOrder": {
+      "Poultry": 10,
+      "Livestock/Swine": 4
+    },
+    "featured": "Most Popular",
     "slug": "vedworm",
     "image": "/images/products/Vedworm/01.png",
     "gallery": [
@@ -3500,6 +3642,11 @@
     "name": "V-CHOLINE-90",
     "category": "Poultry & Livestock & Swine",
     "presentation": "25 kg Bag",
+    "displayOrder": {
+      "Poultry": 28,
+      "Livestock/Swine": 3
+    },
+    "featured": "Best Seller",
     "slug": "v-choline-90",
     "image": "/images/products/V-Choline-90/01.png",
     "gallery": [
@@ -3630,6 +3777,11 @@
     "name": "VEDLYSIN",
     "category": "Poultry & Livestock & Swine",
     "presentation": "25 kg Bag",
+    "displayOrder": {
+      "Poultry": 29,
+      "Livestock/Swine": 2
+    },
+    "featured": "Best Seller",
     "slug": "vedlysin",
     "image": "/images/products/Vedlysin/01.png",
     "gallery": [
@@ -3715,6 +3867,11 @@
     "name": "VEDMETH",
     "category": "Poultry & Livestock & Swine",
     "presentation": "25 kg Bag",
+    "displayOrder": {
+      "Poultry": 30,
+      "Livestock/Swine": 1
+    },
+    "featured": "Best Seller",
     "slug": "vedmeth",
     "image": "/images/products/Vedmeth/01.png",
     "gallery": [
@@ -3817,6 +3974,10 @@
     "name": "VEDMIX",
     "category": "Livestock & Swine",
     "presentation": "25 kg Bag",
+    "displayOrder": {
+      "Livestock/Swine": 32
+    },
+    "featured": null,
     "slug": "vedmix",
     "image": "/images/products/Vedmix/01.png",
     "gallery": [
@@ -3950,6 +4111,11 @@
     "name": "VEDIGEST",
     "category": "Poultry & Livestock & Swine",
     "presentation": "25 kg Bag",
+    "displayOrder": {
+      "Poultry": 31,
+      "Livestock/Swine": 33
+    },
+    "featured": null,
     "slug": "vedigest",
     "image": "/images/products/Vedigest/01.png",
     "gallery": [
@@ -4088,6 +4254,10 @@
     "name": "OXYVED-AQ",
     "category": "Aqua",
     "presentation": "5kg Pack",
+    "displayOrder": {
+      "Aqua": 1
+    },
+    "featured": null,
     "slug": "Oxyved-aq",
     "image": "/images/products/Oxyved-Aq/01.png",
     "gallery": [
@@ -4140,6 +4310,10 @@
     "name": "O2VED-AQ",
     "category": "Aqua",
     "presentation": "5kg Pack",
+    "displayOrder": {
+      "Aqua": 2
+    },
+    "featured": null,
     "slug": "O2Ved-aq",
     "image": "/images/products/O2Ved-Aq/01.png",
     "gallery": [
@@ -4192,6 +4366,10 @@
     "name": "VEDCLEAN-AQ",
     "category": "Aqua",
     "presentation": "5kg Pack",
+    "displayOrder": {
+      "Aqua": 3
+    },
+    "featured": null,
     "slug": "Vedclean-aq",
     "image": "/images/products/Vedclean-Aq/01.png",
     "gallery": [
@@ -4248,6 +4426,10 @@
     "name": "MICROMIN VED-AQ",
     "category": "Aqua",
     "presentation": "5kg Pack",
+    "displayOrder": {
+      "Aqua": 4
+    },
+    "featured": null,
     "slug": "Micromin-ved-aq",
     "image": "/images/products/Micromin-Ved-Aq/01.png",
     "gallery": [
@@ -4300,6 +4482,10 @@
     "name": "VEDPROVIB-AQ",
     "category": "Aqua",
     "presentation": "5kg Pack",
+    "displayOrder": {
+      "Aqua": 5
+    },
+    "featured": null,
     "slug": "Vedprovib-aq",
     "image": "/images/products/Vedprovib-Aq/01.png",
     "gallery": [
@@ -4352,6 +4538,10 @@
     "name": "VEDLIV-AQ",
     "category": "Aqua",
     "presentation": "5kg Pack",
+    "displayOrder": {
+      "Aqua": 6
+    },
+    "featured": null,
     "slug": "Vedliv-aq",
     "image": "/images/products/Vedliv-Aq/01.png",
     "gallery": [
@@ -4400,6 +4590,10 @@
     "name": "VEDGROW-AQ",
     "category": "Aqua",
     "presentation": "5kg Pack",
+    "displayOrder": {
+      "Aqua": 7
+    },
+    "featured": null,
     "slug": "Vedgrow-aq",
     "image": "/images/products/Vedgrow-Aq/01.png",
     "gallery": [
@@ -4448,6 +4642,10 @@
     "name": "VEDTOX-AQ",
     "category": "Aqua",
     "presentation": "5kg Pack",
+    "displayOrder": {
+      "Aqua": 8
+    },
+    "featured": null,
     "slug": "Vedtox-aq",
     "image": "/images/products/Vedtox-Aq/01.png",
     "gallery": [
@@ -4500,6 +4698,10 @@
     "name": "DIGYVED PLUS",
     "category": "Pets",
     "presentation": "100ml",
+    "displayOrder": {
+      "Pets": 1
+    },
+    "featured": null,
     "slug": "Digyved-plus",
     "image": "/images/products/Digyved-Plus/01.png",
     "gallery": [
@@ -4547,6 +4749,10 @@
     "name": "DIGYVED DROPS",
     "category": "Pets",
     "presentation": "30ml",
+    "displayOrder": {
+      "Pets": 2
+    },
+    "featured": null,
     "slug": "Digyved-drops",
     "image": "/images/products/Digyved-Drops/01.png",
     "gallery": [
@@ -4594,6 +4800,10 @@
     "name": "LIV VED",
     "category": "Pets",
     "presentation": "100ml",
+    "displayOrder": {
+      "Pets": 3
+    },
+    "featured": null,
     "slug": "Liv-ved",
     "image": "/images/products/Liv-Ved/01.png",
     "gallery": [
@@ -4640,6 +4850,10 @@
     "name": "VEDPYRIN PETS",
     "category": "Pets",
     "presentation": "30ml",
+    "displayOrder": {
+      "Pets": 4
+    },
+    "featured": null,
     "slug": "Vedpyrin-pets",
     "image": "/images/products/Vedpyrin-Pets/01.png",
     "gallery": [
@@ -4686,6 +4900,10 @@
     "name": "IMMUNOVED",
     "category": "Pets",
     "presentation": "100ml",
+    "displayOrder": {
+      "Pets": 5
+    },
+    "featured": null,
     "slug": "Immunoved",
     "image": "/images/products/Immunoved/01.png",
     "gallery": [
@@ -4737,6 +4955,10 @@
     "name": "CLEAN AND CARE",
     "category": "Pets",
     "presentation": "200g / 150g",
+    "displayOrder": {
+      "Pets": 6
+    },
+    "featured": null,
     "slug": "Clean-and-care",
     "image": "/images/products/Clean&Care/01.png",
     "gallery": [
@@ -4775,6 +4997,10 @@
     "name": "FUR CARE",
     "category": "Pets",
     "presentation": "200ml",
+    "displayOrder": {
+      "Pets": 7
+    },
+    "featured": null,
     "slug": "Fur-care",
     "image": "/images/products/Furcare/01.png",
     "gallery": [
@@ -4813,6 +5039,10 @@
     "name": "VED MV",
     "category": "Pets",
     "presentation": "30ml",
+    "displayOrder": {
+      "Pets": 8
+    },
+    "featured": null,
     "slug": "Ved-mv",
     "image": "/images/products/Ved-MV/01.png",
     "gallery": [
@@ -4859,6 +5089,10 @@
     "name": "VEDIARRO HERB",
     "category": "Pets",
     "presentation": "100ml",
+    "displayOrder": {
+      "Pets": 9
+    },
+    "featured": null,
     "slug": "Vediarro-herb",
     "image": "/images/products/Vediarro-Herb/01.png",
     "gallery": [
@@ -4900,6 +5134,10 @@
     "name": "VEDRESP",
     "category": "Pets",
     "presentation": "100ml",
+    "displayOrder": {
+      "Pets": 10
+    },
+    "featured": null,
     "slug": "Vedresp",
     "image": "/images/products/Vedresp/01.png",
     "gallery": [
@@ -4941,6 +5179,10 @@
     "name": "VEDWORM PETS",
     "category": "Pets",
     "presentation": "100ml",
+    "displayOrder": {
+      "Pets": 11
+    },
+    "featured": null,
     "slug": "Vedworm-pets",
     "image": "/images/products/Vedworm-Pets/01.png",
     "gallery": [
@@ -4983,6 +5225,10 @@
     "name": "VEDCAL B12",
     "category": "Pets",
     "presentation": "200ml",
+    "displayOrder": {
+      "Pets": 12
+    },
+    "featured": null,
     "slug": "Vedcal-b12",
     "image": "/images/products/Vedcal-B12/01.png",
     "gallery": [

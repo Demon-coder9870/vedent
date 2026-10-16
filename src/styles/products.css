@@ -1203,3 +1203,161 @@
   font-weight: 600;
   margin: 0;
 }
+
+/* ============================================================
+   Featured Product Badge System
+   ============================================================ */
+
+.product-featured-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 9999px;
+  font-family: var(--font-text, 'Jost', sans-serif);
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  white-space: nowrap;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.product-featured-badge i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glimmer Shimmer Animation */
+.product-featured-badge::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.45) 50%,
+    transparent 100%
+  );
+  transform: skewX(-22deg);
+  animation: badgeShimmerSweep 4.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  border-radius: 9999px;
+}
+
+@keyframes badgeShimmerSweep {
+  0%, 70% {
+    left: -80%;
+  }
+  100% {
+    left: 140%;
+  }
+}
+
+/* Base Badge: Rich Red Gradient */
+.product-featured-badge {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 50%, #b91c1c 100%);
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.42), 0 1px 4px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(254, 202, 202, 0.6);
+}
+
+/* Variant 1: Best Seller (Vibrant Crimson Red Gradient) */
+.product-featured-badge.badge-bestseller {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 50%, #991b1b 100%);
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.45), 0 1px 4px rgba(0, 0, 0, 0.12);
+  border-color: rgba(254, 202, 202, 0.65);
+}
+
+/* Variant 2: Most Popular (Vibrant Scarlet / Ruby Red Gradient) */
+.product-featured-badge.badge-popular {
+  background: linear-gradient(135deg, #f43f5e 0%, #e11d48 50%, #be123c 100%);
+  box-shadow: 0 4px 14px rgba(225, 29, 72, 0.45), 0 1px 4px rgba(0, 0, 0, 0.12);
+  border-color: rgba(254, 205, 211, 0.65);
+}
+
+/* Variant 3: Default Featured (Deep Red Gradient) */
+.product-featured-badge.badge-default {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 50%, #991b1b 100%);
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.45), 0 1px 4px rgba(0, 0, 0, 0.12);
+  border-color: rgba(254, 202, 202, 0.65);
+}
+
+/* Sizes */
+.product-featured-badge.badge-sm {
+  padding: 4px 10px;
+  font-size: 0.65rem;
+}
+
+.product-featured-badge.badge-md {
+  padding: 5px 12px;
+  font-size: 0.72rem;
+}
+
+.product-featured-badge.badge-lg {
+  padding: 6px 16px;
+  font-size: 0.78rem;
+}
+
+/* Positioning inside Product Card (List Page) */
+.product-card-badge-wrap {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.product-card:hover .product-card-badge-wrap .product-featured-badge {
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Meta row beside category eyebrow on Detail Page */
+.pd3-header-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.pd3-header-meta .pd3-eyebrow {
+  margin-bottom: 0;
+}
+
+/* Positioning in Related Products Cards */
+.pd3-related-badge-wrap {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.pd3-related-card:hover .pd3-related-badge-wrap .product-featured-badge {
+  transform: translateY(-2px) scale(1.04);
+}
+
+@media (max-width: 768px) {
+  .product-card-badge-wrap {
+    top: 10px;
+    left: 10px;
+  }
+  .pd3-header-meta {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .product-featured-badge.badge-lg {
+    padding: 6px 14px;
+    font-size: 0.72rem;
+  }
+}
+
