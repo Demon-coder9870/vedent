@@ -50,7 +50,7 @@ export default function Sectors() {
           >
             {sectors.map(({ bg, tag, title, sub }, i) => (
               <SwiperSlide key={i}>
-                <Link href={`/products?category=${title}`} className="sector-card">
+                <Link href={`/products/${title.toLowerCase()}`} className="sector-card">
                   <div className="sector-card-bg" style={{ backgroundImage: `url(${bg})` }} />
                   <div className="sector-card-overlay" />
                   <div className="sector-card-content">

@@ -64,7 +64,7 @@ export default function Hero() {
               {heroSectors.map(sector => (
                 <Link
                   key={sector.name}
-                  href={`/products?category=${encodeURIComponent(sector.name)}`}
+                  href={`/products/${encodeURIComponent(sector.name.toLowerCase())}`}
                   className="pill"
                 >
                   {sector.name}

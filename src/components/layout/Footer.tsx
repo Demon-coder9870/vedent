@@ -75,9 +75,9 @@ export default function Footer() {
               {['Poultry', 'Swine', 'Livestock', 'Aqua', 'Pets'].map((s) => (
                 <li key={s}>
                   <Link
-                    href={`/products?category=${encodeURIComponent(s)}`}
+                    href={`/products/${s.toLowerCase()}`}
                     onClick={() => {
-                      if (router.pathname === '/products') {
+                      if (router.pathname.startsWith('/products')) {
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                       }
                     }}
