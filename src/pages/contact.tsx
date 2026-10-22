@@ -4,6 +4,7 @@ import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import PageHeader from '../components/layout/PageHeader';
 import CtaSection from '../components/ctaSection/CtaSection';
+import { getCanonicalUrl } from '../data/seoConfig';
 
 const processSteps = [
   {
@@ -68,8 +69,9 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <title>Contact Us | VEDVET</title>
-        <meta name="description" content="Get in touch with VEDVET for premium animal healthcare solutions." />
+        <title>Contact VEDVET | Veterinary Healthcare Inquiries & Support</title>
+        <meta name="description" content="Get in touch with VEDVET for premium veterinary pharmaceuticals, feed supplements, and partnership inquiries worldwide." />
+        <link rel="canonical" href={getCanonicalUrl('/contact')} key="canonical" />
       </Head>
 
       <Header />

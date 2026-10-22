@@ -517,7 +517,8 @@
 }
 
 .pd3-ben-content { flex: 1; }
-.pd3-ben-content h4 {
+.pd3-ben-content h4,
+.pd3-ben-content h3 {
   font-size: 1.15rem;
   font-weight: 800;
   color: var(--charcoal);

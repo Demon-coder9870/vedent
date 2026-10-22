@@ -23,8 +23,8 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,7 +43,7 @@ export default function Header() {
 
     const onScroll = () => { handleScroll(); };
     window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    handleScroll();
     return () => window.removeEventListener('scroll', onScroll);
   }, [router.pathname]);
 
@@ -61,6 +61,27 @@ export default function Header() {
     } else {
       setMobileOpen(false);
     }
+  };
+
+  const isItemActive = (item: (typeof navItems)[0]) => {
+    if (item.href === '/') {
+      return router.pathname === '/' && activeSection === 'hero';
+    }
+    if (item.href?.startsWith('/#')) {
+      return router.pathname === '/' && activeSection === item.href.replace('/#', '');
+    }
+    if (item.href === '/products') {
+      return router.pathname.startsWith('/products');
+    }
+    if (item.dropdown) {
+      return item.dropdown.some(
+        (sub) => router.asPath === sub.href || (sub.href !== '/products' && router.asPath.startsWith(sub.href))
+      );
+    }
+    if (item.href) {
+      return router.pathname === item.href || router.asPath === item.href;
+    }
+    return false;
   };
 
   return (
@@ -89,20 +110,38 @@ export default function Header() {
                   <li
                     key={i}
                     className="nav-item"
-                    onMouseEnter={() => item.dropdown && setDropdownOpen(true)}
-                    onMouseLeave={() => item.dropdown && setDropdownOpen(false)}
+                    onMouseEnter={() => item.dropdown && setOpenDropdown(item.label)}
+                    onMouseLeave={() => item.dropdown && setOpenDropdown(null)}
                   >
                     {item.dropdown ? (
-                      <div className="nav-link" style={{ cursor: 'pointer' }}>
-                        <span style={{ display: 'flex', alignItems: 'center', flexDirection: 'row' }}>
-                          {item.label} <i className="bi bi-chevron-down" style={{ fontSize: '0.8em', marginLeft: 4, marginTop: 2 }} />
-                        </span>
+                      <div className={`nav-link${isItemActive(item) ? ' active' : ''}`} style={{ cursor: 'pointer' }}>
+                        <Link
+                          href={item.href || item.dropdown[0].href}
+                          onClick={(e) => handleLinkClick(e, item.href || item.dropdown![0].href)}
+                          style={{
+                            color: 'inherit',
+                            textDecoration: 'none',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            flexDirection: 'row',
+                            gap: '5px',
+                            whiteSpace: 'nowrap'
+                          }}
+                        >
+                          <span>{item.label}</span>
+                          <i className="bi bi-chevron-down" style={{ fontSize: '0.75em', marginTop: '1px' }} />
+                        </Link>
                         <span className="nav-link-bar" />
 
                         {/* Dropdown Menu */}
-                        <div className={`nav-dropdown ${dropdownOpen ? 'open' : ''}`}>
+                        <div className={`nav-dropdown ${openDropdown === item.label ? 'open' : ''}`}>
                           {item.dropdown.map((subItem, j) => (
-                            <Link key={j} href={subItem.href} className="dropdown-link">
+                            <Link 
+                              key={j} 
+                              href={subItem.href} 
+                              onClick={(e) => handleLinkClick(e, subItem.href)}
+                              className={`dropdown-link${router.asPath === subItem.href ? ' active' : ''}`}
+                            >
                               {subItem.label}
                             </Link>
                           ))}
@@ -112,7 +151,7 @@ export default function Header() {
                       <Link
                         href={item.href!}
                         onClick={(e) => handleLinkClick(e, item.href!)}
-                        className={`nav-link${(router.pathname === '/' && activeSection === item.href?.replace('/#', '')) ? ' active' : ''}`}
+                        className={`nav-link${isItemActive(item) ? ' active' : ''}`}
                       >
                         {item.label}
                         <span className="nav-link-bar" />
@@ -173,7 +212,7 @@ export default function Header() {
                   <div className="drawer-dropdown-wrapper">
                     <div
                       className="drawer-link-container"
-                      onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
+                      onClick={() => setOpenMobileDropdown(openMobileDropdown === item.label ? null : item.label)}
                       style={{ 
                         display: 'flex', 
                         justifyContent: 'space-between', 
@@ -182,16 +221,16 @@ export default function Header() {
                         padding: '15px 26px', 
                         fontSize: '1.05rem',
                         fontWeight: '700',
-                        color: 'var(--charcoal)'
+                        color: isItemActive(item) ? 'var(--lime-dark)' : 'var(--charcoal)'
                       }}
                     >
                       <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
                         <span className="drawer-link-num">0{i + 1}</span>
                         {item.label}
                       </div>
-                      <i className={`bi bi-chevron-${mobileDropdownOpen ? 'up' : 'down'}`} style={{ color: 'var(--lime-dark)' }} />
+                      <i className={`bi bi-chevron-${openMobileDropdown === item.label ? 'up' : 'down'}`} style={{ color: 'var(--lime-dark)' }} />
                     </div>
-                    {mobileDropdownOpen && (
+                    {openMobileDropdown === item.label && (
                       <div className="drawer-dropdown-list" style={{ paddingLeft: '26px', background: 'rgba(0,0,0,0.02)' }}>
                         {item.dropdown.map((subItem, j) => (
                           <Link
@@ -201,11 +240,11 @@ export default function Header() {
                             style={{ 
                               display: 'block', 
                               padding: '15px 26px', 
-                              color: 'var(--charcoal)', 
+                              color: router.asPath === subItem.href ? 'var(--lime-dark)' : 'var(--charcoal)', 
                               textDecoration: 'none', 
                               borderBottom: j === item.dropdown!.length - 1 ? 'none' : '1px solid rgba(0,0,0,0.05)',
                               fontSize: '1rem',
-                              fontWeight: '600'
+                              fontWeight: router.asPath === subItem.href ? '700' : '600'
                             }}
                           >
                             {subItem.label}
@@ -218,7 +257,7 @@ export default function Header() {
                   <Link
                     href={item.href!}
                     onClick={(e) => handleLinkClick(e, item.href!)}
-                    className={(router.pathname === '/' && activeSection === item.href?.replace('/#', '')) ? 'active' : ''}
+                    className={isItemActive(item) ? 'active' : ''}
                   >
                     <span className="drawer-link-num">0{i + 1}</span>
                     {item.label}

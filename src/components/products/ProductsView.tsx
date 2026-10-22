@@ -7,6 +7,8 @@ import Footer from '../layout/Footer';
 import PageHeader from '../layout/PageHeader';
 import { products } from '../../data/products';
 import FeaturedBadge from '../productDesigns/FeaturedBadge';
+import { getProductPrimaryCategory } from '../../data/categoryHelpers';
+import { getCanonicalUrl } from '../../data/seoConfig';
 
 export const categories = ['All', 'Poultry', 'Swine', 'Livestock', 'Aqua', 'Pets'];
 
@@ -144,17 +146,39 @@ export default function ProductsView({ initialCategory = 'All' }: ProductsViewPr
       ];
 
   const pageTitle = activeCategory === 'All' ? 'Our Products' : `${activeCategory} Products`;
+  const canonicalPath = activeCategory === 'All' ? '/products' : `/products/${activeCategory.toLowerCase()}`;
 
   return (
     <>
       <Head>
-        <title>{activeCategory === 'All' ? 'Products | VEDVET' : `${activeCategory} Products | VEDVET`}</title>
+        <title>{activeCategory === 'All' ? 'Herbal Animal Nutrition Supplements | feed Additives Products' : `${activeCategory} Veterinary Products & Healthcare | VEDVET`}</title>
         <meta
           name="description"
-          content={`Explore our premium range of veterinary healthcare products${
-            activeCategory !== 'All' ? ` for ${activeCategory.toLowerCase()}` : ''
-          }.`}
+          content={activeCategory === 'All'
+            ? 'Boost livestock health with premium herbal animal nutrition supplements. Get natural feed additives for better growth and strong immunity.'
+            : `Explore VEDVET's premium veterinary healthcare formulations and feed supplements for ${activeCategory.toLowerCase()}. Trusted by veterinarians in 18+ countries.`
+          }
         />
+        <meta property="og:title" content={activeCategory === 'All' ? 'Herbal Animal Nutrition Supplements | feed Additives Products' : `${activeCategory} Veterinary Products & Healthcare | VEDVET`} />
+        <meta
+          property="og:description"
+          content={activeCategory === 'All'
+            ? 'Boost livestock health with premium herbal animal nutrition supplements. Get natural feed additives for better growth and strong immunity.'
+            : `Explore VEDVET's premium veterinary healthcare formulations and feed supplements for ${activeCategory.toLowerCase()}. Trusted by veterinarians in 18+ countries.`
+          }
+        />
+        <meta property="og:url" content={getCanonicalUrl(canonicalPath)} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={activeCategory === 'All' ? 'Herbal Animal Nutrition Supplements | feed Additives Products' : `${activeCategory} Veterinary Products & Healthcare | VEDVET`} />
+        <meta
+          name="twitter:description"
+          content={activeCategory === 'All'
+            ? 'Boost livestock health with premium herbal animal nutrition supplements. Get natural feed additives for better growth and strong immunity.'
+            : `Explore VEDVET's premium veterinary healthcare formulations and feed supplements for ${activeCategory.toLowerCase()}. Trusted by veterinarians in 18+ countries.`
+          }
+        />
+        <link rel="canonical" href={getCanonicalUrl(canonicalPath)} key="canonical" />
       </Head>
 
       <Header />
@@ -170,11 +194,11 @@ export default function ProductsView({ initialCategory = 'All' }: ProductsViewPr
           <div className="container-wide">
             <div className="products-page-layout">
               {/* Sidebar */}
-              <aside className="products-sidebar">
+              <aside className="products-sidebar" aria-label="Product Filters">
                 <div style={{ marginBottom: '30px' }}>
-                  <h3 style={{ fontSize: '1.2rem', marginBottom: '15px', fontWeight: 600, color: 'var(--charcoal)' }}>
+                  <div style={{ fontSize: '1.2rem', marginBottom: '15px', fontWeight: 600, color: 'var(--charcoal)', fontFamily: 'var(--font-heading)' }} role="heading" aria-level={2}>
                     Search
-                  </h3>
+                  </div>
                   <div style={{ position: 'relative' }}>
                     <input
                       type="text"
@@ -184,6 +208,7 @@ export default function ProductsView({ initialCategory = 'All' }: ProductsViewPr
                         setSearchQuery(e.target.value);
                         setCurrentPage(1);
                       }}
+                      aria-label="Search products"
                       style={{
                         width: '100%',
                         padding: '12px 16px',
@@ -210,9 +235,9 @@ export default function ProductsView({ initialCategory = 'All' }: ProductsViewPr
                   </div>
                 </div>
 
-                <h3 style={{ fontSize: '1.2rem', marginBottom: '20px', fontWeight: 600, color: 'var(--charcoal)' }}>
+                <div style={{ fontSize: '1.2rem', marginBottom: '20px', fontWeight: 600, color: 'var(--charcoal)', fontFamily: 'var(--font-heading)' }} role="heading" aria-level={2}>
                   Categories
-                </h3>
+                </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   {categories.map((cat) => (
                     <button
@@ -243,6 +268,9 @@ export default function ProductsView({ initialCategory = 'All' }: ProductsViewPr
 
               {/* Main Product Grid */}
               <div>
+                <h2 className="visually-hidden">
+                  {activeCategory === 'All' ? 'All Formulations Catalog' : `${activeCategory} Formulations Catalog`}
+                </h2>
                 {paginatedProducts.length === 0 ? (
                   <div style={{ textAlign: 'center', padding: '60px 20px', background: '#fff', borderRadius: '12px', border: '1px solid var(--border-light)' }}>
                     <i className="bi bi-box-seam" style={{ fontSize: '2.5rem', color: '#94a3b8', display: 'block', marginBottom: '15px' }}></i>
@@ -260,9 +288,11 @@ export default function ProductsView({ initialCategory = 'All' }: ProductsViewPr
                   </div>
                 ) : (
                   <div className="products-grid" style={{ paddingTop: 0 }}>
-                    {paginatedProducts.map((product, index) => (
-                      <Link href={`/product/${product.slug}`} key={product.slug} style={{ textDecoration: 'none' }} passHref>
-                        <div className="product-card" data-aos="fade-up" data-aos-delay={index * 100}>
+                    {paginatedProducts.map((product, index) => {
+                      const cardCategory = activeCategory !== 'All' ? activeCategory.toLowerCase() : getProductPrimaryCategory(product.category);
+                      return (
+                        <Link href={`/products/${cardCategory}/${product.slug}`} key={product.slug} style={{ textDecoration: 'none' }} passHref>
+                          <div className="product-card" data-aos="fade-up" data-aos-delay={index * 100}>
                           {product.featured && (
                             <div className="product-card-badge-wrap">
                               <FeaturedBadge featured={product.featured} size="md" />
@@ -286,7 +316,8 @@ export default function ProductsView({ initialCategory = 'All' }: ProductsViewPr
                           </div>
                         </div>
                       </Link>
-                    ))}
+                    );
+                  })}
                   </div>
                 )}
 

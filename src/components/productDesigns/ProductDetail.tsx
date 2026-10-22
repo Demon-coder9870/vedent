@@ -6,11 +6,17 @@ import Footer from '../layout/Footer';
 import PageHeader from '../layout/PageHeader';
 import { products } from '../../data/products';
 import FeaturedBadge from './FeaturedBadge';
+import { getProductPrimaryCategory, formatCategoryLabel } from '../../data/categoryHelpers';
+import { getCanonicalUrl } from '../../data/seoConfig';
 
 type Product = typeof products[0];
-interface ProductPageProps { product: Product; relatedProducts: Product[]; }
+interface ProductPageProps {
+  product: Product;
+  relatedProducts: Product[];
+  currentCategory?: string;
+}
 
-export default function ProductDetail({ product, relatedProducts }: ProductPageProps) {
+export default function ProductDetail({ product, relatedProducts, currentCategory }: ProductPageProps) {
   const [activeImg, setActiveImg] = React.useState((product.gallery && product.gallery.length > 0) ? product.gallery[0] : product.image);
   const [fullscreenOpen, setFullscreenOpen] = React.useState(false);
   const [activeSection, setActiveSection] = React.useState('pd3-desc');
@@ -109,20 +115,90 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
     }
   };
 
+  const primaryCat = getProductPrimaryCategory(product.category);
+  const canonicalProductUrl = getCanonicalUrl(`/products/${primaryCat}/${product.slug}`);
+
   return (
     <>
       <Head>
-        <title>{product.name} | VEDVET</title>
-        <meta name="description" content={product.shortDescription} />
+        <title>{`${product.name} | ${product.category} Veterinary Healthcare | VEDVET`}</title>
+        <meta name="description" content={`${product.name}: ${product.shortDescription} Veterinary formulation with ${product.presentation || 'standard presentation'} for ${product.category}.`} />
+        <link rel="canonical" href={canonicalProductUrl} key="canonical" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Product',
+                  '@id': `${canonicalProductUrl}#product`,
+                  name: product.name,
+                  description: product.shortDescription || product.fullDescription,
+                  category: product.category,
+                  image: product.image ? (product.image.startsWith('http') ? product.image : `https://www.vedvet.com${product.image}`) : undefined,
+                  brand: {
+                    '@type': 'Brand',
+                    name: 'VEDVET'
+                  },
+                  manufacturer: {
+                    '@type': 'Organization',
+                    name: 'VEDVET Animal Health Private Limited'
+                  }
+                },
+                {
+                  '@type': 'BreadcrumbList',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://www.vedvet.com'
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'Products',
+                      item: 'https://www.vedvet.com/products'
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: formatCategoryLabel(primaryCat),
+                      item: `https://www.vedvet.com/products/${primaryCat}`
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 4,
+                      name: product.name,
+                      item: canonicalProductUrl
+                    }
+                  ]
+                }
+              ]
+            })
+          }}
+        />
       </Head>
       <Header />
 
-      <PageHeader
-        title={product.name}
-        eyebrow={product.category}
-        tagline={product.tagline}
-        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Products', href: '/products' }, { label: product.name }]}
-      />
+      {(() => {
+        const catSlug = currentCategory || getProductPrimaryCategory(product.category);
+        const catLabel = formatCategoryLabel(catSlug);
+        return (
+          <PageHeader
+            title={product.name}
+            eyebrow={product.category}
+            tagline={product.tagline}
+            breadcrumbs={[
+              { label: 'Home', href: '/' },
+              { label: 'Products', href: '/products' },
+              { label: catLabel, href: `/products/${catSlug.toLowerCase()}` },
+              { label: product.name }
+            ]}
+          />
+        );
+      })()}
 
       <main className="pd3-main">
 
@@ -197,7 +273,7 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
                   <FeaturedBadge featured={product.featured} size="lg" />
                 )}
               </div>
-              <h1 className="pd3-h1">{product.name}</h1>
+              <div className="pd3-h1" role="presentation">{product.name}</div>
               {product.tagline && (
                 <p className="pd3-tagline-text"><i className="bi bi-quote"></i>{product.tagline}</p>
               )}
@@ -337,7 +413,7 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
                         <div className="pd3-ben-row" key={i}>
                           <div className="pd3-ben-icon"><i className={`bi ${iconClass}`}></i></div>
                           <div className="pd3-ben-content">
-                            <h4>{b.title}</h4>
+                            <h3>{b.title}</h3>
                             <p>{b.text}</p>
                           </div>
                           <span className="pd3-ben-num">{String(i + 1).padStart(2, '0')}</span>
@@ -392,7 +468,7 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
                       {product.dosage.methods.map((method: any, i: number) => (
                         <div key={i} style={{ marginBottom: '25px', background: '#fcfdfd', border: '1px solid #eef2f6', borderRadius: '12px', overflow: 'hidden' }}>
                           <div style={{ background: '#f5f8fb', padding: '15px 20px', borderBottom: '1px solid #eef2f6' }}>
-                            <h4 style={{ margin: 0, fontSize: '1rem', color: 'var(--lime-dark)' }}>{method.name}</h4>
+                            <h3 style={{ margin: 0, fontSize: '1rem', color: 'var(--lime-dark)' }}>{method.name}</h3>
                           </div>
                           <div style={{ padding: '0 20px', overflowX: 'auto' }}>
                             <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '300px' }}>
@@ -446,7 +522,7 @@ export default function ProductDetail({ product, relatedProducts }: ProductPageP
               <div className="pd3-related-grid">
                 {displayRelated.map((relProduct, idx) => (
                   <Link 
-                    href={`/product/${relProduct.slug}`} 
+                    href={`/products/${getProductPrimaryCategory(relProduct.category)}/${relProduct.slug}`} 
                     key={relProduct.slug || idx} 
                     className="pd3-related-card"
                     data-aos="fade-up" 

@@ -21,6 +21,16 @@ const staticRoutes = [
   { url: '/contact', priority: '0.8', changefreq: 'monthly' },
 ];
 
+function getProductPrimaryCategory(category) {
+  const lower = (category || '').toLowerCase();
+  if (lower.includes('aqua')) return 'aqua';
+  if (lower.includes('pet')) return 'pets';
+  if (lower.includes('poultry')) return 'poultry';
+  if (lower.includes('livestock')) return 'livestock';
+  if (lower.includes('swine')) return 'swine';
+  return 'poultry';
+}
+
 function generateSitemap() {
   const currentDate = new Date().toISOString().split('T')[0];
 
@@ -42,8 +52,9 @@ function generateSitemap() {
   });
 
   const productEntries = products.map((p) => {
+    const primaryCat = getProductPrimaryCategory(p.category);
     return `  <url>
-    <loc>${SITE_URL}/product/${p.slug}</loc>
+    <loc>${SITE_URL}/products/${primaryCat}/${p.slug}</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

@@ -13,14 +13,67 @@ import Vision from '../components/visionSection/Vision';
 import Faq from '../components/faqSection/Faq';
 import Certifications from '../components/homeSection/Certifications';
 import Contact from '../components/contactSection/Contact';
+import { getCanonicalUrl } from '../data/seoConfig';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>VEDVET | Veterinary Healthcare & Animal Health Solutions</title>
+        <title>Best Herbal Animal Feed Additives Exporter In Worldwide | VEDVET</title>
+        <meta name="description" content="VEDVET offers herbal veterinary solutions and animal feed additives that support gut health, immunity and nutrition in poultry and livestock worldwide." />
+        <link rel="canonical" href={getCanonicalUrl('/')} key="canonical" />
         <meta name="robots" content="index, follow" />
         <link rel="icon" href="/favicon.ico" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Organization',
+                  '@id': 'https://www.vedvet.com/#organization',
+                  name: 'VEDVET Animal Health Private Limited',
+                  url: 'https://www.vedvet.com',
+                  logo: 'https://www.vedvet.com/images/vedvet-logo.png',
+                  description: 'Specialist manufacturer of premium veterinary pharmaceuticals, feed additives, premixes, and animal healthcare products.',
+                  address: {
+                    '@type': 'PostalAddress',
+                    streetAddress: "2nd floor, Applaud Tower, St. Jude's Chowk, Behind Super Star Electricals, GMS Road",
+                    addressLocality: 'Dehradun',
+                    postalCode: '248001',
+                    addressRegion: 'Uttarakhand',
+                    addressCountry: 'IN'
+                  },
+                  contactPoint: [
+                    {
+                      '@type': 'ContactPoint',
+                      telephone: '+91 999 77 148 00',
+                      contactType: 'customer support',
+                      email: 'info@vedvet.com',
+                      availableLanguage: ['en']
+                    }
+                  ],
+                  sameAs: [
+                    'https://www.facebook.com/p/Vedvet-Animal-Health-Private-Limited-100070798733935/',
+                    'https://x.com/ved_vet',
+                    'https://www.linkedin.com/in/ved-vet-604050422/',
+                    'https://www.instagram.com/ved_vet/'
+                  ]
+                },
+                {
+                  '@type': 'WebSite',
+                  '@id': 'https://www.vedvet.com/#website',
+                  url: 'https://www.vedvet.com',
+                  name: 'VEDVET',
+                  publisher: {
+                    '@id': 'https://www.vedvet.com/#organization'
+                  }
+                }
+              ]
+            })
+          }}
+        />
       </Head>
 
       <Header />

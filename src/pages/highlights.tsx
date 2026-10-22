@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import PageHeader from '../components/layout/PageHeader';
+import { getCanonicalUrl } from '../data/seoConfig';
 
 // Array of images for the gallery
 const highlightsImages = [
@@ -48,6 +49,7 @@ export default function HighlightsPage() {
       <Head>
         <title>Event Highlights | VEDVET</title>
         <meta name="description" content="Explore the VedVet gallery featuring our state-of-the-art facilities, product range, and commitment to animal healthcare." />
+        <link rel="canonical" href={getCanonicalUrl('/highlights')} key="canonical" />
       </Head>
 
       <Header />

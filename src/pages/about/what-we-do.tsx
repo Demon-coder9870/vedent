@@ -5,6 +5,7 @@ import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import PageHeader from '../../components/layout/PageHeader';
 import CtaSection from '../../components/ctaSection/CtaSection';
+import { getCanonicalUrl } from '../../data/seoConfig';
 
 const principles = [
   { title: 'Partnership', icon: 'bi-handshake', desc: 'Our customers, suppliers, and employees are our partners. We build long-term, trustful, and therefore productive relationships with all of them.', img: '/images/what-we-do/Partnership.jpg' },
@@ -31,8 +32,9 @@ export default function WhatWeDo() {
   return (
     <>
       <Head>
-        <title>What We Do | VEDVET</title>
-        <meta name="description" content="VEDVET develops and produces premium-quality feed additives and premixes to improve animal performance." />
+        <title>What We Do | Veterinary Formulations & Operations | VEDVET</title>
+        <meta name="description" content="VEDVET develops and manufactures premium veterinary feed additives, premixes, and herbal solutions across 18+ countries with GMP-certified excellence." />
+        <link rel="canonical" href={getCanonicalUrl('/about/what-we-do')} key="canonical" />
       </Head>
 
       <Header />

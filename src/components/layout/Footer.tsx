@@ -56,7 +56,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h5 className="footer-col-title">Quick Links</h5>
+            <div className="footer-col-title" role="heading" aria-level={2}>Quick Links</div>
             <ul className="footer-links">
               {navItems.map(({ label, href }) => (
                 <li key={label}>
@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* Animal Healthcare */}
           <div>
-            <h5 className="footer-col-title">Animal Healthcare</h5>
+            <div className="footer-col-title" role="heading" aria-level={2}>Animal Healthcare</div>
             <ul className="footer-links">
               {['Poultry', 'Swine', 'Livestock', 'Aqua', 'Pets'].map((s) => (
                 <li key={s}>
@@ -91,7 +91,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h5 className="footer-col-title">Contact</h5>
+            <div className="footer-col-title" role="heading" aria-level={2}>Contact</div>
             <div className="footer-contact-item">
               <i className="bi bi-geo-alt" />
               <span>2nd floor, Applaud Tower, St. Jude's Chowk, Behind Super Star Electricals, GMS Road, Dehradun-248001, Uttarakhand, INDIA</span>

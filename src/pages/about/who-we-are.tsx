@@ -5,6 +5,7 @@ import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import PageHeader from '../../components/layout/PageHeader';
 import CtaSection from '../../components/ctaSection/CtaSection';
+import { getCanonicalUrl } from '../../data/seoConfig';
 
 const milestones = [
   {
@@ -38,8 +39,9 @@ export default function WhoWeAre() {
   return (
     <>
       <Head>
-        <title>Who We Are | VEDVET</title>
-        <meta name="description" content="Discover VEDVET's journey, beliefs, and our leadership." />
+        <title>About VEDVET | Who We Are & Leadership</title>
+        <meta name="description" content="Discover VEDVET's 12+ year journey, our commitment to uncompromised animal wellbeing, and executive leadership in veterinary science." />
+        <link rel="canonical" href={getCanonicalUrl('/about/who-we-are')} key="canonical" />
       </Head>
 
       <Header />
@@ -97,7 +99,7 @@ export default function WhoWeAre() {
               {values.map((v, i) => (
                 <div key={i} className="wwa-values-card" data-aos="fade-up" style={{ animationDelay: `${i * 0.1}s` }}>
                   <div className="wwa-values-icon"><i className={`bi ${v.icon}`} /></div>
-                  <h4>{v.title}</h4>
+                  <h3>{v.title}</h3>
                   <p>{v.desc}</p>
                 </div>
               ))}
@@ -158,7 +160,9 @@ export default function WhoWeAre() {
           <div className="container-wide" style={{ position: 'relative', zIndex: 2 }}>
             <div className="quote-content" data-aos="zoom-in">
               <i className="bi bi-quote quote-icon-large" />
-              <h2>"People don't care how much you know until they know how much you care."</h2>
+              <blockquote style={{ margin: 0, padding: 0, border: 'none' }}>
+                <h2>"People don't care how much you know until they know how much you care."</h2>
+              </blockquote>
               <p>
                 VEDVET is not just a veterinary company — it is a place where relationships are built before business deals are signed, and where our customers and the animal industry are valued as much as our own principles.
               </p>

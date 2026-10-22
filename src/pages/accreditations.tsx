@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import PageHeader from '../components/layout/PageHeader';
+import { getCanonicalUrl } from '../data/seoConfig';
 
 export default function Accreditations() {
   const certifications = [
@@ -70,6 +71,7 @@ export default function Accreditations() {
       <Head>
         <title>Accreditations | VEDVET Quality Standards</title>
         <meta name="description" content="Explore our industry-leading accreditations, certifications, and our commitment to premium veterinary healthcare standards." />
+        <link rel="canonical" href={getCanonicalUrl('/accreditations')} key="canonical" />
       </Head>
 
       <Header />
