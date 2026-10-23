@@ -34,7 +34,7 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Brand */}
           <div>
-            <div className="footer-brand" style={{ marginBottom: '20px' }}>
+            <Link href="/" className="footer-brand" style={{ display: 'inline-block', marginBottom: '20px' }} aria-label="Vedvet Home">
               <Image
                 src="/images/vedvet-logo.png"
                 alt="VedVet Logo"
@@ -42,7 +42,7 @@ export default function Footer() {
                 height={72}
                 style={{ objectFit: 'contain', height: 'clamp(40px, 8vw, 72px)', width: 'auto', filter: 'brightness(0) invert(1)' }}
               />
-            </div>
+            </Link>
             <p className="footer-desc">
               World-class veterinary healthcare solutions for modern animal care — trusted by veterinarians and farmers in 18+ countries.
             </p>

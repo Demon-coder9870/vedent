@@ -22,7 +22,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false,
+    fallback: 'blocking',
   };
 };
 
@@ -33,6 +33,16 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   if (!validCategories.includes(categoryParam.toLowerCase())) {
     return {
       notFound: true,
+    };
+  }
+
+  // Force lowercase category URL
+  if (categoryParam !== categoryParam.toLowerCase()) {
+    return {
+      redirect: {
+        destination: `/products/${categoryParam.toLowerCase()}`,
+        permanent: true,
+      },
     };
   }
 

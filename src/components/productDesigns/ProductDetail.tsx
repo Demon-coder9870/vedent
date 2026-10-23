@@ -8,6 +8,7 @@ import { products } from '../../data/products';
 import FeaturedBadge from './FeaturedBadge';
 import { getProductPrimaryCategory, formatCategoryLabel } from '../../data/categoryHelpers';
 import { getCanonicalUrl } from '../../data/seoConfig';
+import { getEnhancedProductSchema } from '../../data/schemaConfig';
 
 type Product = typeof products[0];
 interface ProductPageProps {
@@ -127,56 +128,9 @@ export default function ProductDetail({ product, relatedProducts, currentCategor
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@graph': [
-                {
-                  '@type': 'Product',
-                  '@id': `${canonicalProductUrl}#product`,
-                  name: product.name,
-                  description: product.shortDescription || product.fullDescription,
-                  category: product.category,
-                  image: product.image ? (product.image.startsWith('http') ? product.image : `https://www.vedvet.com${product.image}`) : undefined,
-                  brand: {
-                    '@type': 'Brand',
-                    name: 'VEDVET'
-                  },
-                  manufacturer: {
-                    '@type': 'Organization',
-                    name: 'VEDVET Animal Health Private Limited'
-                  }
-                },
-                {
-                  '@type': 'BreadcrumbList',
-                  itemListElement: [
-                    {
-                      '@type': 'ListItem',
-                      position: 1,
-                      name: 'Home',
-                      item: 'https://www.vedvet.com'
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 2,
-                      name: 'Products',
-                      item: 'https://www.vedvet.com/products'
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 3,
-                      name: formatCategoryLabel(primaryCat),
-                      item: `https://www.vedvet.com/products/${primaryCat}`
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 4,
-                      name: product.name,
-                      item: canonicalProductUrl
-                    }
-                  ]
-                }
-              ]
-            })
+            __html: JSON.stringify(
+              getEnhancedProductSchema(product, canonicalProductUrl, currentCategory || primaryCat)
+            ),
           }}
         />
       </Head>

@@ -56,14 +56,22 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const categoryParam = typeof params?.category === 'string' ? params.category.toLowerCase() : '';
-  const slugParam = typeof params?.slug === 'string' ? params.slug : '';
-  const slugLower = slugParam.toLowerCase();
+const legacySlugMap: Record<string, string> = {
+  'v-choline-90': 'v-choline',
+  'o2ved-aq': 'o-two-ved-aq',
+  'vedcal-b12': 'vedcal-b-twelve',
+};
 
-  // Find product by slug
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const rawCat = typeof params?.category === 'string' ? params.category : '';
+  const categoryParam = rawCat.toLowerCase();
+  const rawSlug = typeof params?.slug === 'string' ? params.slug : '';
+  const slugLower = rawSlug.toLowerCase();
+  const canonicalSlug = legacySlugMap[slugLower] || slugLower;
+
+  // Find product by canonical slug
   const product = products.find(
-    (p) => p.slug === slugParam || p.slug.toLowerCase() === slugLower
+    (p) => p.slug === canonicalSlug || p.slug === slugLower
   );
 
   if (!product) {
@@ -77,6 +85,16 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   if (!validCategories.includes(categoryParam)) {
     return {
       notFound: true,
+    };
+  }
+
+  // If the requested URL has uppercase, legacy numbers, or doesn't match clean slug, 301 redirect
+  if (rawSlug !== product.slug || rawCat !== categoryParam) {
+    return {
+      redirect: {
+        destination: `/products/${categoryParam}/${product.slug}`,
+        permanent: true,
+      },
     };
   }
 

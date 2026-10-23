@@ -94,7 +94,17 @@ export default function Header() {
             <nav className="main-nav">
 
               {/* Brand */}
-              <Link href="/#hero" onClick={(e) => handleLinkClick(e, '/#hero')} className="nav-brand">
+              <Link
+                href="/"
+                onClick={(e) => {
+                  setMobileOpen(false);
+                  if (router.pathname === '/') {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }
+                }}
+                className="nav-brand"
+              >
                 <Image
                   src="/images/vedvet-logo.png"
                   alt="VedVet Logo"
@@ -189,7 +199,17 @@ export default function Header() {
       <div className={`mobile-drawer${mobileOpen ? ' open' : ''}`} role="dialog" aria-modal="true">
         {/* Drawer Header */}
         <div className="drawer-header">
-          <span className="nav-brand">
+          <Link
+            href="/"
+            onClick={(e) => {
+              setMobileOpen(false);
+              if (router.pathname === '/') {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+            }}
+            className="nav-brand"
+          >
             <Image
               src="/images/vedvet-logo.png"
               alt="VedVet Logo"
@@ -197,7 +217,7 @@ export default function Header() {
               height={40}
               style={{ objectFit: 'contain', height: '40px', width: 'auto' }}
             />
-          </span>
+          </Link>
           <button className="drawer-close" onClick={() => setMobileOpen(false)} aria-label="Close menu">
             <i className="bi bi-x-lg" />
           </button>

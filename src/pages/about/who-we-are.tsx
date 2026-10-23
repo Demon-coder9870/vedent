@@ -6,6 +6,7 @@ import Footer from '../../components/layout/Footer';
 import PageHeader from '../../components/layout/PageHeader';
 import CtaSection from '../../components/ctaSection/CtaSection';
 import { getCanonicalUrl } from '../../data/seoConfig';
+import { getAboutPageSchema } from '../../data/schemaConfig';
 
 const milestones = [
   {
@@ -42,6 +43,19 @@ export default function WhoWeAre() {
         <title>About VEDVET | Who We Are & Leadership</title>
         <meta name="description" content="Discover VEDVET's 12+ year journey, our commitment to uncompromised animal wellbeing, and executive leadership in veterinary science." />
         <link rel="canonical" href={getCanonicalUrl('/about/who-we-are')} key="canonical" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              getAboutPageSchema(
+                'About VEDVET | Who We Are & Leadership',
+                "Discover VEDVET's 12+ year journey, our commitment to uncompromised animal wellbeing, and executive leadership in veterinary science.",
+                getCanonicalUrl('/about/who-we-are'),
+                breadcrumbs
+              )
+            ),
+          }}
+        />
       </Head>
 
       <Header />

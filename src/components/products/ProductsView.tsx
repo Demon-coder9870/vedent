@@ -9,6 +9,7 @@ import { products } from '../../data/products';
 import FeaturedBadge from '../productDesigns/FeaturedBadge';
 import { getProductPrimaryCategory } from '../../data/categoryHelpers';
 import { getCanonicalUrl } from '../../data/seoConfig';
+import { getCollectionPageSchema } from '../../data/schemaConfig';
 
 export const categories = ['All', 'Poultry', 'Swine', 'Livestock', 'Aqua', 'Pets'];
 
@@ -18,6 +19,33 @@ export function normalizeCategory(cat?: string | string[]): string {
   const match = categories.find((c) => c.toLowerCase() === trimmed.toLowerCase());
   return match || trimmed;
 }
+
+export interface CategorySEOInfo {
+  title: string;
+  description: string;
+  pageTitle?: string;
+  tagline?: string;
+}
+
+export const CATEGORY_SEO_CONFIG: Record<string, CategorySEOInfo> = {
+  All: {
+    title: 'Herbal Animal Nutrition Supplements | feed Additives Products',
+    description: 'Boost livestock health with premium herbal animal nutrition supplements. Get natural feed additives for better growth and strong immunity.',
+    pageTitle: 'Our Products',
+  },
+  Poultry: {
+    title: 'Natural Poultry Feed Supplements and Additives | Vedvet',
+    description: 'Looking for high-quality poultry feed supplements? We manufacture and transport natural herbal Food additives to boost poultry health globally',
+    pageTitle: 'Poultry Feed Supplements and Additives',
+    tagline: 'Looking for high-quality poultry feed supplements? We manufacture and transport natural herbal Food additives to boost poultry health globally.',
+  },
+  Swine: {
+    title: 'Natural Swine Feed Supplements and Organic Additives',
+    description: 'Improve animal health with our natural swine feed supplements. Our organic swine additives and quality pig feed additives ensure steady growth.',
+    pageTitle: 'Natural Swine Feed Supplements and Organic Additives',
+    tagline: 'Improve animal health with our natural swine feed supplements. Our organic swine additives and quality pig feed additives ensure steady growth.',
+  },
+};
 
 interface ProductsViewProps {
   initialCategory?: string;
@@ -145,46 +173,50 @@ export default function ProductsView({ initialCategory = 'All' }: ProductsViewPr
         { label: activeCategory }
       ];
 
-  const pageTitle = activeCategory === 'All' ? 'Our Products' : `${activeCategory} Products`;
+  const currentSEO: CategorySEOInfo = CATEGORY_SEO_CONFIG[activeCategory] || {
+    title: `${activeCategory} Veterinary Products & Healthcare | VEDVET`,
+    description: `Explore VEDVET's premium veterinary healthcare formulations and feed supplements for ${activeCategory.toLowerCase()}. Trusted by veterinarians in 18+ countries.`,
+    pageTitle: `${activeCategory} Products`,
+    tagline: undefined,
+  };
+
+  const pageTitle = currentSEO.pageTitle || (activeCategory === 'All' ? 'Our Products' : `${activeCategory} Products`);
   const canonicalPath = activeCategory === 'All' ? '/products' : `/products/${activeCategory.toLowerCase()}`;
 
   return (
     <>
       <Head>
-        <title>{activeCategory === 'All' ? 'Herbal Animal Nutrition Supplements | feed Additives Products' : `${activeCategory} Veterinary Products & Healthcare | VEDVET`}</title>
-        <meta
-          name="description"
-          content={activeCategory === 'All'
-            ? 'Boost livestock health with premium herbal animal nutrition supplements. Get natural feed additives for better growth and strong immunity.'
-            : `Explore VEDVET's premium veterinary healthcare formulations and feed supplements for ${activeCategory.toLowerCase()}. Trusted by veterinarians in 18+ countries.`
-          }
-        />
-        <meta property="og:title" content={activeCategory === 'All' ? 'Herbal Animal Nutrition Supplements | feed Additives Products' : `${activeCategory} Veterinary Products & Healthcare | VEDVET`} />
-        <meta
-          property="og:description"
-          content={activeCategory === 'All'
-            ? 'Boost livestock health with premium herbal animal nutrition supplements. Get natural feed additives for better growth and strong immunity.'
-            : `Explore VEDVET's premium veterinary healthcare formulations and feed supplements for ${activeCategory.toLowerCase()}. Trusted by veterinarians in 18+ countries.`
-          }
-        />
+        <title>{currentSEO.title}</title>
+        <meta name="description" content={currentSEO.description} />
+        <meta property="og:title" content={currentSEO.title} />
+        <meta property="og:description" content={currentSEO.description} />
         <meta property="og:url" content={getCanonicalUrl(canonicalPath)} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={activeCategory === 'All' ? 'Herbal Animal Nutrition Supplements | feed Additives Products' : `${activeCategory} Veterinary Products & Healthcare | VEDVET`} />
-        <meta
-          name="twitter:description"
-          content={activeCategory === 'All'
-            ? 'Boost livestock health with premium herbal animal nutrition supplements. Get natural feed additives for better growth and strong immunity.'
-            : `Explore VEDVET's premium veterinary healthcare formulations and feed supplements for ${activeCategory.toLowerCase()}. Trusted by veterinarians in 18+ countries.`
-          }
-        />
+        <meta name="twitter:title" content={currentSEO.title} />
+        <meta name="twitter:description" content={currentSEO.description} />
         <link rel="canonical" href={getCanonicalUrl(canonicalPath)} key="canonical" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              getCollectionPageSchema(
+                currentSEO.title,
+                currentSEO.description,
+                getCanonicalUrl(canonicalPath),
+                breadcrumbs,
+                filteredProducts
+              )
+            ),
+          }}
+        />
       </Head>
 
       <Header />
 
       <PageHeader
         title={pageTitle}
+        tagline={currentSEO.tagline}
         breadcrumbs={breadcrumbs}
         bgImage="/images/hero.jpg"
       />
@@ -271,6 +303,26 @@ export default function ProductsView({ initialCategory = 'All' }: ProductsViewPr
                 <h2 className="visually-hidden">
                   {activeCategory === 'All' ? 'All Formulations Catalog' : `${activeCategory} Formulations Catalog`}
                 </h2>
+
+                {currentSEO.tagline && activeCategory !== 'All' && (
+                  <div
+                    style={{
+                      background: 'linear-gradient(135deg, rgba(42, 83, 134, 0.05) 0%, rgba(46, 125, 50, 0.05) 100%)',
+                      border: '1px solid rgba(42, 83, 134, 0.15)',
+                      borderRadius: '12px',
+                      padding: '16px 20px',
+                      marginBottom: '24px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '12px',
+                    }}
+                  >
+                    <i className="bi bi-shield-check" style={{ fontSize: '1.3rem', color: 'var(--lime-dark)', flexShrink: 0 }} />
+                    <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--charcoal)', lineHeight: 1.55, fontWeight: 500 }}>
+                      {currentSEO.tagline}
+                    </p>
+                  </div>
+                )}
                 {paginatedProducts.length === 0 ? (
                   <div style={{ textAlign: 'center', padding: '60px 20px', background: '#fff', borderRadius: '12px', border: '1px solid var(--border-light)' }}>
                     <i className="bi bi-box-seam" style={{ fontSize: '2.5rem', color: '#94a3b8', display: 'block', marginBottom: '15px' }}></i>

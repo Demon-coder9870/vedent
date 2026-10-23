@@ -5,6 +5,7 @@ import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import PageHeader from '../components/layout/PageHeader';
 import { getCanonicalUrl } from '../data/seoConfig';
+import { getAboutPageSchema } from '../data/schemaConfig';
 
 export default function Accreditations() {
   const certifications = [
@@ -72,6 +73,22 @@ export default function Accreditations() {
         <title>Accreditations | VEDVET Quality Standards</title>
         <meta name="description" content="Explore our industry-leading accreditations, certifications, and our commitment to premium veterinary healthcare standards." />
         <link rel="canonical" href={getCanonicalUrl('/accreditations')} key="canonical" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              getAboutPageSchema(
+                'Accreditations | VEDVET Quality Standards',
+                'Explore our industry-leading accreditations, certifications, and our commitment to premium veterinary healthcare standards.',
+                getCanonicalUrl('/accreditations'),
+                [
+                  { label: 'Home', href: '/' },
+                  { label: 'Accreditations', href: '/accreditations' },
+                ]
+              )
+            ),
+          }}
+        />
       </Head>
 
       <Header />

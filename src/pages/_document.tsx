@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <meta name="keywords" content="Veterinary Healthcare, Animal Health, Swine, Livestock, Poultry, Aqua, Pets, Feed Supplements" />
+        <meta name="keywords" content="Veterinary Healthcare, Animal Nutrition, Poultry Feed Supplements, Swine Feed Additives, Feed Additives Exporter Germany, Poultry Supplements Dubai UAE, Swine Additives Bangkok Thailand, Animal Health Turkey, Veterinary Feed Egypt Jordan Taiwan Iran Asia" />
         <meta property="og:type" content="website" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

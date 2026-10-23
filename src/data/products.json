@@ -3647,7 +3647,7 @@
       "Livestock/Swine": 3
     },
     "featured": "Best Seller",
-    "slug": "v-choline-90",
+    "slug": "v-choline",
     "image": "/images/products/V-Choline-90/01.png",
     "gallery": [
       "/images/products/V-Choline-90/01.png"
@@ -4258,7 +4258,7 @@
       "Aqua": 1
     },
     "featured": null,
-    "slug": "Oxyved-aq",
+    "slug": "oxyved-aq",
     "image": "/images/products/Oxyved-Aq/01.png",
     "gallery": [
       "/images/products/Oxyved-Aq/01.png"
@@ -4314,7 +4314,7 @@
       "Aqua": 2
     },
     "featured": null,
-    "slug": "O2Ved-aq",
+    "slug": "o-two-ved-aq",
     "image": "/images/products/O2Ved-Aq/01.png",
     "gallery": [
       "/images/products/O2Ved-Aq/01.png"
@@ -4370,7 +4370,7 @@
       "Aqua": 3
     },
     "featured": null,
-    "slug": "Vedclean-aq",
+    "slug": "vedclean-aq",
     "image": "/images/products/Vedclean-Aq/01.png",
     "gallery": [
       "/images/products/Vedclean-Aq/01.png"
@@ -4430,7 +4430,7 @@
       "Aqua": 4
     },
     "featured": null,
-    "slug": "Micromin-ved-aq",
+    "slug": "micromin-ved-aq",
     "image": "/images/products/Micromin-Ved-Aq/01.png",
     "gallery": [
       "/images/products/Micromin-Ved-Aq/01.png"
@@ -4486,7 +4486,7 @@
       "Aqua": 5
     },
     "featured": null,
-    "slug": "Vedprovib-aq",
+    "slug": "vedprovib-aq",
     "image": "/images/products/Vedprovib-Aq/01.png",
     "gallery": [
       "/images/products/Vedprovib-Aq/01.png"
@@ -4542,7 +4542,7 @@
       "Aqua": 6
     },
     "featured": null,
-    "slug": "Vedliv-aq",
+    "slug": "vedliv-aq",
     "image": "/images/products/Vedliv-Aq/01.png",
     "gallery": [
       "/images/products/Vedliv-Aq/01.png"
@@ -4594,7 +4594,7 @@
       "Aqua": 7
     },
     "featured": null,
-    "slug": "Vedgrow-aq",
+    "slug": "vedgrow-aq",
     "image": "/images/products/Vedgrow-Aq/01.png",
     "gallery": [
       "/images/products/Vedgrow-Aq/01.png"
@@ -4646,7 +4646,7 @@
       "Aqua": 8
     },
     "featured": null,
-    "slug": "Vedtox-aq",
+    "slug": "vedtox-aq",
     "image": "/images/products/Vedtox-Aq/01.png",
     "gallery": [
       "/images/products/Vedtox-Aq/01.png"
@@ -4702,7 +4702,7 @@
       "Pets": 1
     },
     "featured": null,
-    "slug": "Digyved-plus",
+    "slug": "digyved-plus",
     "image": "/images/products/Digyved-Plus/01.png",
     "gallery": [
       "/images/products/Digyved-Plus/01.png"
@@ -4753,7 +4753,7 @@
       "Pets": 2
     },
     "featured": null,
-    "slug": "Digyved-drops",
+    "slug": "digyved-drops",
     "image": "/images/products/Digyved-Drops/01.png",
     "gallery": [
       "/images/products/Digyved-Drops/01.png"
@@ -4804,7 +4804,7 @@
       "Pets": 3
     },
     "featured": null,
-    "slug": "Liv-ved",
+    "slug": "liv-ved",
     "image": "/images/products/Liv-Ved/01.png",
     "gallery": [
       "/images/products/Liv-Ved/01.png"
@@ -4854,7 +4854,7 @@
       "Pets": 4
     },
     "featured": null,
-    "slug": "Vedpyrin-pets",
+    "slug": "vedpyrin-pets",
     "image": "/images/products/Vedpyrin-Pets/01.png",
     "gallery": [
       "/images/products/Vedpyrin-Pets/01.png"
@@ -4904,7 +4904,7 @@
       "Pets": 5
     },
     "featured": null,
-    "slug": "Immunoved",
+    "slug": "immunoved",
     "image": "/images/products/Immunoved/01.png",
     "gallery": [
       "/images/products/Immunoved/01.png"
@@ -4959,7 +4959,7 @@
       "Pets": 6
     },
     "featured": null,
-    "slug": "Clean-and-care",
+    "slug": "clean-and-care",
     "image": "/images/products/Clean&Care/01.png",
     "gallery": [
       "/images/products/Clean&Care/01.png"
@@ -5001,7 +5001,7 @@
       "Pets": 7
     },
     "featured": null,
-    "slug": "Fur-care",
+    "slug": "fur-care",
     "image": "/images/products/Furcare/01.png",
     "gallery": [
       "/images/products/Furcare/01.png"
@@ -5043,7 +5043,7 @@
       "Pets": 8
     },
     "featured": null,
-    "slug": "Ved-mv",
+    "slug": "ved-mv",
     "image": "/images/products/Ved-MV/01.png",
     "gallery": [
       "/images/products/Ved-MV/01.png"
@@ -5093,7 +5093,7 @@
       "Pets": 9
     },
     "featured": null,
-    "slug": "Vediarro-herb",
+    "slug": "vediarro-herb",
     "image": "/images/products/Vediarro-Herb/01.png",
     "gallery": [
       "/images/products/Vediarro-Herb/01.png"
@@ -5138,7 +5138,7 @@
       "Pets": 10
     },
     "featured": null,
-    "slug": "Vedresp",
+    "slug": "vedresp",
     "image": "/images/products/Vedresp/01.png",
     "gallery": [
       "/images/products/Vedresp/01.png"
@@ -5183,7 +5183,7 @@
       "Pets": 11
     },
     "featured": null,
-    "slug": "Vedworm-pets",
+    "slug": "vedworm-pets",
     "image": "/images/products/Vedworm-Pets/01.png",
     "gallery": [
       "/images/products/Vedworm-Pets/01.png"
@@ -5229,7 +5229,7 @@
       "Pets": 12
     },
     "featured": null,
-    "slug": "Vedcal-b12",
+    "slug": "vedcal-b-twelve",
     "image": "/images/products/Vedcal-B12/01.png",
     "gallery": [
       "/images/products/Vedcal-B12/01.png"

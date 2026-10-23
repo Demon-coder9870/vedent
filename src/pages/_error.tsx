@@ -1,4 +1,11 @@
-function Error({ statusCode }) {
+import React from 'react';
+import type { NextPageContext } from 'next';
+
+interface ErrorProps {
+  statusCode: number;
+}
+
+function Error({ statusCode }: ErrorProps) {
   return (
     <div style={{
       display: 'flex',
@@ -51,7 +58,7 @@ function Error({ statusCode }) {
   );
 }
 
-Error.getInitialProps = ({ res, err }) => {
+Error.getInitialProps = ({ res, err }: NextPageContext) => {
   const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
   return { statusCode };
 };
