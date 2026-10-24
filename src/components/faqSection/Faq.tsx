@@ -1,4 +1,5 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
+import Link from 'next/link';
 
 const faqs = [
   {
@@ -22,16 +23,6 @@ const faqs = [
 export default function Faq() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const scrollTo = (e: React.MouseEvent, id: string) => {
-    e.preventDefault();
-    const el = document.getElementById(id);
-    if (el) {
-      const header = document.querySelector('.site-header') as HTMLElement;
-      const offset = header ? header.offsetHeight : 80;
-      window.scrollTo({ top: el.offsetTop - offset + 4, behavior: 'smooth' });
-    }
-  };
-
   return (
     <section id="faq" className="faq-section">
       <div className="container-wide">
@@ -43,9 +34,9 @@ export default function Faq() {
             <p className="section-subtitle" style={{ marginBottom: 32 }}>
               Everything you need to know about VEDVET's products and services.
             </p>
-            <a href="#contact" onClick={(e) => scrollTo(e, 'contact')} className="btn-dark">
+            <Link href="/contact" className="btn-dark">
               Contact Support <i className="bi bi-arrow-right" />
-            </a>
+            </Link>
           </div>
 
           {/* FAQ items */}

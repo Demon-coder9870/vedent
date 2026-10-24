@@ -21,7 +21,7 @@ export default function CtaSection({
   const lines = title.split('\n');
 
   return (
-    <section className="cta-section">
+    <section id="contact" className="cta-section">
       <div className="cta-bg-glow" />
       <div className="container-wide">
         <div className="cta-content" data-aos="fade-up">
