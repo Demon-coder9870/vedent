@@ -13,6 +13,10 @@ function getPrimaryCategory(cat) {
 
 const nextConfig = {
   reactStrictMode: true,
+  swcMinify: true,
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
   async redirects() {
     const productRedirects = [];
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import Header from '../../components/layout/Header';
@@ -156,3 +157,9 @@ export default function WhatWeDo() {
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {},
+  };
+};

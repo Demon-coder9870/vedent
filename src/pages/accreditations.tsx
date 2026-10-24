@@ -1,4 +1,5 @@
 import React from 'react';
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Header from '../components/layout/Header';
@@ -160,3 +161,9 @@ export default function Accreditations() {
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {},
+  };
+};

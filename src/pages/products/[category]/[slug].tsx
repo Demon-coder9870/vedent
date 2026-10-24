@@ -1,11 +1,15 @@
 import React from 'react';
 import { GetStaticProps, GetStaticPaths } from 'next';
 import { useRouter } from 'next/router';
-import { products } from '../../../data/products';
 import ProductDetail from '../../../components/productDesigns/ProductDetail';
+import {
+  Product,
+  getAllProductPaths,
+  getProductBySlug,
+  getRelatedProducts,
+  legacySlugMap,
+} from '../../../lib/products';
 import { getProductAllCategories } from '../../../data/categoryHelpers';
-
-type Product = (typeof products)[0];
 
 interface ProductDetailProps {
   product: Product;
@@ -13,7 +17,11 @@ interface ProductDetailProps {
   category: string;
 }
 
-export default function CategoryProductDetailPage({ product, relatedProducts, category }: ProductDetailProps) {
+export default function CategoryProductDetailPage({
+  product,
+  relatedProducts,
+  category,
+}: ProductDetailProps) {
   const router = useRouter();
 
   if (router.isFallback) {
@@ -32,23 +40,17 @@ export default function CategoryProductDetailPage({ product, relatedProducts, ca
     );
   }
 
-  return <ProductDetail product={product} relatedProducts={relatedProducts} currentCategory={category} />;
+  return (
+    <ProductDetail
+      product={product}
+      relatedProducts={relatedProducts}
+      currentCategory={category}
+    />
+  );
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths: { params: { category: string; slug: string } }[] = [];
-
-  for (const product of products) {
-    const validCats = getProductAllCategories(product.category);
-    for (const cat of validCats) {
-      paths.push({
-        params: {
-          category: cat,
-          slug: product.slug,
-        },
-      });
-    }
-  }
+  const paths = getAllProductPaths();
 
   return {
     paths,
@@ -56,13 +58,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-const legacySlugMap: Record<string, string> = {
-  'v-choline-90': 'v-choline',
-  'o2ved-aq': 'o-two-ved-aq',
-  'vedcal-b12': 'vedcal-b-twelve',
-};
-
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps<ProductDetailProps> = async ({ params }) => {
   const rawCat = typeof params?.category === 'string' ? params.category : '';
   const categoryParam = rawCat.toLowerCase();
   const rawSlug = typeof params?.slug === 'string' ? params.slug : '';
@@ -70,9 +66,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const canonicalSlug = legacySlugMap[slugLower] || slugLower;
 
   // Find product by canonical slug
-  const product = products.find(
-    (p) => p.slug === canonicalSlug || p.slug === slugLower
-  );
+  const product = getProductBySlug(canonicalSlug);
 
   if (!product) {
     return {
@@ -98,13 +92,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     };
   }
 
-  const sameCategory = products.filter(
-    (p) => p.slug !== product.slug && p.category === product.category
-  );
-  const otherCategory = products.filter(
-    (p) => p.slug !== product.slug && p.category !== product.category
-  );
-  const relatedProducts = [...sameCategory, ...otherCategory].slice(0, 4);
+  const relatedProducts = getRelatedProducts(product.slug, product.category, 4);
 
   return {
     props: {
