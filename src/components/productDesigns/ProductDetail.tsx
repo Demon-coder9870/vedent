@@ -119,11 +119,21 @@ export default function ProductDetail({ product, relatedProducts, currentCategor
   const primaryCat = getProductPrimaryCategory(product.category);
   const canonicalProductUrl = getCanonicalUrl(`/products/${primaryCat}/${product.slug}`);
 
+  const pageTitle = (product as any).metaTitle || (product as any).seoTitle || `${product.name} | ${product.category} Veterinary Healthcare | VEDVET`;
+  const pageDescription = (product as any).metaDescription || (product as any).seoDescription || `${product.name}: ${product.shortDescription} Veterinary formulation with ${product.presentation || 'standard presentation'} for ${product.category}.`;
+
   return (
     <>
       <Head>
-        <title>{`${product.name} | ${product.category} Veterinary Healthcare | VEDVET`}</title>
-        <meta name="description" content={`${product.name}: ${product.shortDescription} Veterinary formulation with ${product.presentation || 'standard presentation'} for ${product.category}.`} />
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={canonicalProductUrl} />
+        <meta property="og:type" content="product" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
         <link rel="canonical" href={canonicalProductUrl} key="canonical" />
         <script
           type="application/ld+json"

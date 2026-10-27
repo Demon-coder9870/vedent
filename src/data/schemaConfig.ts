@@ -254,6 +254,8 @@ export function getEnhancedProductSchema(
     fullDescription?: string;
     image?: string;
     tagline?: string;
+    metaTitle?: string;
+    metaDescription?: string;
   },
   canonicalProductUrl: string,
   categorySlug: string
@@ -266,7 +268,7 @@ export function getEnhancedProductSchema(
         '@type': 'Product',
         '@id': `${canonicalProductUrl}#product`,
         name: product.name,
-        description: product.shortDescription || product.fullDescription,
+        description: product.metaDescription || product.shortDescription || product.fullDescription,
         category: product.category,
         image: product.image ? (product.image.startsWith('http') ? product.image : `${SITE_URL}${product.image}`) : undefined,
         sku: product.slug,
