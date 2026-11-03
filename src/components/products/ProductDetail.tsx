@@ -23,13 +23,7 @@ export default function ProductDetail({ product, relatedProducts, currentCategor
 
   const displayRelated = Array.isArray(relatedProducts) ? relatedProducts.slice(0, 4) : [];
 
-  const isAquaOrPets = Boolean(
-    product.category &&
-      (product.category.toLowerCase().includes('aqua') ||
-        product.category.toLowerCase().includes('pet'))
-  );
-
-  const hasDosage = !isAquaOrPets && Boolean(
+  const hasDosage = Boolean(
     product.dosage &&
       product.dosage.methods &&
       Array.isArray(product.dosage.methods) &&
