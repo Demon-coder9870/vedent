@@ -709,9 +709,12 @@
       }
     ],
     "indications": [
-      "VEDGROW remains active throughout the gastrointestinal tract, exerting broad-spectrum antimicrobial activity and enhancing nutrient utilisation.",
-      "With the progressive restriction and banning of antibiotic-based growth promoters due to associated health and safety concerns, plant-based alternatives have become increasingly important in modern livestock management.",
-      "VEDGROW, formulated with plant extracts and essential oil components, serves as an established herbal growth promoter and is widely relied upon by farmers seeking effective, herbal-based alternatives for sustainable and productive animal rearing."
+      "Sub-optimal body weight gain, lagging Feed Conversion Ratio (FCR), and uneven growth rates in commercial broilers and growing swine.",
+      "Transition periods following the withdrawal of antibiotic growth promoters (AGPs) requiring natural gut microbiome enhancement.",
+      "Feed transition stress, post-debeaking, vaccination stress, or seasonal temperature fluctuations impairing flock feed intake.",
+      "Underdeveloped intestinal villi and sluggish endogenous digestive enzyme secretion in young livestock and starter chicks.",
+      "Nutritional convalescence, poor flock uniformity, and intestinal mucosal repair following mild enteric disturbances.",
+      "Slow ruminal development, low nutrient assimilation, and poor body conditioning in growing calves, sheep, and goats."
     ],
     "compositionBase": "Each 100 ml / g contains extract of:",
     "composition": [
@@ -1108,9 +1111,12 @@
       }
     ],
     "indications": [
-      "Diarrhoea is a major cause of slower growth, higher mortality and low productivity in animals, and its causes are varied — ranging from bacterial and protozoan infection, imbalanced feed and mycotoxins to electrolytic imbalance.",
-      "VEDIARRO HERB contains medicinal herbs known to possess antibacterial, anti-diarrhoeal, anti-dysentery, anthelmintic, carminative and digestive properties, and also useful against amoebiasis and colic pain.",
-      "Its adsorbent binds with toxins, while the electrolytes support rapid recovery."
+      "Outbreaks of wet droppings, nonspecific diarrhea, and scouring across broiler, layer, and breeder flocks.",
+      "Neonatal and nutritional calf scours, lamb diarrhea, and piglet post-weaning loose stools.",
+      "Enteritis caused by bacterial overgrowth (E. coli, Salmonella), sudden ration changes, or feed mycotoxicosis.",
+      "Severe dehydration, electrolyte exhaustion, and metabolic acidosis associated with profuse diarrheal states.",
+      "Intestinal mucosal erosion and secondary enteritis following coccidiosis or anthelmintic treatments.",
+      "Summer loose droppings induced by high water intake and environmental heat stress in commercial poultry houses."
     ],
     "compositionBase": "Each 100 ml / g contains extract of:",
     "composition": [
@@ -4306,11 +4312,42 @@
       "Cloudy, discoloured, or foul-smelling water suggesting ammonia, sulphide, or algae toxin build-up.",
       "As a routine preventive measure during water quality maintenance and periodic water changes."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 1 kg contains:",
+    "composition": [
+      {
+        "ingredient": "Calcium Peroxide & Sodium Percarbonate (Available Oxygen 14%)",
+        "amount": "600g"
+      },
+      {
+        "ingredient": "Effervescent Aeration & Dispersal Matrix",
+        "amount": "250g"
+      },
+      {
+        "ingredient": "Stabilized Mineral Oxygen Donors",
+        "amount": "150g"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "POND BROADCAST APPLICATION",
+          "dosages": [
+            {
+              "target": "Emergency Hypoxia / Surface Gasping",
+              "amount": "3 kg to 5 kg per acre (broadcast directly)"
+            },
+            {
+              "target": "Routine Dissolved Oxygen Maintenance",
+              "amount": "1 kg to 2 kg per acre (1 meter depth)"
+            },
+            {
+              "target": "Live Fish & Shrimp Seed Transport",
+              "amount": "1g to 2g per 100 litres of packing water"
+            }
+          ]
+        }
+      ],
+      "note": "Broadcast evenly over the water column, especially during early morning hours or low atmospheric pressure."
     },
     "animalUsedImages": [
       "/images/products/animalused-aqua.png"
@@ -4362,11 +4399,42 @@
       "Stagnant or poorly circulated ponds where surface aerators fail to reach deeper layers.",
       "Extended culture periods where bottom conditions need sustained, not one-time, correction."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 1 kg bottom-release dense granule contains:",
+    "composition": [
+      {
+        "ingredient": "Slow-Release Oxygen Coated Granules (Available O2 16%)",
+        "amount": "650g"
+      },
+      {
+        "ingredient": "Sediment Re-Oxygenating Compounds",
+        "amount": "200g"
+      },
+      {
+        "ingredient": "Microbial Sludge Decomposition Catalyst",
+        "amount": "150g"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "POND BOTTOM APPLICATION",
+          "dosages": [
+            {
+              "target": "Black Soil & Bottom Sludge Conditioning",
+              "amount": "3 kg to 5 kg per acre targeted over feed zones"
+            },
+            {
+              "target": "Routine Bottom Aeration (Every 10-14 days)",
+              "amount": "1.5 kg to 2 kg per acre"
+            },
+            {
+              "target": "Pre-Stocking Pond Preparation",
+              "amount": "2 kg to 3 kg per acre across pond bed"
+            }
+          ]
+        }
+      ],
+      "note": "Granules sink directly to the benthic sediment for long-acting bottom dissolved oxygen release."
     },
     "animalUsedImages": [
       "/images/products/animalused-aqua.png"
@@ -4422,11 +4490,46 @@
       "Newly introduced or quarantined stock, as part of a standard biosecurity protocol.",
       "High-density culture systems where bacterial pressure builds up faster than usual."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 1 kg active aquaculture biosecurity formulation contains:",
+    "composition": [
+      {
+        "ingredient": "Potassium Monopersulfate Compound (Triple Salt)",
+        "amount": "500g"
+      },
+      {
+        "ingredient": "Sodium Dichloroisocyanurate (NaDCC)",
+        "amount": "150g"
+      },
+      {
+        "ingredient": "Biofilm Penetrating Surfactant Complex",
+        "amount": "100g"
+      },
+      {
+        "ingredient": "Buffered Mineral Stabilizers q.s.",
+        "amount": "250g"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "WATER SANITIZATION & EQUIPMENT HYGIENE",
+          "dosages": [
+            {
+              "target": "Pre-Stocking Water Treatment",
+              "amount": "1 kg to 2 kg per acre (1 meter water depth)"
+            },
+            {
+              "target": "Routine Bacterial Load Reduction (During Culture)",
+              "amount": "500g to 1 kg per acre every 15 days"
+            },
+            {
+              "target": "Nets, Tanks, Aerators & Equipment Wash",
+              "amount": "10g to 20g per 10 litres of clean water"
+            }
+          ]
+        }
+      ],
+      "note": "Dissolve completely in 20 litres of clean water and distribute uniformly over pond surface during morning hours."
     },
     "animalUsedImages": [
       "/images/products/animalused-aqua.png"
@@ -4478,11 +4581,62 @@
       "Ponds on intensive feeding regimes where mineral depletion is likely over time.",
       "As a routine supplement to maintain mineral balance through the culture cycle."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 1 kg fortified micro-mineral premix contains:",
+    "composition": [
+      {
+        "ingredient": "Calcium (min)",
+        "amount": "240g"
+      },
+      {
+        "ingredient": "Phosphorus (min)",
+        "amount": "120g"
+      },
+      {
+        "ingredient": "Magnesium",
+        "amount": "65g"
+      },
+      {
+        "ingredient": "Zinc Glycinate",
+        "amount": "12g"
+      },
+      {
+        "ingredient": "Iron (Chelated)",
+        "amount": "6g"
+      },
+      {
+        "ingredient": "Manganese",
+        "amount": "8g"
+      },
+      {
+        "ingredient": "Copper Chelate",
+        "amount": "2.5g"
+      },
+      {
+        "ingredient": "Selenium & Iodine Complex",
+        "amount": "550mg"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "FEED TOP-DRESSING & WATER MINERALIZATION",
+          "dosages": [
+            {
+              "target": "Daily Feed Top-Dressing (Shrimp & Fish)",
+              "amount": "5g to 10g per kg of feed"
+            },
+            {
+              "target": "Water Mineral Balance (Post-Moulting)",
+              "amount": "3 kg to 5 kg per acre based on salinity"
+            },
+            {
+              "target": "Cramp / White Muscle Recovery",
+              "amount": "10g to 15g per kg of feed for 7 days"
+            }
+          ]
+        }
+      ],
+      "note": "Mix with feed binder and dry in shade for 20 minutes before feeding, or dissolve in water for pond application."
     },
     "animalUsedImages": [
       "/images/products/animalused-aqua.png"
@@ -4534,11 +4688,50 @@
       "Declining survival or inconsistent growth performance across the pond.",
       "As a routine addition to support immunity and overall pond productivity."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 1 kg multi-strain probiotic & amino acid complex contains:",
+    "composition": [
+      {
+        "ingredient": "Bacillus subtilis & Bacillus licheniformis",
+        "amount": "2.5 x 10^9 CFU/g"
+      },
+      {
+        "ingredient": "Lactobacillus acidophilus & L. plantarum",
+        "amount": "1.0 x 10^9 CFU/g"
+      },
+      {
+        "ingredient": "Saccharomyces cerevisiae (Active Yeast)",
+        "amount": "1.5 x 10^9 CFU/g"
+      },
+      {
+        "ingredient": "Essential Amino Acid Complex (Methionine, Lysine)",
+        "amount": "150g"
+      },
+      {
+        "ingredient": "Prebiotic Matrix (Mannan-oligosaccharides & Beta-Glucans)",
+        "amount": "100g"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "POND WATER CONDITIONING & FEED APPLICATION",
+          "dosages": [
+            {
+              "target": "Pond Preparation (Plankton Bloom Initiation)",
+              "amount": "1 kg per acre (fermented with jaggery)"
+            },
+            {
+              "target": "Regular Pond Probiotic Dosing (Every 7-10 days)",
+              "amount": "500g to 1 kg per acre"
+            },
+            {
+              "target": "Gut Health & Feed Inclusion",
+              "amount": "5g per kg of formulated feed"
+            }
+          ]
+        }
+      ],
+      "note": "For pond application, activate with 2 kg jaggery in 20 litres of pond water for 12 hours before broadcasting."
     },
     "animalUsedImages": [
       "/images/products/animalused-aqua.png"
@@ -4586,11 +4779,54 @@
       "Following stress events (handling, water quality shifts, disease pressure) that may affect liver function.",
       "As a routine addition to support digestion, liver health, and growth through the culture cycle."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 1 kg bioactive hepatoprotective supplement contains extracts of:",
+    "composition": [
+      {
+        "ingredient": "Andrographis paniculata extract",
+        "amount": "150g"
+      },
+      {
+        "ingredient": "Eclipta alba extract",
+        "amount": "120g"
+      },
+      {
+        "ingredient": "Phyllanthus niruri extract",
+        "amount": "100g"
+      },
+      {
+        "ingredient": "Tephrosia purpurea extract",
+        "amount": "80g"
+      },
+      {
+        "ingredient": "Choline Chloride & Inositol",
+        "amount": "150g"
+      },
+      {
+        "ingredient": "Vitamin B-Complex & Phospholipid Matrix",
+        "amount": "100g"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "FEED INCORPORATION — AQUACULTURE",
+          "dosages": [
+            {
+              "target": "Routine Growth Promotion & Feed Conversion (FCR)",
+              "amount": "5g to 10g per kg of feed daily"
+            },
+            {
+              "target": "Hepatopancreas Stress & Fatty Liver Recovery",
+              "amount": "15g to 20g per kg of feed for 7–10 days"
+            },
+            {
+              "target": "Post-Antibiotic / Post-Chemical Rehabilitation",
+              "amount": "10g per kg of feed for 14 days"
+            }
+          ]
+        }
+      ],
+      "note": "Bind uniformly onto pelleted feed using commercial feed binder or fish oil; shade-dry prior to feeding."
     },
     "animalUsedImages": [
       "/images/products/animalused-aqua.png"
@@ -4638,11 +4874,50 @@
       "High-density stocking, where pathogen pressure and growth demands are both elevated.",
       "As a routine addition to support sustained growth and immunity through the culture cycle."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 1 kg bio-stimulant & natural growth enhancer contains:",
+    "composition": [
+      {
+        "ingredient": "Phytogenic Growth & Enzyme Promoters",
+        "amount": "200g"
+      },
+      {
+        "ingredient": "Hydrolyzed Marine Bio-Peptides",
+        "amount": "250g"
+      },
+      {
+        "ingredient": "Multi-Enzyme Complex (Protease, Amylase, Phytase)",
+        "amount": "100g"
+      },
+      {
+        "ingredient": "Spirulina & Bio-chelated Trace Minerals",
+        "amount": "250g"
+      },
+      {
+        "ingredient": "Immunostimulating Polysaccharides",
+        "amount": "200g"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "POND WATER & FEED ENRICHMENT",
+          "dosages": [
+            {
+              "target": "Plankton Bloom Sustenance",
+              "amount": "2 kg to 3 kg per acre during pond preparation"
+            },
+            {
+              "target": "Daily Growth Acceleration (Feed)",
+              "amount": "5g to 10g per kg of feed"
+            },
+            {
+              "target": "High Stocking Density Support",
+              "amount": "1.5 kg to 2 kg per acre every 14 days"
+            }
+          ]
+        }
+      ],
+      "note": "Evenly distribute over pond surface or blend thoroughly into complete feed rations."
     },
     "animalUsedImages": [
       "/images/products/animalused-aqua.png"
@@ -4684,6 +4959,10 @@
       {
         "title": "Supports better survivability, growth, and ultimate yield in fish, shrimp, and prawns.",
         "text": "Supports better survivability, growth, and ultimate yield in fish, shrimp, and prawns."
+      },
+      {
+        "title": "Safe for Beneficial Plankton & Biofloc Systems",
+        "text": "Selective mineral-biological action binds toxic metabolites without crashing microalgae blooms or disrupting beneficial biofloc microbial consortia."
       }
     ],
     "indications": [
@@ -4694,11 +4973,50 @@
       "Before restocking, to condition water and sediment for the next culture cycle.",
       "As a routine addition across varied pond conditions to maintain consistent water quality"
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 1 kg micro-porous toxin adsorbent & water clarifier contains:",
+    "composition": [
+      {
+        "ingredient": "Hydrated Sodium Calcium Aluminosilicate (HSCAS)",
+        "amount": "450g"
+      },
+      {
+        "ingredient": "High-Surface Activated Carbon",
+        "amount": "200g"
+      },
+      {
+        "ingredient": "Yucca schidigera extract (Saponin 30%)",
+        "amount": "100g"
+      },
+      {
+        "ingredient": "Biological Nitrification Stimulators",
+        "amount": "150g"
+      },
+      {
+        "ingredient": "Potassium Humate Matrix",
+        "amount": "100g"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "WATER & SOIL BROADCAST",
+          "dosages": [
+            {
+              "target": "Routine Ammonia, Nitrite & Toxin Management",
+              "amount": "1 kg to 2 kg per acre every 10–14 days"
+            },
+            {
+              "target": "Acute Ammonia Spike / Water Toxicity",
+              "amount": "3 kg to 5 kg per acre immediate broadcast"
+            },
+            {
+              "target": "Sludge & Feeding Zone Soil Detoxification",
+              "amount": "2.5 kg per acre over check-tray areas"
+            }
+          ]
+        }
+      ],
+      "note": "Mix with dry pond sand or clean water and broadcast uniformly over affected feeding and benthic zones."
     },
     "animalUsedImages": [
       "/images/products/animalused-aqua.png"
@@ -4745,11 +5063,58 @@
       "Suspected irritable bowel syndrome (IBS).",
       "Gastric infections associated with stomach disorders in adult pets."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 10 ml herbal digestive syrup contains extracts of:",
+    "composition": [
+      {
+        "ingredient": "Zingiber officinale (Sunthi / Ginger)",
+        "amount": "80mg"
+      },
+      {
+        "ingredient": "Foeniculum vulgare (Saunf / Fennel)",
+        "amount": "60mg"
+      },
+      {
+        "ingredient": "Trachyspermum ammi (Ajwain)",
+        "amount": "50mg"
+      },
+      {
+        "ingredient": "Piper longum (Pippali)",
+        "amount": "40mg"
+      },
+      {
+        "ingredient": "Terminalia chebula (Haritaki)",
+        "amount": "50mg"
+      },
+      {
+        "ingredient": "Cuminum cyminum (Jeera / Cumin)",
+        "amount": "40mg"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "ORAL ADMINISTRATION — DOGS & CATS",
+          "dosages": [
+            {
+              "target": "Pups & Kittens",
+              "amount": "1 ml to 2 ml twice daily"
+            },
+            {
+              "target": "Small Dogs (<10 kg) & Cats",
+              "amount": "2.5 ml to 5 ml twice daily"
+            },
+            {
+              "target": "Medium Dogs (10–25 kg)",
+              "amount": "5 ml to 8 ml twice daily"
+            },
+            {
+              "target": "Large & Giant Breeds (>25 kg)",
+              "amount": "10 ml to 15 ml twice daily"
+            }
+          ]
+        }
+      ],
+      "note": "Administer orally 15-20 minutes before meals or as directed by a veterinarian."
     },
     "animalUsedImages": [
       "/images/products/animalused-pets.png"
@@ -4796,11 +5161,50 @@
       "Poor absorption or assimilation of food.",
       "As a digestive tonic to support overall gut health in pets."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 1 ml paediatric carminative drop contains extracts of:",
+    "composition": [
+      {
+        "ingredient": "Anethum sowa (Dill Seed Oil)",
+        "amount": "0.005ml"
+      },
+      {
+        "ingredient": "Foeniculum vulgare (Fennel extract)",
+        "amount": "15mg"
+      },
+      {
+        "ingredient": "Zingiber officinale (Ginger extract)",
+        "amount": "10mg"
+      },
+      {
+        "ingredient": "Trachyspermum ammi (Ajwain extract)",
+        "amount": "10mg"
+      },
+      {
+        "ingredient": "Mentha piperita (Peppermint oil)",
+        "amount": "5mg"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "ORAL PAEDIATRIC DROPS",
+          "dosages": [
+            {
+              "target": "Neonatal Pups & Kittens (<4 weeks)",
+              "amount": "4 to 6 drops twice daily"
+            },
+            {
+              "target": "Puppies & Kittens (4-12 weeks)",
+              "amount": "8 to 12 drops twice to thrice daily"
+            },
+            {
+              "target": "Small Dogs & Adult Cats",
+              "amount": "15 to 20 drops twice daily"
+            }
+          ]
+        }
+      ],
+      "note": "Administer directly into mouth using calibrated dropper or mix in milk/water."
     },
     "animalUsedImages": [
       "/images/products/animalused-pets.png"
@@ -4819,38 +5223,95 @@
     "gallery": [
       "/images/products/Liv-Ved/01.png"
     ],
-    "tagline": "An Effective Herbal Liver Tonic",
-    "shortDescription": "A herbal hepatic tonic formulated to protect liver function, enhance protein synthesis, and support recovery from hepatic damage, toxicity, and viral infection in pets.",
-    "fullDescription": "Liv Ved is a clinically effective herbal liver tonic formulated to support hepatic health in pets. It increases appetite and protects the liver from toxins, drugs, and chemicals, while enhancing protein building in liver cells. Liv Ved supports pets experiencing anorexia, hepatic damage and dysfunction, ascites, and jaundice, as well as toxicity linked to drugs and pesticides, and serves as a valuable adjuvant in managing canine and feline viral hepatitis, distemper, and parvovirus infection.",
+    "tagline": "Advanced Herbal Hepatoprotective & Appetite Stimulating Syrup",
+    "shortDescription": "A potent botanical hepatoprotective syrup powered by Kalmegh, Bhringraj, and Bhumi Amla to detoxify the liver, stimulate natural appetite, and accelerate hepatocyte regeneration in dogs and cats.",
+    "fullDescription": "LIV VED is a premier veterinary hepatoprotective and metabolic tonic specifically developed for the comprehensive care of canine and feline hepatic health. Formulated with standardized extracts of Andrographis paniculata (Kalmegh), Eclipta alba (Bhringraj), and Phyllanthus niruri (Bhumi Amla), LIV VED provides multi-targeted liver support. It effectively protects hepatic parenchymal cells from chemical and medicinal toxicity, stimulates bile flow, enhances protein synthesis in damaged liver lobes, and rapidly stimulates appetite in sick or debilitated pets. LIV VED is indispensable during liver illness recovery, post-antibiotic or anti-parasitic treatment, and as a supportive tonic in viral infections.",
     "benefits": [
       {
-        "title": "Increases appetite in pets.",
-        "text": "Increases appetite in pets."
+        "title": "Potent Hepatoprotection & Detoxification",
+        "text": "Standardised Kalmegh and Bhumi Amla protect liver parenchymal tissue from toxins, environmental chemicals, and drug metabolites."
       },
       {
-        "title": "Protects the liver from toxins, drugs, and chemicals.",
-        "text": "Protects the liver from toxins, drugs, and chemicals."
+        "title": "Stimulates Appetite & Digestion",
+        "text": "Naturally stimulates bile production and pancreatic enzymes, rapidly reversing inappetence, anorexia, and sluggish feeding habits."
       },
       {
-        "title": "Enhances protein building in liver cells.",
-        "text": "Enhances protein building in liver cells."
+        "title": "Accelerates Hepatocyte Regeneration",
+        "text": "Eclipta alba and Punarnava stimulate cellular protein synthesis, accelerating the natural repair of damaged hepatic cells and normalizing SGOT, SGPT, and ALP levels."
       },
       {
-        "title": "Serves as an adjuvant in managing canine and feline viral hepatitis, distemper, and parvovirus infection",
-        "text": "Serves as an adjuvant in managing canine and feline viral hepatitis, distemper, and parvovirus infection"
+        "title": "Essential Post-Therapeutic Recovery",
+        "text": "Counteracts the hepatotoxic burden of long-term antibiotics, NSAIDs, anthelmintics, steroids, and anti-tick medications."
+      },
+      {
+        "title": "Viral & Infectious Adjunct Support",
+        "text": "Acts as vital supportive therapy during recovery from Canine Parvovirus, Infectious Canine Hepatitis, and tick-borne fever."
+      },
+      {
+        "title": "Improves Vitality & Coat Lustre",
+        "text": "Optimized metabolic functioning promotes nutrient assimilation, resulting in improved body conditioning, higher energy levels, and a lustrous coat."
       }
     ],
     "indications": [
-      "Anorexia or reduced appetite in pets.",
-      "Hepatic damage or dysfunction, ascites, or jaundice.",
-      "Toxicity associated with drugs or pesticides.",
-      "As an adjuvant during canine and feline viral hepatitis, distemper, or parvovirus infection."
+      "Anorexia, chronic inappetence, unexplained weight loss, and sluggish digestion in dogs and cats.",
+      "Acute and chronic hepatitis, fatty liver syndrome, hepatic dysfunction, ascites, and clinical or subclinical jaundice.",
+      "Drug-induced liver stress following prolonged administration of antibiotics, anti-fungals, NSAIDs, steroids, or dewormers.",
+      "Supportive co-therapy in managing viral infections (Parvovirus, Coronavirus) and hemoprotozoan tick infections.",
+      "Liver support for geriatric pets experiencing age-related metabolic decline and reduced liver filtration capacity.",
+      "Routine liver rejuvenation and seasonal conditioning to maintain peak vitality and digestive resilience."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 10 ml hepatoprotective syrup contains extracts of:",
+    "composition": [
+      {
+        "ingredient": "Andrographis paniculata (Kalmegh)",
+        "amount": "150mg"
+      },
+      {
+        "ingredient": "Eclipta alba (Bhringraj)",
+        "amount": "120mg"
+      },
+      {
+        "ingredient": "Phyllanthus niruri (Bhumi Amla)",
+        "amount": "100mg"
+      },
+      {
+        "ingredient": "Tephrosia purpurea (Sarphoka)",
+        "amount": "80mg"
+      },
+      {
+        "ingredient": "Boerhavia diffusa (Punarnava)",
+        "amount": "70mg"
+      },
+      {
+        "ingredient": "Picrorhiza kurroa (Kutki)",
+        "amount": "40mg"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "ORAL LIVER TONIC — PETS",
+          "dosages": [
+            {
+              "target": "Puppies & Kittens",
+              "amount": "2.5 ml to 5 ml daily"
+            },
+            {
+              "target": "Small Breeds & Cats (<10 kg)",
+              "amount": "5 ml twice daily"
+            },
+            {
+              "target": "Medium Breeds (10–25 kg)",
+              "amount": "7.5 ml twice daily"
+            },
+            {
+              "target": "Large & Giant Breeds (>25 kg)",
+              "amount": "10 ml to 15 ml twice daily"
+            }
+          ]
+        }
+      ],
+      "note": "Give daily for 20-30 days during liver disorders, appetite loss, or post-medication recovery."
     },
     "animalUsedImages": [
       "/images/products/animalused-pets.png"
@@ -4896,11 +5357,50 @@
       "Swelling or poor blood circulation.",
       "Pain or inflammation requiring supportive relief."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 10 ml herbal antipyretic & analgesic syrup contains extracts of:",
+    "composition": [
+      {
+        "ingredient": "Tinospora cordifolia (Guduchi)",
+        "amount": "150mg"
+      },
+      {
+        "ingredient": "Salix alba (White Willow Bark standardized)",
+        "amount": "100mg"
+      },
+      {
+        "ingredient": "Ocimum sanctum (Tulsi)",
+        "amount": "80mg"
+      },
+      {
+        "ingredient": "Zingiber officinale (Sunthi)",
+        "amount": "60mg"
+      },
+      {
+        "ingredient": "Swertia chirata (Chirayata)",
+        "amount": "50mg"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "ORAL SYRUP — CANINE & FELINE",
+          "dosages": [
+            {
+              "target": "Cats & Small Dogs (<10 kg)",
+              "amount": "2.5 ml to 5 ml twice daily"
+            },
+            {
+              "target": "Medium Dogs (10–25 kg)",
+              "amount": "5 ml to 8 ml twice daily"
+            },
+            {
+              "target": "Large Breeds (>25 kg)",
+              "amount": "10 ml twice to thrice daily"
+            }
+          ]
+        }
+      ],
+      "note": "Administer after meals for 3-5 days or as recommended by your veterinary practitioner."
     },
     "animalUsedImages": [
       "/images/products/animalused-pets.png"
@@ -4951,11 +5451,58 @@
       "As follow-up therapy alongside antibiotics in bacterial infections.",
       "Weakened immunity or low antibody titer"
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 10 ml herbal immunomodulator syrup contains standardized extracts of:",
+    "composition": [
+      {
+        "ingredient": "Withania somnifera (Ashwagandha)",
+        "amount": "150mg"
+      },
+      {
+        "ingredient": "Tinospora cordifolia (Giloy)",
+        "amount": "120mg"
+      },
+      {
+        "ingredient": "Ocimum sanctum (Holy Basil)",
+        "amount": "100mg"
+      },
+      {
+        "ingredient": "Emblica officinalis (Amla)",
+        "amount": "80mg"
+      },
+      {
+        "ingredient": "Glycyrrhiza glabra (Yashtimadhu)",
+        "amount": "60mg"
+      },
+      {
+        "ingredient": "Curcuma longa (Curcumin 95%)",
+        "amount": "40mg"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "ORAL IMMUNE SUPPLEMENT",
+          "dosages": [
+            {
+              "target": "Kittens & Puppies",
+              "amount": "2.5 ml once daily"
+            },
+            {
+              "target": "Small Dogs & Cats (<10 kg)",
+              "amount": "5 ml once to twice daily"
+            },
+            {
+              "target": "Medium Dogs (10–25 kg)",
+              "amount": "7.5 ml twice daily"
+            },
+            {
+              "target": "Large Dogs (>25 kg)",
+              "amount": "10 ml to 15 ml twice daily"
+            }
+          ]
+        }
+      ],
+      "note": "Administer for 10-14 days before and after vaccination, or continuously during convalescence."
     },
     "animalUsedImages": [
       "/images/products/animalused-pets.png"
@@ -4993,11 +5540,46 @@
       "Poor overall skin and coat condition.",
       "As routine grooming care to help prevent ectoparasite infestation."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Herbal ecto-parasiticidal topical formulation contains:",
+    "composition": [
+      {
+        "ingredient": "Azadirachta indica (Neem Seed Oil)",
+        "amount": "5.0% w/w"
+      },
+      {
+        "ingredient": "Eucalyptus globulus (Nilgiri Oil)",
+        "amount": "2.0% w/w"
+      },
+      {
+        "ingredient": "Cymbopogon citratus (Lemongrass Oil)",
+        "amount": "1.5% w/w"
+      },
+      {
+        "ingredient": "Cedrus deodara (Devdaru Oil)",
+        "amount": "2.0% w/w"
+      },
+      {
+        "ingredient": "Tea Tree Oil & Skin Conditioning Emollients",
+        "amount": "q.s."
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "TOPICAL SHAMPOO & POWDER GROOMING",
+          "dosages": [
+            {
+              "target": "Shampoo Routine (Ticks & Fleas)",
+              "amount": "Wet coat thoroughly with warm water, apply liberal lather, leave for 5–10 minutes, and rinse well."
+            },
+            {
+              "target": "Powder Routine (Preventive Care)",
+              "amount": "Dust powder evenly against hair direction across the entire body once to twice weekly."
+            }
+          ]
+        }
+      ],
+      "note": "Avoid contact with eyes, nose, and mouth. Safe for dogs and puppies older than 8 weeks."
     },
     "animalUsedImages": [
       "/images/products/animalused-pets.png"
@@ -5035,11 +5617,66 @@
       "Allergic skin conditions such as flea bite allergy and atopy.",
       "Fungal skin infection and pyoderma."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 10 ml fortified oral coat conditioner contains:",
+    "composition": [
+      {
+        "ingredient": "Linoleic Acid (Omega-6 Essential Fatty Acid)",
+        "amount": "3200mg"
+      },
+      {
+        "ingredient": "Linolenic Acid (Omega-3 Essential Fatty Acid)",
+        "amount": "450mg"
+      },
+      {
+        "ingredient": "Eicosapentaenoic Acid (EPA)",
+        "amount": "120mg"
+      },
+      {
+        "ingredient": "Docosahexaenoic Acid (DHA)",
+        "amount": "80mg"
+      },
+      {
+        "ingredient": "Zinc Glycinate Chelate",
+        "amount": "25mg"
+      },
+      {
+        "ingredient": "Biotin (Vitamin B7)",
+        "amount": "500mcg"
+      },
+      {
+        "ingredient": "Vitamin A (Palmitate)",
+        "amount": "2000 IU"
+      },
+      {
+        "ingredient": "Vitamin E (Tocopherol)",
+        "amount": "25 IU"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "ORAL LIQUID — COAT & DERMAL HEALTH",
+          "dosages": [
+            {
+              "target": "Cats & Small Pups (<5 kg)",
+              "amount": "2.5 ml daily"
+            },
+            {
+              "target": "Dogs (5–15 kg)",
+              "amount": "5 ml to 7.5 ml daily"
+            },
+            {
+              "target": "Dogs (15–30 kg)",
+              "amount": "10 ml daily"
+            },
+            {
+              "target": "Giant Breeds (>30 kg)",
+              "amount": "15 ml daily"
+            }
+          ]
+        }
+      ],
+      "note": "Pour directly over daily meal. For optimal results, use continuously for 4 to 6 weeks."
     },
     "animalUsedImages": [
       "/images/products/animalused-pets.png"
@@ -5058,38 +5695,119 @@
     "gallery": [
       "/images/products/Ved-MV/01.png"
     ],
-    "tagline": "An Effective Multivitamin Liquid Supplement",
-    "shortDescription": "A liquid multivitamin supplement combining iron, copper, and five essential vitamins to address nutritional deficiencies and support growth and metabolism in dogs and cats",
-    "fullDescription": "Ved MV is a liquid dietary multivitamin supplement formulated for dogs and cats, containing iron, copper, and 5 essential vitamins. It is designed for dogs and cats that may not be receiving complete nutrition, offering reliable support against various vitamin and amino acid deficiencies. Ved MV helps improve a pet's growth and stimulates metabolism, supporting overall good health.",
+    "tagline": "High-Potency Multivitamin & Essential Trace Mineral Liquid Supplement",
+    "shortDescription": "A fortified liquid multivitamin tonic combining chelated iron, copper, and essential vitamins to correct nutritional deficiencies, stimulate appetite, and promote healthy growth in dogs and cats.",
+    "fullDescription": "VED MV is a veterinary-grade liquid dietary multivitamin supplement scientifically formulated for dogs and cats of all ages. Enriched with highly bioavailable ferrous gluconate, copper sulfate, and a comprehensive spectrum of essential vitamins (A, D3, E, and full B-complex), VED MV provides targeted nutritional therapy for pets experiencing dietary imbalances, slow growth, or recovering from illness. The fortified liquid formula ensures rapid intestinal absorption, stimulating cellular metabolism, promoting muscular development, enhancing hemoglobin synthesis, and maintaining optimal vitality and natural immunity across puppies, kittens, and adult pets.",
     "benefits": [
       {
-        "title": "A liquid dietary supplement for dogs and cats containing iron, copper, and 5 essential vitamins",
-        "text": "A liquid dietary supplement for dogs and cats containing iron, copper, and 5 essential vitamins"
+        "title": "Comprehensive Vitamin & Mineral Profile",
+        "text": "Delivers balanced proportions of vitamins A, D3, E, and full B-complex fortified with elemental iron and copper for total metabolic vitality."
       },
       {
-        "title": "Designed for dogs and cats that may not be getting complete nutrition.",
-        "text": "Designed for dogs and cats that may not be getting complete nutrition."
+        "title": "Hemoglobin & Red Blood Cell Support",
+        "text": "Organic ferrous gluconate and copper sulfate stimulate erythropoiesis, correcting anemia, lethargy, and nutritional debility."
       },
       {
-        "title": "Reliable support for various vitamin and amino acid deficiencies.",
-        "text": "Reliable support for various vitamin and amino acid deficiencies."
+        "title": "Enhanced Growth & Muscle Development",
+        "text": "Fortified with L-Lysine and DL-Methionine to support muscle protein synthesis, tissue repair, and skeletal development in growing puppies and kittens."
       },
       {
-        "title": "Helps improve a pet's growth and stimulates metabolism for good health.",
-        "text": "Helps improve a pet's growth and stimulates metabolism for good health."
+        "title": "Appetite & Metabolic Stimulation",
+        "text": "B-complex vitamins stimulate digestive enzyme secretion, reviving appetite in picky eaters, malnourished rescues, and convalescent pets."
+      },
+      {
+        "title": "Immune Defense & Stress Resistance",
+        "text": "Antioxidant vitamins A and E neutralize oxidative free radicals, bolstering immune resilience against environmental, seasonal, and vaccination stress."
+      },
+      {
+        "title": "Healthy Coat, Skin & Optical Integrity",
+        "text": "Nourishes the epithelial barrier and hair follicles, preventing dry, dull coats, excessive shedding, and corneal dryness."
       }
     ],
     "indications": [
-      "Incomplete or unbalanced nutrition in dogs and cats.",
-      "Suspected vitamin or amino acid deficiencies.",
-      "Poor growth or slow development in growing pets.",
-      "As a general supplement to support metabolism and overall health."
+      "Nutritional hypovitaminosis and micro-mineral deficiencies in dogs and cats of all life stages.",
+      "Retarded growth, stunted muscular development, and poor weight gain in weaning puppies and kittens.",
+      "Nutritional anemia, pale mucous membranes, fatigue, and lethargy following parasitic or viral infections.",
+      "Post-operative recovery, post-antibiotic debility, and convalescence following systemic ailments.",
+      "Pregnancy, lactation, and high metabolic demand requiring elevated micro-nutrient supplementation.",
+      "Loss of appetite, finicky eating habits, and stress induced by traveling, rehoming, or vaccinations."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 5 ml fortified multivitamin liquid contains:",
+    "composition": [
+      {
+        "ingredient": "Vitamin A (Palmitate)",
+        "amount": "2500 IU"
+      },
+      {
+        "ingredient": "Vitamin D3",
+        "amount": "400 IU"
+      },
+      {
+        "ingredient": "Vitamin E",
+        "amount": "5 IU"
+      },
+      {
+        "ingredient": "Vitamin B1 (Thiamine)",
+        "amount": "2.5mg"
+      },
+      {
+        "ingredient": "Vitamin B2 (Riboflavin)",
+        "amount": "2.5mg"
+      },
+      {
+        "ingredient": "Vitamin B6 (Pyridoxine)",
+        "amount": "1.5mg"
+      },
+      {
+        "ingredient": "Vitamin B12 (Cyanocobalamin)",
+        "amount": "10mcg"
+      },
+      {
+        "ingredient": "Nicotinamide (Vitamin B3)",
+        "amount": "20mg"
+      },
+      {
+        "ingredient": "D-Panthenol (Vitamin B5)",
+        "amount": "5mg"
+      },
+      {
+        "ingredient": "Ferrous Gluconate (Iron)",
+        "amount": "15mg"
+      },
+      {
+        "ingredient": "Copper Sulfate",
+        "amount": "2mg"
+      },
+      {
+        "ingredient": "L-Lysine & DL-Methionine",
+        "amount": "50mg"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "ORAL MULTIVITAMIN LIQUID",
+          "dosages": [
+            {
+              "target": "Puppies & Kittens",
+              "amount": "0.5 ml to 1 ml daily"
+            },
+            {
+              "target": "Adult Cats & Small Dogs (<10 kg)",
+              "amount": "2.5 ml daily"
+            },
+            {
+              "target": "Medium Dogs (10–25 kg)",
+              "amount": "5 ml daily"
+            },
+            {
+              "target": "Large Dogs (>25 kg)",
+              "amount": "7.5 ml to 10 ml daily"
+            }
+          ]
+        }
+      ],
+      "note": "Administer orally directly or mix with morning food. Shake well before use."
     },
     "animalUsedImages": [
       "/images/products/animalused-pets.png"
@@ -5108,33 +5826,95 @@
     "gallery": [
       "/images/products/Vediarro-Herb/01.png"
     ],
-    "tagline": "An Effective Herbal Anti-diarrhoeal",
-    "shortDescription": "A herbal anti-diarrhoeal formulated to control diarrhoea of varied causes, protect intestinal mucosa, and address enteritis, dysentery, and calf scours in pets and livestock.",
-    "fullDescription": "Vediarro Herb is a clinically effective herbal anti-diarrhoeal formulated to control diarrhea of varied etiologies. Its antibacterial activity helps prevent gastrointestinal upsets, while its anti-inflammatory action protects the intestinal mucosa from damage. Vediarro Herb is useful in both specific and nonspecific diarrhea, calf scours, and conditions such as enteritis, dysentery, and gastritis.",
+    "tagline": "Fast-Acting Herbal Anti-Diarrhoeal & Gut Mucosal Protective Suspension",
+    "shortDescription": "A fast-acting herbal anti-diarrhoeal suspension combining Kutaja, Bilva, and natural astringents to rapidly control loose droppings, soothe intestinal inflammation, and restore hydration in dogs and cats.",
+    "fullDescription": "VEDIARRO HERB is a specialized veterinary herbal anti-diarrhoeal suspension formulated to provide rapid, gentle relief from loose stools and gastrointestinal distress in puppies, kittens, and adult pets. Combining time-tested botanical astringents including Holarrhena antidysenterica (Kutaja), Aegle marmelos (Bilva), and Punica granatum (Dadima), this formulation binds bacterial enterotoxins, calms hyper-peristaltic intestinal spasms, and forms a soothing protective barrier over inflamed enteric mucosa. Unlike synthetic anti-diarrheals that cause sluggish motility and rebound constipation, VEDIARRO HERB naturally consolidates watery stools, promotes physiological fluid reabsorption, and supports swift gastrointestinal convalescence.",
     "benefits": [
       {
-        "title": "Helps control diarrhea of varied etiologies",
-        "text": "Helps control diarrhea of varied etiologies"
+        "title": "Rapid Enteric Astringent Action",
+        "text": "Active botanical tannins from Kutaja and Bilva form a soothing protective shield over irritated intestinal mucosa, halting fluid and electrolyte leakage."
       },
       {
-        "title": "Antibacterial activity helps prevent gastrointestinal upsets.",
-        "text": "Antibacterial activity helps prevent gastrointestinal upsets."
+        "title": "Calms Intestinal Spasms & Colic",
+        "text": "Antispasmodic and carminative extracts of Musta and Sunthi alleviate painful abdominal cramping, tenesmus, and excessive intestinal hyper-motility."
       },
       {
-        "title": "Anti-inflammatory activity protects the intestinal mucosa from damage.",
-        "text": "Anti-inflammatory activity protects the intestinal mucosa from damage."
+        "title": "Natural Antimicrobial Protection",
+        "text": "Demonstrates targeted botanical activity against pathogenic enteric microbes while preserving beneficial microflora and gut biome balance."
+      },
+      {
+        "title": "Restores Normal Stool Consistency",
+        "text": "Promotes rapid water re-absorption within the colon, consolidating loose and watery droppings within 24 to 48 hours without causing rebound constipation."
+      },
+      {
+        "title": "Electrolyte & Fluid Stabilization",
+        "text": "Helps maintain physiological hydration and acid-base equilibrium, preventing dangerous dehydration in young puppies and kittens."
+      },
+      {
+        "title": "100% Herbal & Non-Antibiotic",
+        "text": "Safe, gentle formulation suitable for sensitive digestive tracts, free from chemical residues and safe for prolonged enteric recovery."
       }
     ],
     "indications": [
-      "Specific and nonspecific diarrhea.",
-      "Calf scours.",
-      "Enteritis, dysentery, and gastritis."
+      "Acute and chronic nonspecific diarrhea, loose watery droppings, and dietary indiscretion diarrhea in dogs and cats.",
+      "Dietary transition enteritis caused by sudden food changes, raw food switching, or scavenging indiscretion.",
+      "Supportive adjunct therapy during viral enteritis (Canine Parvovirus, Coronavirus) alongside standard fluid therapy.",
+      "Post-deworming diarrhea and secondary dysbiosis following oral antibiotic therapy.",
+      "Stress-induced colitis, traveling diarrhea, and weaning diarrhea in newly adopted puppies and kittens.",
+      "Chronic gastrointestinal inflammation, dysentery, and intermittent irritable bowel signs in adult and geriatric pets."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 10 ml herbal anti-diarrhoeal suspension contains extracts of:",
+    "composition": [
+      {
+        "ingredient": "Holarrhena antidysenterica (Kutaja)",
+        "amount": "180mg"
+      },
+      {
+        "ingredient": "Aegle marmelos (Bael / Bilva)",
+        "amount": "150mg"
+      },
+      {
+        "ingredient": "Punica granatum (Dadima / Pomegranate)",
+        "amount": "100mg"
+      },
+      {
+        "ingredient": "Cyperus rotundus (Musta / Nagarmotha)",
+        "amount": "80mg"
+      },
+      {
+        "ingredient": "Acacia catechu (Khadira)",
+        "amount": "60mg"
+      },
+      {
+        "ingredient": "Zingiber officinale (Sunthi)",
+        "amount": "50mg"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "ORAL SUSPENSION — ENTERIC CARE",
+          "dosages": [
+            {
+              "target": "Puppies & Kittens",
+              "amount": "2.5 ml to 5 ml twice daily"
+            },
+            {
+              "target": "Small Dogs & Cats (<10 kg)",
+              "amount": "5 ml twice daily"
+            },
+            {
+              "target": "Medium Dogs (10–25 kg)",
+              "amount": "8 ml to 10 ml twice daily"
+            },
+            {
+              "target": "Large Dogs (>25 kg)",
+              "amount": "12 ml to 15 ml twice daily"
+            }
+          ]
+        }
+      ],
+      "note": "Administer orally for 3 to 5 consecutive days or until loose stool normalizes. Maintain hydration."
     },
     "animalUsedImages": [
       "/images/products/animalused-pets.png"
@@ -5175,11 +5955,62 @@
       "Severe respiratory infections requiring supportive therapy.",
       "As a preventive aid to reduce disease incidence and support overall performance."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 10 ml herbal respiratory syrup contains extracts of:",
+    "composition": [
+      {
+        "ingredient": "Adhatoda vasica (Vasaka)",
+        "amount": "180mg"
+      },
+      {
+        "ingredient": "Ocimum sanctum (Tulsi)",
+        "amount": "140mg"
+      },
+      {
+        "ingredient": "Glycyrrhiza glabra (Yashtimadhu)",
+        "amount": "100mg"
+      },
+      {
+        "ingredient": "Solanum xanthocarpum (Kantakari)",
+        "amount": "80mg"
+      },
+      {
+        "ingredient": "Zingiber officinale (Sunthi)",
+        "amount": "60mg"
+      },
+      {
+        "ingredient": "Piper longum (Pippali)",
+        "amount": "50mg"
+      },
+      {
+        "ingredient": "Mentha arvensis (Pudina Satva)",
+        "amount": "10mg"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "ORAL RESPIRATORY SYRUP",
+          "dosages": [
+            {
+              "target": "Puppies & Kittens",
+              "amount": "2.5 ml twice daily"
+            },
+            {
+              "target": "Cats & Small Dogs (<10 kg)",
+              "amount": "5 ml twice daily"
+            },
+            {
+              "target": "Medium Dogs (10–25 kg)",
+              "amount": "7.5 ml twice daily"
+            },
+            {
+              "target": "Large Dogs (>25 kg)",
+              "amount": "10 ml to 15 ml twice daily"
+            }
+          ]
+        }
+      ],
+      "note": "Administer with a small amount of warm water or honey for 5-7 days to soothe airways."
     },
     "animalUsedImages": [
       "/images/products/animalused-pets.png"
@@ -5221,11 +6052,58 @@
       "Digestive disturbances linked to worm infestation.",
       "As routine deworming to strengthen long-term resistance."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 10 ml herbal anthelmintic liquid contains extracts of:",
+    "composition": [
+      {
+        "ingredient": "Embelia ribes (Vidanga)",
+        "amount": "200mg"
+      },
+      {
+        "ingredient": "Butea monosperma (Palash beej)",
+        "amount": "150mg"
+      },
+      {
+        "ingredient": "Mallotus philippensis (Kampillaka)",
+        "amount": "100mg"
+      },
+      {
+        "ingredient": "Carica papaya (Papaya seed extract)",
+        "amount": "80mg"
+      },
+      {
+        "ingredient": "Vernonia anthelmintica (Kalijiri)",
+        "amount": "70mg"
+      },
+      {
+        "ingredient": "Zingiber officinale (Sunthi)",
+        "amount": "50mg"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "ORAL DEWORMING DOSAGE",
+          "dosages": [
+            {
+              "target": "Puppies & Kittens (>4 weeks)",
+              "amount": "2.5 ml to 5 ml single dose, repeat after 14 days"
+            },
+            {
+              "target": "Small Dogs & Cats (<10 kg)",
+              "amount": "5 ml to 10 ml once daily for 2 days"
+            },
+            {
+              "target": "Medium Dogs (10–25 kg)",
+              "amount": "15 ml once daily for 2 days"
+            },
+            {
+              "target": "Large Dogs (>25 kg)",
+              "amount": "20 ml to 25 ml once daily for 2 days"
+            }
+          ]
+        }
+      ],
+      "note": "Administer on an empty stomach in the morning. Repeat preventive deworming every 3 months."
     },
     "animalUsedImages": [
       "/images/products/animalused-pets.png"
@@ -5271,11 +6149,58 @@
       "Lactating mothers, to help prevent milk fever post-whelping.",
       "Suspected calcium, phosphorus, or vitamin deficiency affecting bone health."
     ],
-    "compositionBase": null,
-    "composition": [],
+    "compositionBase": "Each 10 ml fortified calcium suspension contains:",
+    "composition": [
+      {
+        "ingredient": "Microcrystalline Calcium MCHA",
+        "amount": "350mg"
+      },
+      {
+        "ingredient": "Phosphorus",
+        "amount": "180mg"
+      },
+      {
+        "ingredient": "Vitamin D3",
+        "amount": "400 IU"
+      },
+      {
+        "ingredient": "Vitamin B12 (Cyanocobalamin)",
+        "amount": "25mcg"
+      },
+      {
+        "ingredient": "Vitamin A (Palmitate)",
+        "amount": "1500 IU"
+      },
+      {
+        "ingredient": "Zinc & Magnesium Bio-chelates",
+        "amount": "20mg"
+      },
+      {
+        "ingredient": "Cissus quadrangularis extract (Hadjod)",
+        "amount": "100mg"
+      }
+    ],
     "dosage": {
-      "methods": [],
-      "note": "Or as directed by a veterinarian."
+      "methods": [
+        {
+          "name": "ORAL CALCIUM & BONE HEALTH SUSPENSION",
+          "dosages": [
+            {
+              "target": "Puppies & Kittens",
+              "amount": "2.5 ml to 5 ml daily"
+            },
+            {
+              "target": "Adult Dogs (Small to Medium)",
+              "amount": "5 ml to 10 ml daily"
+            },
+            {
+              "target": "Large Breeds & Lactating Bitches",
+              "amount": "15 ml to 20 ml daily"
+            }
+          ]
+        }
+      ],
+      "note": "Administer directly or mix with daily food. Essential during growth, teething, and peak lactation."
     },
     "animalUsedImages": [
       "/images/products/animalused-pets.png"
