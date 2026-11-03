@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 import EventWidget from './EventWidget';
 
@@ -27,21 +26,32 @@ export default function Header() {
   const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      setScrolled(window.scrollY > 60);
+      const isScrolled = window.scrollY > 60;
+      setScrolled((prev) => (prev !== isScrolled ? isScrolled : prev));
 
-      if (router.pathname !== '/') return;
+      if (router.pathname !== '/') {
+        ticking = false;
+        return;
+      }
 
-      const sections = ['hero', 'about', 'services', 'innovation', 'faq', 'contact'];
+      const sections = ['hero', 'about', 'sectors', 'capabilities', 'vision', 'faq', 'certifications'];
       let current = '';
       for (const id of sections) {
         const el = document.getElementById(id);
         if (el && el.getBoundingClientRect().top <= 100) current = id;
       }
-      if (current) setActiveSection(current);
+      if (current) setActiveSection((prev) => (prev !== current ? current : prev));
+      ticking = false;
     };
 
-    const onScroll = () => { handleScroll(); };
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(handleScroll);
+        ticking = true;
+      }
+    };
     window.addEventListener('scroll', onScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener('scroll', onScroll);
@@ -105,12 +115,15 @@ export default function Header() {
                 }}
                 className="nav-brand"
               >
-                <Image
-                  src="/images/vedvet-logo.png"
+                <img
+                  src="/images/vedvet-logo.webp"
+                  srcSet="/images/vedvet-logo-mobile.webp 210w, /images/vedvet-logo.webp 759w"
+                  sizes="(max-width: 768px) 120px, 210px"
                   alt="VedVet Logo"
                   width={210}
                   height={72}
-                  style={{ objectFit: 'contain', height: 'clamp(40px, 8vw, 72px)', width: 'auto' }}
+                  decoding="async"
+                  style={{ objectFit: 'contain', height: 'clamp(40px, 8vw, 72px)', width: 'auto', display: 'block' }}
                 />
               </Link>
 
@@ -196,7 +209,7 @@ export default function Header() {
         onClick={() => setMobileOpen(false)}
         aria-hidden="true"
       />
-      <div className={`mobile-drawer${mobileOpen ? ' open' : ''}`} role="dialog" aria-modal="true">
+      <div className={`mobile-drawer${mobileOpen ? ' open' : ''}`} role="dialog" aria-modal="true" aria-label="Navigation menu">
         {/* Drawer Header */}
         <div className="drawer-header">
           <Link
@@ -210,12 +223,14 @@ export default function Header() {
             }}
             className="nav-brand"
           >
-            <Image
-              src="/images/vedvet-logo.png"
+            <img
+              src="/images/vedvet-logo-mobile.webp"
               alt="VedVet Logo"
               width={120}
               height={40}
-              style={{ objectFit: 'contain', height: '40px', width: 'auto' }}
+              loading="lazy"
+              decoding="async"
+              style={{ objectFit: 'contain', height: '40px', width: 'auto', display: 'block' }}
             />
           </Link>
           <button className="drawer-close" onClick={() => setMobileOpen(false)} aria-label="Close menu">

@@ -2,12 +2,12 @@ import React from 'react';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-import Header from '../../components/layout/Header';
-import Footer from '../../components/layout/Footer';
-import PageHeader from '../../components/layout/PageHeader';
-import CtaSection from '../../components/ctaSection/CtaSection';
-import { getCanonicalUrl } from '../../data/seoConfig';
-import { getAboutPageSchema } from '../../data/schemaConfig';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import PageHeader from '@/components/layout/PageHeader';
+import CtaSection from '@/components/home/CtaSection';
+import { getCanonicalUrl } from '@/data/seoConfig';
+import { getAboutPageSchema } from '@/data/schemaConfig';
 
 const milestones = [
   {
@@ -41,7 +41,7 @@ export default function WhoWeAre() {
   return (
     <>
       <Head>
-        <title>About VEDVET | Who We Are & Leadership</title>
+        <title>About VEDVET | Who We Are &amp; Leadership</title>
         <meta name="description" content="Discover VEDVET's 12+ year journey, our commitment to uncompromised animal wellbeing, and executive leadership in veterinary science." />
         <link rel="canonical" href={getCanonicalUrl('/about/who-we-are')} key="canonical" />
         <script
@@ -75,7 +75,7 @@ export default function WhoWeAre() {
             <div className="wwa-intro-grid">
               <div className="wwa-intro-image-col" data-aos="fade-right">
                 <div className="wwa-intro-img-wrap">
-                  <img src="/images/our-identity.jpg" alt="Our Identity - VEDVET" />
+                  <img src="/images/our-identity.webp" alt="Our Identity - VEDVET" width={600} height={450} loading="lazy" decoding="async" />
                   <div className="wwa-intro-img-badge">
                     <i className="bi bi-stars" />
                     <div>
@@ -89,10 +89,10 @@ export default function WhoWeAre() {
                 <span className="section-label">Our Identity</span>
                 <h2 className="section-title">A Specialist in<br /><span className="accent">Premium Animal Health.</span></h2>
                 <p className="wwa-intro-lead">
-                  VEDVET is a specialist in premium feed additives and veterinary products, backed by 12+ years of rich industry experience. We are dedicated to developing innovative, sustainable solutions that drive our customers' success through consistently high-quality products.
+                  VEDVET is a specialist in premium feed additives and veterinary products, backed by 12+ years of rich industry experience. We are dedicated to developing innovative, sustainable solutions that drive our customers&apos; success through consistently high-quality products.
                 </p>
                 <p className="wwa-intro-body">
-                  Our approach begins with a deep understanding of our customers' needs and concerns — this customer-first principle shapes every solution we deliver. By combining scientific rigor with hands-on expertise, we help our partners support animal health, optimize performance, and improve production efficiency, ensuring long-term value at every stage of the process.
+                  Our approach begins with a deep understanding of our customers&apos; needs and concerns — this customer-first principle shapes every solution we deliver. By combining scientific rigor with hands-on expertise, we help our partners support animal health, optimize performance, and improve production efficiency, ensuring long-term value at every stage of the process.
                 </p>
                 <div className="wwa-values-mini-grid">
                   {values.map((v, i) => (
@@ -176,7 +176,7 @@ export default function WhoWeAre() {
             <div className="quote-content" data-aos="zoom-in">
               <i className="bi bi-quote quote-icon-large" />
               <blockquote style={{ margin: 0, padding: 0, border: 'none' }}>
-                <h2>"People don't care how much you know until they know how much you care."</h2>
+                <h2>&ldquo;People don&apos;t care how much you know until they know how much you care.&rdquo;</h2>
               </blockquote>
               <p>
                 VEDVET is not just a veterinary company — it is a place where relationships are built before business deals are signed, and where our customers and the animal industry are valued as much as our own principles.
@@ -198,7 +198,7 @@ export default function WhoWeAre() {
               <div className="ceo-image-wrapper" data-aos="fade-right">
                 <div className="ceo-image-accent" />
                 <div style={{ position: 'relative', height: '100%' }}>
-                  <img src="/images/ceo.jpeg" alt="CEO Portrait" className="ceo-image" />
+                  <img src="/images/ceo.webp" alt="CEO Portrait" className="ceo-image" width={500} height={600} loading="lazy" decoding="async" />
                   <div
                     style={{
                       position: 'absolute',
@@ -212,17 +212,21 @@ export default function WhoWeAre() {
                       boxShadow: '0 10px 24px rgba(0,0,0,0.18)',
                       zIndex: 3,
                     }}
-                    title="Founder & CEO at Desk"
+                    title="Founder &amp; CEO at Desk"
                   >
                     <img
-                      src="/images/ceo-second.jpeg"
+                      src="/images/ceo-second.webp"
                       alt="CEO in Executive Office"
+                      width={145}
+                      height={100}
+                      loading="lazy"
+                      decoding="async"
                       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     />
                   </div>
                 </div>
                 <div className="ceo-name-tag">
-                  <strong>Founder & CEO</strong>
+                  <strong>Founder &amp; CEO</strong>
                   <span>VEDVET Animal Health Pvt. Ltd.</span>
                 </div>
               </div>
@@ -231,7 +235,7 @@ export default function WhoWeAre() {
                 <h3 className="section-title" style={{ marginBottom: '30px', fontSize: '2.2rem' }}>About Our CEO</h3>
                 <div className="ceo-text-columns">
                   <p>A young, dynamic and successful businessman, our CEO brings over 22 years of veteran experience to the industry. His passion for understanding the benefits of herbs — for animals as well as humans — led to the creation of VEDVET ANIMAL HEALTH Private Limited.</p>
-                  <p>An unwavering "never give up" attitude, paired with a positive outlook in every circumstance, has helped him steer both his life and the company toward sustained success.</p>
+                  <p>An unwavering &quot;never give up&quot; attitude, paired with a positive outlook in every circumstance, has helped him steer both his life and the company toward sustained success.</p>
                   <p>His all-round expertise across sales, marketing, brand management, alliances and acquisitions has been instrumental in driving organizational growth, helping build VEDVET into one of the leading healthcare companies worldwide.</p>
                   <p>An inspirational leader, he has instilled strong values throughout the organization. He believes that every individual holds potential waiting to be unlocked, and he leads by example, acting as a role model for his team every day.</p>
                 </div>

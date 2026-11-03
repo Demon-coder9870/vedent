@@ -1,13 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 const navItems = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about/who-we-are' },
   { label: 'Products', href: '/products' },
-  { label: 'Services', href: '/#services' },
+  { label: 'Accreditations', href: '/accreditations' },
   { label: 'Highlights', href: '/highlights' },
   { label: 'Contact Us', href: '/contact' },
 ];
@@ -35,11 +34,13 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="footer-brand" style={{ display: 'inline-block', marginBottom: '20px' }} aria-label="Vedvet Home">
-              <Image
-                src="/images/vedvet-logo.png"
+              <img
+                src="/images/vedvet-logo.webp"
                 alt="VedVet Logo"
                 width={210}
                 height={72}
+                loading="lazy"
+                decoding="async"
                 style={{ objectFit: 'contain', height: 'clamp(40px, 8vw, 72px)', width: 'auto', filter: 'brightness(0) invert(1)' }}
               />
             </Link>
@@ -94,7 +95,7 @@ export default function Footer() {
             <div className="footer-col-title" role="heading" aria-level={2}>Contact</div>
             <div className="footer-contact-item">
               <i className="bi bi-geo-alt" />
-              <span>2nd floor, Applaud Tower, St. Jude's Chowk, Behind Super Star Electricals, GMS Road, Dehradun-248001, Uttarakhand, INDIA</span>
+              <span>2nd floor, Applaud Tower, St. Jude&apos;s Chowk, Behind Super Star Electricals, GMS Road, Dehradun-248001, Uttarakhand, INDIA</span>
             </div>
             <div className="footer-contact-item">
               <i className="bi bi-telephone" />

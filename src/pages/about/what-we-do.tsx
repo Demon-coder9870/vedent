@@ -1,25 +1,24 @@
 import React, { useState } from 'react';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
-import Header from '../../components/layout/Header';
-import Footer from '../../components/layout/Footer';
-import PageHeader from '../../components/layout/PageHeader';
-import CtaSection from '../../components/ctaSection/CtaSection';
-import { getCanonicalUrl } from '../../data/seoConfig';
-import { getAboutPageSchema } from '../../data/schemaConfig';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import PageHeader from '@/components/layout/PageHeader';
+import CtaSection from '@/components/home/CtaSection';
+import { getCanonicalUrl } from '@/data/seoConfig';
+import { getAboutPageSchema } from '@/data/schemaConfig';
 
 const principles = [
-  { title: 'Partnership', icon: 'bi-handshake', desc: 'Our customers, suppliers, and employees are our partners. We build long-term, trustful, and therefore productive relationships with all of them.', img: '/images/what-we-do/Partnership.jpg' },
-  { title: 'Quality', icon: 'bi-award', desc: "Maintaining the high quality of our products and services is every employee's responsibility.", img: '/images/what-we-do/Quality.jpg' },
-  { title: 'Innovation', icon: 'bi-lightbulb', desc: 'Continuous improvement and innovation are central to our goals, driving the economic success of both our customers and our company.', img: '/images/what-we-do/Innovation.jpg' },
-  { title: 'Respect & Teamwork', icon: 'bi-people', desc: 'We champion international, process-oriented teamwork and respect cultural differences across our worldwide operations. We treat every human being with dignity and respect.', img: '/images/what-we-do/Teamwork.jpg' },
-  { title: 'Compliance', icon: 'bi-shield-check', desc: 'We adhere to all relevant legal rules, regulations, and requirements, ensuring the highest safety standards for our products and services.', img: '/images/what-we-do/Compliance.jpg' },
-  { title: 'Ethics', icon: 'bi-heart', desc: 'We hold ourselves to strong ethical principles in every dealing, acting with appropriate and good conduct in all situations.', img: '/images/what-we-do/Ethics.jpg' },
-  { title: 'Confidentiality', icon: 'bi-lock', desc: 'We protect our know-how, business practices, and trade secrets.', img: '/images/what-we-do/Confidentiality.jpg' },
-  { title: 'Resource Stewardship', icon: 'bi-recycle', desc: 'We are committed to managing economic, environmental, and social resources carefully and efficiently.', img: '/images/what-we-do/Resource Stewardship.jpg' },
-  { title: 'Environmental Responsibility', icon: 'bi-tree', desc: 'We voluntarily commit to reducing our contribution to global warming and its associated threats.', img: '/images/what-we-do/Enviromental Responsibilty.jpg' },
-  { title: 'Code of Conduct', icon: 'bi-journal-check', desc: "We uphold and commit ourselves to the principles outlined in our company's code of conduct.", img: '/images/what-we-do/Code of Conduct.jpg' },
+  { title: 'Partnership', icon: 'bi-handshake', desc: 'Our customers, suppliers, and employees are our partners. We build long-term, trustful, and therefore productive relationships with all of them.', img: '/images/what-we-do/Partnership.webp' },
+  { title: 'Quality', icon: 'bi-award', desc: "Maintaining the high quality of our products and services is every employee's responsibility.", img: '/images/what-we-do/Quality.webp' },
+  { title: 'Innovation', icon: 'bi-lightbulb', desc: 'Continuous improvement and innovation are central to our goals, driving the economic success of both our customers and our company.', img: '/images/what-we-do/Innovation.webp' },
+  { title: 'Respect & Teamwork', icon: 'bi-people', desc: 'We champion international, process-oriented teamwork and respect cultural differences across our worldwide operations. We treat every human being with dignity and respect.', img: '/images/what-we-do/Teamwork.webp' },
+  { title: 'Compliance', icon: 'bi-shield-check', desc: 'We adhere to all relevant legal rules, regulations, and requirements, ensuring the highest safety standards for our products and services.', img: '/images/what-we-do/Compliance.webp' },
+  { title: 'Ethics', icon: 'bi-heart', desc: 'We hold ourselves to strong ethical principles in every dealing, acting with appropriate and good conduct in all situations.', img: '/images/what-we-do/Ethics.webp' },
+  { title: 'Confidentiality', icon: 'bi-lock', desc: 'We protect our know-how, business practices, and trade secrets.', img: '/images/what-we-do/Confidentiality.webp' },
+  { title: 'Resource Stewardship', icon: 'bi-recycle', desc: 'We are committed to managing economic, environmental, and social resources carefully and efficiently.', img: '/images/what-we-do/Resource Stewardship.webp' },
+  { title: 'Environmental Responsibility', icon: 'bi-tree', desc: 'We voluntarily commit to reducing our contribution to global warming and its associated threats.', img: '/images/what-we-do/Enviromental Responsibilty.webp' },
+  { title: 'Code of Conduct', icon: 'bi-journal-check', desc: "We uphold and commit ourselves to the principles outlined in our company's code of conduct.", img: '/images/what-we-do/Code of Conduct.webp' },
 ];
 
 export default function WhatWeDo() {
@@ -34,7 +33,7 @@ export default function WhatWeDo() {
   return (
     <>
       <Head>
-        <title>What We Do | Veterinary Formulations & Operations | VEDVET</title>
+        <title>What We Do | Veterinary Formulations &amp; Operations | VEDVET</title>
         <meta name="description" content="VEDVET develops and manufactures premium veterinary feed additives, premixes, and herbal solutions across 18+ countries with GMP-certified excellence." />
         <link rel="canonical" href={getCanonicalUrl('/about/what-we-do')} key="canonical" />
         <script
@@ -78,7 +77,7 @@ export default function WhatWeDo() {
                 </div>
               </div>
               <div className="wwd-intro-image" data-aos="fade-left">
-                <img src="/images/what-we-do/Our Operations.jpg" alt="Our Operations" />
+                <img src="/images/what-we-do/Our Operations.webp" alt="Our Operations" width={600} height={400} loading="lazy" decoding="async" />
                 <div className="wwd-intro-image-badge">
                   <i className="bi bi-patch-check-fill" />
                   <span>GMP Certified</span>
@@ -128,7 +127,7 @@ export default function WhatWeDo() {
                 {principles.map((p, i) => (
                   <div key={i} className={`principles-tab-pane ${activeTab === i ? 'active' : ''}`}>
                     <div className="principles-tab-img-wrap">
-                      <img src={p.img} alt={p.title} className="principles-tab-img" />
+                      <img src={p.img} alt={p.title} className="principles-tab-img" width={700} height={450} loading="lazy" decoding="async" />
                       <div className="principles-tab-img-overlay" />
                       <div className="principles-tab-img-label">
                         <i className={`bi ${p.icon}`} /> {p.title}
@@ -145,8 +144,6 @@ export default function WhatWeDo() {
             </div>
           </div>
         </section>
-
-
 
         {/* ── BOTTOM CTA ────────────────────────────────────── */}
         <CtaSection />

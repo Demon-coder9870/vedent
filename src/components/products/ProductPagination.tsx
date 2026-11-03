@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/ProductCatalog.module.css';
+import styles from '@/styles/ProductCatalog.module.css';
 
 interface ProductPaginationProps {
   currentPage: number;

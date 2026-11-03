@@ -1,0 +1,76 @@
+import React, { useEffect, useRef } from 'react';
+
+const stats = [
+  { value: 12, suffix: '+', label: 'YEARS OF EXCELLENCE' },
+  { value: 52, suffix: '+', label: 'PRODUCTS PORTFOLIO' },
+  { value: 18, suffix: '+', label: 'COUNTRIES SERVED' },
+  { value: 6, suffix: '+', label: 'CERTIFICATIONS' },
+];
+
+const AnimatedNumber = ({ target, suffix }: { target: number, suffix: string }) => {
+  const spanRef = useRef<HTMLSpanElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          const duration = 2000;
+          const startTime = performance.now();
+          
+          const updateCounter = (currentTime: number) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            // easeOutExpo for smooth deceleration
+            const easeOut = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+            const currentVal = Math.floor(easeOut * target);
+
+            if (spanRef.current) {
+              spanRef.current.textContent = `${currentVal}${suffix}`;
+            }
+            
+            if (progress < 1) {
+              requestAnimationFrame(updateCounter);
+            } else if (spanRef.current) {
+              spanRef.current.textContent = `${target}${suffix}`;
+            }
+          };
+          
+          requestAnimationFrame(updateCounter);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+    
+    return () => observer.disconnect();
+  }, [target, suffix]);
+
+  return (
+    <div className="counter-value" ref={containerRef}>
+      <span ref={spanRef}>0{suffix}</span>
+    </div>
+  );
+};
+
+export default function Counter() {
+  return (
+    <section className="counter-section">
+      <div className="container-wide">
+        <div className="counter-grid">
+          {stats.map((stat, idx) => (
+            <div key={idx} className="counter-item" data-aos="fade-up" data-aos-delay={idx * 100}>
+              <AnimatedNumber target={stat.value} suffix={stat.suffix} />
+              <div className="counter-label">{stat.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

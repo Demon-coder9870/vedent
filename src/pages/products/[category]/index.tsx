@@ -1,10 +1,10 @@
 import React from 'react';
 import { GetStaticProps, GetStaticPaths } from 'next';
 import Head from 'next/head';
-import Header from '../../../components/layout/Header';
-import Footer from '../../../components/layout/Footer';
-import PageHeader from '../../../components/layout/PageHeader';
-import ProductCatalog from '../../../components/products/ProductCatalog';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import PageHeader from '@/components/layout/PageHeader';
+import ProductCatalog from '@/components/products/ProductCatalog';
 import {
   ProductSummary,
   getAllProductSummaries,
@@ -12,10 +12,10 @@ import {
   getCategorySEO,
   getAllCategorySlugs,
   CategorySEOInfo,
-} from '../../../lib/products';
-import { categories, formatCategoryLabel, getProductAllCategories } from '../../../data/categoryHelpers';
-import { getCanonicalUrl } from '../../../data/seoConfig';
-import { getCollectionPageSchema } from '../../../data/schemaConfig';
+} from '@/lib/products';
+import { categories, formatCategoryLabel, getProductAllCategories } from '@/data/categoryHelpers';
+import { getCanonicalUrl } from '@/data/seoConfig';
+import { getCollectionPageSchema } from '@/data/schemaConfig';
 
 interface CategoryPageProps {
   categorySlug: string;

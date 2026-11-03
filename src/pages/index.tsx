@@ -1,21 +1,23 @@
 import React from 'react';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
-import Hero from '../components/homeSection/Hero';
-import Counter from '../components/homeSection/Counter';
-import About from '../components/aboutSection/About';
-import Sectors from '../components/sectorsSection/Sectors';
-import Commitment from '../components/homeSection/Commitment';
-import CoreCapabilities from '../components/homeSection/CoreCapabilities';
-import Vision from '../components/visionSection/Vision';
-import Faq from '../components/faqSection/Faq';
-import Certifications from '../components/homeSection/Certifications';
-import Contact from '../components/contactSection/Contact';
-import { getCanonicalUrl } from '../data/seoConfig';
-import { ORGANIZATION_SCHEMA, WEBSITE_SCHEMA, getHomepageFaqSchema } from '../data/schemaConfig';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import Hero from '@/components/home/Hero';
+import { getCanonicalUrl } from '@/data/seoConfig';
+import { ORGANIZATION_SCHEMA, WEBSITE_SCHEMA, getHomepageFaqSchema } from '@/data/schemaConfig';
+
+// Below-the-fold components dynamically code-split while preserving SSR for SEO & content integrity
+const Counter = dynamic(() => import('@/components/home/Counter'));
+const About = dynamic(() => import('@/components/home/About'));
+const Sectors = dynamic(() => import('@/components/home/Sectors'));
+const CoreCapabilities = dynamic(() => import('@/components/home/CoreCapabilities'));
+const Vision = dynamic(() => import('@/components/home/Vision'));
+const Faq = dynamic(() => import('@/components/home/Faq'));
+const Certifications = dynamic(() => import('@/components/home/Certifications'));
+const CtaSection = dynamic(() => import('@/components/home/CtaSection'));
 
 export default function Home() {
   return (
@@ -26,6 +28,21 @@ export default function Home() {
         <link rel="canonical" href={getCanonicalUrl('/')} key="canonical" />
         <meta name="robots" content="index, follow" />
         <link rel="icon" href="/favicon.ico" />
+        
+        {/* Mobile & Desktop LCP Discovery: Preload exact device version */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/slider/1-mobile.webp"
+          media="(max-width: 768px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/images/slider/1.webp"
+          media="(min-width: 769px)"
+        />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -48,12 +65,11 @@ export default function Home() {
         <Counter />
         <About />
         <Sectors />
-        {/* <Commitment /> */}
         <CoreCapabilities />
         <Vision />
         <Faq />
         <Certifications />
-        <Contact />
+        <CtaSection />
       </main>
 
       <Footer />

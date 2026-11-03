@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
-import PageHeader from '../components/layout/PageHeader';
-import CtaSection from '../components/ctaSection/CtaSection';
-import { getCanonicalUrl } from '../data/seoConfig';
-import { getContactPageSchema } from '../data/schemaConfig';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import PageHeader from '@/components/layout/PageHeader';
+import { getCanonicalUrl } from '@/data/seoConfig';
+import { getContactPageSchema } from '@/data/schemaConfig';
+import type { ContactFormPayload, ContactFormStatus } from '@/types/contact';
 
 const processSteps = [
   {
@@ -32,14 +32,14 @@ const processSteps = [
 ];
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState<ContactFormPayload>({ name: '', email: '', message: '' });
 
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Contact Us' }
   ];
 
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<ContactFormStatus>('idle');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -71,7 +71,7 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <title>Contact VEDVET | Veterinary Healthcare Inquiries & Support</title>
+        <title>Contact VEDVET | Veterinary Healthcare Inquiries &amp; Support</title>
         <meta name="description" content="Get in touch with VEDVET for premium veterinary pharmaceuticals, feed supplements, and partnership inquiries worldwide." />
         <link rel="canonical" href={getCanonicalUrl('/contact')} key="canonical" />
         <script
@@ -102,14 +102,15 @@ export default function ContactPage() {
                 <div style={{ marginBottom: '40px' }}>
                   <h2 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '15px' }}>Send us a Message</h2>
                   <p className="section-subtitle" style={{ margin: 0 }}>
-                    We'd love to hear from you — reach out with questions, queries, or if you are interested and want to start a conversation.
+                    We&apos;d love to hear from you — reach out with questions, queries, or if you are interested and want to start a conversation.
                   </p>
                 </div>
 
                 <form className="modern-contact-form" onSubmit={handleSubmit}>
                   <div className="form-group" style={{ marginBottom: '20px' }}>
-                    <label style={{ display: 'block', marginBottom: '8px', fontWeight: 600 }}>Name *</label>
+                    <label htmlFor="contact-name" style={{ display: 'block', marginBottom: '8px', fontWeight: 600 }}>Name *</label>
                     <input
+                      id="contact-name"
                       type="text"
                       placeholder="Your Full Name"
                       required
@@ -120,8 +121,9 @@ export default function ContactPage() {
                   </div>
 
                   <div className="form-group" style={{ marginBottom: '20px' }}>
-                    <label style={{ display: 'block', marginBottom: '8px', fontWeight: 600 }}>E-Mail *</label>
+                    <label htmlFor="contact-email" style={{ display: 'block', marginBottom: '8px', fontWeight: 600 }}>E-Mail *</label>
                     <input
+                      id="contact-email"
                       type="email"
                       placeholder="Your Email Address"
                       required
@@ -132,8 +134,9 @@ export default function ContactPage() {
                   </div>
 
                   <div className="form-group" style={{ marginBottom: '25px' }}>
-                    <label style={{ display: 'block', marginBottom: '8px', fontWeight: 600 }}>Message *</label>
+                    <label htmlFor="contact-message" style={{ display: 'block', marginBottom: '8px', fontWeight: 600 }}>Message *</label>
                     <textarea
+                      id="contact-message"
                       rows={6}
                       placeholder="Write your message here..."
                       required
@@ -170,7 +173,7 @@ export default function ContactPage() {
                     <div>
                       <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>Head Office</h4>
                       <p style={{ margin: 0, color: '#555', lineHeight: '1.6' }}>
-                        2nd floor, Applaud Tower, St. Jude's Chowk,<br />Behind Super Star Electricals, GMS Road,<br />Dehradun-248001, Uttarakhand, INDIA
+                        2nd floor, Applaud Tower, St. Jude&apos;s Chowk,<br />Behind Super Star Electricals, GMS Road,<br />Dehradun-248001, Uttarakhand, INDIA
                       </p>
                     </div>
                   </div>
@@ -189,7 +192,7 @@ export default function ContactPage() {
                   <div className="contact-info-item" style={{ display: 'flex', gap: '20px', marginBottom: '40px', alignItems: 'flex-start' }}>
                     <div className="contact-info-icon" style={{ fontSize: '1.5rem', color: 'var(--white)', background: 'var(--lime)', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '12px', flexShrink: 0 }}><i className="bi bi-telephone-fill" /></div>
                     <div>
-                      <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>Phone & Working Hours</h4>
+                      <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>Phone &amp; Working Hours</h4>
                       <p style={{ margin: 0, color: '#555', lineHeight: '1.6' }}>
                         +91 999 77 148 00<br />
                         <span style={{ fontSize: '0.9rem', color: '#666' }}>Monday to Friday: 10:00 AM to 5:00 PM</span>
@@ -217,7 +220,7 @@ export default function ContactPage() {
         <section className="bg-pattern-dots" style={{ backgroundColor: '#f8fafc', padding: '100px 0' }}>
           <div className="container-wide">
             <div style={{ textAlign: 'center', marginBottom: '70px' }} data-aos="fade-up">
-              <span className="section-label" style={{ justifyContent: 'center' }}>What's Next?</span>
+              <span className="section-label" style={{ justifyContent: 'center' }}>What&apos;s Next?</span>
               <h2 className="section-title">How we build together</h2>
             </div>
 
@@ -244,6 +247,7 @@ export default function ContactPage() {
       {/* Map Section */}
       <section className="map-section" style={{ width: '100%', height: '500px', backgroundColor: '#e5e7eb', marginTop: '0', display: 'flex' }}>
         <iframe
+          title="VEDVET Head Office Location"
           width="100%"
           height="100%"
           frameBorder="0"
