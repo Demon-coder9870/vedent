@@ -1,15 +1,15 @@
 import React from 'react';
 import { GetStaticProps, GetStaticPaths } from 'next';
 import { useRouter } from 'next/router';
-import ProductDetail from '../../../components/productDesigns/ProductDetail';
+import ProductDetail from '@/components/products/ProductDetail';
 import {
   Product,
   getAllProductPaths,
   getProductBySlug,
   getRelatedProducts,
   legacySlugMap,
-} from '../../../lib/products';
-import { getProductAllCategories } from '../../../data/categoryHelpers';
+} from '@/lib/products';
+import { getProductAllCategories } from '@/data/categoryHelpers';
 
 interface ProductDetailProps {
   product: Product;

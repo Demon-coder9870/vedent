@@ -1,25 +1,8 @@
-import rawProducts from '../data/products.json';
-import { getProductAllCategories, getProductPrimaryCategory, formatCategoryLabel } from '../data/categoryHelpers';
+import rawProducts from '@/data/products.json';
+import { getProductAllCategories, getProductPrimaryCategory, formatCategoryLabel } from '@/data/categoryHelpers';
+import type { Product, ProductSummary, CategorySEOInfo } from '@/types/product';
 
-export type Product = (typeof rawProducts)[0];
-
-export interface ProductSummary {
-  name: string;
-  slug: string;
-  category: string;
-  presentation: string;
-  shortDescription: string;
-  image: string;
-  featured?: string;
-  displayOrder?: Record<string, number>;
-}
-
-export interface CategorySEOInfo {
-  title: string;
-  description: string;
-  pageTitle?: string;
-  tagline?: string;
-}
+export type { Product, ProductSummary, CategorySEOInfo };
 
 export const CATEGORY_SEO_CONFIG: Record<string, CategorySEOInfo> = {
   All: {
@@ -63,6 +46,19 @@ export const legacySlugMap: Record<string, string> = {
   'v-choline-90': 'v-choline',
   'o2ved-aq': 'o-two-ved-aq',
   'vedcal-b12': 'vedcal-b-twelve',
+  'clean-care-shampoo-and-powder': 'clean-and-care',
+  'ved-selvit-e': 'vedselvit-e',
+  'ved-meth': 'vedmeth',
+  'vedresp-2': 'vedresp',
+  'vedworm-2': 'vedworm',
+  'vedprovib': 'vedprovib-aq',
+  'vita-mv-ved': 'ved-mv',
+  'oxy-ved': 'oxyved-aq',
+  'ved-crd': 'ved-crd-herb',
+  'vedcrd': 'ved-crd-herb',
+  'ved-crd-powder': 'ved-crd-herb',
+  'vedliv': 'vedliv-herb',
+  'vedkidney': 'ved-kidney-power',
 };
 
 export function toProductSummary(p: Product): ProductSummary {

@@ -1,6 +1,14 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /cgi-sys/
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /*.php$
 
-# Sitemap
+# Host & Sitemap
+Host: https://www.vedvet.com
 Sitemap: https://www.vedvet.com/sitemap.xml

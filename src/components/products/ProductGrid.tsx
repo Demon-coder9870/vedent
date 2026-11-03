@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import ProductCard from './ProductCard';
-import { ProductSummary } from '../../lib/products';
-import styles from '../../styles/ProductCatalog.module.css';
+import { ProductSummary } from '@/lib/products';
+import styles from '@/styles/ProductCatalog.module.css';
 
 interface ProductGridProps {
   products: ProductSummary[];

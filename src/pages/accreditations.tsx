@@ -1,12 +1,11 @@
 import React from 'react';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
-import PageHeader from '../components/layout/PageHeader';
-import { getCanonicalUrl } from '../data/seoConfig';
-import { getAboutPageSchema } from '../data/schemaConfig';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import PageHeader from '@/components/layout/PageHeader';
+import { getCanonicalUrl } from '@/data/seoConfig';
+import { getAboutPageSchema } from '@/data/schemaConfig';
 
 export default function Accreditations() {
   const certifications = [
@@ -16,7 +15,7 @@ export default function Accreditations() {
       meaningTitle: 'What Does Halal Certification Mean?',
       meaningDesc: 'Halal certification verifies that the certified products and relevant production processes meet established Halal requirements. Depending on the product, this can include the assessment of ingredients, raw materials, processing, handling, storage, and prevention of contamination with non-Halal materials.',
       icon: 'bi-star-fill',
-      image: '/images/accreditations/Halal.png'
+      image: '/images/accreditations/Halal.webp'
     },
     {
       title: 'GMO Certified',
@@ -24,15 +23,15 @@ export default function Accreditations() {
       meaningTitle: 'What Does GMO Certification Mean?',
       meaningDesc: 'GMO certification verifies that products, ingredients, and relevant production processes covered by the certification meet defined requirements concerning the use and presence of genetically modified organisms (GMOs).',
       icon: 'bi-flower1',
-      image: '/images/accreditations/GMO.png'
+      image: '/images/accreditations/GMO.webp'
     },
     {
       title: 'ISO 9001 Certified',
       desc: 'Our organization is ISO 9001 Certified, demonstrating that our Quality Management System meets the requirements of the internationally recognized ISO 9001 standard. For our customers and distribution partners, this reflects our commitment to consistent processes, quality management, customer satisfaction, traceability, and continual improvement across the activities covered by our certification.',
       meaningTitle: 'What Does ISO 9001 Certification Mean?',
-      meaningDesc: 'ISO 9001 is an internationally recognized standard for Quality Management Systems (QMS). Certification involves the assessment of an organization\'s quality management processes against the requirements of the standard.',
+      meaningDesc: "ISO 9001 is an internationally recognized standard for Quality Management Systems (QMS). Certification involves the assessment of an organization's quality management processes against the requirements of the standard.",
       icon: 'bi-patch-check-fill',
-      image: '/images/accreditations/ISO 9001 2015.png'
+      image: '/images/accreditations/ISO 9001 2015.webp'
     },
     {
       title: 'ISO 22000 Certified',
@@ -40,7 +39,7 @@ export default function Accreditations() {
       meaningTitle: 'What Does ISO 22000 Certification Mean?',
       meaningDesc: 'ISO 22000 is an internationally recognized standard for Food Safety Management Systems (FSMS). It provides a structured framework for identifying, evaluating, controlling, and monitoring food-safety hazards throughout the relevant supply chain. Depending on the certified scope, this can include controls related to raw materials, production processes, hygiene, storage, handling, traceability, monitoring, and corrective actions.',
       icon: 'bi-shield-check',
-      image: '/images/accreditations/ISO 22000.png'
+      image: '/images/accreditations/ISO 22000.webp'
     },
     {
       title: 'FAMI-QS Certified',
@@ -48,7 +47,7 @@ export default function Accreditations() {
       meaningTitle: 'What Does FAMI-QS Certification Mean?',
       meaningDesc: 'FAMI-QS is a recognized certification system specifically developed for the specialty feed ingredients and their mixtures industry. The system provides a structured framework for managing risks associated with the production and supply of products used in animal nutrition.',
       icon: 'bi-diagram-3-fill',
-      image: '/images/accreditations/FAMI-QS.png'
+      image: '/images/accreditations/FAMI-QS.webp'
     },
     {
       title: 'GMP Certified',
@@ -56,7 +55,7 @@ export default function Accreditations() {
       meaningTitle: 'What Does GMP Certification Mean?',
       meaningDesc: 'Good Manufacturing Practices (GMP) provide a structured framework for ensuring that products are consistently manufactured and controlled according to established quality requirements. GMP covers key areas of manufacturing such as personnel, premises, equipment, sanitation, raw materials, production processes, quality control, documentation, storage, and handling, as applicable to the relevant product category and certification scope.',
       icon: 'bi-building-check',
-      image: '/images/accreditations/GMP.png'
+      image: '/images/accreditations/GMP.webp'
     },
     {
       title: 'HACCP Certified',
@@ -64,7 +63,7 @@ export default function Accreditations() {
       meaningTitle: 'What Does HACCP Certification Mean?',
       meaningDesc: 'HACCP (Hazard Analysis and Critical Control Points) is a systematic, preventive approach to identifying, evaluating, and controlling hazards that may affect product safety. Rather than relying solely on testing the finished product, HACCP focuses on identifying potential hazards throughout relevant processes and establishing appropriate Critical Control Points (CCPs) and control measures.',
       icon: 'bi-shield-lock-fill',
-      image: '/images/accreditations/HACCP.png'
+      image: '/images/accreditations/HACCP.webp'
     }
   ];
 
@@ -125,11 +124,13 @@ export default function Accreditations() {
                 >
                   <div className="acc-visual">
                     <div className="acc-icon-box" style={{ background: 'transparent', boxShadow: 'none' }}>
-                      <Image
+                      <img
                         src={cert.image}
                         alt={cert.title}
                         width={120}
                         height={120}
+                        loading="lazy"
+                        decoding="async"
                         style={{ objectFit: 'contain' }}
                       />
                     </div>

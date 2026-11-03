@@ -1,11 +1,11 @@
 import React, { useState, useMemo, useRef } from 'react';
-import { ProductSummary, getSortedProductSummaries } from '../../lib/products';
-import { categories } from '../../data/categoryHelpers';
+import { ProductSummary, getSortedProductSummaries } from '@/lib/products';
+import { categories } from '@/data/categoryHelpers';
 import ProductFilters from './ProductFilters';
 import ProductGrid from './ProductGrid';
 import ProductPagination from './ProductPagination';
 import CategoryBanner from './CategoryBanner';
-import styles from '../../styles/ProductCatalog.module.css';
+import styles from '@/styles/ProductCatalog.module.css';
 
 interface ProductCatalogProps {
   products: ProductSummary[];

@@ -1,5 +1,5 @@
-import { SITE_URL, getCanonicalUrl } from './seoConfig';
-import { formatCategoryLabel, getProductPrimaryCategory } from './categoryHelpers';
+import { SITE_URL, getCanonicalUrl } from '@/data/seoConfig';
+import { formatCategoryLabel, getProductPrimaryCategory } from '@/data/categoryHelpers';
 
 export interface BreadcrumbItem {
   label: string;

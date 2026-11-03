@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import FeaturedBadge from '../productDesigns/FeaturedBadge';
-import { ProductSummary } from '../../lib/products';
-import { getProductPrimaryCategory } from '../../data/categoryHelpers';
-import styles from '../../styles/ProductCatalog.module.css';
+import FeaturedBadge from './FeaturedBadge';
+import { ProductSummary } from '@/lib/products';
+import { getProductPrimaryCategory } from '@/data/categoryHelpers';
+import styles from '@/styles/ProductCatalog.module.css';
 
 interface ProductCardProps {
   product: ProductSummary;
@@ -39,6 +39,8 @@ export default function ProductCard({ product, categoryContext = 'All', index = 
             src={product.image}
             alt={product.name}
             className={styles.image}
+            width={300}
+            height={300}
             loading={index < 3 ? 'eager' : 'lazy'}
             decoding="async"
           />

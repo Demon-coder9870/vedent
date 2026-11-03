@@ -1,18 +1,19 @@
 import React from 'react';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import Header from '../../components/layout/Header';
-import Footer from '../../components/layout/Footer';
-import PageHeader from '../../components/layout/PageHeader';
-import ProductCatalog from '../../components/products/ProductCatalog';
+import { useRouter } from 'next/router';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import PageHeader from '@/components/layout/PageHeader';
+import ProductCatalog from '@/components/products/ProductCatalog';
 import {
   ProductSummary,
   getAllProductSummaries,
   getCategorySEO,
-} from '../../lib/products';
-import { categories, getProductAllCategories } from '../../data/categoryHelpers';
-import { getCanonicalUrl } from '../../data/seoConfig';
-import { getCollectionPageSchema } from '../../data/schemaConfig';
+} from '@/lib/products';
+import { categories, formatCategoryLabel, getProductAllCategories } from '@/data/categoryHelpers';
+import { getCanonicalUrl } from '@/data/seoConfig';
+import { getCollectionPageSchema } from '@/data/schemaConfig';
 
 interface ProductsPageProps {
   products: ProductSummary[];
@@ -20,8 +21,21 @@ interface ProductsPageProps {
 }
 
 export default function ProductsPage({ products, categoryCounts }: ProductsPageProps) {
-  const seo = getCategorySEO('All');
-  const canonicalUrl = getCanonicalUrl('/products');
+  const router = useRouter();
+  const rawCatQuery = typeof router.query.category === 'string' ? router.query.category.trim() : '';
+  const catLower = rawCatQuery.toLowerCase();
+
+  const isSpecificCat = ['poultry', 'swine', 'livestock', 'aqua', 'pets'].includes(catLower);
+  const seo = getCategorySEO(isSpecificCat ? formatCategoryLabel(catLower) : 'All');
+  const canonicalUrl = isSpecificCat
+    ? getCanonicalUrl(`/products/${catLower}`)
+    : getCanonicalUrl('/products');
+
+  React.useEffect(() => {
+    if (isSpecificCat) {
+      router.replace(`/products/${catLower}`);
+    }
+  }, [isSpecificCat, catLower, router]);
 
   const breadcrumbs = [
     { label: 'Home', href: '/' },
